@@ -16,6 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="<?php echo site_url();?>/wp-content/themes/radiosofa/style.css">
 
 	<?php wp_head(); ?>
 </head>
@@ -51,8 +52,15 @@
             </audio>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
+		<nav id="site-navigation" class="main-navigation tab">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'radiosofa' ); ?></button>
+
+               <ul>
+                   <li class="tablinks" onclick="openCity(event, 'page-ondes')"><a href="#">Ondes</a></li>
+                   <li class="tablinks" onclick="openCity(event, 'page-sofas')"><a href="#">Sofas</a></li>
+                   <li class="tablinks" onclick="openCity(event, 'page-convives')"><a href="#">Convives</a></li>
+                   <li class="tablinks" onclick="openCity(event, 'page-emissions')"><a href="#">Emissions</a></li>
+               </ul>
 			<?php
 			/*wp_nav_menu(
 				array(

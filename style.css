@@ -647,14 +647,33 @@ textarea {
 
 /* Navigation
 --------------------------------------------- */
+#page{
+	margin:20px;
+}
+
+.site-header{
+	display:flex;
+	align-items: center;
+}
+.site-header audio{
+	margin-left:10px;
+}
+
+.site-branding{
+	display:flex;
+	align-items: center;
+}
+
 .main-navigation {
-	display: block;
-	width: 100%;
+	width:100%;
+	display: flex;
+	justify-content: flex-end;
 }
 
 .main-navigation ul {
 	display: none;
 	list-style: none;
+	text-decoration: none;
 	margin: 0;
 	padding-left: 0;
 }
@@ -666,6 +685,7 @@ textarea {
 	top: 100%;
 	left: -999em;
 	z-index: 99999;
+
 }
 
 .main-navigation ul ul ul {
@@ -690,6 +710,8 @@ textarea {
 
 .main-navigation li {
 	position: relative;
+	text-decoration: none;
+
 }
 
 .main-navigation a {
@@ -702,6 +724,33 @@ textarea {
 .main-navigation.toggled ul {
 	display: block;
 }
+
+.custom-logo-link{
+	width: 80px;
+}
+
+.tab button {
+	background-color: inherit;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	font-size: 17px;
+}
+
+/* Style the tab content */
+.tabcontent {
+	display: none;
+	border-top: none;
+}
+.tablinks a{
+	color: black;
+	margin-left:20px;
+}
+.active {
+	display: block;
+}
+
 
 @media screen and (min-width: 37.5em) {
 
