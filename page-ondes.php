@@ -3,7 +3,6 @@
 ?>
 
 	<main id="primary" class="site-main">
-ondes
 <?php
 
 $post = get_page_by_title('Ondes');

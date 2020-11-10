@@ -7,8 +7,6 @@ Template Name: Convives
 ?>
 
 	<main id="primary" class="site-main">
-          convives
-
 <?php
 
 $post = get_page_by_title('Convives');
