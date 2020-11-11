@@ -46,20 +46,37 @@
 				<p class="site-description"><?php echo $radiosofa_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
 
+            <!--<iframe src="https://www.radioking.com/widgets/player/player.php?id=292531&c=%23FFFFFF&c2=%232F3542&f=h&i=0&ii=null&p=0&s=0&li=0&popup=0&plc=NaN&h=undefined&l=470&a=0&v=2" style="border-radius: 5px; width: 470px; height: 145px; min-width: 470px; min-height: 0; " frameBorder="0" ></iframe>-->
+
             <audio controls>
-                <source src="https://www.radioking.com/play/radio-sofa" type="audio/mpeg">
+                <source src="https://www.radioking.com/play/radio-sofa" type="audio/mpeg" style="width:100px">
                 Your browser does not support the audio element.
             </audio>
-		</div><!-- .site-branding -->
+            <a class="play" href="#"></a>
+            <div id="rk-current-track-widget" data-id="radio-sofa" data-buy="0"></div>
+            <script type="text/javascript" src="https://widget.radioking.io/current-track/build/script.min.js"></script>
+
+        </div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation tab">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'radiosofa' ); ?></button>
+            <h1 onclick="openCity(event, 'page-ondes')"><span>2</span><span>4</span><span>/</span><span>7</span><span> </span>
+                    <span>S</span><span>E</span><span>R</span><span>V</span><span>I</span><span>C</span><span>E</span></h1>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <?php esc_html_e( 'Primary Menu', 'radiosofa' ); ?></button>
 
                <ul>
-                   <li class="tablinks" onclick="openCity(event, 'page-ondes')"><a href="#">Ondes</a></li>
-                   <li class="tablinks" onclick="openCity(event, 'page-sofas')"><a href="#">Sofas</a></li>
-                   <li class="tablinks" onclick="openCity(event, 'page-convives')"><a href="#">Convives</a></li>
-                   <li class="tablinks" onclick="openCity(event, 'page-emissions')"><a href="#">Emissions</a></li>
+                   <!--<li class="tablinks" onclick="openCity(event, 'page-ondes')"><a href="#">Ondes</a></li>-->
+                   <li class="tablinks" onclick="openCity(event, 'page-convives')">Convives</li>
+                   <li class="tablinks" onclick="openCity(event, 'page-sofas')">Sofas</li>
+                   <li class="tablinks" onclick="openCity(event, 'page-emissions')">Emissions</li>
+                   <li class="tablinks" onclick="openCity(event, 'page-residence')">Residence</li>
+                   <li class="tablinks"><a target="_blank" href="https://facebook.com/radiosofa">
+                           <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/fb.png" width="20" alt="Facebook logo">
+                       </a>
+                        <a target="_blank" href="https://www.instagram.com/radio.sofa/">
+                           <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/insta.png" width="20" alt="Instagram logo">
+                       </a>
+                   </li>
                </ul>
 			<?php
 			/*wp_nav_menu(

@@ -40,7 +40,27 @@ get_header();
 
     <div id="page-emissions" class="tabcontent">
         <?php
-        require('page-sofas.php');
+        require('page-emissions.php');
+        ?>
+    </div>
+
+    <div id="page-residence" class="tabcontent">
+        <?php
+        $post = get_page_by_title('Residence');
+        $content = $post->post_content;
+        $content = apply_filters('the_content', $content);
+        $content = str_replace(']]>', ']]&gt;', $content);
+        echo $content;
+        ?>
+    </div>
+
+    <div id="page-actualite" class="tabcontent">
+        <?php
+        $post = get_page_by_title('Acutalites');
+        $content = $post->post_content;
+        $content = apply_filters('the_content', $content);
+        $content = str_replace(']]>', ']]&gt;', $content);
+        echo $content;
         ?>
     </div>
 

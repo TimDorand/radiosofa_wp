@@ -387,6 +387,7 @@ template {
 }
 
 html {
+	background: #fbfbfb;
 	box-sizing: border-box;
 }
 
@@ -472,7 +473,6 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-	background: #fff;
 }
 
 hr {
@@ -533,25 +533,26 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #4169e1;
+	/*color: #4169e1;*/
+	color: #080627;
 }
 
 a:visited {
-	color: #800080;
+	/*color: #800080;*/
 }
 
-a:hover,
-a:focus,
-a:active {
+#primary a:hover,
+#primary  a:focus,
+#primary  a:active {
 	color: #191970;
 }
 
-a:focus {
+#primary a:focus {
 	outline: thin dotted;
 }
 
-a:hover,
-a:active {
+#primary a:hover,
+#primary a:active {
 	outline: 0;
 }
 
@@ -648,34 +649,145 @@ textarea {
 /* Navigation
 --------------------------------------------- */
 #page{
-	margin:20px;
+	padding:20px;
 }
 
 .site-header{
 	display:flex;
 	align-items: center;
+	margin-bottom: 20px;
+	justify-content: space-between;
 }
 .site-header audio{
 	margin-left:10px;
 }
 
+/* SITE BRANDING + RADIO PLAYER */
 .site-branding{
+	width:50%;
 	display:flex;
 	align-items: center;
 }
 
-.main-navigation {
+.custom-logo-link{
+	width: 100px;
+}
+.site-branding :before,.site-branding :after {
+	display: block;
+	content: "";
+	position: absolute;
+}
+.site-branding audio{
+	display:none;
+}
+.play, .pause {
+	width: 100px;
+	height: 100px;
+	padding:10px 20px;
+	display: block;
+	clear: both;
+}
+.site-branding a:active,.site-branding a:hover{
+	outline:none;
+}
+.play:before {
+	border-top: 37px solid transparent;
+	border-bottom: 37px solid transparent;
+	border-left: 62px solid #1a1c19;
+}
+.pause:before {
+	background: #1a1c19;
+	width: 25px;
+	height: 62px;
+	margin-top:5px;
+}
+.pause:after {
+	background: #1a1c19;
+	margin: 5px 0 0 40px;
+	width: 25px;
+	height: 62px;
+}
+
+#rk-current-track-widget{
 	width:100%;
+}
+#rk-current-track-widget div .component div{
+	box-shadow: none;
+	background:none;
+	font-size: 1rem;
+}
+#rk-current-track-widget div .component div img{
+	display:none;
+}
+#rk-current-track-widget div .component div span{
+	 display: none;
+ }
+
+.main-navigation {
+	width:50%;
+	max-width: 600px;
 	display: flex;
-	justify-content: flex-end;
+	flex-direction: column;
+}
+
+.main-navigation h1{
+	color:black;
+	font-weight: 400;
+	font-size: 4.5rem;
+	display: flex;
+	justify-content: space-between;
+	height: 90px;
+	margin: -20px 0 0 0;
+	overflow: hidden;
+	padding: 0;
+	cursor: pointer;
 }
 
 .main-navigation ul {
+	justify-content: space-between;
+
+	/*
 	display: none;
+	*/
 	list-style: none;
 	text-decoration: none;
 	margin: 0;
 	padding-left: 0;
+}
+
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+
+.tab button {
+	background-color: inherit;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	font-size: 17px;
+}
+
+/* Style the tab content */
+.tabcontent {
+	display: none;
+	border-top: none;
+}
+.tablinks{
+	cursor: pointer;
+	color: black;
+	text-transform: uppercase;
+}
+.active {
+	display: block;
 }
 
 .main-navigation ul ul {
@@ -714,42 +826,6 @@ textarea {
 
 }
 
-.main-navigation a {
-	display: block;
-	text-decoration: none;
-}
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-.custom-logo-link{
-	width: 80px;
-}
-
-.tab button {
-	background-color: inherit;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	padding: 14px 16px;
-	font-size: 17px;
-}
-
-/* Style the tab content */
-.tabcontent {
-	display: none;
-	border-top: none;
-}
-.tablinks a{
-	color: black;
-	margin-left:20px;
-}
-.active {
-	display: block;
-}
 
 
 @media screen and (min-width: 37.5em) {
@@ -792,6 +868,22 @@ textarea {
 
 /* Posts and pages
 --------------------------------------------- */
+#primary h2{
+	margin-top: 0;
+}
+.wp-block-latest-posts{
+	margin: 0;
+	padding:0;
+	text-align: right;
+}
+
+
+.wp-block-latest-posts a{
+
+}
+.wp-block-image{
+	margin:0;
+}
 .sticky {
 	display: block;
 }
