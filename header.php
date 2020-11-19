@@ -59,8 +59,14 @@
         </div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation tab">
-            <h1 onclick="openCity(event, 'page-ondes')"><span>2</span><span>4</span><span>/</span><span>7</span><span> </span>
-                    <span>S</span><span>E</span><span>R</span><span>V</span><span>I</span><span>C</span><span>E</span></h1>
+           <!-- <h1 onclick="openCity(event, 'page-ondes')">
+                <span>2</span><span>4</span><span>/</span><span>7</span><span> </span>
+                    <span>S</span><span>E</span><span>R</span><span>V</span><span>I</span><span>C</span><span>E</span>
+            </h1>-->
+            <div class="messagedefilant" onclick="openCity(event, 'page-ondes')">
+                <div data-text="24/7 SERVICE" onclick="openCity(event, 'page-ondes')"><span>24/7 SERVICE</span></div>
+            </div>
+
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
                 <?php esc_html_e( 'Primary Menu', 'radiosofa' ); ?></button>
 
@@ -73,6 +79,8 @@
                    <li class="tablinks"><a target="_blank" href="https://facebook.com/radiosofa">
                            <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/fb.png" width="20" alt="Facebook logo">
                        </a>
+                   </li>
+                   <li class="tablinks">
                         <a target="_blank" href="https://www.instagram.com/radio.sofa/">
                            <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/insta.png" width="20" alt="Instagram logo">
                        </a>

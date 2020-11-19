@@ -15,7 +15,10 @@
 		<div class="site-info">
             contact.radiosofa@gmail.com
 			<!--<span class="sep"> | </span>-->
-		</div><!-- .site-info -->
+		</div>
+        <div class="footer-line">
+            <hr/>
+        </div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

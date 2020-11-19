@@ -650,6 +650,8 @@ textarea {
 --------------------------------------------- */
 #page{
 	padding:20px;
+	max-width:1400px;
+	margin:auto;
 }
 
 .site-header{
@@ -664,7 +666,7 @@ textarea {
 
 /* SITE BRANDING + RADIO PLAYER */
 .site-branding{
-	width:50%;
+	max-width:400px;
 	display:flex;
 	align-items: center;
 }
@@ -683,7 +685,7 @@ textarea {
 .play, .pause {
 	width: 100px;
 	height: 100px;
-	padding:10px 20px;
+	padding:20px 20px;
 	display: block;
 	clear: both;
 }
@@ -691,21 +693,20 @@ textarea {
 	outline:none;
 }
 .play:before {
-	border-top: 37px solid transparent;
-	border-bottom: 37px solid transparent;
-	border-left: 62px solid #1a1c19;
+	border-top: 27px solid transparent;
+	border-bottom: 27px solid transparent;
+	border-left: 42px solid #1a1c19;
 }
 .pause:before {
 	background: #1a1c19;
-	width: 25px;
-	height: 62px;
-	margin-top:5px;
+	width: 15px;
+	height: 52px;
 }
 .pause:after {
 	background: #1a1c19;
-	margin: 5px 0 0 40px;
-	width: 25px;
-	height: 62px;
+	margin: 0 0 0 30px;
+	width: 15px;
+	height: 52px;
 }
 
 #rk-current-track-widget{
@@ -724,13 +725,13 @@ textarea {
  }
 
 .main-navigation {
-	width:50%;
-	max-width: 600px;
+	width:100%;
+	max-width: 800px;
 	display: flex;
 	flex-direction: column;
 }
 
-.main-navigation h1{
+/*.main-navigation h1{
 	color:black;
 	font-weight: 400;
 	font-size: 4.5rem;
@@ -741,7 +742,66 @@ textarea {
 	overflow: hidden;
 	padding: 0;
 	cursor: pointer;
+}*/
+
+/* Texte défilant */
+.messagedefilant {
+	display: block;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 60px;
+	margin-top: -20px;
 }
+
+.messagedefilant div {
+	position: absolute;
+	min-width: 100%; /* au minimum la largeur du conteneur */
+}
+
+.messagedefilant div span,
+.messagedefilant div:after {
+	position: relative;
+	display: inline-block;
+	white-space: nowrap;
+	top:0;
+	color:#1a1c19;
+	font-size: 4rem;
+	margin-top: -19px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.messagedefilant div span {
+	font-weight: 700;
+	margin-top: -19px;
+	color:#1a1c19;
+	font-size: 4rem;
+	overflow: hidden;
+	padding: 0;
+	cursor: pointer;
+	animation: defilement 10s infinite linear;
+}
+
+.messagedefilant div:after {
+	position: absolute;
+	top:0; left:0;
+	content:attr(data-text);
+	animation: defilement2 10s infinite linear;
+}
+
+@keyframes defilement {
+	0% { margin-left: 0; }
+	100% { margin-left: -100%; }
+}
+
+@keyframes defilement2 {
+	0% { margin-left: 100%; }
+	100% { margin-left: 0%; }
+}
+
+
 
 .main-navigation ul {
 	justify-content: space-between;
@@ -866,6 +926,16 @@ textarea {
 	flex: 1 0 50%;
 }
 
+/* Footer */
+
+footer{
+	display: flex;
+	flex-direction: row;
+}
+.footer-line{
+	width: 100%;
+	padding:10px 0 10px 10px;
+}
 /* Posts and pages
 --------------------------------------------- */
 #primary h2{
