@@ -666,7 +666,7 @@ textarea {
 
 /* SITE BRANDING + RADIO PLAYER */
 .site-branding{
-	width: 40%;
+	width: calc(40% + 50px);
 	display:flex;
 	align-items: center;
 }
@@ -725,7 +725,7 @@ textarea {
  }
 
 .main-navigation {
-	width: 60%;
+	width: calc(60% - 20px);
 	display: flex;
 	flex-direction: column;
 }
