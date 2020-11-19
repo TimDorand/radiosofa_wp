@@ -725,7 +725,7 @@ textarea {
  }
 
 .main-navigation {
-	width: calc(60% - 20px);
+	width: calc(60% - 50px);
 	display: flex;
 	flex-direction: column;
 }
@@ -943,11 +943,11 @@ footer{
 #primary h2{
 	margin-top: 0;
 }
-.wp-block-latest-posts{
+/*.wp-block-latest-posts{
 	margin: 0;
 	padding:0;
 	text-align: right;
-}
+}*/
 
 
 .wp-block-latest-posts a{
