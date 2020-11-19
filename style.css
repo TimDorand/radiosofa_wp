@@ -730,6 +730,9 @@ textarea {
 	flex-direction: column;
 }
 
+.wp-block-column:not(:first-child) {
+	margin-left: 50px;
+}
 /*.main-navigation h1{
 	color:black;
 	font-weight: 400;
