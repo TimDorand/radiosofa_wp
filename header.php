@@ -32,7 +32,7 @@
             $custom_logo_id = get_theme_mod( 'custom_logo' );
             $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
             ?>
-            <span class="custom-logo-link" onclick="openCity(event, 'page-residence')">
+            <span class="custom-logo-link" onclick="openCity(event, 'page-ondes')">
                 <img alt="Radio Sofa Logo" src="<?php echo $image[0];?>"/>
             </span>
             <?php
