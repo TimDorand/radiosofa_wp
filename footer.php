@@ -45,6 +45,12 @@
             }
         });
     });
+
+    $(document).ready( function() {
+        $("#menu-toggle").click(function(){
+            $("#primary-menu").toggle();
+        });
+    });
 </script>
 
 </body>

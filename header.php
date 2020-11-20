@@ -74,9 +74,12 @@
                 <div data-text="24/7 SERVICE" onclick="openCity(event, 'page-ondes')"><span>24/7 SERVICE</span></div>
             </div>
 
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-                <?php esc_html_e( 'Primary Menu', 'radiosofa' ); ?></button>
+<!--			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <?php /*esc_html_e( '▽', 'radiosofa' ); */?>
+            </button>-->
+            <div id="menu-toggle">▽</div>
 
+            <div id="primary-menu">
                <ul>
                    <!--<li class="tablinks" onclick="openCity(event, 'page-ondes')"><a href="#">Ondes</a></li>-->
                    <li class="tablinks" onclick="openCity(event, 'page-convives')">Convives</li>
@@ -93,13 +96,14 @@
                        </a>
                    </li>
                </ul>
+            </div>
 			<?php
-			/*wp_nav_menu(
+/*			wp_nav_menu(
 				array(
 					'theme_location' => 'menu-1',
 					'menu_id'        => 'primary-menu',
 				)
-			);*/
-			?>
+			);
+			*/?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

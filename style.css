@@ -889,17 +889,44 @@ textarea {
 
 @media screen and (max-width: 600px) {
 
+	body{
+		font-size:1rem;
+	}
 	.wp-block-column:not(:first-child){
 		margin-left:0px;
 	}
 	.site-header{
-		flex-direction: column;
+		flex-direction: column-reverse;
 	}
 	.site-branding, .main-navigation{
 		width:100%;
 	}
-}
 
+	.play, .pause {
+		margin-top: -26px;
+		padding: 31px 0px 0px 18px;
+	}
+	#primary-menu{
+		display:none;
+	}
+	#menu-toggle{
+
+		text-align: center;
+		font-size: 1.5rem;
+		padding-top: 16px;
+	}
+	.main-navigation ul{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.main-navigation li {
+		position: relative;
+		text-decoration: none;
+		padding: 9px;
+		font-size:1rem;
+	}
+}
 @media screen and (min-width: 37.5em) {
 
 	.menu-toggle {
