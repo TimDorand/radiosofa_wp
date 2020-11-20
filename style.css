@@ -942,6 +942,9 @@ footer{
 #primary h2{
 	margin-top: 0;
 }
+.wp-block-column p{
+	margin-top:0;
+}
 .wp-block-latest-posts{
 	margin: 0;
 	padding:0;
