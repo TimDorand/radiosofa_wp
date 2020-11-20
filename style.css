@@ -387,7 +387,7 @@ template {
 }
 
 html {
-	background: #fbfbfb;
+	background: #f7f8f4;
 	box-sizing: border-box;
 }
 
@@ -887,7 +887,18 @@ textarea {
 
 }
 
+@media screen and (max-width: 600px) {
 
+	.wp-block-column:not(:first-child){
+		margin-left:0px;
+	}
+	.site-header{
+		flex-direction: column;
+	}
+	.site-branding, .main-navigation{
+		width:100%;
+	}
+}
 
 @media screen and (min-width: 37.5em) {
 
@@ -935,7 +946,8 @@ footer{
 }
 .footer-line{
 	width: 100%;
-	padding:10px 0 10px 10px;
+	padding: 10px 0 0 10px;
+	height: 5px;
 }
 /* Posts and pages
 --------------------------------------------- */
@@ -970,7 +982,7 @@ display:none;
 
 .post,
 .page {
-	margin: 0 0 1.5em;
+	margin: 0;
 }
 
 .updated:not(.published) {
