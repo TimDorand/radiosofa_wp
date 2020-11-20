@@ -930,7 +930,7 @@ textarea {
 		font-size:1rem;
 	}
 	.messagedefilant{
-		width: 200%;
+		width: calc(100% + 40px);
 		height: 60px;
 		margin: -20px -20px 12px -20px;
 	}
