@@ -913,7 +913,7 @@ textarea {
 		display:none;
 	}
 	#menu-toggle{
-
+		display:block;
 		text-align: center;
 		font-size: 1.5rem;
 		padding-top: 16px;
