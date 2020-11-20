@@ -54,9 +54,9 @@ get_header();
         ?>
     </div>
 
-    <div id="page-actualite" class="tabcontent">
+    <div id="page-actualites" class="tabcontent">
         <?php
-        $post = get_page_by_title('Acutalites');
+        $post = get_page_by_title('Actualites');
         $content = $post->post_content;
         $content = apply_filters('the_content', $content);
         $content = str_replace(']]>', ']]&gt;', $content);
