@@ -71,7 +71,7 @@
                     <span>S</span><span>E</span><span>R</span><span>V</span><span>I</span><span>C</span><span>E</span>
             </h1>-->
             <div class="messagedefilant" onclick="openCity(event, 'page-ondes')">
-                <div data-text="24/7 SERVICE" onclick="openCity(event, 'page-ondes')"><span>24/7 SERVICE</span></div>
+                <div data-text="ÉCLECTISME ET GROOVE &#160;&#160; &#160; &#160; &#160; &#160;  " onclick="openCity(event, 'page-ondes')"><span>ÉCLECTISME ET GROOVE &#160;&#160; &#160; &#160; &#160; &#160;  </span></div>
             </div>
 
 <!--			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
@@ -86,14 +86,17 @@
                    <li class="tablinks" onclick="openCity(event, 'page-sofas')">Sofas</li>
                    <li class="tablinks" onclick="openCity(event, 'page-emissions')">Emissions</li>
                    <li class="tablinks" onclick="openCity(event, 'page-residence')">Residence</li>
-                   <li class="tablinks"><a target="_blank" href="https://facebook.com/radiosofa">
+                   <li class="tablinks">
+
+                       <div style="display:flex;flex-direction:row";> <a target="_blank" href="https://facebook.com/radiosofa">
                            <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/fb.png" width="20" alt="Facebook logo">
                        </a>
-                   </li>
-                   <li class="tablinks">
-                        <a target="_blank" href="https://www.instagram.com/radio.sofa/">
-                           <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/insta.png" width="20" alt="Instagram logo">
-                       </a>
+                           &#160;&#160;
+
+                           <a target="_blank" href="https://www.instagram.com/radio.sofa/">
+                               <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/insta.png" width="20" alt="Instagram logo">
+                           </a>
+                       </div>
                    </li>
                </ul>
             </div>

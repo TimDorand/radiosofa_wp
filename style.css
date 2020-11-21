@@ -734,8 +734,8 @@ textarea {
 }
 .play, .pause {
 	width: 100px;
-	height: 100px;
-	padding:20px 20px;
+	height: 60px;
+	padding:0px 20px;
 	display: block;
 	clear: both;
 }
@@ -818,17 +818,18 @@ textarea {
 	white-space: nowrap;
 	top:0;
 	color:#1a1c19;
-	font-size: 4rem;
-	margin-top: -19px;
+	font-size: 3rem;
+	margin-top: 0px;
 	font-weight: 700;
 	cursor: pointer;
 }
 
 .messagedefilant div span {
 	font-weight: 700;
-	margin-top: -19px;
 	color:#1a1c19;
-	font-size: 4rem;
+
+	font-size: 3rem;
+	margin-top: 0px;
 	overflow: hidden;
 	padding: 0;
 	cursor: pointer;
