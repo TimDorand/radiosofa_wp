@@ -719,10 +719,17 @@ textarea {
 	width: calc(40% + 50px);
 	display:flex;
 	align-items: center;
+	height: 70px;
+
 }
 
 .custom-logo-link{
-	width: 100px;
+	display: inline-block;
+}
+.custom-logo-link img{
+	width: 71px;
+	max-width: 71px;
+	height:71px;
 }
 .site-branding :before,.site-branding :after {
 	display: block;
@@ -777,23 +784,13 @@ textarea {
 	width: calc(60% - 50px);
 	display: flex;
 	flex-direction: column;
+	height:71px;
+
 }
 
 .wp-block-column:not(:first-child) {
 	margin-left: 50px;
 }
-/*.main-navigation h1{
-	color:black;
-	font-weight: 400;
-	font-size: 4.5rem;
-	display: flex;
-	justify-content: space-between;
-	height: 90px;
-	margin: -20px 0 0 0;
-	overflow: hidden;
-	padding: 0;
-	cursor: pointer;
-}*/
 
 /* Texte défilant */
 .messagedefilant {
@@ -803,7 +800,7 @@ textarea {
 	position: relative;
 	width: 100%;
 	height: 60px;
-	margin-top: -20px;
+	margin-top: -13px;
 }
 
 .messagedefilant div {
@@ -865,6 +862,7 @@ textarea {
 	text-decoration: none;
 	margin: 0;
 	padding-left: 0;
+	align-items: flex-end;
 }
 
 .main-navigation a {
@@ -1117,10 +1115,6 @@ display:none;
 	padding: 0;
 }
 
-/* Make sure logo link wraps around logo image. */
-.custom-logo-link {
-	display: inline-block;
-}
 
 /* Captions
 --------------------------------------------- */
