@@ -24,33 +24,52 @@
 
 <?php wp_footer(); ?>
 
-<script src="<?php echo site_url();?>/wp-content/themes/radiosofa/js/jquery_min_213.js"></script>
 <script>
-    $(function() {
-        $("audio + a").click(function(e) {
-            e.preventDefault();
-            var song = $(this).prev('audio').get(0);
 
-            if (song.paused) {
-                song.play();
-//         $(this).text("❙ ❙");
-                $(this).addClass("pause");
-                $(this).removeClass("play");
-            }
-            else {
-                song.pause();
-//         $(this).text("▶");
-                $(this).addClass("play");
-                $(this).removeClass("pause");
-            }
-        });
-    });
 
+    // MENU
     $(document).ready( function() {
         $("#menu-toggle").click(function(){
             $("#primary-menu").toggle();
         });
     });
+
+
+    var ladate = new Date();
+    var tab_jour = new Array("Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi");
+    console.log("Nous sommes un "+tab_jour[ladate.getDay()])
+
+    function findMyText(needle, replacementText) {
+        var myOldString = $(".haystack").html();
+        var myNewString = myOldString.replace(needle, replacementText);
+        $(".haystack").html(myNewString);
+
+    }
+
+    var haystackText = "";
+    function findMyText2(needle, replacement) {
+        if (haystackText.length == 0) {
+            haystackText = document.getElementById("primary").innerHTML;
+        }
+        var match = new RegExp(needle, "ig");
+        var replaced = "";
+        if (replacement.length > 0) {
+            replaced = haystackText.replace(match, replacement);
+        }
+        else {
+            var boldText = "            " + needle + "            ";
+            replaced = haystackText.replace(match, boldText);
+        }
+        console.warn(match)
+        document.getElementById("primary").innerHTML = replaced;
+    }
+
+    document.addEventListener("DOMContentLoaded", (event) => {
+        findMyText(tab_jour[ladate.getDay() -1], "Hier");
+        findMyText(tab_jour[ladate.getDay()], "Aujourd'hui");
+        findMyText(tab_jour[ladate.getDay() + 1], "Demain");
+    });
+
 </script>
 
 </body>
