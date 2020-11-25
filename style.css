@@ -829,14 +829,12 @@ textarea {
 	overflow: hidden;
 	padding: 0;
 	cursor: pointer;
-	animation: defilement 10s infinite linear;
 }
 
 .messagedefilant div:after {
 	position: absolute;
 	top:0; left:0;
 	content:attr(data-text);
-	animation: defilement2 10s infinite linear;
 }
 
 @keyframes defilement {
