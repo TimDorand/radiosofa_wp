@@ -715,7 +715,7 @@ textarea {
 
 /* SITE BRANDING + RADIO PLAYER */
 .site-branding{
-	width: calc(40% + 50px);
+	width: calc(35% + 50px);
 	display:flex;
 	align-items: center;
 	height: 70px;
@@ -780,7 +780,7 @@ textarea {
  }
 
 .main-navigation {
-	width: calc(60% - 50px);
+	width: calc(65% - 50px);
 	display: flex;
 	flex-direction: column;
 	height:71px;
