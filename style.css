@@ -1062,20 +1062,51 @@ display:none;
 	display: block;
 }
 
+/* EVENTS PLANNING VSEL */
+.vsel-container{
 
-.vsel-meta{
+	display: flex;
+	flex-direction: column-reverse;
+}
+.vsel-meta,.vsel-image-info{
 	width:auto;
 	float:none;
 }
-.vsel-meta h3{
+.vsel-content h3 {
+	margin: 0 0 18px;
 	text-transform: uppercase;
 }
 .vsel-meta-date{
-	margin-right:5px;
+	padding-right:5px;
+	text-transform: capitalize;
 }
+.vsel-meta-title{
+	margin-bottom: 10px;
+}
+.vsel-meta-title:after{
+	border: 3px solid lightblue;
+	background: lightblue;
+	display: block;
+	content: "";
+	position: absolute;
+	margin-left: -29px;
+	width: 50px;
+	margin-top: 4px;
+}
+.vsel-meta-date:after {content: ' // ';}
+
 .vsel-meta-time, .vsel-meta-date{
 	display:inline;
 }
+.vsel-content{
+
+	display: flex;
+	flex-direction: column;
+}
+.vsel-info p {
+	font-style: italic;
+}
+
 .post,
 .page {
 	margin: 0;

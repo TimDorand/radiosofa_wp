@@ -70,6 +70,22 @@
                  echo "10";
              } ?>s infinite linear;
         }
+        .vsel-meta-title:after {
+            border: 3px solid <?php
+            $texte_defilant_temps = get_field("couleur_2");
+        if(isset($texte_defilant_temps)){
+            echo $texte_defilant_temps;
+        } else {
+              echo "lightblue";
+          } ?>;
+            background: <?php
+             $texte_defilant_temps = get_field("couleur_2");
+        if(isset($texte_defilant_temps)){
+            echo $texte_defilant_temps;
+        } else {
+              echo "lightblue";
+          } ?>;
+        }
     </style>
 
 	<?php wp_head(); ?>
