@@ -50,6 +50,7 @@
              } else {
                  echo "#f7f8f4";
              } ?>;
+        }
         .messagedefilant div span {
             animation: defilement <?php
              $texte_defilant_temps = get_field("texte_defilant_temps");
@@ -68,7 +69,6 @@
              } else {
                  echo "10";
              } ?>s infinite linear;
-        }
         }
     </style>
 
