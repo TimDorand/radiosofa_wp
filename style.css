@@ -388,7 +388,6 @@ template {
 }
 
 html {
-	background: #f7f8f4;
 	box-sizing: border-box;
 }
 
@@ -1037,6 +1036,7 @@ footer{
 --------------------------------------------- */
 #primary h2{
 	margin-top: 0;
+	text-transform: uppercase;
 }
 .wp-block-column p{
 	margin-top:0;
@@ -1064,6 +1064,20 @@ display:none;
 	display: block;
 }
 
+
+.vsel-meta{
+	width:auto;
+	float:none;
+}
+.vsel-meta h3{
+	text-transform: uppercase;
+}
+.vsel-meta-date{
+	margin-right:5px;
+}
+.vsel-meta-time, .vsel-meta-date{
+	display:inline;
+}
 .post,
 .page {
 	margin: 0;

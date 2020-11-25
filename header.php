@@ -40,6 +40,19 @@
             });
         });
         </script>
+
+    <style>
+        html{
+            background: <?php
+             $backgroundColor = get_field("couleur_1");
+             if(isset($backgroundColor)){
+                 echo $backgroundColor;
+             } else {
+                 echo "#f7f8f4";
+             } ?>;
+        }
+    </style>
+
 	<?php wp_head(); ?>
 </head>
 
@@ -57,6 +70,7 @@
             <span class="custom-logo-link" onclick="openCity(event, 'page-ondes')">
                 <img alt="Radio Sofa Logo" src="<?php echo $image[0];?>"/>
             </span>
+
             <?php
 			/*the_custom_logo();*/
 			if ( is_front_page() && is_home() ) :
@@ -93,7 +107,10 @@
                     <span>S</span><span>E</span><span>R</span><span>V</span><span>I</span><span>C</span><span>E</span>
             </h1>-->
             <div class="messagedefilant" onclick="openCity(event, 'page-ondes')">
-                <div data-text="ÉCLECTISME ET GROOVE &#160;&#160; &#160; &#160; &#160; &#160;  " onclick="openCity(event, 'page-ondes')"><span>ÉCLECTISME ET GROOVE &#160;&#160; &#160; &#160; &#160; &#160;  </span></div>
+                <?php
+                $text_defilant = get_field("texte_defilant");
+                ?>
+                <div data-text="<?php echo $text_defilant; ?>" onclick="openCity(event, 'page-ondes')"><span><?php echo $text_defilant; ?></span></div>
             </div>
 
 <!--			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
