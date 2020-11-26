@@ -739,9 +739,9 @@ textarea {
 	display:none;
 }
 .play, .pause {
-	width: 100px;
+	width: 70px;
 	height: 60px;
-	padding:0px 20px;
+	padding: 0 0 0 20px;
 	display: block;
 	clear: both;
 }
@@ -766,7 +766,11 @@ textarea {
 }
 
 #rk-current-track-widget{
-	width:100%;
+	max-width: 65%;
+}
+
+#rk-current-track-widget div{
+	width:inherit;
 }
 #rk-current-track-widget div .component div{
 	box-shadow: none;
