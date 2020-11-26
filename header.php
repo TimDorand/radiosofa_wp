@@ -70,7 +70,7 @@
                  echo "10";
              } ?>s infinite linear;
         }
-        .vsel-meta-title:after {
+        .vsel-meta-date:before{
             border: 3px solid <?php
             $couleur_2 = get_field("couleur_2");
         if(isset($couleur_2)){
