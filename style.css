@@ -1076,6 +1076,10 @@ display:none;
 	display: block;
 }
 
+.wp-block-columns {
+	margin-bottom: 0;
+}
+
 #page-ondes .wp-block-column h2:after{
 	border: 3px solid lightblue;
 	background: lightblue;
