@@ -1039,6 +1039,9 @@ footer{
 #primary h2{
 	margin-top: 0;
 	text-transform: uppercase;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1.5em;
 }
 .wp-block-column p{
 	margin-top:0;
@@ -1058,6 +1061,10 @@ display:none;
 }
 .wp-block-latest-posts__post-excerpt{
 	margin-top:0px;
+	text-align: justify;
+}
+.wp-block-latest-posts.alignleft {
+	margin:0;
 }
 .wp-block-image{
 	margin:0;
