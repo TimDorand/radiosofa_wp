@@ -604,6 +604,9 @@ a:visited {
 #primary a:active {
 	outline: 0;
 }
+.text-justify{
+	text-align: justify;
+}
 
 /* Forms
 --------------------------------------------- */
