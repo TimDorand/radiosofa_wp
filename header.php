@@ -64,7 +64,6 @@
 
         .messagedefilant div:after {
             animation: defilement2 <?php
-             $texte_defilant_temps = get_field("texte_defilant_temps");
              if(isset($texte_defilant_temps)){
                  echo $texte_defilant_temps;
              } else {
@@ -73,19 +72,47 @@
         }
         .vsel-meta-title:after {
             border: 3px solid <?php
-            $texte_defilant_temps = get_field("couleur_2");
-        if(isset($texte_defilant_temps)){
-            echo $texte_defilant_temps;
+            $couleur_2 = get_field("couleur_2");
+        if(isset($couleur_2)){
+            echo $couleur_2;
         } else {
               echo "lightblue";
           } ?>;
             background: <?php
-             $texte_defilant_temps = get_field("couleur_2");
-        if(isset($texte_defilant_temps)){
-            echo $texte_defilant_temps;
+        if(isset($couleur_2)){
+            echo $couleur_2;
         } else {
               echo "lightblue";
           } ?>;
+            margin-left: <?php
+             $margin = get_field("couleur_2_margin");
+        if(isset($margin)){
+            echo $margin;
+        } else {
+              echo "-29";
+          } ?>px;
+        }
+
+        #page-ondes .wp-block-column h2:after {
+            border: 3px solid <?php
+            $couleur_3 = get_field("couleur_3");
+        if(isset($couleur_3)){
+            echo $couleur_3;
+        } else {
+              echo "lightblue";
+          } ?>;
+            background: <?php
+        if(isset($couleur_3)){
+            echo $couleur_3;
+        } else {
+              echo "lightblue";
+          } ?>;
+            margin-left: <?php
+        if(isset($margin)){
+            echo $margin;
+        } else {
+              echo "-29";
+          } ?>px;
         }
     </style>
 

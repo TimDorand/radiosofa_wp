@@ -1062,6 +1062,16 @@ display:none;
 	display: block;
 }
 
+#page-ondes .wp-block-column h2:after{
+	border: 3px solid lightblue;
+	background: lightblue;
+	display: block;
+	content: "";
+	position: absolute;
+	margin-left: -29px;
+	width: 50px;
+	margin-top: 4px;
+}
 /* EVENTS PLANNING VSEL */
 .vsel-container{
 
