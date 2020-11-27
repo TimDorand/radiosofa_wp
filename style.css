@@ -1138,7 +1138,7 @@ display:none;
 	width: 50px;
 	margin-top: 29px;
 }
-.vsel-meta-date:after {content: ' // ';}
+/*.vsel-meta-date:after {content: ' // ';}*/
 
 .vsel-meta-time, .vsel-meta-date{
 	display:inline;
