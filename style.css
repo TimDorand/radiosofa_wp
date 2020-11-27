@@ -1108,6 +1108,9 @@ display:none;
 	width:auto;
 	float:none;
 }
+.vsel-info{
+	width:100%;
+}
 #vsel .vsel-content{
 	border-bottom:none;
 }
