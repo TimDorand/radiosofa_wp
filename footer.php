@@ -65,7 +65,6 @@
     }
 
     document.addEventListener("DOMContentLoaded", (event) => {
-        findMyText(tab_jour[ladate.getDay() -1], "Hier");
         findMyText(tab_jour[ladate.getDay()], "Aujourd'hui");
         findMyText(tab_jour[ladate.getDay() + 1], "Demain");
     });
