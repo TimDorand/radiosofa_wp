@@ -723,7 +723,7 @@ textarea {
 
 /* SITE BRANDING + RADIO PLAYER */
 .site-branding{
-	width: calc(35% + 50px);
+	width: calc(35% + 80px);
 	display:flex;
 	align-items: center;
 	height: 70px;
@@ -783,6 +783,7 @@ textarea {
 #rk-current-track-widget div .component div{
 	box-shadow: none;
 	background:none;
+	font-size:1.02em;
 }
 
 #rk-current-track-widget div .component div img{
@@ -793,7 +794,7 @@ textarea {
  }
 
 .main-navigation {
-	width: calc(65% - 50px);
+	width: calc(65% - 80px);
 	display: flex;
 	flex-direction: column;
 	height:71px;
@@ -801,7 +802,7 @@ textarea {
 }
 
 .wp-block-column:not(:first-child) {
-	margin-left: 50px;
+	margin-left: 80px;
 }
 
 /* Texte défilant */
@@ -825,9 +826,10 @@ textarea {
 	position: relative;
 	display: inline-block;
 	white-space: nowrap;
-	top:0;
-	color:#1a1c19;
-	font-size: 3rem;
+	top:0;/*
+	color:#1a1c19;*/
+	color:#555;
+	font-size: 2em;
 	margin-top: 0px;
 	font-weight: 700;
 	cursor: pointer;
@@ -835,9 +837,10 @@ textarea {
 
 .messagedefilant div span {
 	font-weight: 700;
-	color:#1a1c19;
-
-	font-size: 3rem;
+	/*
+        color:#1a1c19;*/
+	color:#555;
+	font-size: 2em;
 	margin-top: 0px;
 	overflow: hidden;
 	padding: 0;
@@ -943,6 +946,7 @@ textarea {
 .main-navigation li {
 	position: relative;
 	text-decoration: none;
+	font-size:2em;
 
 }
 #menu-toggle {
