@@ -36,7 +36,7 @@
 
 
     var ladate = new Date();
-    var tab_jour = new Array("Dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi");
+    var tab_jour = new Array("dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi");
     console.log("Nous sommes un "+tab_jour[ladate.getDay()])
 
     function findMyText(needle, replacementText) {
