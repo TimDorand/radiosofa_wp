@@ -582,6 +582,7 @@ figure {
 table {
 	margin: 0;
 	width: 100%;
+	border-spacing:0px;
 }
 
 /* Links
