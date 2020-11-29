@@ -584,7 +584,9 @@ table {
 	width: 100%;
 	border-spacing:0px;
 }
-
+.margin-left-10 .wp-block-column{
+	margin-left: 10px;
+}
 /* Links
 --------------------------------------------- */
 a {
