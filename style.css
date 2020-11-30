@@ -1147,6 +1147,7 @@ display:none;
 .vsel-meta-date{
 	padding-right:5px;
 	text-transform: uppercase;
+	width: 73px;
 }
 .vsel-meta-title{
 	margin-bottom: 10px;
@@ -1167,8 +1168,11 @@ display:none;
 	width: 100%;
 	margin-bottom: 10px;
 
+
 }
-/*.vsel-container{
+.vsel-info{
+	width:100%;
+}/*.vsel-container{
 	display: flex;
 	flex-direction: column;
 }
