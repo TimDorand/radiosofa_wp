@@ -1147,9 +1147,11 @@ display:none;
 .vsel-meta-date {
 	padding-right: 5px;
 	text-transform: uppercase;
+	width: 100px;
+
 }
 .vsel-meta-date span{
-	width: 73px;
+	width: 100px;
 }
 .vsel-meta-title{
 	margin-bottom: 10px;
