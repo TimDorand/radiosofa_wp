@@ -719,6 +719,9 @@ textarea {
 	align-items: center;
 	margin-bottom: 20px;
 	justify-content: space-between;
+	border-top: 2px solid #1a1c19;
+	border-bottom: 2px solid #1a1c19;
+
 }
 .site-header audio{
 	margin-left:10px;
@@ -729,17 +732,17 @@ textarea {
 	width: calc(35% + 80px);
 	display:flex;
 	align-items: center;
-	height: 70px;
-
+	height: 86px;
 }
 
 .custom-logo-link{
 	display: inline-block;
 }
 .custom-logo-link img{
-	width: 71px;
-	max-width: 71px;
-	height:71px;
+	margin-top: 5px;
+	width: 61px;
+	max-width: 61px;
+	height: 61px;
 }
 .site-branding :before,.site-branding :after {
 	display: block;
@@ -800,8 +803,7 @@ textarea {
 	width: calc(65% - 80px);
 	display: flex;
 	flex-direction: column;
-	height:71px;
-
+	justify-content: center;
 }
 
 .wp-block-column:not(:first-child) {
@@ -815,13 +817,13 @@ textarea {
 	overflow: hidden;
 	position: relative;
 	width: 100%;
-	height: 60px;
+	height: 32px;
 	margin-top: -10px;
 }
 
 .messagedefilant div {
 	position: absolute;
-	min-width: 100%; /* au minimum la largeur du conteneur */
+	min-width: 103%; /* au minimum la largeur du conteneur */
 }
 
 .messagedefilant div span,
@@ -829,25 +831,18 @@ textarea {
 	position: relative;
 	display: inline-block;
 	white-space: nowrap;
-	top:0;/*
-	color:#1a1c19;*/
-	color:#555;
-	font-size: 2em;
+	top: 0;
+}
+.messagedefilant div span,
+.messagedefilant div:after {
+	color:#1a1c19;
+	font-size: 1.4em;
+	font-style:italic;
 	margin-top: 0px;
 	font-weight: 700;
 	cursor: pointer;
-}
-
-.messagedefilant div span {
-	font-weight: 700;
-	/*
-        color:#1a1c19;*/
-	color:#555;
-	font-size: 2em;
-	margin-top: 0px;
 	overflow: hidden;
 	padding: 0;
-	cursor: pointer;
 }
 
 .messagedefilant div:after {
@@ -909,7 +904,7 @@ textarea {
 }
 .tablinks{
 	cursor: pointer;
-	color: black;
+	color: #1a1c19;
 	text-transform: uppercase;
 }
 .active {
@@ -949,7 +944,7 @@ textarea {
 .main-navigation li {
 	position: relative;
 	text-decoration: none;
-	font-size:2em;
+	font-size: 1.8em;
 
 }
 #menu-toggle {
@@ -1044,11 +1039,16 @@ textarea {
 footer{
 	display: flex;
 	flex-direction: row;
+	margin-top: -17px;
 }
 .footer-line{
 	width: 100%;
 	padding: 10px 0 0 10px;
 	height: 5px;
+}
+.footer-line hr{
+	background-color: #1a1c19;
+	height: 2px;
 }
 /* Posts and pages
 --------------------------------------------- */
@@ -1070,6 +1070,34 @@ footer{
 	list-style: none;
 	padding: 0;
 	margin: 0;
+}
+.replay-images{
+	padding-bottom: 30px;
+
+}
+.replay-images div:not(:first-child) {
+	margin-left:10px;
+}
+.replay-images img{
+	object-fit:cover;
+	width: 100%;
+	height: 100px;
+}
+.bloc-articles {
+	border-left: 2px solid #1a1c19;
+	padding-left: 30px;
+	padding-bottom: 20px;
+	margin-bottom: -6px;
+}
+
+.titre-bloc-articles {
+	border-left: 2px solid #1a1c19;
+	padding-left: 30px;
+	padding-top:30px;
+	border-top: 2px solid #1a1c19;
+	margin-bottom:0;
+	padding-bottom:30px;
+	cursor:pointer;
 }
 
 .wp-block-latest-posts a{
@@ -1099,18 +1127,28 @@ display:none;
 	display: block;
 	content: "";
 	position: absolute;
-	margin-left: -29px;
+	margin-left: 0px;
 	width: 50px;
 	margin-top: 4px;
 }
 /* EVENTS PLANNING VSEL */
-.vsel-container{
+
+.vsel-meta{
+	display: flex;
+	flex-direction: row;
+	float: none;
+	width: auto;
+}
+#vsel .vsel-content{
+	border-bottom:none;
+}
+/*.vsel-container{
 	display: flex;
 	flex-direction: column;
 }
 .vsel-meta,.vsel-image-info{
-	display: flex;
-	flex-wrap: wrap;
+!*	display: flex;
+	flex-wrap: wrap;*!
 	width:auto;
 	float:none;
 }
@@ -1145,13 +1183,13 @@ display:none;
 	width: 50px;
 	margin-top: 29px;
 }
-/*.vsel-meta-date:after {content: ' // ';}*/
+!*.vsel-meta-date:after {content: ' // ';}*!
 
 .vsel-meta-time, .vsel-meta-date{
 	display:inline;
 	font-size: 1.4em;
 
-}
+}*/
 .vsel-content{
 
 	display: flex;

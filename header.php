@@ -111,7 +111,7 @@
         if(isset($margin)){
             echo $margin;
         } else {
-              echo "-29";
+              echo "0";
           } ?>px;
         }
     </style>
@@ -122,6 +122,13 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'radiosofa' ); ?></a>
+
+    <div class="messagedefilant" onclick="openCity(event, 'page-ondes')">
+        <?php
+        $text_defilant = get_field("texte_defilant");
+        ?>
+        <div data-text="<?php echo $text_defilant; ?>" onclick="openCity(event, 'page-ondes')"><span><?php echo $text_defilant; ?></span></div>
+    </div>
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
@@ -168,12 +175,6 @@
                 <span>2</span><span>4</span><span>/</span><span>7</span><span> </span>
                     <span>S</span><span>E</span><span>R</span><span>V</span><span>I</span><span>C</span><span>E</span>
             </h1>-->
-            <div class="messagedefilant" onclick="openCity(event, 'page-ondes')">
-                <?php
-                $text_defilant = get_field("texte_defilant");
-                ?>
-                <div data-text="<?php echo $text_defilant; ?>" onclick="openCity(event, 'page-ondes')"><span><?php echo $text_defilant; ?></span></div>
-            </div>
 
 <!--			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
                 <?php /*esc_html_e( '▽', 'radiosofa' ); */?>
