@@ -93,7 +93,7 @@
           } ?>px;
         }
 
-        #page-ondes .wp-block-column h2:after {
+        #page-ondes .wp-block-column h2:after, .vsel-meta-title:before{
             border: 3px solid <?php
             $couleur_3 = get_field("couleur_3");
         if(isset($couleur_3)){

@@ -1157,7 +1157,7 @@ display:none;
 	display: block;
 	content: "";
 	position: absolute;
-	margin-left: -29px;
+	margin-left: 0px;
 	width: 50px;
 	margin-top: 29px;
 }
