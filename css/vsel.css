@@ -1,0 +1,72 @@
+
+/* EVENTS PLANNING VSEL */
+.vsel-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 241.9px;
+}
+#vsel .vsel-content{
+    margin:0 !important;
+    border-bottom:none;
+    padding-right: 5px !important;
+}
+
+.vsel-meta{
+    width: 100% !important;
+    float: none;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+}
+.vsel-meta-date {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: 0;
+    font-style: italic;
+}
+.vsel-meta-time{
+    order:2;
+    margin: -5px 0 !important;
+}
+.vsel-meta-date span{
+}
+.vsel-meta-title{
+}
+.vsel-image-info {
+    width: 100% !important;
+}
+.vsel-image-info p{
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 0.8em !important;
+    margin: 5px 0 !important;
+    line-height: 1em;
+}
+.vsel-image-info:before{
+}
+.vsel-content h3 {
+    margin: -5px 0 0 0 !important;
+    padding: 0;
+    font-size: 0.9em !important;
+    order: 1;
+    letter-spacing: 0!important;
+    font-weight: 500 !important
+}
+.vsel-info, .vsel-image-info{
+}
+.vsel-info .wp-block-table{
+    margin:0;
+}
+.vsel-content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: none !important;
+}
+
+.vsel-info p {
+    font-style: italic;
+}

@@ -1,0 +1,301 @@
+
+/* Texte défilant */
+.messagedefilant {
+    display: block;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 25px;
+    margin-top: -4px;
+}
+
+.messagedefilant div {
+    position: absolute;
+    min-width: 103%; /* au minimum la largeur du conteneur */
+}
+
+.messagedefilant div span,
+.messagedefilant div:after {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    top: 0;
+}
+.messagedefilant div span,
+.messagedefilant div:after {
+    color:#1a1c19;
+    font-size: 1.1em;
+    font-style:italic;
+    margin-top: 0px;
+    font-weight: 700;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0;
+}
+
+.messagedefilant div:after {
+    position: absolute;
+    top:0; left:0;
+    content:attr(data-text);
+}
+
+@keyframes defilement {
+    0% { margin-left: 0; }
+    100% { margin-left: -100%; }
+}
+
+@keyframes defilement2 {
+    0% { margin-left: 100%; }
+    100% { margin-left: 0%; }
+}
+
+
+
+/* SITE BRANDING + RADIO PLAYER */
+/*.src-components-loader__loader--3N_B4 */
+.custom-logo-link{
+    display: inline-block;
+}
+.custom-logo-link img{
+    width: 74px;
+}
+.site-branding{
+    padding:20px 0 0 20px;
+}
+.site-player{
+    display: flex;
+    padding: 40px 0 20px 10px;
+    border-bottom: 1px solid black;
+    max-width: 220px;
+}
+.site-player :before,.site-player :after {
+    display: block;
+    content: "";
+    position: absolute;
+}
+.site-player audio{
+    display:none;
+}
+.play, .pause {
+    width: 60px;
+    height: 50px;
+    padding: 0 0 0 10px;
+    display: block;
+    clear: both;
+}
+.site-player a:active,.site-player a:hover{
+    outline:none;
+}
+.play:before {
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid transparent;
+    border-left: 29px solid #1a1c19;
+}
+.pause:before {
+    background: #1a1c19;
+    width: 10px;
+    height: 30px;
+}
+.pause:after {
+    background: #1a1c19;
+    margin: 0 0 0 23px;
+    width: 10px;
+    height: 30px;
+}
+.src-components-current-track__title-block--2bXfQ > div{
+    font-weight: 700;
+}
+.src-components-current-track__artist--3AuZL{
+    margin-top:-5px;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-style: italic;
+}
+#rk-current-track-widget{
+    max-width: 81%;
+    margin-top: -5px;
+}
+
+#rk-current-track-widget div{
+    width:inherit;
+}
+#rk-current-track-widget div .component div{
+    padding: 0;
+    box-shadow: none;
+    background:none;
+    font-size:1.02em;
+}
+
+#rk-current-track-widget div .component div img{
+    display:none;
+}
+#rk-current-track-widget div .component div span{
+    display: none;
+}
+
+.main-navigation{
+    padding: 20px 0 0 20px;
+}
+.main-navigation ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-navigation a {
+    display: block;
+    text-decoration: none;
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+    display: block;
+}
+
+
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    border-top: none;
+}
+.tablinks{
+    cursor: pointer;
+    color: #1a1c19;
+    text-transform: uppercase;
+}
+.active {
+    display: block;
+}
+
+.main-navigation ul ul {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    float: left;
+    position: absolute;
+    top: 100%;
+    left: -999em;
+    z-index: 99999;
+
+}
+
+.main-navigation ul ul ul {
+    left: -999em;
+    top: 0;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+    display: block;
+    left: auto;
+}
+
+.main-navigation ul ul a {
+    width: 200px;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+    left: auto;
+}
+
+.main-navigation li {
+    position: relative;
+    text-decoration: none;
+    font-size: 1.2em;
+
+}
+#menu-toggle {
+    display: none;
+}
+
+.header-bio{
+    padding: 20px;
+    font-weight: 400;
+    font-size: 0.7em;
+    line-height: 1.2;
+}
+.site-header-second-part{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 20px -13px 0;
+}
+.site-header-second-part small{
+    z-index: 2;
+}
+.site-header-second-part a{
+    margin-top: 10px
+;
+    box-shadow: 0 0 0px 8px white;
+    z-index: 0;
+    background: white;
+}
+
+@media screen and (max-width: 600px) {
+
+    body{
+        font-size:1rem;
+    }
+    .wp-block-column:not(:first-child){
+        margin-left:0px;
+    }
+    .site-header{
+        flex-direction: column-reverse;
+    }
+    .site-branding, .main-navigation{
+        width:100%;
+    }
+
+    .play, .pause {
+        margin-top: -26px;
+        padding: 31px 0px 0px 18px;
+    }
+    #primary-menu{
+        display:none;
+    }
+    #menu-toggle{
+        display:block;
+        text-align: center;
+        font-size: 1.5rem;
+        padding-top: 16px;
+    }
+    .main-navigation ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .main-navigation li {
+        position: relative;
+        text-decoration: none;
+        padding: 9px;
+        font-size:1rem;
+    }
+    .messagedefilant{
+        width: calc(100% + 40px);
+        height: 60px;
+        margin: -20px -20px 12px -20px;
+    }
+}
+@media screen and (min-width: 37.5em) {
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .main-navigation ul {
+        display: flex;
+    }
+}
+

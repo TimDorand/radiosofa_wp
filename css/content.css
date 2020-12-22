@@ -1,0 +1,131 @@
+/* Pages design */
+#page{
+    padding:10px 20px 20px 20px;
+    max-width:1040px;
+    margin:auto;
+}
+.site-main{
+    overflow: scroll;
+}
+.page-body{
+    display:flex;
+    flex-direction:row;
+    border:1px solid black;
+    max-height: calc(100vh - 64px);
+    height: 100%;}
+.wp-block-column:not(:first-child) {
+    margin-left: 53px;
+}
+
+.site-header{
+    border-right: 1px solid black;
+    min-width: 220px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.site-header audio{
+    margin-left:10px;
+}
+.tabcontent{
+    padding:20px;
+}
+/* HOME */
+.img-bordered img{
+    border: 1px solid black;
+}
+.img-bordered figcaption{
+    text-align: center;
+    font-size: 0.7em;
+}
+.rs-title{
+    display: flex;
+    width: calc(100% - 10px);
+    justify-content: flex-end;
+    border: 1px solid black;
+    height: 37px;
+    margin: 10px 0 20px 0;
+}
+.rs-title div{
+    border: 1px solid black;
+    width: 100%;
+    background: white;
+    height: 37px;
+    margin: -9px -10px 0 0;
+}
+.rs-title h2{
+    font-weight: 400;
+    text-align: center;
+    margin:3px 0 0 0;
+}
+.rs-title-light{
+    background: rgba(248, 112, 248, 0.51);
+}
+.rs-title-default{
+    background: rgba(131, 46, 199, 0.51);
+}
+.rs-title-dark{
+    background: rgba(25, 0, 255, 0.48);
+}
+
+
+/* JOURNAL */
+.wp-block-columns{
+    margin-bottom: 17px;
+}
+.wp-block-column p{
+    margin-top:0;
+}
+.wp-block-latest-posts{
+    margin: 0;
+    padding:0;
+}
+.wp-block-latest-posts .wp-block-latest-posts__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.replay-images{
+    padding-bottom: 30px;
+
+}
+.replay-images div:not(:first-child) {
+    margin-left:10px;
+}
+.replay-images img{
+    object-fit:cover;
+    width: 100%;
+    height: 100px;
+}
+.bloc-articles {
+}
+
+.wp-block-latest-posts li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.wp-block-latest-posts a{
+    order: 1;
+    flex-basis: 85%;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+.wp-block-latest-posts__post-excerpt{
+    margin-top: 0;
+    text-align: justify;
+    font-size: 0.7em;
+    line-height: 1.2;
+    order: 2;
+}
+.wp-block-latest-posts__post-date {
+    order: 0;
+    flex-basis: 15%;
+}
+.wp-block-latest-posts.alignleft {
+    margin:0;
+}

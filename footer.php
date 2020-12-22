@@ -10,15 +10,16 @@
  */
 
 ?>
+    </div> <!-- .page-body -->
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-            contact.radiosofa@gmail.com
+            <!--<p>contact.radiosofa@gmail.com</p>-->
 			<!--<span class="sep"> | </span>-->
 		</div>
-        <div class="footer-line">
+        <!--<div class="footer-line">
             <hr/>
-        </div><!-- .site-info -->
+        </div>--><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
@@ -40,9 +41,9 @@
     console.log("Nous sommes un "+tab_jour[ladate.getDay()])
 
     function findMyText(needle, replacementText) {
-        var myOldString = $(".haystack").html();
+        var myOldString = $(".vsel-meta").html();
         var myNewString = myOldString.replace(needle, replacementText);
-        $(".haystack").html(myNewString);
+        $(".vsel-meta").html(myNewString);
 
     }
 
@@ -61,7 +62,7 @@
             replaced = haystackText.replace(match, boldText);
         }
         console.warn(match)
-        document.getElementById("primary").innerHTML = replaced;
+        document.getElementById("vsel").innerHTML = replaced;
     }
 
     document.addEventListener("DOMContentLoaded", (event) => {
