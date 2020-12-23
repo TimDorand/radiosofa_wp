@@ -191,9 +191,9 @@
         <div class="header-bio">
             <p class="text-justify">
                 <?php
-                $texte_defilant_temps = get_field("texte_defilant_temps");
-                if(isset($texte_defilant_temps)){
-                    echo $texte_defilant_temps;
+                $texte_bio = get_field("texte_bio");
+                if(isset($texte_bio)){
+                    echo $texte_bio;
                 } else {
                     echo "
 Radio Sofa vous partage en continu de la musique universelle piochée avec soin par notre équipe 

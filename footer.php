@@ -10,17 +10,17 @@
  */
 
 ?>
-    </div> <!-- .page-body -->
+</div> <!-- .page-body -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-            <!--<p>contact.radiosofa@gmail.com</p>-->
-			<!--<span class="sep"> | </span>-->
-		</div>
-        <!--<div class="footer-line">
-            <hr/>
-        </div>--><!-- .site-info -->
-	</footer><!-- #colophon -->
+<footer id="colophon" class="site-footer">
+    <div class="site-info">
+        <!--<p>contact.radiosofa@gmail.com</p>-->
+        <!--<span class="sep"> | </span>-->
+    </div>
+    <!--<div class="footer-line">
+        <hr/>
+    </div>--><!-- .site-info -->
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
@@ -29,8 +29,8 @@
 
 
     // MENU
-    $(document).ready( function() {
-        $("#menu-toggle").click(function(){
+    $(document).ready(function () {
+        $("#menu-toggle").click(function () {
             $("#primary-menu").toggle();
         });
     });
@@ -38,16 +38,17 @@
 
     var ladate = new Date();
     var tab_jour = new Array("dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi");
-    console.log("Nous sommes un "+tab_jour[ladate.getDay()])
+    console.log("Nous sommes un " + tab_jour[ladate.getDay()]);
 
     function findMyText(needle, replacementText) {
-        var myOldString = $(".vsel-meta").html();
+        var myOldString = $(".vsel-container").html();
         var myNewString = myOldString.replace(needle, replacementText);
-        $(".vsel-meta").html(myNewString);
+        $(".vsel-container").html(myNewString);
 
     }
 
     var haystackText = "";
+
     function findMyText2(needle, replacement) {
         if (haystackText.length == 0) {
             haystackText = document.getElementById("primary").innerHTML;
@@ -56,8 +57,7 @@
         var replaced = "";
         if (replacement.length > 0) {
             replaced = haystackText.replace(match, replacement);
-        }
-        else {
+        } else {
             var boldText = "            " + needle + "            ";
             replaced = haystackText.replace(match, boldText);
         }
@@ -67,7 +67,7 @@
 
     document.addEventListener("DOMContentLoaded", (event) => {
         findMyText(tab_jour[ladate.getDay()], "Aujourd'hui");
-        findMyText(tab_jour[ladate.getDay() + 1], "Demain");
+        /*findMyText(tab_jour[ladate.getDay() + 1], "Demain");*/
     });
 
 </script>
