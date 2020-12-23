@@ -87,7 +87,7 @@
     margin: 0;
 }
 .replay-images{
-    padding-bottom: 30px;
+    /*padding-bottom: 30px;*/
 
 }
 .replay-images div:not(:first-child) {
