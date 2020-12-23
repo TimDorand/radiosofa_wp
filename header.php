@@ -23,8 +23,11 @@
             $("audio + a").click(function(e) {
                 e.preventDefault();
                 var song = $(this).prev('audio').get(0);
+                var src= "https://www.radioking.com/play/radio-sofa";
 
                 if (song.paused) {
+                    song.src=src;
+                    song.load();
                     song.play();
 //         $(this).text("❙ ❙");
                     $(this).addClass("pause");
@@ -32,6 +35,9 @@
                 }
                 else {
                     song.pause();
+                    song.currentTime = 0;
+                    song.src = '';
+
 //         $(this).text("▶");
                     $(this).addClass("play");
                     $(this).removeClass("pause");
@@ -119,8 +125,8 @@
 	<header id="masthead" class="site-header">
         <div class="site-header-first-part">
         <div class="site-player">
-            <audio controls>
-                <source src="https://www.radioking.com/play/radio-sofa" type="audio/mpeg" style="width:100px">
+            <audio controls preload="none">
+                <source src="" type="audio/mpeg" style="width:100px">
                 Your browser does not support the audio element.
             </audio>
             <a class="play" href="#"></a>
