@@ -29,7 +29,7 @@
     margin-left:10px;
 }
 .tabcontent{
-    padding:20px;
+    padding: 20px 20px 10px 20px;
 }
 /* HOME */
 .img-bordered img{
@@ -71,7 +71,7 @@
 
 
 /* JOURNAL */
-.wp-block-columns{
+.wp-block-columns:first-child{
     margin-bottom: 17px;
 }
 .wp-block-column p{
