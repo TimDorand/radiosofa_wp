@@ -41,9 +41,9 @@
     console.log("Nous sommes un " + tab_jour[ladate.getDay()]);
 
     function findMyText(needle, replacementText) {
-        var myOldString = $(".vsel-container").html();
-        var myNewString = myOldString.replace(needle, replacementText);
-        $(".vsel-container").html(myNewString);
+        var myOldString = $("#vsel").html();
+        var myNewString = myOldString.replaceAll(needle, replacementText);
+        $("#vsel").html(myNewString);
 
     }
 
