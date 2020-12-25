@@ -380,7 +380,7 @@ template {
 --------------------------------------------- */
 
 /* Inherit box-sizing to more easily change it's value on a component level.
-@link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 *,
 *::before,
 *::after {
@@ -402,6 +402,7 @@ html {
     src: url('../fonts/Akkurat.ttf') format('truetype');
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'DM Sans';
     src: url('../fonts/DMSans-Italic.ttf') format('truetype');
@@ -463,8 +464,21 @@ textarea,
     /*font-size: 0.87rem;
     line-height: 1.5;*/
 
-    font-size: 0.87em;
+    /*
+
+    font-size: 0.87rem;
     line-height: 1.2;
+*/
+
+    font-size: 0.9rem;
+}
+
+/*BIG SCREEN*/
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1.1rem;
+    }
 }
 
 h1,
@@ -580,16 +594,19 @@ img {
 }
 
 figure {
-    margin: 0.5em 0 0 0;}
+    margin: 0.5em 0 0 0;
+}
 
 table {
     margin: 0;
     width: 100%;
-    border-spacing:0px;
+    border-spacing: 0px;
 }
-.margin-left-10 .wp-block-column:not(:first-child){
+
+.margin-left-10 .wp-block-column:not(:first-child) {
     margin-left: 10px;
 }
+
 /* Links
 --------------------------------------------- */
 a {
@@ -602,8 +619,8 @@ a:visited {
 }
 
 #primary a:hover,
-#primary  a:focus,
-#primary  a:active {
+#primary a:focus,
+#primary a:active {
     color: #191970;
 }
 
@@ -615,7 +632,8 @@ a:visited {
 #primary a:active {
     outline: 0;
 }
-.text-justify{
+
+.text-justify {
     text-align: justify;
 }
 
@@ -738,26 +756,30 @@ textarea {
 
 /* Footer */
 
-footer{
+footer {
     display: flex;
     flex-direction: row;
     margin-top: -17px;
 }
-.footer-line{
+
+.footer-line {
     width: 100%;
     padding: 10px 0 0 10px;
     height: 5px;
 }
-.footer-line hr{
+
+.footer-line hr {
     background-color: #1a1c19;
     height: 2px;
 }
+
 /* Posts and pages
 --------------------------------------------- */
 
-.wp-block-image{
-    margin:0;
+.wp-block-image {
+    margin: 0;
 }
+
 .sticky {
     display: block;
 }

@@ -70,3 +70,11 @@
 .vsel-info p {
     font-style: italic;
 }
+
+@media screen and (max-width: 600px) {
+    .vsel-container{
+        height: auto;
+        flex-direction: row;
+    }
+
+}

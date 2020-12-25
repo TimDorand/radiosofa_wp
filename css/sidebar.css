@@ -52,6 +52,15 @@
 
 
 
+.site-header{
+    border-right: 1px solid black;
+    /*min-width: 220px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 25%;
+}
+
 /* SITE BRANDING + RADIO PLAYER */
 /*.src-components-loader__loader--3N_B4 */
 .custom-logo-link{
@@ -67,7 +76,7 @@
     display: flex;
     padding: 40px 0 20px 10px;
     border-bottom: 1px solid black;
-    max-width: 220px;
+    /*max-width: 220px;*/
 }
 .site-player :before,.site-player :after {
     display: block;
@@ -243,9 +252,45 @@
     background: white;
 }
 
+/* MOBILE */
 @media screen and (max-width: 600px) {
 
-    body{
+    .site-header{
+        order: 2;
+        border: none;
+    }
+    .site-player{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: white;
+        z-index: 3;
+        border: 1px solid black;
+        margin: 0 -10px 0 -10px;
+    }
+    .site-branding{
+
+        position: absolute;
+        top: 32px;
+        right: 20px;
+        z-index: 1;
+    }
+    .main-navigation{
+        position: absolute;
+        top: 120px;
+        background: white;
+        right: 20px;
+        text-align: right;
+        z-index: 0;
+    }
+    .header-bio{
+        display: none;
+    }
+    .site-header-second-part{
+        display: none;
+    }
+
+/*    body{
         font-size:1rem;
     }
     .wp-block-column:not(:first-child){
@@ -286,16 +331,16 @@
         width: calc(100% + 40px);
         height: 60px;
         margin: -20px -20px 12px -20px;
-    }
+    }*/
 }
 @media screen and (min-width: 37.5em) {
 
-    .menu-toggle {
+/*    .menu-toggle {
         display: none;
     }
 
     .main-navigation ul {
         display: flex;
-    }
+    }*/
 }
 

@@ -1,11 +1,12 @@
 /* Pages design */
 #page{
-    padding:10px 20px 20px 20px;
-    max-width:1040px;
+    padding:10px 2% 20px 2%;
+    /*min-width:1040px;*/
     margin:auto;
 }
 .site-main{
     overflow: scroll;
+    flex-basis: 75%;
 }
 .page-body{
     display:flex;
@@ -17,14 +18,6 @@
     margin-left: 53px;
 }
 
-.site-header{
-    border-right: 1px solid black;
-    min-width: 220px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 .site-header audio{
     margin-left:10px;
 }
@@ -130,4 +123,28 @@
 }
 .wp-block-latest-posts.alignleft {
     margin:0;
+}
+
+@media screen and (max-width: 600px) {
+    .page-body{
+        flex-direction: column;
+    }
+ .img-visu-mois img{
+     width:72%;
+ }
+ .rs-title{
+
+     margin-top: 41px;
+     height: 30px;
+     border: 2px solid black;
+ }
+ .rs-title div{
+     margin-top: -12px;
+     height: 30px;
+     border: 2px solid black;
+ }
+ .rs-title h2{
+     font-size: 1.3em;
+     margin: 4px 0 0 0;
+ }
 }
