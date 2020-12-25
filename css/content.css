@@ -128,6 +128,8 @@
 @media screen and (max-width: 600px) {
     .page-body{
         flex-direction: column;
+        border: none;
+        border-top: 1px solid black;
     }
  .img-visu-mois img{
      width:72%;
