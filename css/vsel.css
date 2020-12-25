@@ -71,10 +71,18 @@
     font-style: italic;
 }
 
+/*MOBILE */
 @media screen and (max-width: 600px) {
     .vsel-container{
         height: auto;
         flex-direction: row;
     }
 
+}
+
+/* BIG SCREEN */
+@media screen and (min-width: 1300px) {
+    .vsel-container{
+        height: 100%;
+    }
 }
