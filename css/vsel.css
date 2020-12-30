@@ -4,7 +4,8 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 241.9px;
+    height: 50vh;
+    max-height: 300px;
 }
 #vsel .vsel-content{
     margin:0 !important;
@@ -83,6 +84,7 @@
 /* BIG SCREEN */
 @media screen and (min-width: 1300px) {
     .vsel-container{
-        height: 100%;
+        height: 46vh;
+        max-height: 100%;
     }
 }
