@@ -162,5 +162,9 @@ iframe{
     position: absolute;
     width: calc(100% - 50px);
     bottom: 14px;
+    background: white;
     left: 23px;
+    border: 1px solid black;
+    padding: 5px;
+    height: 32px;
 }
