@@ -77,6 +77,11 @@
                 this.pause(); // Stop playing
                 this.currentTime = 0; // Reset time
             });
+
+
+            $(".site-player a").addClass("play");
+            $(".site-player a").removeClass("pause");
+
             $(this).parent().find("iframe").show();
 
         })
