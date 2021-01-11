@@ -25,15 +25,28 @@
                 var song = $(this).prev('audio').get(0);
                 var src= "https://www.radioking.com/play/radio-sofa";
 
+
                 if (song.paused) {
+                    $('audio').each(function(){
+                        this.pause(); // Stop playing
+                        this.currentTime = 0; // Reset time
+                    });
+                    $('iframe').attr('src', $('iframe').attr('src'));
                     song.src=src;
                     song.load();
                     song.play();
 //         $(this).text("❙ ❙");
                     $(this).addClass("pause");
                     $(this).removeClass("play");
+                    $("iframe").hide();
                 }
                 else {
+                    $('audio').each(function(){
+                        this.pause(); // Stop playing
+                        this.currentTime = 0; // Reset time
+                    });
+                    $('iframe').attr('src', $('iframe').attr('src'));
+
                     song.pause();
                     song.currentTime = 0;
                     song.src = '';
@@ -131,7 +144,8 @@
             </audio>
             <a class="play" href="#"></a>
             <div id="rk-current-track-widget" data-id="radio-sofa" data-buy="0"></div>
-            <script type="text/javascript" src="https://widget.radioking.io/current-track/build/script.min.js"></script>
+            <!-- <script type="text/javascript" src="https://widget.radioking.io/current-track/build/script.min.js"></script> -->
+            <script type="text/javascript" src="<?php echo site_url();?>/wp-content/themes/radiosofa/js/current-track/rk-current-track.min.js"></script>
         </div>
 		<div class="site-branding">
 			<?php

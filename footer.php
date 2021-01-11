@@ -70,6 +70,20 @@
         /*findMyText(tab_jour[ladate.getDay() + 1], "Demain");*/
     });
 
+    $(document).ready(function () {
+        $("iframe").hide();
+        $(".btn-replay").click(function(){
+            $('audio').each(function(){
+                this.pause(); // Stop playing
+                this.currentTime = 0; // Reset time
+            });
+            $(this).parent().find("iframe").show();
+
+        })
+
+    })
+
+
 </script>
 
 </body>

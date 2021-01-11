@@ -7,6 +7,13 @@
 .site-main{
     overflow: scroll;
     flex-basis: 75%;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.site-main::-webkit-scrollbar {
+    display: none;
 }
 .page-body{
     display:flex;
@@ -149,4 +156,11 @@
      font-size: 1.3em;
      margin: 4px 0 0 0;
  }
+}
+
+iframe{
+    position: absolute;
+    width: calc(100% - 50px);
+    bottom: 14px;
+    left: 23px;
 }
