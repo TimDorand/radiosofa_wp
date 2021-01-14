@@ -1,6 +1,6 @@
 /* Pages design */
 #page{
-    padding:10px 2% 20px 2%;
+    padding:10px 4% 20px 4%;
     /*min-width:1040px;*/
     margin:auto;
 }
@@ -131,6 +131,25 @@
 .wp-block-latest-posts.alignleft {
     margin:0;
 }
+/* IFRAMES */
+
+iframe{
+    z-index: 4;
+    position: absolute;
+    width: calc(100% - 8%);
+    background: white;
+    left: 4%;
+    border: 1px solid black;
+    padding: 5px;
+    height: 72px;
+    bottom: 14px;
+}
+
+.widget-controls-top, .singleSound, .soundContainer, .compactSound{
+    background:#fff !important;
+    border:none !important;
+}
+
 
 @media screen and (max-width: 600px) {
     .page-body{
@@ -156,15 +175,4 @@
      font-size: 1.3em;
      margin: 4px 0 0 0;
  }
-}
-
-iframe{
-    position: absolute;
-    width: calc(100% - 50px);
-    bottom: 14px;
-    background: white;
-    left: 23px;
-    border: 1px solid black;
-    padding: 5px;
-    height: 32px;
 }

@@ -25,9 +25,9 @@
 
 <?php wp_footer(); ?>
 
+<script src="<?php echo site_url();?>/wp-content/themes/radiosofa/js/utils.js"></script>
+
 <script>
-
-
     // MENU
     $(document).ready(function () {
         $("#menu-toggle").click(function () {
@@ -70,19 +70,29 @@
         /*findMyText(tab_jour[ladate.getDay() + 1], "Demain");*/
     });
 
+    // Replay Souncdloud and mixcloud player
     $(document).ready(function () {
+        alert = function() {};
+        window.alert = function() {};
+
         $("iframe").hide();
         $(".btn-replay").click(function(){
-            $('audio').each(function(){
-                this.pause(); // Stop playing
-                this.currentTime = 0; // Reset time
-            });
+           stopAllAudio();
 
+            // Hide all iframes
+            $("iframe").hide();
 
+            // set "play" to player
             $(".site-player a").addClass("play");
             $(".site-player a").removeClass("pause");
 
-            $(this).parent().find("iframe").show();
+            /*$(this).parent().find("iframe").show();*/
+            $(this).next().show();
+            $(".page-body").css("height", "calc(100vh - 135px)")
+            $(".widget-controls-top").css({"background": "#fff", "border": "none"});
+            $(".singleSound").css({"background": "#fff", "border": "none"});
+            $(".soundContainer").css({"background": "#fff", "border": "none"});
+            $(".compactSound .g-background-default").css({"background": "#fff", "border": "none"});
 
         })
 
@@ -91,5 +101,8 @@
 
 </script>
 
+<style>
+
+</style>
 </body>
 </html>

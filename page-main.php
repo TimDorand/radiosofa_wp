@@ -69,6 +69,9 @@ get_header();
 <script>
     function openCity(evt, cityName) {
         var i, tabcontent, tablinks;
+        $("#primary-menu").find("li").removeClass("currenttab");
+        evt.currentTarget.className += " currenttab";
+        $(this).children("a").css("border", "1px solid black");
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
             tabcontent[i].style.display = "none";
@@ -78,7 +81,6 @@ get_header();
             tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
         document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
     }
 </script>
 

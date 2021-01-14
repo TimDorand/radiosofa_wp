@@ -17,6 +17,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
     <script src="<?php echo site_url();?>/wp-content/themes/radiosofa/js/jquery_min_213.js"></script>
+    <script src="<?php echo site_url();?>/wp-content/themes/radiosofa/js/utils.js"></script>
+
     <script>
         // PLAYER
         $(function() {
@@ -27,11 +29,7 @@
 
 
                 if (song.paused) {
-                    $('audio').each(function(){
-                        this.pause(); // Stop playing
-                        this.currentTime = 0; // Reset time
-                    });
-                    $('iframe').attr('src', $('iframe').attr('src'));
+                    stopAllAudio()
                     song.src=src;
                     song.load();
                     song.play();
@@ -39,14 +37,11 @@
                     $(this).addClass("pause");
                     $(this).removeClass("play");
                     $("iframe").hide();
+                    $(".page-body").css("height", "100%")
+
                 }
                 else {
-                    $('audio').each(function(){
-                        this.pause(); // Stop playing
-                        this.currentTime = 0; // Reset time
-                    });
-                    $('iframe').attr('src', $('iframe').attr('src'));
-
+                    stopAllAudio()
                     song.pause();
                     song.currentTime = 0;
                     song.src = '';
@@ -145,7 +140,7 @@
             <a class="play" href="#"></a>
             <div id="rk-current-track-widget" data-id="radio-sofa" data-buy="0"></div>
             <!-- <script type="text/javascript" src="https://widget.radioking.io/current-track/build/script.min.js"></script> -->
-            <script type="text/javascript" src="<?php echo site_url();?>/wp-content/themes/radiosofa/js/current-track/rk-current-track.min.js"></script>
+            <script type="text/javascript" src="<?php echo site_url();?>/wp-content/themes/radiosofa/js/current-track/rk-current-track.js"></script>
         </div>
 		<div class="site-branding">
 			<?php
@@ -186,12 +181,12 @@
 
             <div id="primary-menu">
                <ul>
-                   <!--<li class="tablinks" onclick="openCity(event, 'page-ondes')"><a href="#">Ondes</a></li>-->
-                   <li class="tablinks" onclick="openCity(event, 'page-sofas')">Sofas</li>
-                   <li class="tablinks" onclick="openCity(event, 'page-convives')">Convives</li>
-                   <li class="tablinks" onclick="openCity(event, 'page-residence')">Residence</li>
-                   <li class="tablinks" onclick="openCity(event, 'page-emissions')">Emissions</li>
-                   <li class="tablinks" onclick="openCity(event, 'page-articles')">Journal</li>
+                   <li class="tablinks currenttab" onclick="openCity(event, 'page-ondes')"><a>Salon</a></li>
+                   <li class="tablinks" onclick="openCity(event, 'page-sofas')"><a>Sofas</a></li>
+                   <li class="tablinks" onclick="openCity(event, 'page-convives')"><a>Convives</a></li>
+                   <li class="tablinks" onclick="openCity(event, 'page-residence')"><a>Residence</a></li>
+                   <li class="tablinks" onclick="openCity(event, 'page-emissions')"><a>Emissions</a></li>
+                   <li class="tablinks" onclick="openCity(event, 'page-articles')"><a>Journal</a></li>
                    <li class="tablinks">
 
 

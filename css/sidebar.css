@@ -112,6 +112,19 @@
     width: 10px;
     height: 30px;
 }
+
+div[class^='src-components-current-track__title-block--'] > div {
+    font-weight: 700;
+}
+div[class^='src-components-current-track__artist--'] > div {
+    margin-top:-5px;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-style: italic;
+}
+div[class^='src-components-current-track__articleCard--'] {
+    /*display: none !important;*/
+}
 .src-components-current-track__title-block--2bXfQ > div{
     font-weight: 700;
 }
@@ -143,6 +156,8 @@
     display: none;
 }
 
+
+
 .main-navigation{
     padding: 20px 0 0 20px;
 }
@@ -152,6 +167,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    margin-left: -10px;
 }
 
 .main-navigation a {
@@ -184,6 +200,13 @@
     cursor: pointer;
     color: #1a1c19;
     text-transform: uppercase;
+}
+.tablinks a{
+    display:inline;
+    padding: 3px 10px;
+}
+.currenttab a{
+    border: 1px solid black;
 }
 .active {
     display: block;
