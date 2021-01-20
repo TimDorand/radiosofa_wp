@@ -67,6 +67,7 @@
 }
 .vsel-info .wp-block-table{
     margin:0;
+    margin-bottom: 5px;
 }
 .vsel-info tr{
     justify-content: space-between;
