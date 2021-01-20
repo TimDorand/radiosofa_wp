@@ -112,6 +112,15 @@
               echo "rgba(25, 0, 255, 0.48);";
               } ?>;
         }
+        .page-body{
+            background:<?php
+            $couleur_4 = get_field("couleur_5");
+        if(isset($couleur_4)){
+            echo $couleur_4;
+        } else {
+              echo "rgba(25, 0, 255, 0.48);";
+              } ?>;
+        }
     </style>
 
 </head>
