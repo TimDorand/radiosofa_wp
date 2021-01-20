@@ -118,7 +118,16 @@
         if(isset($couleur_4)){
             echo $couleur_4;
         } else {
-              echo "rgba(25, 0, 255, 0.48);";
+              echo "#fff";
+              } ?>;
+        }
+        .messagedefilant div span, .messagedefilant div:after {
+            color:<?php
+            $couleur_4 = get_field("couleur_6");
+        if(isset($couleur_4)){
+            echo $couleur_4;
+        } else {
+              echo "#000";
               } ?>;
         }
     </style>
