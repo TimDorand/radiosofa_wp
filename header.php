@@ -239,16 +239,15 @@ Eclectisme garanti avec chaque semaine des sélections thématiques et des DJ se
         </div>
         </div>
         <div class="site-header-second-part">
-        <small>contact.radiosofa@gmail.com</small>
 
         <div style="display:flex;flex-direction:row";> <a target="_blank" href="https://facebook.com/radiosofa">
                 <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/fb.png" width="20" alt="Facebook logo">
             </a>
-            &#160;&#160;
-
             <a target="_blank" href="https://www.instagram.com/radio.sofa/">
                 <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/insta.png" width="20" alt="Instagram logo">
             </a>
         </div>
+            <small>contact.radiosofa@gmail.com</small>
+
         </div>
 	</header><!-- #masthead -->

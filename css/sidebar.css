@@ -262,19 +262,21 @@ div[class^='src-components-current-track__articleCard--'] {
 }
 .site-header-second-part{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0 -49px -10px 20px;
+    flex-direction: row;
+
+    align-items: flex-end;
+    align-content: flex-end;
+    margin: 20px;
 }
 .site-header-second-part small{
-    z-index: 2;
 }
 .site-header-second-part a{
     width: 15px;
-    margin-top: 10px;
-    box-shadow: 0 0 0px 8px white;
-    z-index: 0;
-    background: white;
+    margin-right:5px;
+    /*   margin-top: 10px;
+       box-shadow: 0 0 0px 8px white;
+       z-index: 0;
+       background: white;*/
 }
 
 /* MOBILE */
