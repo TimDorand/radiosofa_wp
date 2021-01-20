@@ -59,6 +59,8 @@
     flex-direction: column;
     justify-content: space-between;
     flex-basis: 25%;
+    overflow: hidden;
+
 }
 
 /* SITE BRANDING + RADIO PLAYER */
