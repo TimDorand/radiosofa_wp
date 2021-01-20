@@ -72,6 +72,9 @@
     justify-content: space-between;
     display: flex;
 }
+.vsel-info td{
+    min-width: 38px;
+}
 .vsel-content{
     display: flex;
     flex-direction: column;
