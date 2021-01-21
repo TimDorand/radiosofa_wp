@@ -199,12 +199,12 @@
 
             <div id="primary-menu">
                <ul>
-                   <li class="tablinks currenttab" onclick="openCity(event, 'page-ondes')"><a>Salon</a></li>
-                   <li class="tablinks" onclick="openCity(event, 'page-sofas')"><a>Sofas</a></li>
-                   <li class="tablinks" onclick="openCity(event, 'page-convives')"><a>Convives</a></li>
-                   <li class="tablinks" onclick="openCity(event, 'page-residence')"><a>Residence</a></li>
-                   <li class="tablinks" onclick="openCity(event, 'page-emissions')"><a>Emissions</a></li>
-                   <li class="tablinks" onclick="openCity(event, 'page-articles')"><a>Journal</a></li>
+                   <li class="tablinks currenttab" onclick="openCity(event, 'page-ondes')"><h2>Salon</h2></li>
+                   <li class="tablinks" onclick="openCity(event, 'page-sofas')"><h2>Sofas</h2></li>
+                   <li class="tablinks" onclick="openCity(event, 'page-convives')"><h2>Convives</h2></li>
+                   <li class="tablinks" onclick="openCity(event, 'page-residence')"><h2>Residence</h2></li>
+                   <li class="tablinks" onclick="openCity(event, 'page-emissions')"><h2>Emissions</h2></li>
+                   <li class="tablinks" onclick="openCity(event, 'page-articles')"><h2>Journal</h2></li>
                    <li class="tablinks">
 
 
@@ -240,11 +240,14 @@ Eclectisme garanti avec chaque semaine des sélections thématiques et des DJ se
         </div>
         <div class="site-header-second-part">
 
-        <div style="display:flex;flex-direction:row";> <a target="_blank" href="https://facebook.com/radiosofa">
-                <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/fb.png" width="20" alt="Facebook logo">
+        <div style="display:flex;flex-direction:row";> <a target="_blank" href="https://facebook.com/webradio.sofa">
+                <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/logo_facebook.png" width="20" alt="Facebook logo">
             </a>
             <a target="_blank" href="https://www.instagram.com/radio.sofa/">
-                <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/insta.png" width="20" alt="Instagram logo">
+                <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/logo_insta.png" width="20" alt="Instagram logo">
+            </a>
+            <a target="_blank" href="https://open.spotify.com/user/jackhadagroove/">
+                <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/logo_spotify.png" width="20" alt="Spotify logo">
             </a>
         </div>
             <small>contact.radiosofa@gmail.com</small>

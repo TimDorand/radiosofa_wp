@@ -25,7 +25,6 @@
 .vsel-meta-date {
     padding: 0 !important;
     margin: 0 !important;
-    font-size: 0.9em;
     font-weight: 700;
     letter-spacing: 0;
     font-style: italic;
@@ -46,8 +45,6 @@
 }
 .vsel-image-info p{
     font-style: normal !important;
-    font-weight: 400 !important;
-    font-size: 0.8em !important;
     margin: 5px 0 !important;
     line-height: 1em;
 }
@@ -57,13 +54,12 @@
     margin: 0px 0px 0px 7px !important;
     padding: 0px !important;
     display: inline-block !important;
-    font-size: 0.9em !important;
     order: 1;
     letter-spacing: 0!important;
-    font-weight: 500 !important
+    font-weight: 500 !important;
+    font-size: inherit !important;
 }
 .vsel-info, .vsel-image-info{
-    font-size: 0.9rem;
 }
 .vsel-info .wp-block-table{
     margin:0;
