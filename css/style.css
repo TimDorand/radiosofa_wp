@@ -11,3 +11,6 @@
 
 /* Pages and Content style */
 @import url("content.css");
+
+/* music loader*/
+@import url("loader.css");

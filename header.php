@@ -17,42 +17,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
     <script src="<?php echo site_url();?>/wp-content/themes/radiosofa/js/jquery_min_213.js"></script>
-    <script src="<?php echo site_url();?>/wp-content/themes/radiosofa/js/utils.js"></script>
-
-    <script>
-        // PLAYER
-        $(function() {
-            $("audio + a").click(function(e) {
-                e.preventDefault();
-                var song = $(this).prev('audio').get(0);
-                var src= "https://www.radioking.com/play/radio-sofa";
-
-
-                if (song.paused) {
-                    stopAllAudio()
-                    song.src=src;
-                    song.load();
-                    song.play();
-//         $(this).text("❙ ❙");
-                    $(this).addClass("pause");
-                    $(this).removeClass("play");
-                    $("iframe").hide();
-                    $(".page-body").css("height", "100%")
-
-                }
-                else {
-                    stopAllAudio()
-                    song.pause();
-                    song.currentTime = 0;
-                    song.src = '';
-
-//         $(this).text("▶");
-                    $(this).addClass("play");
-                    $(this).removeClass("pause");
-                }
-            });
-        });
-        </script>
     <?php wp_head(); ?>
     <link rel="stylesheet" href="<?php echo site_url();?>/wp-content/themes/radiosofa/css/style.css">
 
@@ -131,19 +95,36 @@
               } ?>;
         }
     </style>
+    <?php
+    // Charger le script js
+    wp_enqueue_script( 'rs-ajax', get_template_directory_uri() . '/js/ajax.js', array( 'jquery' ), '1.0', true );
+    wp_enqueue_script( 'rs-utils', get_template_directory_uri() . '/js/utils.js', array( 'jquery' ), '1.0', true );
+    wp_enqueue_script( 'rs-main', get_template_directory_uri() . '/js/main-script.js', array( 'jquery' ), '1.0', true );
+
+    // Envoyer une variable de PHP à JS proprement
+    wp_localize_script( 'rs-ajax', 'ajaxurl', admin_url( 'admin-ajax.php') );
+    ?>
 
 </head>
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
+
+    <div class="music-loader-container" id="spin">
+        <div class="music-loader-item"></div>
+        <div class="music-loader-item"></div>
+        <div class="music-loader-item"></div>
+        <div class="music-loader-item"></div>
+        <div class="music-loader-item"></div>
+    </div>
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'radiosofa' ); ?></a>
 
-    <div class="messagedefilant" onclick="openCity(event, 'page-ondes')">
+    <div class="messagedefilant" onclick="openPage(event, 'page-ondes')">
         <?php
         $text_defilant = get_field("texte_defilant");
         ?>
-        <div data-text="<?php echo $text_defilant; ?>" onclick="openCity(event, 'page-ondes')"><span><?php echo $text_defilant; ?></span></div>
+        <div data-text="<?php echo $text_defilant; ?>" onclick="openPage(event, 'page-ondes')"><span><?php echo $text_defilant; ?></span></div>
     </div>
 
     <div class="page-body">
@@ -165,7 +146,7 @@
             $custom_logo_id = get_theme_mod( 'custom_logo' );
             $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
             ?>
-            <span class="custom-logo-link" onclick="openCity(event, 'page-ondes')">
+            <span class="custom-logo-link" onclick="openPage(event, 'page-ondes')">
                 <img alt="Radio Sofa Logo" src="<?php echo $image[0];?>"/>
             </span>
 
@@ -199,12 +180,12 @@
 
             <div id="primary-menu">
                <ul>
-                   <li class="tablinks currenttab" onclick="openCity(event, 'page-ondes')"><h2>Salon</h2></li>
-                   <li class="tablinks" onclick="openCity(event, 'page-sofas')"><h2>Sofas</h2></li>
-                   <li class="tablinks" onclick="openCity(event, 'page-convives')"><h2>Convives</h2></li>
-                   <li class="tablinks" onclick="openCity(event, 'page-residence')"><h2>Residence</h2></li>
-                   <li class="tablinks" onclick="openCity(event, 'page-emissions')"><h2>Emissions</h2></li>
-                   <li class="tablinks" onclick="openCity(event, 'page-articles')"><h2>Journal</h2></li>
+                   <li class="tablinks currenttab" onclick="openPage(event, 'page-ondes')"><h2><a href="/#">Salon</a></h2></li>
+                   <li class="tablinks" onclick="openPage(event, 'page-sofas')"><h2><a href="/#">Sofas</a></h2></li>
+                   <li class="tablinks" onclick="openPage(event, 'page-convives')"><h2><a href="/#convives">Convives</a></h2></li>
+                   <li class="tablinks" onclick="openPage(event, 'page-residence')"><h2><a href="/#residence">Residence</a></h2></li>
+                   <li class="tablinks" onclick="openPage(event, 'page-emissions')"><h2><a href="/#emissions">Emissions</a></h2></li>
+                   <li class="tablinks" id="menu-journal" onclick="openPage(event, 'page-journal')"><h2><a href="/#journal">Journal</a></h2></li>
                    <li class="tablinks">
 
 

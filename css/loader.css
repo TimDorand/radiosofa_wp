@@ -1,0 +1,68 @@
+/**{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #00bd9c;
+}*/
+.music-loader-container{
+    height: 10%;
+    width: 10%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: calc(50% - 50px);
+    z-index: 3;
+    top: calc(50% - 50px);
+}
+
+.music-loader-item{
+    height: 30%;
+    width: 30px;
+    background-color: #eee;
+    margin: 0 5px;
+}
+.music-loader-item:nth-child(1){
+    animation: dong 1s infinite running;
+    animation-delay: 0s;
+}
+.music-loader-item:nth-child(2){
+    animation: dong 1s infinite running;
+    animation-delay: .1s;
+}
+.music-loader-item:nth-child(3){
+    animation: dong 1s infinite running;
+    animation-delay: .2s;
+}
+.music-loader-item:nth-child(4){
+    animation: dong 1s infinite running;
+    animation-delay: .3s;
+}
+.music-loader-item:nth-child(5){
+    animation: dong 1s infinite running;
+    animation-delay: .4s;
+}
+
+@keyframes dong{
+    0% {
+        height: 30%;
+    }
+    20% {
+        height: 80%;
+    }
+    40%,100% {
+        height: 30%;
+    }
+}

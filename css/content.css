@@ -25,6 +25,7 @@ h2{
     font-weight: 400;
     margin: 25px 0px;
 }
+
 h3{
     font-size: 2rem;
 }
@@ -42,6 +43,14 @@ small{
     font-size: 1.2rem;
 }
 
+/* Boutons */
+.btn{
+
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 0;
+    text-transform: uppercase;
+}
 
 /* Pages design */
 #page{
@@ -196,6 +205,13 @@ iframe{
 .widget-controls-top, .singleSound, .soundContainer, .compactSound{
     background:#fff !important;
     border:none !important;
+}
+
+/* JOURNAL */
+
+.post-single{
+    min-height:85vh;
+    display:none;
 }
 
 

@@ -203,7 +203,10 @@ div[class^='src-components-current-track__articleCard--'] {
 }
 
 .main-navigation a {
-    display: block;
+
+    margin: 0;
+    padding: 0;
+    display: inline;
     text-decoration: none;
 }
 
