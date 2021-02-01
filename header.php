@@ -102,7 +102,8 @@
     wp_enqueue_script( 'rs-main', get_template_directory_uri() . '/js/main-script.js', array( 'jquery' ), '1.0', true );
 
     // Envoyer une variable de PHP à JS proprement
-    wp_localize_script( 'rs-ajax', 'ajaxurl', admin_url( 'admin-ajax.php') );
+    wp_localize_script( 'rs-ajax', 'ajaxUrl', admin_url( 'admin-ajax.php') );
+    wp_localize_script( 'rs-ajax', 'isAdmin', is_admin());
     ?>
 
 </head>

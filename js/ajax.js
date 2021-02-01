@@ -7,7 +7,7 @@ function displayPost(post_name) {
     $("#spin").show();
 
     $.ajax({
-        url: ajaxurl,
+        url: ajaxUrl,
         type: "POST",
         data: {
             'action': 'load_post_with_name',

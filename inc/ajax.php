@@ -23,3 +23,4 @@ function rs_load_post_with_name()
 
 
 add_action('wp_ajax_nopriv_load_post_with_name', 'rs_load_post_with_name');
+add_action('wp_ajax_load_post_with_name', 'rs_load_post_with_name');
