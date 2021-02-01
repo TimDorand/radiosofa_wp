@@ -59,6 +59,7 @@ $(function() {
         findMyText(tab_jour[ladate.getDay()], "Aujourd'hui");
         findMyText(tab_jour[ladate.getDay() + 1], "Demain");
 
+        // ARTICLES
         // Home articles
         $(".bloc-articles a").click(function(e){
             var url = new URL($(this).attr('href'));
@@ -66,6 +67,14 @@ $(function() {
             displayPost(url.pathname.replace(/\//g, ""));
             window.location = '#article-'+url.pathname.replace(/\//g, "");
             e.preventDefault();
+        });
+
+        // Journal articles
+        $('.post-title').click(function () {
+            var post_id = $(this).parent().attr('data-post-id');
+            displayPost(post_id);
+            $("html, body").scrollTop(0);
+
         });
 
         // Block alerts

@@ -1,19 +1,10 @@
-(function ($) {
-    $(document).ready(function () {
-        $('.post-title').click(function () {
 
-            var post_id = $(this).parent().attr('data-post-id');
-            displayPost(post_id)
-        });
-    });
-})(jQuery);
 
 function displayPost(post_name) {
 
     $(".post-single").show();
     $("#spin").show();
 
-    $("html, body").scrollTop(0);
     $.ajax({
         url: ajaxurl,
         type: "POST",
@@ -26,7 +17,7 @@ function displayPost(post_name) {
             '<h2 class="post-title">' + response.data['post_title'] + '</h2>' +
             response.data['post_content'] + '</div><hr/>';
         $('#post-single-content').html(post_html); // Afficher le HTML
+        $(".site-main").scrollTop(0);
         $("#spin").hide();
-
     });
 }
