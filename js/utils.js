@@ -47,6 +47,7 @@ function stopAllAudio() {
 // Rooter page
 function openPage(evt, pageName) {
     var i, tabcontent, tablinks;
+    $('#post-single-content').hide();
     $("#primary-menu").find("li").removeClass("currenttab");
     if(evt && evt.currentTarget){
         evt.currentTarget.className += " currenttab";

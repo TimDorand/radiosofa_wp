@@ -41,7 +41,6 @@ $(function() {
 
         // Article
         if (anchor.includes("article-")) {
-            $("#menu-journal").addClass("currenttab");
             openPage(null, "page-journal");
             displayPost(anchor.substr( anchor.lastIndexOf('article-') + 8 ))
         }

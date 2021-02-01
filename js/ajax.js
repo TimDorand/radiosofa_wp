@@ -2,6 +2,7 @@
 
 function displayPost(post_name) {
 
+    $("#menu-journal").removeClass("currenttab").addClass('currenttab');
     $(".post-single").show();
     $("#spin").show();
 
