@@ -17,7 +17,7 @@ function displayPost(post_name) {
         var post_html = '<div data-post-id="' + response.data['ID'] + '">' +
             '<h2 class="post-title">' + response.data['post_title'] + '</h2>' +
             response.data['post_content'] + '</div><hr/>';
-        $('#post-single-content').html(post_html); // Afficher le HTML
+        $('#post-single-content').show().html(post_html); // Afficher le HTML
         $(".site-main").scrollTop(0);
         $("#spin").hide();
     });
