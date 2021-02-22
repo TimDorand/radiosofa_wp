@@ -1,13 +1,13 @@
-// PLAYER
-$(function() {
+// On click functions
+(function ($) {
+    // Player
     $("audio + a").click(function (e) {
         e.preventDefault();
         var song = $(this).prev('audio').get(0);
         var src = "https://www.radioking.com/play/radio-sofa";
 
-
         if (song.paused) {
-            stopAllAudio()
+            stopAllAudio();
             song.src = src;
             song.load();
             song.play();
@@ -18,7 +18,7 @@ $(function() {
             $(".page-body").css("height", "100%")
 
         } else {
-            stopAllAudio()
+            stopAllAudio();
             song.pause();
             song.currentTime = 0;
             song.src = '';
@@ -28,26 +28,34 @@ $(function() {
             $(this).removeClass("pause");
         }
     });
-});
 
-(function ($) {
     $(document).ready(function () {
 
         // Hide spinner on load
         $("#spin").hide();
 
-        // Rooter: Open page from anchor
+        $("#page-ondes").show();
+
+        // Navigation: Open page from anchor
         var anchor = $(location).attr('hash').split('#').pop();
 
-        // Article
+        // Url to Article
         if (anchor.includes("article-")) {
-            openPage(null, "page-journal");
-            displayPost(anchor.substr( anchor.lastIndexOf('article-') + 8 ))
+            fetchPost(anchor.substr( anchor.lastIndexOf('article-') + 8 ))
         }
-        // Page
+        // Url to Page
         else if (anchor && document.getElementById("page-" + anchor)) {
-            openPage(null, "page-" + anchor)
+            if(anchor === "journal"){
+                openPage(null, "page-journal", "Journal");
+            }else{
+                fetchHideShowPage("page-" + anchor, selectorToPageName("page-" + anchor))
+            }
         }
+
+        // Menu to Page
+        $(".pageSelector").click(function(e) {
+            fetchHideShowPage($(this).attr("pageSelector"), selectorToPageName($(this).attr("pageSelector")));
+        });
 
         // Mobile Menu toggle
         $("#menu-toggle").click(function () {
@@ -62,8 +70,8 @@ $(function() {
         // Home articles
         $(".bloc-articles a").click(function(e){
             var url = new URL($(this).attr('href'));
-            openPage(null, "page-journal");
-            displayPost(url.pathname.replace(/\//g, ""));
+            openPage(null, "page-journal", "Journal");
+            fetchPost(url.pathname.replace(/\//g, ""));
             window.location = '#article-'+url.pathname.replace(/\//g, "");
             e.preventDefault();
         });
@@ -71,7 +79,7 @@ $(function() {
         // Journal articles
         $('.post-title').click(function () {
             var post_id = $(this).parent().attr('data-post-id');
-            displayPost(post_id);
+            fetchPost(post_id);
             $("html, body").scrollTop(0);
 
         });
@@ -107,6 +115,20 @@ $(function() {
         $("#link-all-articles").click(function(){
             $(".post-single").hide();
         })
+
+
+        // Load all pages in background
+        setTimeout(function () {
+            var pagesToLoad = ["Sofas", "Convives", "Residence", "Emissions"]
+            for ( const pageName of pagesToLoad ) {
+                setTimeout(function(){
+                    fetchPage(null, pageName)
+                },1000)
+            }
+        },10000)
+
+        console.log("[Main Script] Document ready");
     });
+    // End document ready
 
 })(jQuery);

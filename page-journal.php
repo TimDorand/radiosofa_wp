@@ -1,3 +1,9 @@
+<?php
+
+/*
+Template Name: Journal
+*/
+?>
 <div class="post-single">
     <button class="btn" id="link-all-articles">Tous les articles</button>
     <div id="post-single-content"></div>

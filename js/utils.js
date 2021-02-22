@@ -44,9 +44,12 @@ function stopAllAudio() {
 
 }
 
-// Rooter page
-function openPage(evt, pageName) {
-    var i, tabcontent, tablinks;
+// Rooter page: handle active menu, hide all page, show content
+function openPage(evt, selector, pageName) {
+    console.debug("[openPage] evt:", evt, "selector:", selector, "pageName:", pageName);
+
+    // Menu handling
+    var i, tablinks;
     $('#post-single-content').hide();
     $("#primary-menu").find("li").removeClass("currenttab");
     if(evt && evt.currentTarget){
@@ -57,11 +60,31 @@ function openPage(evt, pageName) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
     }
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+    if(selector){
+        $("[pageSelector="+selector+"]").addClass("currenttab");
     }
-    if(pageName.includes("page-")){
-        document.getElementById(pageName).style.display = "block";
+
+    // Hide all pages
+    $(".tabcontent").hide();
+    $("#"+selector).show();
+
+    if(pageName === "Residence"){
+        console.debug("[handlerRe] evt:", evt, "selector:", selector, "pageName:", pageName);
+
+        handleResidence();
     }
+}
+
+function selectorToPageName(selector){
+    return selector.substr( selector.lastIndexOf('page-') + 5 ).replace(/^\w/, (c) => c.toUpperCase());
+}
+
+function handleResidence(){
+    setTimeout(function(){
+        $("#page-residence .wp-block-image").click(function(){
+            var resident = $(this).children("figcaption").text();
+            console.warn("[Résidence]", resident);
+            fetchHideShowPage("page-residence", "RESIDENCE "+resident);
+        });
+    },0)
 }
