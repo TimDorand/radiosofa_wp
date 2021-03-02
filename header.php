@@ -199,10 +199,10 @@
 			*/?>
 		</nav><!-- #site-navigation -->
 
-        <div class="header-bio">
+        <!--<div class="header-bio">
             <p class="text-justify">
                 <?php
-                $texte_bio = get_field("texte_bio");
+/*                $texte_bio = get_field("texte_bio");
                 if(isset($texte_bio)){
                     echo $texte_bio;
                 } else {
@@ -212,9 +212,9 @@ de diggers de salon.
 <br/><br/>
 Eclectisme garanti avec chaque semaine des sélections thématiques et des DJ sets, à écouter assis et debout.
                     ";
-                } ?>
+                } */?>
             </p>
-        </div>
+        </div>-->
         </div>
         <div class="site-header-second-part">
 

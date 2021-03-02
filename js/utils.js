@@ -34,7 +34,7 @@ function stopAllAudio() {
         this.pause();
         this.currentTime = 0;
     });
-    var allIframes = $("iframe");
+    var allIframes = $("iframe").not('iframe').attr('src','*youtube*');
     for(let count = 0; count < allIframes.length; count++) {
         // Stop iframe audio
         var srcIframe = $(allIframes[count]).attr('src');

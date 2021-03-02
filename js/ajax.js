@@ -55,7 +55,7 @@ $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
             if(localStorage.getItem("debug")) return true;
 
             //0.5 h = 1800000 ms
-            if (foundLocalStorage && ((new Date().getTime() - JSON.parse(foundLocalStorage)._) < 1800000)) {
+            if (foundLocalStorage && ((new Date().getTime() - JSON.parse(foundLocalStorage)._) < 3600000)) {
                 console.log("found in cache", cacheKey);
                 success(foundLocalStorage);
                 return false;
