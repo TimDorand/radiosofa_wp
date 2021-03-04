@@ -30,9 +30,14 @@
     letter-spacing: 0;
     font-style: italic;
     display: inline-block;
+    font-size: 1.7rem;
+}
+.vsel-meta-title {
+    font-size: 1.7rem;
 
 }
 .vsel-meta-time{
+}
     order:2;
     margin: -5px 0 !important;
 }

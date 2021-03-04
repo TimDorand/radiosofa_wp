@@ -21,12 +21,12 @@
     display: inline-block;
     white-space: nowrap;
     top: 0;
-    font-size:2rem;
+    font-size:1.8rem;
 }
 .messagedefilant div span,
 .messagedefilant div:after {
     color:#1a1c19;
-    font-style:italic;
+    /*font-style:italic;*/
     margin-top: 0px;
     font-weight: 700;
     cursor: pointer;
@@ -119,22 +119,13 @@ div[class^='src-components-current-track__title-block--'] > div {
     font-weight: 700;
 }
 div[class^='src-components-current-track__artist--'] {
-    margin-top:-2px;
+    margin-top: 4px;
     /*text-transform: capitalize;*/
     font-weight: 300 !important;
     font-style: italic;
 }
 div[class^='src-components-current-track__articleCard--'] {
     /*display: none !important;*/
-}
-.src-components-current-track__title-block--2bXfQ > div{
-    font-weight: 700;
-}
-.src-components-current-track__artist--3AuZL{
-    margin-top:-5px;
-    text-transform: capitalize;
-    font-weight: 300;
-    font-style: italic;
 }
 #rk-current-track-widget{
     max-width: 81%;
@@ -152,7 +143,7 @@ div[class^='src-components-current-track__articleCard--'] {
     font-weight: 500;
     color: black;
     font-style: normal;
-    padding: 0 5px 5px 0px;
+    padding: 0 4px 2px 0px;
 
 }
 
@@ -273,7 +264,7 @@ div[class^='src-components-current-track__articleCard--'] {
     justify-content: space-between;
     align-items: flex-end;
     align-content: flex-end;
-    margin: 20px;
+    margin: 28px;
 }
 .site-header-second-part small{
     align-items: flex-end;

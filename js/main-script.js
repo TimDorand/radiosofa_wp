@@ -29,13 +29,11 @@
         }
     });
 
+    if(!$(location).attr('hash').split('#').pop()){
+        $("#page-ondes").hide();
+    }
+
     $(document).ready(function () {
-
-        // Hide spinner on load
-        $("#spin").hide();
-
-        $("#page-ondes").show();
-
         // Navigation: Open page from anchor
         var anchor = $(location).attr('hash').split('#').pop();
 
@@ -50,6 +48,11 @@
             }else{
                 fetchHideShowPage("page-" + anchor, selectorToPageName("page-" + anchor))
             }
+        } else{
+            // Hide spinner on load
+            $("#spin").hide();
+
+            $("#page-ondes").show();
         }
 
         // Menu to Page
@@ -128,7 +131,9 @@
         },10000)
 
         console.log("[Main Script] Document ready");
+
     });
     // End document ready
+
 
 })(jQuery);
