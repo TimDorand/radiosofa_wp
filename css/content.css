@@ -55,7 +55,9 @@ small{
     border-radius: 0;
     text-transform: uppercase;
 }
-
+.clickable{
+    cursor:pointer;
+}
 /* Pages design */
 #page{
     margin:auto;
@@ -172,6 +174,9 @@ small{
 }
 .ondes-convives-post{
     width:30%;
+}
+.ondes-convives-post img{
+    border: 1px solid black;
 }
 .replay-images .btn-replay{
     font-size: 10px;

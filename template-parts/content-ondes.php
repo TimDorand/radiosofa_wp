@@ -5,7 +5,7 @@
 <div class="wp-block-columns">
     <div class="wp-block-column" style="flex-basis:40%">
         <figure class="wp-block-image size-large img-bordered img-visu-mois"><img
-                    src="https://radiosofa.timothee.pro/wp-content/uploads/2021/01/Radio_SofaxMoon_Art_Club-1024x1024.jpg"
+                    src="https://radiosofa.timothee.pro/wp-content/uploads/2021/03/SOFA-scaled.jpeg"
                     alt="" class="wp-image-493">
             <figcaption>Le sofa du mois par Moon Art Club Template Parts</figcaption>
         </figure>
@@ -30,7 +30,7 @@
 <div class="wp-block-columns">
     <div class="wp-block-column" style="flex-basis:40%">
         <div class="rs-title rs-title-default">
-            <div><h2 onclick="openPage(event, 'page-actualites')">AGENDA</h2></div>
+            <div><h2 class="clickable" onclick="fetchHideShowPage('page-radio-journal', 'Journal', true)">AGENDA</h2></div>
         </div>
 
 
@@ -92,7 +92,7 @@
     <!-- wp:column -->
     <div class="wp-block-column">
         <div class="rs-title rs-title-dark">
-            <div><h2 onclick="openPage(event, 'page-convives')">CONVIVES</h2></div>
+            <div><h2 class="clickable" onclick="fetchHideShowPage('page-radio-convives', 'Convives', true)">CONVIVES</h2></div>
         </div>
 
         <!-- wp:latest-posts {"categories":[{"id":9,"count":2,"description":"","link":"http://localhost:8888/category/convives/","name":"Convives","slug":"convives","taxonomy":"category","parent":0,"meta":[],"_links":{"self":[{"href":"http://localhost:8888/wp-json/wp/v2/categories/9"}],"collection":[{"href":"http://localhost:8888/wp-json/wp/v2/categories"}],"about":[{"href":"http://localhost:8888/wp-json/wp/v2/taxonomies/category"}],"wp:post_type":[{"href":"http://localhost:8888/wp-json/wp/v2/posts?categories=9"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}}],"postsToShow":6,"displayPostContent":true,"displayPostContentRadio":"full_post","postLayout":"grid","displayFeaturedImage":true} /-->
@@ -107,7 +107,7 @@
             }*/
             foreach ($recentConvives as $post) {
                 $image = get_the_post_thumbnail();
-                echo '<div data-post-id="' . $post->post_name . '" class="ondes-convives-post">';
+                echo '<div data-post-id="' . $post->post_name . '" class="ondes-convives-post" >';
                 echo $image;
                 echo $post->post_content;
                 echo '</div>';
