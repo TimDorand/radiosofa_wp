@@ -265,6 +265,9 @@ small{
     min-height:88vh;
     display:none;
 }
+.post-title{
+    cursor:pointer;
+}
 /* CONVIVES*/
 
 .site-convives{

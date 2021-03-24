@@ -30,7 +30,7 @@
 <div class="wp-block-columns">
     <div class="wp-block-column" style="flex-basis:40%">
         <div class="rs-title rs-title-default">
-            <div><h2 class="clickable" onclick="fetchHideShowPage('page-radio-journal', 'Journal', true)">AGENDA</h2></div>
+            <div><h2 class="clickable" onclick="fetchHideShowPage('page-radio-journal', 'Journal', true)">JOURNAL</h2></div>
         </div>
 
 
@@ -44,7 +44,7 @@
                 $recentArticles = get_posts(["numberposts" => 2, "category" => $categoryArticles->cat_ID]);
                 foreach ($recentArticles as $post) {
                     $post_date = get_the_date( 'j n' );
-                    echo '<li><a href="/#article-' . $post->post_name . '">' . $post->post_title . '</a>
+                    echo '<li><a class="ondes-journal-post-link" data-post-id="' . $post->post_name . '" href="/#article-' . $post->post_name . '">' . $post->post_title . '</a>
                         <time datetime="' . $post->post_date_gmt . '" class="wp-block-latest-posts__post-date">' . $post_date . '</time>
                         <div class="wp-block-latest-posts__post-excerpt ondes-journal-post">' . $post->post_content . '
                     </div>

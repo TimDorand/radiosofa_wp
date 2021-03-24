@@ -87,6 +87,7 @@ $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
 // Show post-single, show loader, fetch post, hide content
 function fetchPost(post_name) {
     console.debug("[fetchPost]", post_name)
+    $("#page-radio-journal").show();
     $(".post-single").show();
     $("#spin").show();
 
@@ -100,12 +101,12 @@ function fetchPost(post_name) {
         /*cache: true*/
     }).done(function (response) {
         if (response && response.data) {
-            $(".tabcontent").hide();
+            openPage(null, "page-radio-journal", "Journal")
             var post_html = '<div data-post-id="' + response.data['ID'] + '">' +
                 '<h2 class="post-title">' + response.data['post_title'] + '</h2>' +
                 response.data['post_content'] + '</div><hr/>';
             $("#page-radio-journal").show();
-            $('#post-single-content').show().html(post_html); // Afficher le HTML
+            $('#page-radio-journal').html(post_html); // Afficher le HTML
             $(".site-main").scrollTop(0);
         } else {
             console.error('[fetchPost] Erreur sur load_post_with_name: ', response);

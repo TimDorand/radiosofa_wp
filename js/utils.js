@@ -84,6 +84,8 @@ function openPage(evt, selector, pageName) {
         handleResidence();
     }else if(pageName === "Sofas"){
         handleSofas();
+    }else if(pageName === "Journal" || pageName ==="Ondes"){
+        handleJournal();
     }
 }
 
@@ -104,6 +106,24 @@ function handleResidence(){
         });
     },0)
 }
+function handleJournal(){
+    setTimeout(function(){
+        // Journal articles
+    $(".ondes-journal-post-link").click(function(){
+        var post_id = $(this).attr('data-post-id');
+        fetchPost(post_id);
+        $("html, body").scrollTop(0);
+    })
+    $('.post-title').click(function () {
+        console.debug('test');
+        var post_id = $(this).parent().attr('data-post-id');
+        fetchPost(post_id);
+        $("html, body").scrollTop(0);
+
+    });
+    },100)
+
+}
 
 function handleSofas(){
     setTimeout(function(){
@@ -113,6 +133,7 @@ function handleSofas(){
         });
     },0)
 }
+
 
 function handleReplayIframe(){
 //hide all replay iframes

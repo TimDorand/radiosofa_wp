@@ -39,6 +39,8 @@
 
         // Url to Article
         if (anchor.includes("article-")) {
+            console.debug('end article');
+
             fetchPost(anchor.substr(anchor.lastIndexOf('article-') + 8))
 
         } else if (anchor.includes("radio-")) {
@@ -76,13 +78,7 @@
             e.preventDefault();
         });
 
-        // Journal articles
-        $('.post-title').click(function () {
-            var post_id = $(this).parent().attr('data-post-id');
-            fetchPost(post_id);
-            $("html, body").scrollTop(0);
-
-        });
+        handleJournal()
 
         // Block alerts
         alert = function () {
