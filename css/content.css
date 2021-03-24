@@ -162,8 +162,13 @@ small{
     margin: 0;
 }
 .replay-images{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     /*padding-bottom: 30px;*/
-
+}
+.ondes-convives-post{
+    width:30%;
 }
 .replay-images div:not(:first-child) {
     /*
@@ -179,6 +184,7 @@ small{
 }
 .btn-replay{
     border: 1px solid black;
+    cursor: pointer;
     
 }
 

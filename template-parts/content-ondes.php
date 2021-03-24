@@ -4,7 +4,6 @@
 ?>
 <div class="wp-block-columns">
     <div class="wp-block-column" style="flex-basis:40%">
-
         <figure class="wp-block-image size-large img-bordered img-visu-mois"><img
                     src="https://radiosofa.timothee.pro/wp-content/uploads/2021/01/Radio_SofaxMoon_Art_Club-1024x1024.jpg"
                     alt="" class="wp-image-493">
@@ -103,118 +102,17 @@
             <?php
             $categoryConvives = get_category_by_slug("Convives");
             $recentConvives = get_posts(["numberposts" => 6, "category" => $categoryConvives->cat_ID]);
-            foreach ($recentConvives as $post) {
+ /*           foreach ($recentConvives as $post) {
                 echo '<div data-post-id="' . $post->post_name . '"><h2 class="post-title"><a href="/#article-' . $post->post_name . '">' . $post->post_title . '</a></h2>' . $post->post_excerpt . '</div><hr/>';
+            }*/
+            foreach ($recentConvives as $post) {
+                $image = get_the_post_thumbnail();
+                echo '<div data-post-id="' . $post->post_name . '" class="ondes-convives-post">';
+                echo $image;
+                echo $post->post_content;
+                echo '</div>';
             }
             ?>
-            <div class="wp-block-column">
-
-                <figure class="wp-block-image size-large is-resized img-bordered"><img
-                            src="http://localhost:8888/wp-content/uploads/2021/01/tom-coololo-edited.jpeg" alt=""
-                            class="wp-image-528" width="243" height="242"></figure>
-
-                <!-- wp:columns {"className":"replay-info"} -->
-                <div class="wp-block-columns replay-info"><!-- wp:column -->
-                    <div class="wp-block-column"><!-- wp:paragraph -->
-                        <p>SET DE SALON w/ JEAN VALJUAN</p>
-                        <!-- /wp:paragraph --></div>
-
-                    <!-- wp:column -->
-                    <div class="wp-block-column">
-                        <div class="btn-replay">REPLAY</div>
-
-
-                        <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay"
-                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/941589784&amp;color=%23303030&amp;inverse=false&amp;auto_play=false&amp;show_user=false"></iframe>
-                    </div>
-                </div>
-            </div>
-
-            <!-- wp:column -->
-            <div class="wp-block-column">
-
-                <figure class="wp-block-image size-large img-bordered"><img
-                            src="http://localhost:8888/wp-content/uploads/2021/01/Baume-1-1024x1024.jpg" alt=""
-                            class="wp-image-526">
-                    <figcaption><span class="has-inline-color has-black-color">SET DE SALON w/ PIERRE</span>
-                    </figcaption>
-                </figure>
-
-
-                <div class="btn-replay">REPLAY</div>
-
-
-                <iframe width="100%" height="60"
-                        src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;mini=1&amp;light=1&amp;feed=%2FPierreRadioSofa%2Fset-de-salon-w-pierre%2F"
-                        frameborder="0"></iframe>
-            </div>
-
-            <!-- wp:column -->
-            <div class="wp-block-column">
-
-                <figure class="wp-block-image size-large img-bordered"><img
-                            src="http://localhost:8888/wp-content/uploads/2021/01/jose-manuel-1024x1024.jpg" alt=""
-                            class="wp-image-527"></figure>
-
-
-                <div class="btn-replay">REPLAY</div>
-
-                <!-- wp:paragraph -->
-                <p></p>
-                <!-- /wp:paragraph --></div>
         </div>
-
-        <!-- wp:columns {"className":"replay-images"} -->
-        <div class="wp-block-columns replay-images"><!-- wp:column -->
-            <div class="wp-block-column">
-
-                <figure class="wp-block-image size-large img-bordered"><img
-                            src="http://localhost:8888/wp-content/uploads/2021/01/tom-coololo-edited.jpeg" alt=""
-                            class="wp-image-528">
-                    <figcaption><span class="has-inline-color has-black-color">SET DE SALON w/ JEAN VALJUAN</span>
-                    </figcaption>
-                </figure>
-
-
-                <div class="btn-replay">REPLAY</div>
-
-
-                <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/941589784&amp;color=%23303030&amp;inverse=false&amp;auto_play=false&amp;show_user=false"></iframe>
-            </div>
-
-            <!-- wp:column -->
-            <div class="wp-block-column">
-
-                <figure class="wp-block-image size-large img-bordered"><img
-                            src="http://localhost:8888/wp-content/uploads/2021/01/Baume-1-1024x1024.jpg" alt=""
-                            class="wp-image-526">
-                    <figcaption><span class="has-inline-color has-black-color">SET DE SALON w/ PIERRE</span>
-                    </figcaption>
-                </figure>
-
-
-                <div class="btn-replay">REPLAY</div>
-
-
-                <iframe width="100%" height="60"
-                        src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;mini=1&amp;light=1&amp;feed=%2FPierreRadioSofa%2Fset-de-salon-w-pierre%2F"
-                        frameborder="0"></iframe>
-            </div>
-
-            <!-- wp:column -->
-            <div class="wp-block-column">
-
-                <figure class="wp-block-image size-large img-bordered"><img
-                            src="http://localhost:8888/wp-content/uploads/2021/01/jose-manuel-1024x1024.jpg" alt=""
-                            class="wp-image-527"></figure>
-
-
-                <div class="btn-replay">REPLAY</div>
-            </div>
-        </div>
-
-        <!-- wp:paragraph -->
-        <p></p>
-        <!-- /wp:paragraph --></div>
+    </div>
 </div>

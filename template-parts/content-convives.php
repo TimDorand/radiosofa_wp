@@ -49,9 +49,6 @@ REPLAY
         echo $image;
         echo $post->post_content;
         echo '</div>';
-
-        $content = apply_filters( 'the_content', get_the_content() );
-
     }
     ?>
     <?php wp_reset_postdata(); ?>
