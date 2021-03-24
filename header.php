@@ -122,13 +122,6 @@
     </div>-->
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'radiosofa' ); ?></a>
 
-    <div class="messagedefilant">
-        <?php
-        $text_defilant = get_field("texte_defilant");
-        ?>
-        <div data-text="<?php echo $text_defilant; ?>"><span><?php echo $text_defilant; ?></span></div>
-    </div>
-
     <div class="page-body">
 
 	<header id="masthead" class="site-header">
@@ -148,7 +141,7 @@
             $custom_logo_id = get_theme_mod( 'custom_logo' );
             $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
             ?>
-            <span class="custom-logo-link" onclick="openPage(event, 'page-ondes', 'Ondes')">
+            <span class="custom-logo-link">
                 <img alt="Radio Sofa Logo" src="<?php echo $image[0];?>"/>
             </span>
 
@@ -182,12 +175,12 @@
 
             <div id="primary-menu">
                <ul>
-                   <li class="tablinks currenttab" pageSelector="page-ondes" onclick="openPage(event, 'page-ondes', 'Ondes')"><h2><a href="/#">Salon</a></h2></li>
-                   <li class="tablinks pageSelector" pageSelector="page-sofas"><h2><a href="/#sofas">Sofas</a></h2></li>
-                   <li class="tablinks pageSelector" pageSelector="page-convives"><h2><a href="/#convives">Convives</a></h2></li>
-                   <li class="tablinks pageSelector" pageSelector="page-residence"><h2><a href="/#residence">Residence</a></h2></li>
-                   <li class="tablinks pageSelector" pageSelector="page-emissions"><h2><a href="/#emissions">Emissions</a></h2></li>
-                   <li class="tablinks " pageSelector="page-journal" onclick="openPage(event, 'page-journal', 'Journal')"><h2><a href="/#journal">Journal</a></h2></li>
+                   <li class="tablinks currenttab pageTemplateSelector" pageSelector="page-radio-ondes"><h2><a href="/#">Salon</a></h2></li>
+                   <li class="tablinks pageSelector" pageSelector="page-sofas"><h2><a href="/#page-sofas">Sofas</a></h2></li>
+                   <li class="tablinks pageTemplateSelector" pageSelector="page-radio-convives"><h2><a href="/#radio-convives">Convives</a></h2></li>
+                   <li class="tablinks pageSelector" pageSelector="page-residence"><h2><a href="/#page-residence">Residence</a></h2></li>
+                   <li class="tablinks pageSelector" pageSelector="page-emissions"><h2><a href="/#page-emissions">Emissions</a></h2></li>
+                   <li class="tablinks pageTemplateSelector" pageSelector="page-radio-journal"><h2><a href="/#radio-journal">Journal</a></h2></li>
                </ul>
             </div>
 			<?php

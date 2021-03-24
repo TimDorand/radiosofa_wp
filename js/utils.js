@@ -5,7 +5,7 @@ console.log("Nous sommes un " + tab_jour[ladate.getDay()]);
 
 function findMyText(needle, replacementText) {
     var myOldString = $("#vsel").html();
-    var myNewString = myOldString.replaceAll(needle, replacementText);
+    var myNewString = myOldString && myOldString.replaceAll(needle, replacementText);
     $("#vsel").html(myNewString);
 }
 
@@ -34,12 +34,14 @@ function stopAllAudio() {
         this.pause();
         this.currentTime = 0;
     });
-    var allIframes = $("iframe").not('iframe').attr('src','*youtube*');
-    for(let count = 0; count < allIframes.length; count++) {
+    var allRelpayIframes = $(".replay-images iframe")
+    allRelpayIframes.hide();
+    console.debug('[stopAllAudio]',     allRelpayIframes);
+    for(let count = 0; count < allRelpayIframes.length; count++) {
         // Stop iframe audio
-        var srcIframe = $(allIframes[count]).attr('src');
-        $(allIframes[count]).attr('src', "");
-        $(allIframes[count]).attr('src', srcIframe);
+        var srcIframe = $(allRelpayIframes[count]).attr('src');
+        $(allRelpayIframes[count]).attr('src', "");
+        $(allRelpayIframes[count]).attr('src', srcIframe);
     }
 
 }
@@ -68,15 +70,29 @@ function openPage(evt, selector, pageName) {
     $(".tabcontent").hide();
     $("#"+selector).show();
 
+    setTimeout(function(){
+        findMyText(tab_jour[ladate.getDay()], "Aujourd'hui");
+        findMyText(tab_jour[ladate.getDay() + 1], "Demain");
+        handleReplayIframe();
+
+    }, 1000)
+
+    $("#spin").hide();
+
     if(pageName === "Residence"){
         console.debug("[handlerRe] evt:", evt, "selector:", selector, "pageName:", pageName);
-
         handleResidence();
+    }else if(pageName === "Sofas"){
+        handleSofas();
     }
 }
 
 function selectorToPageName(selector){
     return selector.substr( selector.lastIndexOf('page-') + 5 ).replace(/^\w/, (c) => c.toUpperCase());
+}
+
+function selectorRadioToPageName(selector){
+    return selector.substr( selector.lastIndexOf('radio-') + 6 ).replace(/^\w/, (c) => c.toUpperCase());
 }
 
 function handleResidence(){
@@ -87,4 +103,41 @@ function handleResidence(){
             fetchHideShowPage("page-residence", "RESIDENCE "+resident);
         });
     },0)
+}
+
+function handleSofas(){
+    setTimeout(function(){
+        $(".sofas-posts .wp-block-column").click(function(){
+            $(".sofas-post").hide();
+            $(this).children(".sofas-post").toggle();
+        });
+    },0)
+}
+
+function handleReplayIframe(){
+//hide all replay iframes
+var allRelpayIframes = $(".replay-images iframe")
+allRelpayIframes.hide();
+// Replay Souncdloud and mixcloud player
+$(".btn-replay").click(function () {
+    stopAllAudio();
+
+    // set "play" to player
+    $(".site-player a").addClass("play");
+    $(".site-player a").removeClass("pause");
+
+    /*$(this).parent().find("iframe").show();*/
+    $(this).next().show();
+    var iframe = $(this).next(); // or some other selector to get the iframe
+
+    iframe.addClass("replay-iframe");
+    /*$(".page-body").css("height", "calc(100vh - 135px)")*/
+    setTimeout(function(){
+        iframe.contents().find(".widget-controls-top").css({"background": "#fff", "border": "none"});
+        iframe.contents().find(".singleSound").css({"background": "#fff", "border": "none"});
+        iframe.contents().find(".soundContainer").css({"background": "#fff", "border": "none"});
+        iframe.contents().find(".compactSound .g-background-default").css({"background": "#fff", "border": "none"});
+    }, 2000)
+
+    })
 }

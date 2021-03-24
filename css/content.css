@@ -3,6 +3,9 @@ html {
     font-size: 10px;
     font-family: Roboto, "Akkurat", "DM Sans", -apple-system, sans-serif;
 }
+html, body, #page{
+    height:100%;
+}
 
 /*
 H1 30 h2 h3 25 h4 20 h5 17  15 p 14 small12
@@ -55,8 +58,6 @@ small{
 
 /* Pages design */
 #page{
-    padding:10px 4% 20px 4%;
-    /*min-width:1040px;*/
     margin:auto;
 }
 
@@ -74,12 +75,10 @@ small{
 .page-body{
     display:flex;
     flex-direction:row;
-    border:1px solid black;
-    max-height: calc(100vh - 64px);
     height: 100%;}
-.wp-block-column:not(:first-child) {
+/*.wp-block-column:not(:first-child) {
     margin-left: 53px;
-}
+}*/
 .img-loader{
     position: absolute;
     left: 30%;
@@ -91,7 +90,7 @@ small{
     margin-left:10px;
 }
 .tabcontent{
-    padding: 25px 35px 10px 35px;
+    padding: 15px 55px 55px 55px;
 }
 /* HOME */
 .img-bordered img{
@@ -135,7 +134,18 @@ small{
     height: 28vw;
 }
 
-/* JOURNAL */
+/* ONDES JOURNAL */
+.ondes-journal-post{
+    width: calc(100% - 0px);
+    height:20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
 .wp-block-columns:first-child{
     margin-bottom: 17px;
 }
@@ -156,7 +166,9 @@ small{
 
 }
 .replay-images div:not(:first-child) {
+    /*
     margin-left:10px;
+    */
 }
 .replay-images img{
     object-fit:cover;
@@ -210,16 +222,16 @@ small{
 
 /* IFRAMES */
 
-iframe{
+.replay-iframe{
     z-index: 4;
     position: absolute;
-    width: calc(100% - 8%);
+    width: 75%;
     background: white;
-    left: 4%;
-    border: 1px solid black;
+    left: 25%;
+    border-top: 1px solid black;
     padding: 5px;
     height: 72px;
-    bottom: 14px;
+    bottom: 0;
 }
 
 .widget-controls-top, .singleSound, .soundContainer, .compactSound{
@@ -233,7 +245,57 @@ iframe{
     min-height:88vh;
     display:none;
 }
+/* CONVIVES*/
 
+.site-convives{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.site-convives .replay-info{
+    display:flex;
+    flex-direction: column-reverse;
+    margin-top: -41px;
+}
+.convives-post {
+    width: calc(33.3% - 20px);
+    margin-bottom: 70px;
+}
+.convives-post img{
+    border: 1px solid black;
+}
+.convives-post p{
+    display:none;
+}
+.convives-post .btn-replay{
+    cursor: pointer;
+    position: absolute;
+    background: white;
+    padding: 4px 7px;
+    margin-left: -10px;
+
+}
+/* SOFAS */
+
+.sofas-posts .wp-block-column{
+    cursor:pointer;
+}
+
+.sofas-post{
+    display:none;
+    width: calc(396% + 90px);
+}
+
+.sofas-post-2{
+    margin-left: calc(-65% - 87px);
+}
+.sofas-post-3{
+     margin-left: calc(-182% - 87px);
+}
+.sofas-post-4{
+     margin-left: calc(-299% - 87px);
+}
 
 @media screen and (max-width: 600px) {
     .page-body{
@@ -259,3 +321,5 @@ iframe{
      margin: 4px 0 0 0;
  }
 }
+
+

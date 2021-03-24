@@ -5,9 +5,9 @@
     padding: 0;
     overflow: hidden;
     position: relative;
-    width: 100%;
+    width: calc(100% - 110px);
     height: 25px;
-    margin-top: -4px;
+    margin: 14px 55px 0 55px;
 }
 
 .messagedefilant div {
@@ -72,11 +72,11 @@
     width: 93px;
 }
 .site-branding{
-    padding: 25px 0 0 28px;
+    padding: 28px 0 0 58px;
 }
 .site-player{
     display: flex;
-    padding: 40px 0 20px 20px;
+    padding: 40px 0 20px 58px;
     border-bottom: 1px solid black;
     /*max-width: 220px;*/
 }
@@ -173,7 +173,7 @@ div[class^='src-components-current-track__articleCard--'] {
 .tablinks{
     cursor: pointer;
     color: #1a1c19;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 .tablinks h2{
     display:inline;
@@ -187,7 +187,7 @@ div[class^='src-components-current-track__articleCard--'] {
 }
 
 .main-navigation{
-    padding: 28px 0 0 28px;
+    padding: 28px 0 0 59px;
 }
 .main-navigation ul{
     display: flex;
@@ -264,7 +264,7 @@ div[class^='src-components-current-track__articleCard--'] {
     justify-content: space-between;
     align-items: flex-end;
     align-content: flex-end;
-    margin: 28px;
+    margin: 59px;
 }
 .site-header-second-part small{
     align-items: flex-end;
@@ -298,7 +298,7 @@ div[class^='src-components-current-track__articleCard--'] {
     .site-branding{
 
         position: absolute;
-        top: 28px;
+        top: 59px;
         right: 20px;
         z-index: 1;
     }

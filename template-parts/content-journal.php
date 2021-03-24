@@ -4,6 +4,8 @@
 Template Name: Journal
 */
 ?>
+<main id="primary" class="site-journal">
+
 <div class="post-single">
     <button class="btn" id="link-all-articles">Tous les articles</button>
     <div id="post-single-content"></div>
@@ -11,8 +13,6 @@ Template Name: Journal
 
 <div id="tous-les-articles"></div>
 <?php
-
-$posts = get_posts(["numberposts" => -1]);
 
 /*
  * [0]=> object(WP_Post)#5188 (24) {
@@ -48,6 +48,9 @@ https://www.youtube.com/watch?v=XYbzw_t0TB4&ab_channel=SinchiCollective&fbclid=I
 ["filter"]=> string(3) "raw" } [
 */
 
+
+$categoryArticles = get_category_by_slug("Articles");
+$posts = get_posts(["numberposts" => -1, "category" => $categoryArticles->cat_ID]);
 foreach ($posts as $post) {
     echo '<div data-post-id="' . $post->post_name . '">
             <h2 class="post-title"><a href="/#article-'.$post->post_name.'">'. $post->post_title . '</a></h2>
@@ -58,3 +61,4 @@ foreach ($posts as $post) {
 ?>
 
 <?php wp_reset_postdata(); ?>
+</main>

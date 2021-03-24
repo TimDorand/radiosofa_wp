@@ -41,3 +41,19 @@ function rs_load_page_with_name()
 
 add_action('wp_ajax_nopriv_load_page_with_name', 'rs_load_page_with_name');
 add_action('wp_ajax_load_page_with_name', 'rs_load_page_with_name');
+
+function rs_load_page_template_with_name()
+{
+    $page_name = $_POST['page_name'];
+
+    try{
+        $template = get_template_part( 'template-parts/content', strtolower($page_name));
+        wp_send_json_success($template);
+    }catch(Exception $e){
+        wp_send_json_error($e);
+    }
+    wp_die();
+}
+
+add_action('wp_ajax_nopriv_load_page_template_with_name', 'rs_load_page_template_with_name');
+add_action('wp_ajax_load_page_template_with_name', 'rs_load_page_template_with_name');

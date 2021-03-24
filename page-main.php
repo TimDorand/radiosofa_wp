@@ -13,6 +13,13 @@ get_header();
 
     <main id="primary" class="site-main">
 
+        <div class="messagedefilant">
+            <?php
+            $text_defilant = get_field("texte_defilant");
+            ?>
+            <div data-text="<?php echo $text_defilant; ?>"><span><?php echo $text_defilant; ?></span></div>
+        </div>
+
 
         <?php
         while (have_posts()) :
@@ -20,17 +27,10 @@ get_header();
         endwhile; // End of the loop.
         ?>
 
-        <div id="page-ondes" class="tabcontent active">
-            <?php
-            $post = get_page_by_title('Ondes');
-            $content = $post->post_content;
-            $content = apply_filters('the_content', $content);
-            $content = str_replace(']]>', ']]&gt;', $content);
-            echo $content;
-            ?>
+        <div id="page-radio-ondes" class="tabcontent active">
         </div>
 
-        <div id="page-convives" class="tabcontent">
+        <div id="page-radio-convives" class="tabcontent">
         </div>
 
         <div id="page-sofas" class="tabcontent">
@@ -40,19 +40,10 @@ get_header();
         </div>
 
         <div id="page-residence" class="tabcontent">
-            <?php
-            $post = get_page_by_title('Residence');
-            $content = $post->post_content;
-            $content = apply_filters('the_content', $content);
-            $content = str_replace(']]>', ']]&gt;', $content);
-            echo $content;
-            ?>
+
         </div>
 
-        <div id="page-journal" class="tabcontent">
-            <?php
-            require('page-journal.php');
-            ?>
+        <div id="page-radio-journal" class="tabcontent">
         </div><!-- .page-journal -->
 
     </main><!-- #main -->
