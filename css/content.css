@@ -161,6 +161,9 @@ small{
     padding: 0;
     margin: 0;
 }
+
+/* ONDES REPLAY CONVIVES */
+
 .replay-images{
     display:flex;
     flex-wrap: wrap;
@@ -169,6 +172,12 @@ small{
 }
 .ondes-convives-post{
     width:30%;
+}
+.replay-images .btn-replay{
+    font-size: 10px;
+    padding: 5px 6px;
+    text-align: center;
+    align-items: center;
 }
 .replay-images div:not(:first-child) {
     /*
