@@ -319,6 +319,24 @@ small{
     margin-left: calc(-299% - 87px);
 }
 
+/* RESIDENCE */
+
+#page-residence .rs-title{
+    transform: translate(0px, 200px);
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+}
+#page-residence figcaption{
+    visibility:hidden;
+}
+#page-residence .replay-images{
+    margin-top: -30px;
+}
+#page-residence .replay-images img{
+    border:1px solid black;
+    cursor: pointer;
+}
 @media screen and (max-width: 600px) {
     .page-body{
         flex-direction: column;
