@@ -320,7 +320,7 @@ small{
 /* RESIDENCE */
 
 #page-residence .rs-title{
-    translate(0px, calc(23vw - 42px));
+    transform: translate(0px, calc(23vw - 42px));
     width: 90%;
     justify-content: center;
     margin: auto;
