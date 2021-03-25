@@ -311,13 +311,12 @@ small{
 }
 
 .sofas-post-2{
-    margin-left: calc(-65% - 87px);
+    margin-left: calc(-100% - 27px)
 }
 .sofas-post-3{
-     margin-left: calc(-182% - 87px);
-}
+    margin-left:  calc(-200% - 57px)}
 .sofas-post-4{
-     margin-left: calc(-299% - 87px);
+    margin-left: calc(-299% - 87px);
 }
 
 @media screen and (max-width: 600px) {
