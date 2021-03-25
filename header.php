@@ -142,7 +142,7 @@
             $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
             ?>
             <span class="custom-logo-link">
-                <img alt="Radio Sofa Logo" src="<?php echo $image[0];?>"/>
+                <img class="tablinks currenttab pageTemplateSelector" pageSelector="page-radio-ondes" alt="Radio Sofa Logo" src="<?php echo $image[0];?>"/>
             </span>
 
             <?php

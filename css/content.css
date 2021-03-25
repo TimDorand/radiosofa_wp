@@ -293,11 +293,9 @@ small{
 }
 .convives-post .btn-replay{
     cursor: pointer;
-    position: absolute;
     background: white;
-    padding: 4px 7px;
     margin-left: -10px;
-
+    width: 64px;
 }
 /* SOFAS */
 
