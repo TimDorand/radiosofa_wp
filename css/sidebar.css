@@ -278,13 +278,17 @@ div[class^='src-components-current-track__articleCard--'] {
        z-index: 0;
        background: white;*/
 }
-
+.site-branding img{
+    -ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Safari */
+    transform: scale(1);
+}
 /* MOBILE */
 @media screen and (max-width: 600px) {
 
     .site-header{
-        order: 2;
         border: none;
+        flex-basis:125px;
     }
     .site-player{
         position: absolute;
@@ -292,23 +296,49 @@ div[class^='src-components-current-track__articleCard--'] {
         width: 100%;
         background: white;
         z-index: 3;
-        border: 1px solid black;
-        margin: 0 -10px 0 -10px;
+        border-bottom: 1px solid black;
+        margin: 0 0px 0 0px;
+        border-top: 1px solid black;
     }
-    .site-branding{
 
+    .messagedefilant{
         position: absolute;
-        top: 59px;
-        right: 20px;
-        z-index: 1;
+        bottom: 112px;
+        width: 100%;
+        background: white;
+        z-index: 3;
+        border-top: 1px solid black;
+        margin: 0 0px 0 0px;
+        padding-top: 2px;
+    }
+
+    .site-branding{
+        position: absolute;
+        top: 22px;
+        z-index: 9;
+        padding: 0;
+        left: calc(50% - 55px);
+    }
+    .site-branding img{
+        width:55px;
     }
     .main-navigation{
         position: absolute;
-        top: 120px;
         background: white;
-        right: 20px;
         text-align: right;
         z-index: 0;
+        padding: 87px 0 0 21px;
+        left: 0px;
+    }
+    .main-navigation ul{
+        flex-direction: row;
+    }
+    .main-navigation li[pageselector^="page-radio-journal"]{
+        
+    }
+
+    .tablinks h2{
+        font-size:15px;
     }
     .header-bio{
         display: none;

@@ -139,6 +139,15 @@ function handleReplayIframe(){
 //hide all replay iframes
 var allRelpayIframes = $(".replay-images iframe")
 allRelpayIframes.hide();
+    for (i = 0; i < allRelpayIframes.length; i++) {
+        const iframe = allRelpayIframes[i];
+console.log("handleReplayIframe", $(iframe).attr("src"));
+/*
+        const iframeUrl = iframe.attr("src");
+*/
+        $(iframe).attr("data-src", $(iframe).attr("src"));
+        $(iframe).attr("src", "about:blank");
+    }
 // Replay Souncdloud and mixcloud player
 $(".btn-replay").click(function () {
     stopAllAudio();
@@ -150,6 +159,7 @@ $(".btn-replay").click(function () {
     /*$(this).parent().find("iframe").show();*/
     $(this).next().show();
     var iframe = $(this).next(); // or some other selector to get the iframe
+    iframe.attr("src", iframe.attr("data-src"));
 
     iframe.addClass("replay-iframe");
     /*$(".page-body").css("height", "calc(100vh - 135px)")*/

@@ -179,8 +179,8 @@
                    <li class="tablinks pageSelector" pageSelector="page-sofas"><h2><a href="/#page-sofas">Sofas</a></h2></li>
                    <li class="tablinks pageTemplateSelector" pageSelector="page-radio-convives"><h2><a href="/#radio-convives">Convives</a></h2></li>
                    <li class="tablinks pageSelector" pageSelector="page-residence"><h2><a href="/#page-residence">Residence</a></h2></li>
-                   <li class="tablinks pageSelector" pageSelector="page-emissions"><h2><a href="/#page-emissions">Emissions</a></h2></li>
-                   <li class="tablinks pageTemplateSelector" pageSelector="page-radio-journal"><h2><a href="/#radio-journal">Journal</a></h2></li>
+                   <li class="tablinks pageSelector desktop-only" pageSelector="page-emissions"><h2><a href="/#page-emissions">Emissions</a></h2></li>
+                   <li class="tablinks pageTemplateSelector desktop-only" pageSelector="page-radio-journal"><h2><a href="/#radio-journal">Journal</a></h2></li>
                </ul>
             </div>
 			<?php
