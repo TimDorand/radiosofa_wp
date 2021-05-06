@@ -89,7 +89,7 @@
             soin par notre équipe de diggers de salon.<br></p>
         <!-- /wp:paragraph -->
 
-        <div class="mobile-only">
+        <div class="mobile-only text-centered">
             <div class="rs-home-footer"> <a target="_blank" href="https://facebook.com/webradio.sofa">
                     <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/logo_facebook.png" width="20" alt="Facebook logo">
                 </a>
