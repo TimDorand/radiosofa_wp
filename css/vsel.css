@@ -93,8 +93,14 @@
     .vsel-container{
         height: auto;
         flex-direction: row;
-    }
+        margin: 41px -37px -4px -37px;
+        max-height: 100%;
 
+    }
+    .vsel-content{
+        margin: 0 0 14px 0 !important;
+
+    }
 }
 
 /* BIG SCREEN */

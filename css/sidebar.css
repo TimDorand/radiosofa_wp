@@ -54,7 +54,7 @@
 
 .site-header{
     border-right: 1px solid black;
-    /*min-width: 220px;*/
+    min-width: 360px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -78,8 +78,8 @@
     display: flex;
     padding: 40px 0 20px 58px;
     border-bottom: 1px solid black;
-    /*max-width: 220px;*/
-}
+    height: 152px;
+    align-items: center;}
 .site-player :before,.site-player :after {
     display: block;
     content: "";
@@ -296,12 +296,15 @@ div[class^='src-components-current-track__articleCard--'] {
         width: 100%;
         background: white;
         z-index: 3;
-        border-bottom: 1px solid black;
+        border-bottom: none;
         margin: 0 0px 0 0px;
         border-top: 1px solid black;
+        height: auto;
+
     }
 
     .messagedefilant{
+        height: 25px;
         position: absolute;
         bottom: 112px;
         width: 100%;
@@ -310,14 +313,13 @@ div[class^='src-components-current-track__articleCard--'] {
         border-top: 1px solid black;
         margin: 0 0px 0 0px;
         padding-top: 2px;
+        margin: -1px 0;
     }
 
     .site-branding{
-        position: absolute;
-        top: 22px;
-        z-index: 9;
-        padding: 0;
-        left: calc(50% - 55px);
+    padding: 20px 0 0 0;
+        display: flex;
+        justify-content: center;
     }
     .site-branding img{
         width:55px;
@@ -327,7 +329,8 @@ div[class^='src-components-current-track__articleCard--'] {
         background: white;
         text-align: right;
         z-index: 0;
-        padding: 87px 0 0 21px;
+        padding: 17px 0 0 27px;
+        width: 100%;
         left: 0px;
     }
     .main-navigation ul{
@@ -346,7 +349,6 @@ div[class^='src-components-current-track__articleCard--'] {
     .site-header-second-part{
         display: none;
     }
-
 }
 @media screen and (min-width: 37.5em) {
 

@@ -28,13 +28,13 @@
 
 
 <div class="wp-block-columns">
-    <div class="wp-block-column" style="flex-basis:40%">
+    <div class="wp-block-column  rs-home-journal" style="flex-basis:40%">
         <div class="rs-title rs-title-default">
             <div><h2 class="clickable" onclick="fetchHideShowPage('page-radio-journal', 'Journal', true)">JOURNAL</h2></div>
         </div>
 
 
-        <div class="wp-block-group">
+        <div class="wp-block-group rs-title-journal">
             <div class="wp-block-group__inner-container">
                 <!-- wp:latest-posts {"categories":[{"id":8,"count":18,"description":"","link":"http://localhost:8888/category/articles/","name":"Articles","slug":"articles","taxonomy":"category","parent":0,"meta":[],"_links":{"self":[{"href":"http://localhost:8888/wp-json/wp/v2/categories/8"}],"collection":[{"href":"http://localhost:8888/wp-json/wp/v2/categories"}],"about":[{"href":"http://localhost:8888/wp-json/wp/v2/taxonomies/category"}],"wp:post_type":[{"href":"http://localhost:8888/wp-json/wp/v2/posts?categories=8"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}}],"postsToShow":3,"displayPostContent":true,"excerptLength":10,"displayPostDate":true,"align":"left","className":"bloc-articles"} /-->
                 <ul class="wp-block-latest-posts__list has-dates alignleft bloc-articles wp-block-latest-posts">
@@ -87,32 +87,51 @@
             équipe de diggers de salon.<br><br>Eclectisme garanti avec chaque semaine des sélections thématiques et des
             DJ sets, à écouter assis et debout.Radio Sofa vous partage en continu de la musique universelle piochée avec
             soin par notre équipe de diggers de salon.<br></p>
-        <!-- /wp:paragraph --></div>
+        <!-- /wp:paragraph -->
+
+        <div class="mobile-only">
+            <div class="rs-home-footer"> <a target="_blank" href="https://facebook.com/webradio.sofa">
+                    <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/logo_facebook.png" width="20" alt="Facebook logo">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/radio.sofa/">
+                    <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/logo_insta.png" width="20" alt="Instagram logo">
+                </a>
+                <a target="_blank" href="https://open.spotify.com/user/jackhadagroove/">
+                    <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/logo_spotify.png" width="20" alt="Spotify logo">
+                </a>
+            </div>
+        </div>
+    </div>
 
     <!-- wp:column -->
-    <div class="wp-block-column">
+    <div class="wp-block-column rs-home-convives">
         <div class="rs-title rs-title-dark">
             <div><h2 class="clickable" onclick="fetchHideShowPage('page-radio-convives', 'Convives', true)">CONVIVES</h2></div>
         </div>
 
+        <span class="mobile-container">
         <!-- wp:latest-posts {"categories":[{"id":9,"count":2,"description":"","link":"http://localhost:8888/category/convives/","name":"Convives","slug":"convives","taxonomy":"category","parent":0,"meta":[],"_links":{"self":[{"href":"http://localhost:8888/wp-json/wp/v2/categories/9"}],"collection":[{"href":"http://localhost:8888/wp-json/wp/v2/categories"}],"about":[{"href":"http://localhost:8888/wp-json/wp/v2/taxonomies/category"}],"wp:post_type":[{"href":"http://localhost:8888/wp-json/wp/v2/posts?categories=9"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}}],"postsToShow":6,"displayPostContent":true,"displayPostContentRadio":"full_post","postLayout":"grid","displayFeaturedImage":true} /-->
 
-        <!-- wp:columns {"className":"replay-images"} -->
-        <div class="wp-block-columns replay-images"><!-- wp:column -->
-            <?php
-            $categoryConvives = get_category_by_slug("Convives");
-            $recentConvives = get_posts(["numberposts" => 6, "category" => $categoryConvives->cat_ID]);
- /*           foreach ($recentConvives as $post) {
-                echo '<div data-post-id="' . $post->post_name . '"><h2 class="post-title"><a href="/#article-' . $post->post_name . '">' . $post->post_title . '</a></h2>' . $post->post_excerpt . '</div><hr/>';
-            }*/
-            foreach ($recentConvives as $post) {
-                $image = get_the_post_thumbnail();
-                echo '<div data-post-id="' . $post->post_name . '" class="ondes-convives-post" >';
-                echo $image;
-                echo $post->post_content;
-                echo '</div>';
-            }
-            ?>
-        </div>
+            <!-- wp:columns {"className":"replay-images"} -->
+            <div class="wp-block-columns replay-images"><!-- wp:column -->
+                <?php
+                $categoryConvives = get_category_by_slug("Convives");
+                $recentConvives = get_posts(["numberposts" => 6, "category" => $categoryConvives->cat_ID]);
+     /*           foreach ($recentConvives as $post) {
+                    echo '<div data-post-id="' . $post->post_name . '"><h2 class="post-title"><a href="/#article-' . $post->post_name . '">' . $post->post_title . '</a></h2>' . $post->post_excerpt . '</div><hr/>';
+                }*/
+                foreach ($recentConvives as $post) {
+                    $image = get_the_post_thumbnail();
+                    echo '<div data-post-id="' . $post->post_name . '" class="ondes-convives-post" >';
+                    echo $image;
+                    echo $post->post_content;
+                    echo '</div>';
+                }
+                ?>
+            </div>
+        </span>
     </div>
+
+    <br/>
+    <br/>
 </div>

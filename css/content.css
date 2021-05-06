@@ -390,7 +390,7 @@ small {
     display:none;
 }
 .desktop-only{
-    display:flex;
+    display:block;
 }
 /* MOBILE */
 @media screen and (max-width: 600px) {
@@ -405,7 +405,6 @@ small {
     .page-body {
         flex-direction: column;
         border: none;
-        border-top: 1px solid black;
     }
 
     .img-visu-mois img {
@@ -429,6 +428,47 @@ small {
         margin: 4px 0 0 0;
         font-size:16px;
     }
+
+
+
+    .home-agenda{
+        height:auto;
+    }
+    .rs-home-journal{
+        order: 2;
+
+    }
+    .rs-home-convives{
+
+        order: 1
+    }
+    .rs-home-convives .replay-images{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 180%;
+    }
+    .ondes-convives-post {
+        margin-right: 20px;
+    }
+    .mobile-container{
+        overflow: scroll;
+        margin: 0 -55px 0 -37px;
+        display: block;
+    }
+    .rs-home-journal .wp-block-latest-posts__list, .rs-home-journal .text-justify{
+        margin: 0 -37px;
+    }
+    .rs-home-journal{
+        margin-bottom: 100px;
+    }
+    .rs-home-footer{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 50%;
+        margin-top: 50px;
+    }
+    }
+
 }
-
-
