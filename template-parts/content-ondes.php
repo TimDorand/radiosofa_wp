@@ -88,7 +88,7 @@
             <div class="wp-block-columns replay-images"><!-- wp:column -->
                 <?php
                 $categoryConvives = get_category_by_slug("Convives");
-                $recentConvives = get_posts(["numberposts" => 6, "category" => $categoryConvives->cat_ID]);
+                $recentConvives = get_posts(["numberposts" => 3, "category" => $categoryConvives->cat_ID]);
                 /*           foreach ($recentConvives as $post) {
                                echo '<div data-post-id="' . $post->post_name . '"><h2 class="post-title"><a href="/#article-' . $post->post_name . '">' . $post->post_title . '</a></h2>' . $post->post_excerpt . '</div><hr/>';
                            }*/
@@ -109,14 +109,9 @@
 
 </div>
 
-<hr/>
 
-<div style="margin-top:50px">
-    <div><h3 onclick="openPage(event, 'page-actualites')">A PROPOS</h3></div>
-</div>
-</div>
-</div>
-<!-- /wp:group -->
+<div class="ondes-footer">
+    <div><h3 onclick="openPage(event, 'page-actualites')">à propos</h3></div>
 
 <!-- wp:paragraph {"className":"text-justify"} -->
 <p class="text-justify">Radio Sofa vous partage en continu de la musique universelle piochée avec soin par notre
@@ -124,6 +119,7 @@
     DJ sets, à écouter assis et debout.Radio Sofa vous partage en continu de la musique universelle piochée avec
     soin par notre équipe de diggers de salon.<br></p>
 <!-- /wp:paragraph -->
+</div>
 
 <div class="mobile-only text-centered">
     <div class="rs-home-footer"><a target="_blank" href="https://facebook.com/webradio.sofa">

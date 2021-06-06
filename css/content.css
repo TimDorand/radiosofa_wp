@@ -163,7 +163,7 @@ display:flex;
     background: rgba(25, 0, 255, 0.48);
 }
 .rs-home-journal{
-    margin-top: 50px;
+    margin-top: 90px;
 }
 .ondes-first-column{flex-basis:47%;}
 .ondes-second-column{flex-basis:53%;}
@@ -291,6 +291,16 @@ display:flex;
     margin: 0;
 }
 
+.ondes-footer{
+    margin: 0px -40px;
+    border-top:1px solid black;
+    padding:0 40px;
+
+}
+.ondes-footer h3{
+font-weight: 300;
+    font-style:italic;
+}
 /* IFRAMES */
 
 .replay-iframe {
