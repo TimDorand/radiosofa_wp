@@ -104,8 +104,9 @@
     // Envoyer une variable de PHP à JS proprement
     wp_localize_script( 'rs-ajax', 'ajaxUrl', admin_url( 'admin-ajax.php') );
     wp_localize_script( 'rs-ajax', 'isAdmin', is_admin());
+    wp_localize_script( 'rs-main', 'url_visuel_mois', get_field("url_visuel_mois"));
+    wp_localize_script( 'rs-main', 'description_visuel_mois', get_field("description_visuel_mois"));
     ?>
-
 </head>
 
 <body <?php body_class(); ?>>
@@ -127,11 +128,15 @@
 	<header id="masthead" class="site-header">
         <div class="site-header-first-part">
         <div class="site-player">
-            <audio controls preload="none">
+
+            <audio id="sidebar-player-audio" controls preload="none" oncanplay="myOnCanPlayFunction()"
+                   oncanplaythrough="myOnCanPlayThroughFunction()"
+                   onloadeddata="myOnLoadedData()">
                 <source src="" type="audio/mpeg" style="width:100px">
                 Your browser does not support the audio element.
             </audio>
-            <a class="play" href="#"></a>
+            <div class="lds-dual-ring"></div>
+            <a id="sidebar-player" class="play" href="#"></a>
             <div id="rk-current-track-widget" data-id="radio-sofa" data-buy="0"></div>
             <!-- <script type="text/javascript" src="https://widget.radioking.io/current-track/build/script.min.js"></script> -->
             <script type="text/javascript" src="<?php echo site_url();?>/wp-content/themes/radiosofa/js/current-track/rk-current-track.js"></script>

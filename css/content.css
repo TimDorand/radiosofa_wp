@@ -109,10 +109,15 @@ display:flex;
 }
 
 .tabcontent {
-    padding: 15px 55px 55px 55px;
+    padding: 15px 40px 40px 40px;
 }
 
 /* HOME */
+@media (min-width: 782px){
+    .wp-block-column:not(:first-child) {
+        margin-left: 42px;
+    }
+}
 .img-bordered img {
     border: 1px solid black;
 }
@@ -127,7 +132,7 @@ display:flex;
     width: calc(100% - 10px);
     justify-content: flex-end;
     border: 1px solid black;
-    height: 41px;
+    height: 84px;
     margin: 10px 0 20px 0;
 }
 
@@ -135,14 +140,15 @@ display:flex;
     border: 1px solid black;
     width: 100%;
     background: white;
-    height: 41px;
+    height: 83px;
     margin: -9px -10px 0 0;
 }
 
 .rs-title h2 {
     font-weight: 400;
+    font-size: 2.6rem;
     text-align: center;
-    margin: 6px 0 0 0;
+    margin: 27px 0 0 0;
 }
 
 .rs-title-light {
@@ -156,10 +162,15 @@ display:flex;
 .rs-title-dark {
     background: rgba(25, 0, 255, 0.48);
 }
-
+.rs-home-journal{
+    margin-top: 50px;
+}
+.ondes-first-column{flex-basis:47%;}
+.ondes-second-column{flex-basis:53%;}
+/*
 .home-agenda {
     height: 28vw;
-}
+}*/
 
 /* ONDES JOURNAL */
 .ondes-journal-post {

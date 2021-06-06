@@ -1,32 +1,57 @@
-// On click functions
-(function ($) {
-    // Player
-    $("audio + a").click(function (e) {
-        e.preventDefault();
-        var song = $(this).prev('audio').get(0);
-        var src = "https://www.radioking.com/play/radio-sofa";
 
-        if (song.paused) {
-            stopAllAudio();
-            song.src = src;
-            song.load();
-            song.play();
+function myOnCanPlayFunction() { console.log('Can play'); }
+function myOnCanPlayThroughFunction() { console.log('Can play through'); }
+function myOnLoadedData() {
+$(".lds-dual-ring").hide();
+$("#sidebar-player").show();
+$("#sidebar-player").addClass("pause");
+}
+
+function playRS(){
+    var song = $("#sidebar-player-audio").get(0);
+    var src = "https://www.radioking.com/play/radio-sofa";
+    console.warn(song.paused);
+    if (song.paused) {
+        stopAllAudio();
+        song.src = src;
+        song.load();
+        song.play();
 //         $(this).text("❙ ❙");
-            $(this).addClass("pause");
-            $(this).removeClass("play");
-            $("iframe").hide();
-            $(".page-body").css("height", "100%")
+        $("#sidebar-player").hide();
+        $(".lds-dual-ring").show();
+        $("#sidebar-player").removeClass("play");
+        $("iframe").hide();
+        $(".page-body").css("height", "100%")
 
-        } else {
-            stopAllAudio();
-            song.pause();
-            song.currentTime = 0;
-            song.src = '';
+    } else {
+        stopAllAudio();
+        song.pause();
+        song.currentTime = 0;
+        song.src = '';
 
 //         $(this).text("▶");
-            $(this).addClass("play");
-            $(this).removeClass("pause");
+        $("#sidebar-player").addClass("play");
+        $("#sidebar-player").removeClass("pause");
+    }
+}
+// On click functions
+(function ($) {
+
+
+    // Player
+    $(".lds-dual-ring").click(function(e){
+        playRS();
+
+    })
+    setTimeout(function(){
+        if($("div[class^='src-components-current-track__title--']")[0].childNodes[0].length > 25){
+            //TODO: defilement du player
+
         }
+    },1000)
+    $("#sidebar-player").click(function (e) {
+        e.preventDefault();
+        playRS();
     });
 
     if (!$(location).attr('hash').split('#').pop()) {
@@ -34,6 +59,8 @@
     }
 
     $(document).ready(function () {
+        // hide player spinner
+        $(".lds-dual-ring").hide();
         // Navigation: Open page from anchor
         var anchor = $(location).attr('hash').split('#').pop();
 
@@ -62,6 +89,7 @@
         });
 
         console.debug('end navigation');
+
 
         // Mobile Menu toggle
         $("#menu-toggle").click(function () {

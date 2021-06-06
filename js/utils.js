@@ -86,6 +86,11 @@ function openPage(evt, selector, pageName) {
         handleSofas();
     }else if(pageName === "Journal" || pageName ==="Ondes"){
         handleJournal();
+
+        setTimeout(function(){
+            $("#visuel_mois").attr('src', url_visuel_mois);
+            $(".description_visuel_mois").html(description_visuel_mois);
+        },0)
     }
 }
 
