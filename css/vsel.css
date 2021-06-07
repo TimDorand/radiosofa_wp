@@ -107,6 +107,6 @@
 /* BIG SCREEN */
 @media screen and (min-width: 1300px) {
     .vsel-container{
-        max-height: 24vw;
+        max-height: 15vw;
     }
 }
