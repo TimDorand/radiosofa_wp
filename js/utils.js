@@ -90,6 +90,12 @@ function openPage(evt, selector, pageName) {
         setTimeout(function(){
             $("#visuel_mois").attr('src', url_visuel_mois);
             $(".description_visuel_mois").html(description_visuel_mois);
+
+            $("#ondes-more-planning").click(function(e) {
+                e.preventDefault();
+                $(".vsel-container").css("max-height", "100%");
+            });
+
         },0)
     }
 }

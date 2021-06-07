@@ -67,6 +67,8 @@
             <div><h2>AGENDA</h2></div>
         </div>
         <?php echo do_shortcode("[vsel]"); ?>
+
+        <div class="text-centered" id="ondes-more-planning">V</div>
         <div class="wp-block-columns"><!-- wp:column -->
             <div class="wp-block-column"></div>
 

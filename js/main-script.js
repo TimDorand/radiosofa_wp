@@ -43,7 +43,7 @@ function playRS(){
         playRS();
 
     })
-    setTimeout(function(){
+    setInterval(function(){
         if($("div[class^='src-components-current-track__title--']")[0].childNodes[0].length > 25){
             //TODO: defilement du player
 
@@ -61,6 +61,7 @@ function playRS(){
     $(document).ready(function () {
         // hide player spinner
         $(".lds-dual-ring").hide();
+
         // Navigation: Open page from anchor
         var anchor = $(location).attr('hash').split('#').pop();
 
