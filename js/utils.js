@@ -93,7 +93,11 @@ function openPage(evt, selector, pageName) {
 
             $("#ondes-more-planning").click(function(e) {
                 e.preventDefault();
-                $(".vsel-container").css("max-height", "100%");
+                if($(".vsel-container").hasClass(".max-height-100")){
+                    $(".vsel-container").removeClass(".max-height-100");
+                } else {
+                    $(".vsel-container").addClass(".max-height-100");
+                }
             });
 
         },0)

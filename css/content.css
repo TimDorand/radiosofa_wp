@@ -122,6 +122,10 @@ display:flex;
     border: 1px solid black;
 }
 
+#ondes-more-planning{
+    cursor:pointer;
+    
+}
 .img-bordered figcaption {
     text-align: center;
     font-size: 1.4rem;
