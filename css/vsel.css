@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-height: 22vw;
+    max-height: 13vw;
     overflow: hidden;
 }
 #vsel .vsel-content{
@@ -93,7 +93,7 @@
 }
 
 .max-height-100{
-    max-height:100%;
+    max-height:100% !important;
 }
 
 /*MOBILE */
@@ -113,7 +113,7 @@
 
 /* BIG SCREEN */
 @media screen and (min-width: 1300px) {
-    .vsel-container{
-        max-height: 15vw;
-    }
+/*    .vsel-container{
+        max-height: 13vw;
+    }*/
 }
