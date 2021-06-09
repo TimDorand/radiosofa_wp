@@ -179,3 +179,4 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 include get_template_directory() . '/inc/ajax.php';
+add_filter( 'wp_lazy_loading_enabled', '__return_false' );
