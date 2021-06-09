@@ -3,8 +3,8 @@
 ?>
 <div class="wp-block-columns">
     <div class="wp-block-column ondes-first-column">
-        <figure class="wp-block-image size-large img-bordered img-visu-mois"><img
-                    src="https://radiosofa.timothee.pro/wp-content/uploads/2021/03/SOFA-scaled.jpeg"
+        <figure class="wp-block-image size-large img-bordered img-visu-mois" ><img
+                    src=""
                     alt="Visuel du mois" id="visuel_mois">
             <figcaption class="description_visuel_mois">Le sofa du mois par Moon Art Club Template Parts</figcaption>
         </figure>
