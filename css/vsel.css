@@ -97,17 +97,22 @@
 }
 
 /*MOBILE */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .vsel-container{
         height: auto;
         flex-direction: row;
-        margin: 41px -37px -4px -37px;
-        max-height: 100%;
-
+        margin: 24px -25px -6px -24px;
+        max-height: 20%;
     }
     .vsel-content{
         margin: 0 0 14px 0 !important;
-
+    }
+    .vsel-meta-date{
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+    #ondes-more-planning {
+        margin-bottom: 0;
     }
 }
 

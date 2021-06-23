@@ -118,6 +118,7 @@
 
 div[class^='src-components-current-track__title-block--'] > div {
     font-weight: 700;
+    line-height: normal;
 }
 div[class^='src-components-current-track__artist--'] {
     margin-top: 4px;
@@ -284,7 +285,7 @@ div[class^='src-components-current-track__articleCard--'] {
     transform: scale(1);
 }
 /* MOBILE */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 
     .site-header{
         border: none;
