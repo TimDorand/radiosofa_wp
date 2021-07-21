@@ -233,6 +233,11 @@ display:flex;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+}
+.rs-block-columns .replay-images{
+    height: 180px;
+    overflow: hidden;
     /*padding-bottom: 30px;*/
 }
 
@@ -357,7 +362,7 @@ font-weight: 300;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
+    visibility: hidden;
 }
 
 .site-convives .replay-info {

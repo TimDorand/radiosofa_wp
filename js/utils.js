@@ -76,7 +76,7 @@ function openPage(evt, selector, pageName) {
 
     if (pageName === "Convives" || pageName === "Ondes") {
         setTimeout(function () {
-            handleReplayIframe();
+            handleReplayIframe((pageName === "Convives"));
         }, 100)
     } else {
         $("#spin").hide();
@@ -154,23 +154,23 @@ function handleSofas() {
 }
 
 
-function handleReplayIframe() {
-    var spinner = $("#spin");
-    spinner.show();
-    $("site-convives").css("visility", "hidden");
-    //hide all replay iframes
+function handleReplayIframe(displaySpinner) {
+    if(displaySpinner){
+        var spinner = $("#spin");
+        spinner.show();
+        $(".site-convives").css("visibility", "hidden");
+    }
     var allRelpayIframes = $(".replay-images iframe")
     allRelpayIframes.hide();
     for (i = 0; i < allRelpayIframes.length; i++) {
-        $("site-convives").css("visility", "hidden");
         const iframe = allRelpayIframes[i];
         $(iframe).attr("data-src", $(iframe).attr("src"));
         $(iframe).attr("src", "about:blank");
-        if (i === allRelpayIframes.length - 1) {
+        if (displaySpinner && i === allRelpayIframes.length - 1) {
             setTimeout(function() {
                 spinner.hide();
-                $("site-convives").css("visility", "visible");
-            },2000)
+                $(".site-convives").css("visibility", "visible");
+            },1000)
         }
     }
 
