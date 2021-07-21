@@ -1,6 +1,10 @@
 
-function myOnCanPlayFunction() { console.log('Can play'); }
-function myOnCanPlayThroughFunction() { console.log('Can play through'); }
+function myOnCanPlayFunction() {
+    //console.log('Can play');
+}
+function myOnCanPlayThroughFunction() {
+    //console.log('Can play through');
+    }
 function myOnLoadedData() {
 $(".lds-dual-ring").hide();
 $("#sidebar-player").show();
@@ -10,7 +14,6 @@ $("#sidebar-player").addClass("pause");
 function playRS(){
     var song = $("#sidebar-player-audio").get(0);
     var src = "https://www.radioking.com/play/radio-sofa";
-    console.warn(song.paused);
     if (song.paused) {
         stopAllAudio();
         song.src = src;
@@ -67,7 +70,6 @@ function playRS(){
 
         // Url to Article
         if (anchor.includes("article-")) {
-            console.debug('end article');
 
             fetchPost(anchor.substr(anchor.lastIndexOf('article-') + 8))
 
@@ -88,9 +90,6 @@ function playRS(){
         $(".pageTemplateSelector").click(function (e) {
             fetchHideShowPage($(this).attr("pageSelector"), selectorRadioToPageName($(this).attr("pageSelector")), true);
         });
-
-        console.debug('end navigation');
-
 
         // Mobile Menu toggle
             $("#menu-toggle").click(function () {

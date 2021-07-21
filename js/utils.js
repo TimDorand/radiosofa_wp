@@ -1,7 +1,6 @@
 // Find and replace text: planning
 var ladate = new Date();
 var tab_jour = new Array("dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi");
-console.log("Nous sommes un " + tab_jour[ladate.getDay()]);
 
 function findMyText(needle, replacementText) {
     var myOldString = $("#vsel").html();
@@ -23,7 +22,6 @@ function findMyText2(needle, replacement) {
         var boldText = "            " + needle + "            ";
         replaced = haystackText.replace(match, boldText);
     }
-    console.warn(match)
     document.getElementById("vsel").innerHTML = replaced;
 }
 
@@ -36,7 +34,7 @@ function stopAllAudio() {
     });
     var allRelpayIframes = $(".replay-images iframe")
     allRelpayIframes.hide();
-    console.debug('[stopAllAudio]', allRelpayIframes);
+    //console.debug('[stopAllAudio]', allRelpayIframes);
     for (let count = 0; count < allRelpayIframes.length; count++) {
         // Stop iframe audio
         var srcIframe = $(allRelpayIframes[count]).attr('src');
@@ -122,7 +120,7 @@ function handleResidence() {
     setTimeout(function () {
         $("#page-residence .wp-block-image").click(function () {
             var resident = $(this).children("figcaption").text();
-            console.warn("[Résidence]", resident);
+            console.debug("[Résidence]", resident);
             fetchHideShowPage("page-residence", "RESIDENCE " + resident);
         });
     }, 0)
@@ -137,7 +135,6 @@ function handleJournal() {
             $("html, body").scrollTop(0);
         })
         $('.post-title').click(function () {
-            console.debug('test');
             var post_id = $(this).parent().attr('data-post-id');
             fetchPost(post_id);
             $("html, body").scrollTop(0);
@@ -165,19 +162,15 @@ function handleReplayIframe() {
     var allRelpayIframes = $(".replay-images iframe")
     allRelpayIframes.hide();
     for (i = 0; i < allRelpayIframes.length; i++) {
-        spinner.show();
-
+        $("site-convives").css("visility", "hidden");
         const iframe = allRelpayIframes[i];
-        /*
-                const iframeUrl = iframe.attr("src");
-        */
         $(iframe).attr("data-src", $(iframe).attr("src"));
         $(iframe).attr("src", "about:blank");
         if (i === allRelpayIframes.length - 1) {
-            spinner.hide();
             setTimeout(function() {
+                spinner.hide();
                 $("site-convives").css("visility", "visible");
-            },1000)
+            },2000)
         }
     }
 
@@ -196,7 +189,6 @@ function handleReplayIframe() {
         $(this).next().show();
         var iframe = $(this).next(); // or some other selector to get the iframe
         iframe.attr("src", iframe.attr("data-src"));
-        console.warn('clicked')
 
         iframe.addClass("replay-iframe");
         /*$(".page-body").css("height", "calc(100vh - 135px)")*/

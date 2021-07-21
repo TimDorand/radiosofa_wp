@@ -103,7 +103,7 @@ display:flex;
 .img-loader {
     position: absolute;
     left: calc(400px + 6%);
-    top: 14%;
+    top: 14vh;
     width: 50%;
 }
 .small-img-loader {
