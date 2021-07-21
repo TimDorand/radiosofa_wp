@@ -97,14 +97,21 @@ display:flex;
     height: 100%;
 }
 
-/*.wp-block-column:not(:first-child) {
+/*.rs-block-column:not(:first-child) {
     margin-left: 53px;
 }*/
 .img-loader {
     position: absolute;
-    left: 30%;
-    top: 7%;
-    width: 40%;
+    left: calc(400px + 6%);
+    top: 14%;
+    width: 50%;
+}
+.small-img-loader {
+    position: absolute;
+    left: 190px;
+    top: 187px;
+    width: 150px;
+    display:none;
 }
 
 .site-header audio {
@@ -117,7 +124,7 @@ display:flex;
 
 /* HOME */
 @media (min-width: 782px){
-    .wp-block-column:not(:first-child) {
+    .rs-block-column:not(:first-child) {
         margin-left: 42px;
     }
 }
@@ -172,8 +179,17 @@ display:flex;
 .rs-home-journal{
     margin-top: 90px;
 }
-.ondes-first-column{flex-basis:47%;}
-.ondes-second-column{flex-basis:53%;}
+.rs-block-columns{
+    display:flex;
+    flex-direction: row;
+}
+.ondes-first-column{
+    width: 44%;
+}
+.ondes-second-column{
+
+}
+
 /*
 .home-agenda {
     height: 28vw;
@@ -192,20 +208,20 @@ display:flex;
     -webkit-box-orient: vertical;
 }
 
-.wp-block-columns:first-child {
+.rs-block-columns:first-child {
     margin-bottom: 17px;
 }
 
-.wp-block-column p {
+.rs-block-column p {
     margin-top: 0;
 }
 
-.wp-block-latest-posts {
+.rs-block-latest-posts {
     margin: 0;
     padding: 0;
 }
 
-.wp-block-latest-posts .wp-block-latest-posts__list {
+.rs-block-latest-posts .rs-block-latest-posts__list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -221,12 +237,9 @@ display:flex;
 }
 
 .ondes-convives-post {
-    width: 30%;
+    width: 47%;
 }
 
-.ondes-convives-post img {
-    border: 1px solid black;
-}
 
 .replay-images .btn-replay {
     font-size: 10px;
@@ -258,17 +271,17 @@ display:flex;
 .bloc-articles {
 }
 
-.wp-block-latest-posts li {
+.rs-block-latest-posts li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.wp-block-latest-posts time {
+.rs-block-latest-posts time {
     flex-basis: 62px;
 }
 
-.wp-block-latest-posts a {
+.rs-block-latest-posts a {
     font-size: 1.7rem;
     order: 1;
     flex-basis: 78%;
@@ -277,7 +290,7 @@ display:flex;
     text-transform: uppercase;
 }
 
-.wp-block-latest-posts__post-excerpt {
+.rs-block-latest-posts__post-excerpt {
 
     margin-top: 0;
     text-align: justify;
@@ -285,7 +298,7 @@ display:flex;
     margin-bottom: 26px;
 }
 
-.wp-block-latest-posts__post-date {
+.rs-block-latest-posts__post-date {
     order: 0;
     /*    flex-basis: 8%;*/
     font-weight: 400;
@@ -294,7 +307,7 @@ display:flex;
     color: black;
 }
 
-.wp-block-latest-posts.alignleft {
+.rs-block-latest-posts.alignleft {
     margin: 0;
 }
 
@@ -313,9 +326,9 @@ font-weight: 300;
 .replay-iframe {
     z-index: 4;
     position: absolute;
-    width: 75%;
+    width: calc(100% - 400px);
     background: white;
-    left: 25%;
+    left: 400px;
     border-top: 1px solid black;
     padding: 10px 9px;
     height: 41px;
@@ -375,7 +388,7 @@ font-weight: 300;
 
 /* SOFAS */
 
-.sofas-posts .wp-block-column {
+.sofas-posts .rs-block-column {
     cursor: pointer;
 }
 
@@ -425,7 +438,7 @@ font-weight: 300;
     display:block;
 }
 /* MOBILE */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 782px) {
 
     .mobile-only{
         display:flex;
@@ -442,6 +455,13 @@ font-weight: 300;
         border: none;
     }
 
+    .ondes-first-column{
+
+        width: 100%;
+    }
+    .rs-block-columns{
+        flex-direction: column;
+    }
     .img-visu-mois img {
         width: 100%;
     }
@@ -472,15 +492,16 @@ font-weight: 300;
 
     }
     .rs-home-convives{
-
         order: 1
     }
     .rs-home-convives .replay-images{
         display: flex;
         flex-wrap: nowrap;
         width: 180%;
+        flex-direction: row;
     }
     .ondes-convives-post {
+        width:30%;
         margin-right: 20px;
     }
     .mobile-container{
@@ -488,11 +509,16 @@ font-weight: 300;
         margin:45px -55px 0 -27px;
         display: block;
     }
-    .rs-home-journal .wp-block-latest-posts__list, .rs-home-journal .text-justify{
+    .rs-home-journal .rs-block-latest-posts__list, .rs-home-journal .text-justify{
         margin: 30px -37px;
     }
     .rs-home-journal {
+        flex-direction: column;
         margin-top: 0px;
+    }
+    .ondes-journal-post{
+        height: 30px;
+
     }
     .rs-home-footer{
 

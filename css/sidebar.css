@@ -285,7 +285,7 @@ div[class^='src-components-current-track__articleCard--'] {
     transform: scale(1);
 }
 /* MOBILE */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 782px) {
 
     .site-header{
         border: none;

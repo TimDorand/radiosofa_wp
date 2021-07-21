@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-height: 13vw;
+    max-height: 25vw;
     overflow: hidden;
 }
 #vsel .vsel-content{
@@ -60,13 +60,14 @@
     padding: 0px !important;
     display: inline-block !important;
     order: 1;
-    letter-spacing: 0!important;
-    font-weight: 500 !important;
-    font-size: inherit !important;
+    letter-spacing: -1px;
+    font-weight: 700 !important;
+    font-size: 27px;
+    line-height: 30px;
 }
 .vsel-info, .vsel-image-info{
 }
-.vsel-info .wp-block-table{
+.vsel-info .rs-block-table{
     margin:0;
     margin-bottom: 5px;
 }
@@ -97,12 +98,12 @@
 }
 
 /*MOBILE */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 782px) {
     .vsel-container{
         height: auto;
         flex-direction: row;
         margin: 24px -25px -6px -24px;
-        max-height: 20%;
+        max-height: 20vh;
     }
     .vsel-content{
         margin: 0 0 14px 0 !important;

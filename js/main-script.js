@@ -93,7 +93,7 @@ function playRS(){
 
 
         // Mobile Menu toggle
-        $("#menu-toggle").click(function () {
+            $("#menu-toggle").click(function () {
             $("#primary-menu").toggle();
         });
 
@@ -118,7 +118,6 @@ function playRS(){
         $("#link-all-articles").click(function () {
             $(".post-single").hide();
         })
-
 
         if (!localStorage.getItem("debug")) {
             // Load all pages in background

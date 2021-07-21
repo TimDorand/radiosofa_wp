@@ -134,7 +134,7 @@ function fetchPage(selector, page_name, is_template) {
         },
         cache: !is_template,
         success: function (data) {
-            console.debug("[fetchPage]  elector: ", selector, " is template", is_template);
+            console.debug("[fetchPage] selector: ", selector, " is template", is_template);
             if (is_template) {
                 openPage(null, selector, page_name)
                 $("#" + selector).show().html(data.replace('{"success":true}', ''));
@@ -150,7 +150,7 @@ function fetchPage(selector, page_name, is_template) {
                 }
             }
 
-            $("#spin").hide();
+            if(selector !== "page-radio-convives") $("#spin").hide();
         },
         error: function (xhr, textStatus, error) {
             console.error("[fetchPage] Erreur", xhr, textStatus, error);

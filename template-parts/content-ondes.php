@@ -1,9 +1,9 @@
 <?php
 
 ?>
-<div class="wp-block-columns">
-    <div class="wp-block-column ondes-first-column">
-        <figure class="wp-block-image size-large img-bordered img-visu-mois" ><img
+<div class="rs-block-columns">
+    <div class="rs-block-column ondes-first-column">
+        <figure class="rs-block-image size-large img-bordered img-visu-mois" ><img
                     src=""
                     alt="Visuel du mois" id="visuel_mois">
             <figcaption class="description_visuel_mois">Le sofa du mois par Moon Art Club Template Parts</figcaption>
@@ -16,10 +16,10 @@
             </div>
 
 
-            <div class="wp-block-group rs-title-journal">
-                <div class="wp-block-group__inner-container">
+            <div class="rs-block-group rs-title-journal">
+                <div class="rs-block-group__inner-container">
                     <!-- wp:latest-posts {"categories":[{"id":8,"count":18,"description":"","link":"http://localhost:8888/category/articles/","name":"Articles","slug":"articles","taxonomy":"category","parent":0,"meta":[],"_links":{"self":[{"href":"http://localhost:8888/wp-json/wp/v2/categories/8"}],"collection":[{"href":"http://localhost:8888/wp-json/wp/v2/categories"}],"about":[{"href":"http://localhost:8888/wp-json/wp/v2/taxonomies/category"}],"wp:post_type":[{"href":"http://localhost:8888/wp-json/wp/v2/posts?categories=8"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}}],"postsToShow":3,"displayPostContent":true,"excerptLength":10,"displayPostDate":true,"align":"left","className":"bloc-articles"} /-->
-                    <ul class="wp-block-latest-posts__list has-dates alignleft bloc-articles wp-block-latest-posts">
+                    <ul class="rs-block-latest-posts__list has-dates alignleft bloc-articles rs-block-latest-posts">
 
                         <?php
                         $categoryArticles = get_category_by_slug("Articles");
@@ -27,30 +27,30 @@
                         foreach ($recentArticles as $post) {
                             $post_date = get_the_date('j n');
                             echo '<li><a class="ondes-journal-post-link" data-post-id="' . $post->post_name . '" href="/#article-' . $post->post_name . '">' . $post->post_title . '</a>
-                        <time datetime="' . $post->post_date_gmt . '" class="wp-block-latest-posts__post-date">' . $post_date . '</time>
-                        <div class="wp-block-latest-posts__post-excerpt ondes-journal-post">' . $post->post_content . '
+                        <time datetime="' . $post->post_date_gmt . '" class="rs-block-latest-posts__post-date">' . $post_date . '</time>
+                        <div class="rs-block-latest-posts__post-excerpt ondes-journal-post">' . $post->post_content . '
                     </div>
                     </li>';
                         }
                         ?>
                         <!--<li><a href="https://radiosofa.timothee.pro/radio-sofa-invite-mic-mac/">RADIO SOFA INVITE MIC
                                 MAC</a>
-                            <time datetime="2021-02-27T14:34:00+01:00" class="wp-block-latest-posts__post-date">27 02</time>
-                            <div class="wp-block-latest-posts__post-excerpt">En attendant d’arpenter à nouveau les fêtes
+                            <time datetime="2021-02-27T14:34:00+01:00" class="rs-block-latest-posts__post-date">27 02</time>
+                            <div class="rs-block-latest-posts__post-excerpt">En attendant d’arpenter à nouveau les fêtes
                                 franciliennes, les trois […]
                             </div>
                         </li>
                         <li><a href="https://radiosofa.timothee.pro/nouvelle-release-italo-de-smib/">NOUVELLE RELEASE ITALO
                                 DE SMIB</a>
-                            <time datetime="2021-02-23T19:44:44+01:00" class="wp-block-latest-posts__post-date">23 02</time>
-                            <div class="wp-block-latest-posts__post-excerpt">Release day pour SMIB ! Les tracks de son
+                            <time datetime="2021-02-23T19:44:44+01:00" class="rs-block-latest-posts__post-date">23 02</time>
+                            <div class="rs-block-latest-posts__post-excerpt">Release day pour SMIB ! Les tracks de son
                                 second […]
                             </div>
                         </li>
                         <li><a href="https://radiosofa.timothee.pro/radio-sofa-invite-itineraire-bis/">RADIO SOFA INVITE
                                 ITINÉRAIRE BIS</a>
-                            <time datetime="2021-02-19T19:58:00+01:00" class="wp-block-latest-posts__post-date">19 02</time>
-                            <div class="wp-block-latest-posts__post-excerpt">Le collectif Itinéraire Bis prend le contrôle
+                            <time datetime="2021-02-19T19:58:00+01:00" class="rs-block-latest-posts__post-date">19 02</time>
+                            <div class="rs-block-latest-posts__post-excerpt">Le collectif Itinéraire Bis prend le contrôle
                                 de nos ondes […]
                             </div>
                         </li>-->
@@ -62,18 +62,18 @@
     </div>
 
     <!-- wp:column {"className":"home-agenda"} -->
-    <div class="wp-block-column home-agenda ondes-second-column">
+    <div class="rs-block-column home-agenda ondes-second-column">
         <div class="rs-title rs-title-light">
             <div><h2>AGENDA</h2></div>
         </div>
         <?php echo do_shortcode("[vsel]"); ?>
 
-        <div class="text-centered" id="ondes-more-planning">▽</div>
-        <div class="wp-block-columns"><!-- wp:column -->
-            <div class="wp-block-column"></div>
+        <!--<div class="text-centered" id="ondes-more-planning">▽</div>-->
+        <div class="rs-block-columns"><!-- wp:column -->
+            <div class="rs-block-column"></div>
 
             <!-- wp:column -->
-            <div class="wp-block-column"></div>
+            <div class="rs-block-column"></div>
         </div>
 
 
@@ -87,7 +87,7 @@
         <!-- wp:latest-posts {"categories":[{"id":9,"count":2,"description":"","link":"http://localhost:8888/category/convives/","name":"Convives","slug":"convives","taxonomy":"category","parent":0,"meta":[],"_links":{"self":[{"href":"http://localhost:8888/wp-json/wp/v2/categories/9"}],"collection":[{"href":"http://localhost:8888/wp-json/wp/v2/categories"}],"about":[{"href":"http://localhost:8888/wp-json/wp/v2/taxonomies/category"}],"wp:post_type":[{"href":"http://localhost:8888/wp-json/wp/v2/posts?categories=9"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}}],"postsToShow":6,"displayPostContent":true,"displayPostContentRadio":"full_post","postLayout":"grid","displayFeaturedImage":true} /-->
 
                 <!-- wp:columns {"className":"replay-images"} -->
-            <div class="wp-block-columns replay-images"><!-- wp:column -->
+            <div class="rs-block-columns replay-images"><!-- wp:column -->
                 <?php
                 $categoryConvives = get_category_by_slug("Convives");
                 $recentConvives = get_posts(["numberposts" => 4, "category" => $categoryConvives->cat_ID]);
@@ -115,10 +115,10 @@
         </div>
 
 
-        <div class="wp-block-group rs-title-journal">
-            <div class="wp-block-group__inner-container">
+        <div class="rs-block-group rs-title-journal">
+            <div class="rs-block-group__inner-container">
                 <!-- wp:latest-posts {"categories":[{"id":8,"count":18,"description":"","link":"http://localhost:8888/category/articles/","name":"Articles","slug":"articles","taxonomy":"category","parent":0,"meta":[],"_links":{"self":[{"href":"http://localhost:8888/wp-json/wp/v2/categories/8"}],"collection":[{"href":"http://localhost:8888/wp-json/wp/v2/categories"}],"about":[{"href":"http://localhost:8888/wp-json/wp/v2/taxonomies/category"}],"wp:post_type":[{"href":"http://localhost:8888/wp-json/wp/v2/posts?categories=8"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}}],"postsToShow":3,"displayPostContent":true,"excerptLength":10,"displayPostDate":true,"align":"left","className":"bloc-articles"} /-->
-                <ul class="wp-block-latest-posts__list has-dates alignleft bloc-articles wp-block-latest-posts">
+                <ul class="rs-block-latest-posts__list has-dates alignleft bloc-articles rs-block-latest-posts">
 
                     <?php
                     $categoryArticles = get_category_by_slug("Articles");
@@ -126,30 +126,30 @@
                     foreach ($recentArticles as $post) {
                         $post_date = get_the_date('j n');
                         echo '<li><a class="ondes-journal-post-link" data-post-id="' . $post->post_name . '" href="/#article-' . $post->post_name . '">' . $post->post_title . '</a>
-                        <time datetime="' . $post->post_date_gmt . '" class="wp-block-latest-posts__post-date">' . $post_date . '</time>
-                        <div class="wp-block-latest-posts__post-excerpt ondes-journal-post">' . $post->post_content . '
+                        <time datetime="' . $post->post_date_gmt . '" class="rs-block-latest-posts__post-date">' . $post_date . '</time>
+                        <div class="rs-block-latest-posts__post-excerpt ondes-journal-post">' . $post->post_content . '
                     </div>
                     </li>';
                     }
                     ?>
                     <!--<li><a href="https://radiosofa.timothee.pro/radio-sofa-invite-mic-mac/">RADIO SOFA INVITE MIC
                             MAC</a>
-                        <time datetime="2021-02-27T14:34:00+01:00" class="wp-block-latest-posts__post-date">27 02</time>
-                        <div class="wp-block-latest-posts__post-excerpt">En attendant d’arpenter à nouveau les fêtes
+                        <time datetime="2021-02-27T14:34:00+01:00" class="rs-block-latest-posts__post-date">27 02</time>
+                        <div class="rs-block-latest-posts__post-excerpt">En attendant d’arpenter à nouveau les fêtes
                             franciliennes, les trois […]
                         </div>
                     </li>
                     <li><a href="https://radiosofa.timothee.pro/nouvelle-release-italo-de-smib/">NOUVELLE RELEASE ITALO
                             DE SMIB</a>
-                        <time datetime="2021-02-23T19:44:44+01:00" class="wp-block-latest-posts__post-date">23 02</time>
-                        <div class="wp-block-latest-posts__post-excerpt">Release day pour SMIB ! Les tracks de son
+                        <time datetime="2021-02-23T19:44:44+01:00" class="rs-block-latest-posts__post-date">23 02</time>
+                        <div class="rs-block-latest-posts__post-excerpt">Release day pour SMIB ! Les tracks de son
                             second […]
                         </div>
                     </li>
                     <li><a href="https://radiosofa.timothee.pro/radio-sofa-invite-itineraire-bis/">RADIO SOFA INVITE
                             ITINÉRAIRE BIS</a>
-                        <time datetime="2021-02-19T19:58:00+01:00" class="wp-block-latest-posts__post-date">19 02</time>
-                        <div class="wp-block-latest-posts__post-excerpt">Le collectif Itinéraire Bis prend le contrôle
+                        <time datetime="2021-02-19T19:58:00+01:00" class="rs-block-latest-posts__post-date">19 02</time>
+                        <div class="rs-block-latest-posts__post-excerpt">Le collectif Itinéraire Bis prend le contrôle
                             de nos ondes […]
                         </div>
                     </li>-->
