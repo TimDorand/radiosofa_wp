@@ -290,6 +290,7 @@ div[class^='src-components-current-track__articleCard--'] {
     .site-header{
         border: none;
         flex-basis:125px;
+        min-width:auto;
     }
     .site-player{
         position: absolute;
@@ -300,19 +301,37 @@ div[class^='src-components-current-track__articleCard--'] {
         border-bottom: none;
         margin: 0 0px 0 0px;
         border-top: 1px solid black;
-        height: auto;
+        height: 73px;
+        padding: 0 0 0 37px;
+    }
+    #rk-current-track-widget div .component div{
+        font-size: 1.7rem;
+    }
 
+    .messagedefilant div span, .messagedefilant div:after{
+        font-size: 16px;
+    }
+    .play:before{
+        border-top: 20px solid transparent;
+        border-bottom: 17px solid transparent;
+        border-left: 29px solid #1a1c19;
+        border-radius: 3px;
+    }
+    .pause:before, .pause:after{
+        height: 40px;
+    }
+    .play, .pause{
+        width: 50px;
     }
 
     .messagedefilant{
-        height: 25px;
+        height: 22px;
         position: absolute;
-        bottom: 112px;
+        bottom: 74px;
         width: 100%;
         background: white;
         z-index: 3;
         border-top: 1px solid black;
-        margin: 0 0px 0 0px;
         padding-top: 2px;
         margin: -1px 0;
     }

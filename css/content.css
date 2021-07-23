@@ -453,7 +453,9 @@ font-weight: 300;
         display:none;
     }
     .img-loader {
-        top: 30%;
+        top: 15%;
+        left: 9%;
+        width: 80%;
     }
     .page-body {
         flex-direction: column;
@@ -511,11 +513,11 @@ font-weight: 300;
     }
     .mobile-container{
         overflow: scroll;
-        margin:45px -55px 0 -27px;
+        margin: 45px -40px 0 -27px;
         display: block;
     }
     .rs-home-journal .rs-block-latest-posts__list, .rs-home-journal .text-justify{
-        margin: 30px -37px;
+        margin: 30px -26px;
     }
     .rs-home-journal {
         flex-direction: column;
@@ -532,6 +534,7 @@ font-weight: 300;
         justify-content: space-around;
         width: 50%;
         margin-top: 50px;
+        margin-bottom: 50px;
     }
     .convives-post {
         width: 100%;
