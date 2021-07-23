@@ -130,6 +130,18 @@ function playRS(){
             }, 10000)
         }
 
+        $(window).scroll(function() {
+
+            if ($(this).scrollTop()>0)
+            {
+                $('header').fadeOut();
+            }
+            else
+            {
+                $('header').fadeIn();
+            }
+        });
+
         console.log("[Main Script] Document ready");
     });
     // End document ready

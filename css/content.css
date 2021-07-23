@@ -52,11 +52,13 @@ a {
 small {
     font-size: 1.2rem;
 }
-img{
+
+img {
     image-rendering: -webkit-optimize-contrast;
 }
+
 .text-centered {
-display:flex;
+    display: flex;
     justify-content: center;
 }
 
@@ -106,12 +108,13 @@ display:flex;
     top: 14vh;
     width: 50%;
 }
+
 .small-img-loader {
     position: absolute;
     left: 190px;
     top: 187px;
     width: 150px;
-    display:none;
+    display: none;
 }
 
 .site-header audio {
@@ -123,19 +126,21 @@ display:flex;
 }
 
 /* HOME */
-@media (min-width: 782px){
+@media (min-width: 782px) {
     .rs-block-column:not(:first-child) {
         margin-left: 42px;
     }
 }
+
 .img-bordered img {
     border: 1px solid black;
 }
 
-#ondes-more-planning{
-    cursor:pointer;
+#ondes-more-planning {
+    cursor: pointer;
 
 }
+
 .img-bordered figcaption {
     text-align: center;
     font-size: 1.4rem;
@@ -176,17 +181,21 @@ display:flex;
 .rs-title-dark {
     background: rgba(25, 0, 255, 0.48);
 }
-.rs-home-journal{
+
+.rs-home-journal {
     margin-top: 90px;
 }
-.rs-block-columns{
-    display:flex;
+
+.rs-block-columns {
+    display: flex;
     flex-direction: row;
 }
-.ondes-first-column{
+
+.ondes-first-column {
     width: 44%;
 }
-.ondes-second-column{
+
+.ondes-second-column {
 
 }
 
@@ -235,7 +244,8 @@ display:flex;
     justify-content: space-between;
 
 }
-.rs-block-columns .replay-images{
+
+.rs-block-columns .replay-images {
     height: 180px;
     overflow: hidden;
     /*padding-bottom: 30px;*/
@@ -316,16 +326,18 @@ display:flex;
     margin: 0;
 }
 
-.ondes-footer{
+.ondes-footer {
     margin: 0px -40px;
-    border-top:1px solid black;
-    padding:0 40px;
+    border-top: 1px solid black;
+    padding: 0 40px;
 
 }
-.ondes-footer h3{
-font-weight: 300;
-    font-style:italic;
+
+.ondes-footer h3 {
+    font-weight: 300;
+    font-style: italic;
 }
+
 /* IFRAMES */
 
 .replay-iframe {
@@ -436,39 +448,45 @@ font-weight: 300;
     cursor: pointer;
 }
 
-.mobile-only{
-    display:none;
+.mobile-only {
+    display: none;
 }
-.desktop-only{
-    display:block;
+
+.desktop-only {
+    display: block;
 }
+
 /* MOBILE */
 @media screen and (max-width: 782px) {
 
-    .mobile-only{
-        display:flex;
+    .mobile-only {
+        display: flex;
     }
 
-    .desktop-only{
-        display:none;
+    .desktop-only {
+        display: none;
     }
+
     .img-loader {
         top: 15%;
         left: 9%;
         width: 80%;
     }
+
     .page-body {
         flex-direction: column;
         border: none;
     }
 
-    .ondes-first-column{
+    .ondes-first-column {
 
         width: 100%;
     }
-    .rs-block-columns{
+
+    .rs-block-columns {
         flex-direction: column;
     }
+
     .img-visu-mois img {
         width: 100%;
     }
@@ -485,49 +503,59 @@ font-weight: 300;
 
     .rs-title h2 {
         margin: 4px 0 0 0;
-        font-size:16px;
+        font-size: 16px;
     }
 
     .img-visu-mois {
         margin-top: 10px;
     }
-    .home-agenda{
-        height:auto;
+
+    .home-agenda {
+        height: auto;
     }
-    .rs-home-journal{
+
+    .rs-home-journal {
         order: 2;
 
     }
-    .rs-home-convives{
+
+    .rs-home-convives {
         order: 1
     }
-    .rs-home-convives .replay-images{
+
+    .rs-home-convives .replay-images {
         display: flex;
         flex-wrap: nowrap;
         width: 180%;
         flex-direction: row;
     }
+
     .ondes-convives-post {
-        width:30%;
+        width: 30%;
         margin-right: 20px;
     }
-    .mobile-container{
+
+    .mobile-container {
         overflow: scroll;
         margin: 45px -40px 0 -27px;
         display: block;
     }
-    .rs-home-journal .rs-block-latest-posts__list, .rs-home-journal .text-justify{
+
+    .rs-home-journal .rs-block-latest-posts__list, .rs-home-journal .text-justify {
         margin: 30px -26px;
     }
+
     .rs-home-journal {
         flex-direction: column;
         margin-top: 0px;
     }
-    .ondes-journal-post{
+
+    .ondes-journal-post {
         height: 30px;
 
     }
-    .rs-home-footer{
+
+    .rs-home-footer {
 
         display: flex;
         flex-direction: row;
@@ -536,14 +564,30 @@ font-weight: 300;
         margin-top: 50px;
         margin-bottom: 50px;
     }
+
     .convives-post {
         width: 100%;
     }
+
     .convives-post .btn-replay {
         margin-left: 17px;
     }
+
     #page-residence .rs-title {
         transform: translate(0px, calc(80vw - 51px));
     }
 
+    .replay-iframe {
+        width: 100%;
+        left: 0;
+        height: 41px;
+        bottom: 73px;
+    }
+
+    .small-img-loader {
+        right: 30px;
+        top: 0px;
+        width: 100px;
+        left: auto;
+    }
 }
