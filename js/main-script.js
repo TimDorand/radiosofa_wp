@@ -47,7 +47,8 @@ function playRS(){
 
     })
     setInterval(function(){
-        if($("div[class^='src-components-current-track__title--']")[0].childNodes[0].length > 25){
+        var playerDiv = $("div[class^='src-components-current-track__title--']");
+        if(playerDiv[0] && playerDiv[0].childNodes[0].length > 25){
             //TODO: defilement du player
 
         }
@@ -130,21 +131,19 @@ function playRS(){
             }, 10000)
         }
 
-        $(window).scroll(function() {
-
-            if ($(this).scrollTop()>0)
-            {
-                $('header').fadeOut();
-            }
-            else
-            {
-                $('header').fadeIn();
-            }
+        var siteMainDiv = $(".site-main");
+        siteMainDiv.on( 'scroll', function(){
+           if(siteMainDiv.scrollTop() === 0){
+               $(".site-branding").fadeIn();
+           }
+           if(siteMainDiv.scrollTop() > 0) {
+               $(".site-branding").fadeOut(1000);
+           }
         });
+
 
         console.log("[Main Script] Document ready");
     });
     // End document ready
-
 
 })(jQuery);

@@ -467,6 +467,9 @@ img {
         display: none;
     }
 
+    .site-main{
+        flex-basis: 76%;
+    }
     .img-loader {
         top: 15%;
         left: 9%;
@@ -589,5 +592,8 @@ img {
         top: 0px;
         width: 100px;
         left: auto;
+    }
+    .sofas-post{
+        width:100%;
     }
 }
