@@ -246,8 +246,8 @@ img {
 }
 
 .rs-block-columns .replay-images {
-    height: 180px;
-    overflow: hidden;
+    /*height: 180px;*/
+    /*overflow: hidden;*/
     /*padding-bottom: 30px;*/
 }
 

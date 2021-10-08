@@ -136,7 +136,8 @@ function playRS(){
            if(siteMainDiv.scrollTop() === 0){
                $(".site-branding").fadeIn();
            }
-           if(siteMainDiv.scrollTop() > 0) {
+           var largeurEcran = $(window).width();
+           if(siteMainDiv.scrollTop() > 0 && largeurEcran < 700) {
                $(".site-branding").fadeOut(1000);
            }
         });
