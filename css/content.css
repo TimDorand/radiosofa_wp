@@ -359,6 +359,9 @@ img {
 
 /* JOURNAL */
 
+#page-radio-journal{
+    overflow:hidden;
+}
 .post-single {
     min-height: 88vh;
     display: none;
