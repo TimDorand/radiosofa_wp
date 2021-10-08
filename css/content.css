@@ -468,7 +468,7 @@ img {
     }
 
     .site-main{
-        flex-basis: 79%;
+        flex-basis: 100%;
     }
     .img-loader {
         top: 15%;
