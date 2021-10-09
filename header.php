@@ -198,8 +198,8 @@
                     </label>
 
                     <ul class="menu__box">
-                        <li class="tablinks pageSelector" pageSelector="page-emissions"><h2><a href="/#page-emissions">Emissions</a></h2></li>
-                        <li class="tablinks pageTemplateSelector" pageSelector="page-radio-journal"><h2><a href="/#radio-journal">Journal</a></h2></li>
+                        <li class="tablinks pageSelector menu__item" pageSelector="page-emissions"><h2><a href="/#page-emissions">Emissions</a></h2></li>
+                        <li class="tablinks pageTemplateSelector menu__item" pageSelector="page-radio-journal"><h2><a href="/#radio-journal">Journal</a></h2></li>
 
                     </ul>
                 </div>
