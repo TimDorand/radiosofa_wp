@@ -133,9 +133,9 @@ function playRS(){
 
         var siteMainDiv = $(".site-main");
         siteMainDiv.on( 'scroll', function(){
-           if(siteMainDiv.scrollTop() === 0){
+           /*if(siteMainDiv.scrollTop() === 0){
                $(".site-branding").fadeIn();
-           }
+           }*/
            var largeurEcran = $(window).width();
            if(siteMainDiv.scrollTop() > 0 && largeurEcran < 700) {
                $(".site-branding").fadeOut(1000);

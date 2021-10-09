@@ -4,7 +4,7 @@
 <div class="rs-block-columns">
     <div class="rs-block-column ondes-first-column">
         <figure class="rs-block-image size-large img-bordered img-visu-mois" ><img
-                    src=""
+                    src="/wp-content/uploads/2021/06/shaworks-sofa.png"
                     alt="Visuel du mois" id="visuel_mois">
             <figcaption class="description_visuel_mois">Le sofa du mois par Moon Art Club Template Parts</figcaption>
         </figure>

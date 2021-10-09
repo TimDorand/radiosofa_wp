@@ -412,12 +412,15 @@ div[class^='src-components-current-track__articleCard--'] {
 }
 @media screen and (max-width: 782px) {
 
-
+    .custom-logo-link {
+    height:67px
+    }
     .site-header{
         border: none;
         flex-basis:auto;
         min-width:auto;
         margin-bottom: 50px;
+        width: 100%;
 
     }
     .main-navigation{
@@ -484,7 +487,7 @@ div[class^='src-components-current-track__articleCard--'] {
         background: white;
         text-align: right;
         z-index: 3;
-        padding: 17px 27px 0 27px;
+        padding: 12px 27px 8px 27px;
         width: 100%;
         left: 0px;
         justify-content: space-between;
