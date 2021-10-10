@@ -104,9 +104,10 @@ img {
 }*/
 .img-loader {
     position: absolute;
-    left: calc(400px + 6%);
-    top: 14vh;
-    width: 50%;
+    left: calc(400px + calc(-335px + 47%));
+    top: calc(50vh - 117px);
+    width: 310px;
+    max-width: 50%;
 }
 
 .small-img-loader {
