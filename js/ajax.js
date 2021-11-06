@@ -61,7 +61,7 @@ $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
             } catch (e) {
                 console.warn('[Cache] couldnot parse data', e)
             }
-            if (foundLocalStorage && ((new Date().getTime() - parseData._) < 3600000)) {
+            if (foundLocalStorage && parseData && ((new Date().getTime() - parseData._) < 3600000)) {
                 console.debug("[Cache] found in cache", cacheKey);
                 success(foundLocalStorage);
                 return false;
@@ -69,12 +69,44 @@ $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
             return true;
         };
         options.success = function (data, textStatus) {
-            var responseData = JSON.stringify(data && data.data ?
+            if(typeof data === undefined) return;
+            console.warn(typeof data, typeof data.data)
+
+            if(typeof data.data == "undefined") {
+                data = replaceEveryting(data, 'iframe width="100%" height="60" src=', 'iframe width="100%" height="60" allow="autoplay" src="about:blank" data-src=')
+                data = replaceEveryting(data, 'allow="autoplay" src=', 'allow="autoplay" src="about:blank" data-src=')
+                console.warn(data)
+            }
+
+            var responseData = JSON.stringify(
                 {
                     _: new Date().getTime(),
-                    cacheData: data.data
-                }
-                : null);
+                    cacheData: data.data ? data.data :
+                        {ID: 25,
+                        comment_count: "0",
+                        comment_status: "closed",
+                        filter: "raw",
+                        guid: "https://timothee.pro/radiosofa/?page_id=25",
+                        menu_order: 0,
+                        ping_status: "closed",
+                        pinged: "",
+                        post_author: "1",
+                        post_content: data,
+                        post_content_filtered: "",
+                        post_date: "2020-11-10 15:59:34",
+                        post_date_gmt: "2020-11-10 14:59:34",
+                        post_excerpt: "",
+                        post_mime_type: "",
+                        post_modified: "2021-03-24 17:10:10",
+                        post_modified_gmt: "2021-03-24 16:10:10",
+                        post_name: "ok",
+                        post_parent: 0,
+                        post_password: "",
+                        post_status: "publish",
+                        post_title: "Sofas",
+                        post_type: "page",
+                        to_ping: ""}
+                });
 
             localStorage.setItem(cacheKey, responseData);
 
@@ -116,10 +148,12 @@ function fetchPost(post_name) {
 
 // Hide content, show loader, fetch page, hide content, openPage()
 function fetchHideShowPage(selector, page_name, is_template) {
-    console.debug("[fetchHideShowPage] selector to show:", selector, "page_name:", page_name)
+    console.debug("[fetchHideShowPage] selector to show:", selector, "page_name:", page_name);
     $("#spin").show();
     $(".tabcontent").hide();
-    fetchPage(selector, page_name, is_template)
+    setTimeout(function(){
+        fetchPage(selector, page_name, is_template)
+    },1)
 }
 
 function fetchPage(selector, page_name, is_template) {
@@ -131,10 +165,26 @@ function fetchPage(selector, page_name, is_template) {
             'action': is_template ? 'load_page_template_with_name' : 'load_page_with_name',
             'page_name': page_name
         },
-        cache: !is_template,
+        cache: true,
+        /*cache: !is_template,*/
         success: function (data) {
-            console.debug("[fetchPage] selector: ", selector, " is template", is_template);
-            if (is_template) {
+            var response = JSON.parse(data) ? JSON.parse(data).cacheData : null;
+            console.debug("[fetchPage] selector: ", selector, " is_template: ", is_template, " response: ", response);
+
+            if (response && selector) {
+                openPage(null, selector, page_name)
+                $("#" + selector).show().html(
+                    response.post_content ?
+                        response.post_content
+                            .replace(']]>', ']]&gt;')
+                            .replace('{"success":true}', '')
+                        : null);
+            } else if (!response && selector) {
+                openPage(null, "page-ondes", "Ondes")
+                console.error('[fetchPage] Erreur sur load_page_with_name: ', response);
+            }
+
+            /*if (is_template) {
                 openPage(null, selector, page_name)
                 $("#" + selector).show().html(data.replace('{"success":true}', ''));
             } else {
@@ -147,10 +197,8 @@ function fetchPage(selector, page_name, is_template) {
                     openPage(null, "page-ondes", "Ondes")
                     console.error('[fetchPage] Erreur sur load_page_with_name: ', response);
                 }
-            }
-
-            if(selector !== "page-radio-convives") $("#spin").hide();
-        },
+            }*/
+            },
         error: function (xhr, textStatus, error) {
             console.error("[fetchPage] Erreur", xhr, textStatus, error);
         }

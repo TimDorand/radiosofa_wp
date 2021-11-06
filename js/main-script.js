@@ -93,8 +93,14 @@ function playRS(){
         });
 
         // Mobile Menu toggle
-            $("#menu-toggle").click(function () {
+        /*$("#menu-toggle").click(function () {
             $("#primary-menu").toggle();
+        });*/
+
+        $(".menu__box li").click(function(){
+            console.warn("menu box li")
+            $(".menu__box").css("visibility","visible");
+            $(".menu__box").css("left","0")
         });
 
         // ARTICLES
@@ -125,7 +131,7 @@ function playRS(){
                 var pagesToLoad = ["Sofas", "Convives", "Residence", "Emissions"]
                 for (const pageName of pagesToLoad) {
                     setTimeout(function () {
-                        fetchPage(null, pageName)
+                        /*fetchPage(null, pageName)*/
                     }, 1000)
                 }
             }, 10000)

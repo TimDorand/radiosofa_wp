@@ -320,6 +320,7 @@ div[class^='src-components-current-track__articleCard--'] {
     top: 0;
     transform: rotate(90deg);
 }
+
 #menu__toggle:checked ~ .menu__box {
     visibility: visible;
     left: 0;
@@ -413,15 +414,15 @@ div[class^='src-components-current-track__articleCard--'] {
 @media screen and (max-width: 782px) {
 
     .custom-logo-link {
-    height:67px
+        height:67px
     }
     .site-header{
         border: none;
         flex-basis:auto;
         min-width:auto;
-        margin-bottom: 50px;
         width: 100%;
 
+        overflow:visible;
     }
     .main-navigation{
         border-bottom: 1px solid black;
@@ -483,7 +484,6 @@ div[class^='src-components-current-track__articleCard--'] {
         width:55px;
     }
     .main-navigation{
-        position: absolute;
         background: white;
         text-align: right;
         z-index: 3;

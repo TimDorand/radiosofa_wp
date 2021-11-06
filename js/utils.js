@@ -25,6 +25,12 @@ function findMyText2(needle, replacement) {
     document.getElementById("vsel").innerHTML = replaced;
 }
 
+function replaceEveryting(str, find, replace) {
+    if(str && typeof str !== "string" || typeof str === "undefined" || typeof find === "undefined" || typeof replace === "undefined"){
+        return;
+    }
+    return str.replace(new RegExp(find, 'g'), replace);
+}
 
 function stopAllAudio() {
     // Stop all audio
@@ -74,10 +80,10 @@ function openPage(evt, selector, pageName) {
     }, 1000);
 
 
-    if (pageName === "Convives" || pageName === "Ondes") {
+    if ((pageName === "Convives" || pageName === "Ondes")) {
         setTimeout(function () {
             handleReplayIframe((pageName === "Convives"));
-        }, 100)
+        }, 10)
     } else {
         $("#spin").hide();
     }
@@ -155,24 +161,25 @@ function handleSofas() {
 
 
 function handleReplayIframe(displaySpinner) {
-    if(displaySpinner){
+ /*   if(displaySpinner){
         var spinner = $("#spin");
         spinner.show();
-        $(".site-convives").css("visibility", "hidden");
-    }
-    var allRelpayIframes = $(".replay-images iframe")
+        /!*$(".site-convives").css("visibility", "hidden");*!/
+    }*/
+/*    var allRelpayIframes = $(".replay-images iframe")
     allRelpayIframes.hide();
     for (i = 0; i < allRelpayIframes.length; i++) {
         const iframe = allRelpayIframes[i];
-        $(iframe).attr("data-src", $(iframe).attr("src"));
-        $(iframe).attr("src", "about:blank");
+        /!*$(iframe).attr("data-src", $(iframe).attr("src"));
+        $(iframe).attr("src", "about:blank");*!/
         if (displaySpinner && i === allRelpayIframes.length - 1) {
             setTimeout(function() {
                 spinner.hide();
-                $(".site-convives").css("visibility", "visible");
-            },1000)
+
+            },1000)/!*$(".site-convives").css("visibility", "visible");*!/
         }
-    }
+    }*/
+    $("#spin").hide();
 
     // Replay Souncdloud and mixcloud player
     $(".btn-replay").click(function () {

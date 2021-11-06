@@ -378,7 +378,6 @@ img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    visibility: hidden;
 }
 
 .site-convives .replay-info {
