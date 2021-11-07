@@ -64,6 +64,9 @@
 
 /* SITE BRANDING + RADIO PLAYER */
 /*.src-components-loader__loader--3N_B4 */
+#send-loader{
+    width: 30px !important;
+}
 .custom-logo-link{
     display: inline-block;
 }

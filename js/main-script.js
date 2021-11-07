@@ -1,58 +1,18 @@
-
-function myOnCanPlayFunction() {
-    //console.log('Can play');
-}
-function myOnCanPlayThroughFunction() {
-    //console.log('Can play through');
-    }
-function myOnLoadedData() {
-$(".lds-dual-ring").hide();
-$("#sidebar-player").show();
-$("#sidebar-player").addClass("pause");
-}
-
-function playRS(){
-    var song = $("#sidebar-player-audio").get(0);
-    var src = "https://www.radioking.com/play/radio-sofa";
-    if (song.paused) {
-        stopAllAudio();
-        song.src = src;
-        song.load();
-        song.play();
-//         $(this).text("❙ ❙");
-        $("#sidebar-player").hide();
-        $(".lds-dual-ring").show();
-        $("#sidebar-player").removeClass("play");
-        $("iframe").hide();
-        $(".page-body").css("height", "100%")
-
-    } else {
-        stopAllAudio();
-        song.pause();
-        song.currentTime = 0;
-        song.src = '';
-
-//         $(this).text("▶");
-        $("#sidebar-player").addClass("play");
-        $("#sidebar-player").removeClass("pause");
-    }
-}
 // On click functions
 (function ($) {
 
-
     // Player
-    $(".lds-dual-ring").click(function(e){
+    $(".lds-dual-ring").click(function (e) {
         playRS();
 
     })
-    setInterval(function(){
+    setInterval(function () {
         var playerDiv = $("div[class^='src-components-current-track__title--']");
-        if(playerDiv[0] && playerDiv[0].childNodes[0].length > 25){
+        if (playerDiv[0] && playerDiv[0].childNodes[0].length > 25) {
             //TODO: defilement du player
 
         }
-    },1000)
+    }, 1000)
     $("#sidebar-player").click(function (e) {
         e.preventDefault();
         playRS();
@@ -97,10 +57,10 @@ function playRS(){
             $("#primary-menu").toggle();
         });*/
 
-        $(".menu__box li").click(function(){
+        $(".menu__box li").click(function () {
             console.warn("menu box li")
-            $(".menu__box").css("visibility","visible");
-            $(".menu__box").css("left","0")
+            $(".menu__box").css("visibility", "visible");
+            $(".menu__box").css("left", "0")
         });
 
         // ARTICLES
@@ -138,14 +98,14 @@ function playRS(){
         }
 
         var siteMainDiv = $(".site-main");
-        siteMainDiv.on( 'scroll', function(){
-           /*if(siteMainDiv.scrollTop() === 0){
-               $(".site-branding").fadeIn();
-           }*/
-           var largeurEcran = $(window).width();
-           if(siteMainDiv.scrollTop() > 0 && largeurEcran < 700) {
-               $(".site-branding").fadeOut(1000);
-           }
+        siteMainDiv.on('scroll', function () {
+            /*if(siteMainDiv.scrollTop() === 0){
+                $(".site-branding").fadeIn();
+            }*/
+            var largeurEcran = $(window).width();
+            if (siteMainDiv.scrollTop() > 0 && largeurEcran < 700) {
+                $(".site-branding").fadeOut(1000);
+            }
         });
 
 

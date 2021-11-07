@@ -4,6 +4,9 @@
 <div class="rs-block-columns">
     <div class="rs-block-column ondes-first-column">
         <figure class="rs-block-image size-large img-bordered img-visu-mois" ><img
+                    width="524"
+                    height="524"
+                    loading="lazy"
                     src="/wp-content/uploads/2021/06/shaworks-sofa.png"
                     alt="Visuel du mois" id="visuel_mois">
             <figcaption class="description_visuel_mois">Le sofa du mois par Moon Art Club Template Parts</figcaption>
@@ -95,7 +98,7 @@
                                echo '<div data-post-id="' . $post->post_name . '"><h2 class="post-title"><a href="/#article-' . $post->post_name . '">' . $post->post_title . '</a></h2>' . $post->post_excerpt . '</div><hr/>';
                            }*/
                 foreach ($recentConvives as $post) {
-                    $image = get_the_post_thumbnail();
+                    $image = get_the_post_thumbnail($post, ["300", "300"]);
                     echo '<div data-post-id="' . $post->post_name . '" class="ondes-convives-post" >';
                     echo $image;
                     echo $post->post_content;

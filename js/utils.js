@@ -26,10 +26,53 @@ function findMyText2(needle, replacement) {
 }
 
 function replaceEveryting(str, find, replace) {
-    if(str && typeof str !== "string" || typeof str === "undefined" || typeof find === "undefined" || typeof replace === "undefined"){
+    if (str && typeof str !== "string" || typeof str === "undefined" || typeof find === "undefined" || typeof replace === "undefined") {
         return;
     }
     return str.replace(new RegExp(find, 'g'), replace);
+}
+
+// AUDIO
+
+function playRS() {
+    var song = $("#sidebar-player-audio").get(0);
+    var src = "https://www.radioking.com/play/radio-sofa";
+    if (song.paused) {
+        stopAllAudio();
+        song.src = src;
+        song.load();
+        song.play();
+//         $(this).text("❙ ❙");
+        $("#sidebar-player").hide();
+        $(".lds-dual-ring").show();
+        $("#sidebar-player").removeClass("play");
+        $("iframe").hide();
+        $(".page-body").css("height", "100%")
+
+    } else {
+        stopAllAudio();
+        song.pause();
+        song.currentTime = 0;
+        song.src = '';
+
+//         $(this).text("▶");
+        $("#sidebar-player").addClass("play");
+        $("#sidebar-player").removeClass("pause");
+    }
+}
+
+function myOnCanPlayFunction() {
+    //console.log('Can play');
+}
+
+function myOnCanPlayThroughFunction() {
+    //console.log('Can play through');
+}
+
+function myOnLoadedData() {
+    $(".lds-dual-ring").hide();
+    $("#sidebar-player").show();
+    $("#sidebar-player").addClass("pause");
 }
 
 function stopAllAudio() {
@@ -50,9 +93,40 @@ function stopAllAudio() {
 
 }
 
+function cleanReponseText(text) {
+    return text && text.replace(']]>', ']]&gt;')
+        .replace('{"success":true}', '')
+}
+
+
+// CONTENT MANAGEMENT
+// Hide content, show loader, fetch page, hide content, openPage()
+function fetchHideShowPage(selector, page_name, is_template) {
+    console.debug("[fetchHideShowPage] selector to show:", selector, "page_name:", page_name);
+    $("#spin").show();
+    $(".tabcontent").hide();
+    var isTabRendered = $("#" + selector + " div").length === 0;
+
+    if (!isTabRendered && selector !== "page-residence") {
+        openPage(null, selector, page_name)
+    } else {
+        fetchPage(selector, page_name, is_template)
+    }
+}
+
 // Rooter page: handle active menu, hide all page, show content
-function openPage(evt, selector, pageName) {
+function openPage(evt, selector, pageName, response) {
     console.debug("[openPage] evt:", evt, "selector:", selector, "pageName:", pageName);
+
+    var selectorDiv = $("#" + selector);
+    if (selector && response) {
+        console.debug("[openPage] page rendering start");
+        selectorDiv.show().html(cleanReponseText(response.post_content))
+        console.debug("[openPage] page rendered");
+    }
+
+    $("#spin").hide();
+    selectorDiv.show();
 
     // Menu handling
     var i, tablinks;
@@ -70,9 +144,6 @@ function openPage(evt, selector, pageName) {
         $("[pageSelector=" + selector + "]").addClass("currenttab");
     }
 
-    // Hide all pages
-    $(".tabcontent").hide();
-    $("#" + selector).show();
 
     setTimeout(function () {
         findMyText(tab_jour[ladate.getDay()], "Aujourd'hui");
@@ -81,9 +152,7 @@ function openPage(evt, selector, pageName) {
 
 
     if ((pageName === "Convives" || pageName === "Ondes")) {
-        setTimeout(function () {
-            handleReplayIframe((pageName === "Convives"));
-        }, 10)
+        handleReplayIframe((pageName === "Convives"));
     } else {
         $("#spin").hide();
     }
@@ -124,10 +193,20 @@ function selectorRadioToPageName(selector) {
 
 function handleResidence() {
     setTimeout(function () {
-        $("#page-residence .wp-block-image").click(function () {
-            var resident = $(this).children("figcaption").text();
-            console.debug("[Résidence]", resident);
-            fetchHideShowPage("page-residence", "RESIDENCE " + resident);
+        $("#back-residence").click(function () {
+            $(".residence-details").hide();
+            $(".replay-images").show();
+            $("#back-residence").parent("div").hide();
+
+        });
+
+            $("#page-radio-residence .rs-block-image").click(function () {
+            var resident = $(this).context.parentElement.childNodes[1].innerText;
+            $(".replay-images").hide();
+            $("#residence-"+resident).show();
+            $("#back-residence").parent("div").show();
+
+                handleReplayIframe();
         });
     }, 0)
 }
@@ -160,25 +239,25 @@ function handleSofas() {
 }
 
 
-function handleReplayIframe(displaySpinner) {
- /*   if(displaySpinner){
-        var spinner = $("#spin");
-        spinner.show();
-        /!*$(".site-convives").css("visibility", "hidden");*!/
-    }*/
-/*    var allRelpayIframes = $(".replay-images iframe")
-    allRelpayIframes.hide();
-    for (i = 0; i < allRelpayIframes.length; i++) {
-        const iframe = allRelpayIframes[i];
-        /!*$(iframe).attr("data-src", $(iframe).attr("src"));
-        $(iframe).attr("src", "about:blank");*!/
-        if (displaySpinner && i === allRelpayIframes.length - 1) {
-            setTimeout(function() {
-                spinner.hide();
+function handleReplayIframe() {
+    /*   if(displaySpinner){
+           var spinner = $("#spin");
+           spinner.show();
+           /!*$(".site-convives").css("visibility", "hidden");*!/
+       }*/
+    /*    var allRelpayIframes = $(".replay-images iframe")
+        allRelpayIframes.hide();
+        for (i = 0; i < allRelpayIframes.length; i++) {
+            const iframe = allRelpayIframes[i];
+            /!*$(iframe).attr("data-src", $(iframe).attr("src"));
+            $(iframe).attr("src", "about:blank");*!/
+            if (displaySpinner && i === allRelpayIframes.length - 1) {
+                setTimeout(function() {
+                    spinner.hide();
 
-            },1000)/!*$(".site-convives").css("visibility", "visible");*!/
-        }
-    }*/
+                },1000)/!*$(".site-convives").css("visibility", "visible");*!/
+            }
+        }*/
     $("#spin").hide();
 
     // Replay Souncdloud and mixcloud player
