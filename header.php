@@ -112,7 +112,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-    <img src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/loading-site.gif" alt="loader" class="img-loader" id="spin"/>
+    <img src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/loading-site.gif" alt="loader" class="img-loader" id="spin" width="200"/>
     <img src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/loading-site.gif" alt="loader" class="small-img-loader" id="small-spin"/>
 
     <!--<div class="music-loader-container" id="spin">
