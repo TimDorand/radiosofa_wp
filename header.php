@@ -198,8 +198,9 @@
                     </label>
 
                     <ul class="menu__box">
-                        <li class="tablinks pageSelector" pageSelector="page-emissions"><h2><a href="/#page-emissions">Emissions</a></h2></li>
-                        <li class="tablinks pageTemplateSelector" pageSelector="page-radio-journal"><h2><a href="/#radio-journal">Journal</a></h2></li>
+                        <li class="tablinks pageTemplateSelector" for="menu__toggle" mobileMenu="true" pageSelector="page-radio-residence"><h2><a href="/#radio-residence">Residence</a></h2></li>
+                        <li class="tablinks pageSelector" for="menu__toggle" mobileMenu="true"  pageSelector="page-emissions"><h2><a href="/#page-emissions">Emissions</a></h2></li>
+                        <li class="tablinks pageTemplateSelector" for="menu__toggle" mobileMenu="true"  pageSelector="page-radio-journal"><h2><a href="/#radio-journal">Journal</a></h2></li>
 
                     </ul>
                 </div>

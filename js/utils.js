@@ -38,7 +38,6 @@ function playRS() {
     var song = $("#sidebar-player-audio").get(0);
     var src = "https://www.radioking.com/play/radio-sofa";
     if (song.paused) {
-        stopAllAudio();
         song.src = src;
         song.load();
         song.play();
@@ -50,17 +49,17 @@ function playRS() {
         $(".page-body").css("height", "100%")
 
     } else {
-        stopAllAudio();
-        song.pause();
-        song.currentTime = 0;
-        song.src = '';
-
-//         $(this).text("▶");
-        $("#sidebar-player").addClass("play");
-        $("#sidebar-player").removeClass("pause");
+        stopRS(song);
     }
 }
 
+function stopRS(song) {
+    song.pause();
+    song.currentTime = 0;
+    song.src = '';
+    $("#sidebar-player").addClass("play");
+    $("#sidebar-player").removeClass("pause");
+}
 function myOnCanPlayFunction() {
     //console.log('Can play');
 }
@@ -83,7 +82,6 @@ function stopAllAudio() {
     });
     var allRelpayIframes = $(".replay-images iframe")
     allRelpayIframes.hide();
-    //console.debug('[stopAllAudio]', allRelpayIframes);
     for (let count = 0; count < allRelpayIframes.length; count++) {
         // Stop iframe audio
         var srcIframe = $(allRelpayIframes[count]).attr('src');
@@ -120,66 +118,30 @@ function openPage(evt, selector, pageName, response) {
 
     var selectorDiv = $("#" + selector);
     if (selector && response) {
-        console.debug("[openPage] page rendering start");
+        console.debug("[openPage] page rendering started...");
         selectorDiv.show().html(cleanReponseText(response.post_content))
         console.debug("[openPage] page rendered");
     }
 
-    $("#spin").hide();
+    if (pageName !== "Convives") $("#spin").hide();
     selectorDiv.show();
 
-    // Menu handling
-    var i, tablinks;
-    $('#post-single-content').hide();
-    $("#primary-menu").find("li").removeClass("currenttab");
-    if (evt && evt.currentTarget) {
-        evt.currentTarget.className += " currenttab";
-        $(this).children("a").css("border", "1px solid black");
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-    }
-    if (selector) {
-        $("[pageSelector=" + selector + "]").addClass("currenttab");
-    }
-
+    handleMenu(evt, selector);
 
     setTimeout(function () {
         findMyText(tab_jour[ladate.getDay()], "Aujourd'hui");
         findMyText(tab_jour[ladate.getDay() + 1], "Demain");
     }, 1000);
 
-
-    if ((pageName === "Convives" || pageName === "Ondes")) {
-        handleReplayIframe((pageName === "Convives"));
-    } else {
-        $("#spin").hide();
-    }
-
-
     if (pageName === "Residence") {
-        console.debug("[handlerRe] evt:", evt, "selector:", selector, "pageName:", pageName);
         handleResidence();
+        handleReplayIframe();
     } else if (pageName === "Sofas") {
         handleSofas();
+    } else if (pageName === "Convives" || pageName === "Ondes") {
+        handleReplayIframe()
     } else if (pageName === "Journal" || pageName === "Ondes") {
-        handleJournal();
-
-        setTimeout(function () {
-            $("#visuel_mois").attr('src', url_visuel_mois);
-            $(".description_visuel_mois").html(description_visuel_mois);
-
-            $("#ondes-more-planning").click(function (e) {
-                e.preventDefault();
-                if ($(".vsel-container").hasClass("max-height-100")) {
-                    $(".vsel-container").removeClass("max-height-100");
-                } else {
-                    $(".vsel-container").addClass("max-height-100");
-                }
-            });
-
-        }, 0)
+        handleJournalClick();
     }
 }
 
@@ -191,6 +153,23 @@ function selectorRadioToPageName(selector) {
     return selector.substr(selector.lastIndexOf('radio-') + 6).replace(/^\w/, (c) => c.toUpperCase());
 }
 
+function handleMenu(evt, selector) {
+    var i, tablinks;
+    $('#post-single-content').hide();
+    $("#masthead").find("li").removeClass("currenttab");
+    if (evt && evt.currentTarget) {
+        evt.currentTarget.className += " currenttab";
+        $(this).children("a").css("border", "1px solid black");
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+    }
+    if (selector) {
+        $("[pageSelector=" + selector + "]").addClass("currenttab");
+    }
+}
+
 function handleResidence() {
     setTimeout(function () {
         $("#back-residence").click(function () {
@@ -200,18 +179,18 @@ function handleResidence() {
 
         });
 
-            $("#page-radio-residence .rs-block-image").click(function () {
+        $("#page-radio-residence .rs-block-image").click(function () {
             var resident = $(this).context.parentElement.childNodes[1].innerText;
             $(".replay-images").hide();
-            $("#residence-"+resident).show();
+            $("#residence-" + resident).show();
             $("#back-residence").parent("div").show();
 
-                handleReplayIframe();
+            handleReplayIframe();
         });
     }, 0)
 }
 
-function handleJournal() {
+function handleJournalClick() {
     setTimeout(function () {
         // Journal articles
         $(".ondes-journal-post-link").click(function () {
@@ -227,6 +206,21 @@ function handleJournal() {
         });
     }, 100)
 
+    setTimeout(function () {
+        $("#visuel_mois").attr('src', url_visuel_mois);
+        $(".description_visuel_mois").html(description_visuel_mois);
+
+        $("#ondes-more-planning").click(function (e) {
+            e.preventDefault();
+            if ($(".vsel-container").hasClass("max-height-100")) {
+                $(".vsel-container").removeClass("max-height-100");
+            } else {
+                $(".vsel-container").addClass("max-height-100");
+            }
+        });
+
+    }, 0)
+
 }
 
 function handleSofas() {
@@ -238,44 +232,32 @@ function handleSofas() {
     }, 0)
 }
 
+var currentReplayDiv;
 
 function handleReplayIframe() {
-    /*   if(displaySpinner){
-           var spinner = $("#spin");
-           spinner.show();
-           /!*$(".site-convives").css("visibility", "hidden");*!/
-       }*/
-    /*    var allRelpayIframes = $(".replay-images iframe")
-        allRelpayIframes.hide();
-        for (i = 0; i < allRelpayIframes.length; i++) {
-            const iframe = allRelpayIframes[i];
-            /!*$(iframe).attr("data-src", $(iframe).attr("src"));
-            $(iframe).attr("src", "about:blank");*!/
-            if (displaySpinner && i === allRelpayIframes.length - 1) {
-                setTimeout(function() {
-                    spinner.hide();
-
-                },1000)/!*$(".site-convives").css("visibility", "visible");*!/
-            }
-        }*/
     $("#spin").hide();
 
     // Replay Souncdloud and mixcloud player
     $(".btn-replay").click(function () {
         var smallSpinner = $("#small-spin");
         smallSpinner.show();
-        stopAllAudio();
 
-        // set "play" to player
-        var playerDiv = $(".site-player a");
-        playerDiv.addClass("play");
-        playerDiv.removeClass("pause");
+        var iframe = $(this).next();
 
-        /*$(this).parent().find("iframe").show();*/
-        $(this).next().show();
-        var iframe = $(this).next(); // or some other selector to get the iframe
+        // Stop and hide last replay
+        if (currentReplayDiv) {
+            currentReplayDiv.attr("src", "about:blank");
+            currentReplayDiv.hide();
+        }
+        // set new replay to current
+        currentReplayDiv = iframe;
+
+        // Stop Player
+        stopRS();
+
+        // load and display new replay
         iframe.attr("src", iframe.attr("data-src"));
-
+        iframe.show();
         iframe.addClass("replay-iframe");
         /*$(".page-body").css("height", "calc(100vh - 135px)")*/
         setTimeout(function () {

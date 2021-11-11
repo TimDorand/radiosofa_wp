@@ -156,32 +156,15 @@ function fetchPage(selector, page_name, is_template) {
             'page_name': page_name
         },
         cache: true,
-        /*cache: !is_template,*/
         success: function (data) {
             var response = JSON.parse(data) ? JSON.parse(data).cacheData : null;
-            console.debug("[fetchPage] selector: ", selector, " is_template: ", is_template, " response: ", response);
-
+            console.debug("[fetchPage] selector: ", selector, " is_template: ", is_template);
             if (response && selector) {
                 openPage(null, selector, page_name, response)
             } else if (!response && selector) {
                 openPage(null, "page-ondes", "Ondes")
                 console.error('[fetchPage] Erreur sur load_page_with_name: ', response);
             }
-
-            /*if (is_template) {
-                openPage(null, selector, page_name)
-                $("#" + selector).show().html(data.replace('{"success":true}', ''));
-            } else {
-                var response = JSON.parse(data) ? JSON.parse(data).cacheData : null;
-                console.debug("[fetchPage] selector: ", selector, " is_template: ", is_template, " response: ", response);
-                if (response && selector) {
-                    openPage(null, selector, page_name)
-                    $("#" + selector).show().html(response.post_content ? response.post_content.replace(']]>', ']]&gt;') : null);
-                } else if (!response && selector) {
-                    openPage(null, "page-ondes", "Ondes")
-                    console.error('[fetchPage] Erreur sur load_page_with_name: ', response);
-                }
-            }*/
         },
         error: function (xhr, textStatus, error) {
             console.error("[fetchPage] Erreur", xhr, textStatus, error);

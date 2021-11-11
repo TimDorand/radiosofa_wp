@@ -46,9 +46,15 @@
 
         // Menu to Page
         $(".pageSelector").click(function (e) {
+            if($(this).attr("mobileMenu")){
+                $("#menu__toggle").click()
+            }
             fetchHideShowPage($(this).attr("pageSelector"), selectorToPageName($(this).attr("pageSelector")), false);
         });
         $(".pageTemplateSelector").click(function (e) {
+            if($(this).attr("mobileMenu")){
+                $("#menu__toggle").click()
+            }
             fetchHideShowPage($(this).attr("pageSelector"), selectorRadioToPageName($(this).attr("pageSelector")), true);
         });
 
@@ -56,12 +62,6 @@
         /*$("#menu-toggle").click(function () {
             $("#primary-menu").toggle();
         });*/
-
-        $(".menu__box li").click(function () {
-            console.warn("menu box li")
-            $(".menu__box").css("visibility", "visible");
-            $(".menu__box").css("left", "0")
-        });
 
         // ARTICLES
         // Home articles
@@ -73,7 +73,7 @@
             e.preventDefault();
         });
 
-        handleJournal()
+        handleReplayIframe();
 
         // Block alerts
         alert = function () {
