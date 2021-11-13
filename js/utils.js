@@ -47,13 +47,13 @@ function playRS() {
         $("#sidebar-player").removeClass("play");
         $("iframe").hide();
         $(".page-body").css("height", "100%")
-
     } else {
         stopRS(song);
     }
 }
 
-function stopRS(song) {
+function stopRS() {
+    var song = $("#sidebar-player-audio").get(0);
     song.pause();
     song.currentTime = 0;
     song.src = '';
