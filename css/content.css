@@ -184,6 +184,9 @@ img {
 .rs-title-dark {
     background: rgba(25, 0, 255, 0.48);
 }
+.rs-title-min-200{
+    min-width:200px;
+}
 
 .rs-home-journal {
     margin-top: 90px;
@@ -549,6 +552,14 @@ img {
         flex-direction: row;
     }
 
+    .replay-images .rs-block-column{
+        width:100%;
+    }
+    #page-radio-residence .replay-images{
+        margin-bottom: 100px;
+
+    }
+
     .ondes-convives-post {
         width: 30%;
         margin-right: 20px;
@@ -593,7 +604,7 @@ img {
     }
 
     #page-radio-residence .rs-title {
-        transform: translate(0px, calc(80vw - 51px));
+        /*transform: translate(0px, calc(80vw - 51px));*/
     }
 
     .replay-iframe {

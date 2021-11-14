@@ -47,6 +47,10 @@ function playRS() {
         $("#sidebar-player").removeClass("play");
         $("iframe").hide();
         $(".page-body").css("height", "100%")
+        if (currentReplayDiv) {
+            currentReplayDiv.attr("src", "about:blank");
+            currentReplayDiv.hide();
+        }
     } else {
         stopRS(song);
     }

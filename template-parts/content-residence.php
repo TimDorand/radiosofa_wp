@@ -55,7 +55,7 @@ foreach ($residents as $resident) {
             <img loading="lazy" width="500" height="500" src="' . $resident->image . '" alt="' . $resident->name . '"></figure>
         </div>
         <div class="rs-block-column">
-            <div class="rs-title rs-title-light"><div><h2>' . $resident->name . '</h2></div></div>
+            <div class="rs-title rs-title-light rs-title-min-200"><div><h2>' . $resident->name . '</h2></div></div>
             <p>' . $resident->desc . '</p>
         </div>
     </div>
