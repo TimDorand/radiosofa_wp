@@ -63,7 +63,13 @@ img {
     display: flex;
     justify-content: center;
 }
+.text-justify{
+    text-align: justify;
+}
 
+.width-50{
+    width:50%;
+}
 /* Boutons */
 .btn {
 
@@ -436,9 +442,12 @@ img {
 
 /* RESIDENCE */
 
+#back-residence p{
+    margin: 7px;
+}
 .replay-images .rs-title {
-    transform: translate(0px, calc(23vw - 42px));
-    width: 90%;
+    transform:translate(0px, calc(34vw - 196px));
+    width: 85%;
     justify-content: center;
     margin: auto;
 }

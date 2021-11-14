@@ -125,9 +125,10 @@ function openPage(evt, selector, pageName, response) {
         console.debug("[openPage] page rendering started...");
         selectorDiv.show().html(cleanReponseText(response.post_content))
         console.debug("[openPage] page rendered");
+        $("#spin").hide();
     }
 
-    if (pageName !== "Convives") $("#spin").hide();
+    /*if (pageName !== "Convives" && pageName !== "Residence") $("#spin").hide();*/
     selectorDiv.show();
 
     handleMenu(evt, selector);
@@ -239,8 +240,8 @@ function handleSofas() {
 var currentReplayDiv;
 
 function handleReplayIframe() {
-    $("#spin").hide();
-
+    /*$("#spin").hide();
+*/
     // Replay Souncdloud and mixcloud player
     $(".btn-replay").click(function () {
         var smallSpinner = $("#small-spin");
