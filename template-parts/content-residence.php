@@ -101,7 +101,7 @@ Global Frequency
 
 - Qu’est-ce que t’évoque le sofa en 1 ou 2 phrases ?
 Modulable et moelleux, le sofa peut accueillir vos positions les plus fantasques!",
-    "/wp-content/uploads/2021/03/89092659_1117093465349544_8177255567056699392_o.jpeg");
+    "/wp-content/uploads/2021/03/nofraje-edited.png");
 
 
 $planisphere = new Resident(
@@ -156,13 +156,13 @@ Fauteuil Club - le nom de l'émission
 
 #4 Qu'est-ce que t'évoque le sofa en 1 ou 2 phrases ?  
 Sofa : n.m. Un nuage de coton dans lequel on se sent en sécurité, un lieu de partage et de réconfort. \"",
-    "/wp-content/uploads/2021/03/89092659_1117093465349544_8177255567056699392_o-1024x1024.jpeg");
+    "/wp-content/uploads/2021/06/Mimi-.jpg");
 
 $micropolis = new Resident(
     "MICROPOLIS",
     "MACROPHONE",
     "",
-    "/wp-content/uploads/2021/03/89092659_1117093465349544_8177255567056699392_o-1024x1024.jpeg");
+    "/wp-content/uploads/2021/06/MICROPOLIS-invite-LOS3SALTOS.jpg");
 
 
 $residents = [$baume, $belaria, $broski, $charleeps, $falafef, $felix, $girasol, $matso, $nofraje, $planisphere, $sunaas, $tropicalites, $mimi, $micropolis];
