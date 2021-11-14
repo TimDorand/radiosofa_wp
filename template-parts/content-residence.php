@@ -32,10 +32,8 @@ $baume = new Resident(
        Enfin vous voyez l\'idée ? J\'suis partie un peu loin mais je vous avoue c\'est pas simple de trouver un nom, surtout sans thème en particulier    
        
        Citation Sofa :    "Do, Si, La, So, Fa, Mi, Ré, Do"  "Sur le plus beau Sofa du monde, on est jamais assis que sur son cul"  "Que celui qui est bien assis ne soit pas pressé de se lever"   
-       Voilà les citations que j\'ai trouvé, la première je l\'ai inventé de toute pièce, c\'est un jeu d\'mot bidon que je viens de trouver haha (vous avez le droit de trouver ça nul hein). Les 2 autres sont des citations connues que j\'ai trouvé sur internet. Elles sont dans l\'ordre de mes préférences, j\'ai mis la dernière si vous cherchiez un truc plus "simple" et mignon, mais sinon je préfère les 2 premières.   
-       
-       Voilà tout, je reste ouvert à toutes remarques biens sûr, ',
-    "/wp-content/uploads/2021/03/baume-scaled.jpeg");
+       Voilà les citations que j\'ai trouvé, la première je l\'ai inventé de toute pièce, c\'est un jeu d\'mot bidon que je viens de trouver haha (vous avez le droit de trouver ça nul hein). Les 2 autres sont des citations connues que j\'ai trouvé sur internet. Elles sont dans l\'ordre de mes préférences, j\'ai mis la dernière si vous cherchiez un truc plus "simple" et mignon, mais sinon je préfère les 2 premières.',
+    "wp-content/uploads/2021/03/Baume-1.jpeg");
 
 $belaria = new Resident(
     "BELARIA",

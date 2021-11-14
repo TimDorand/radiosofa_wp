@@ -622,6 +622,9 @@ img {
         height: 41px;
         bottom: 73px;
     }
+    .replay-images .rs-title{
+        transform: translate(0px,65vw);
+    }
 
     .small-img-loader {
         right: 30px;
@@ -630,6 +633,9 @@ img {
         left: auto;
     }
     .sofas-post{
+        width:100%;
+    }
+    .width-50{
         width:100%;
     }
 }
