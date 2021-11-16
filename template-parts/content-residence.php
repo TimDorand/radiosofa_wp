@@ -206,7 +206,11 @@ foreach ($residents as $resident) {
     <div class="rs-block-columns residence-details-archives">';
 
     $categoryArticles = get_category_by_slug($resident->name);
-    $posts = get_posts(["numberposts" => -1, "category" => $categoryArticles->cat_ID]);
+    if($categoryArticles){
+        $posts = get_posts(["numberposts" => -1, "category" => $categoryArticles->cat_ID]);
+    }else{
+        $posts = [];
+    }
 
     foreach ($posts as $post) {
         $image = get_the_post_thumbnail($post, ["300", "300"]);

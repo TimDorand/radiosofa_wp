@@ -1,39 +1,4 @@
-// Find and replace text: planning
-var ladate = new Date();
-var tab_jour = new Array("dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi");
-
-function findMyText(needle, replacementText) {
-    var myOldString = $("#vsel").html();
-    var myNewString = myOldString && myOldString.replaceAll(needle, replacementText);
-    $("#vsel").html(myNewString);
-}
-
-var haystackText = "";
-
-function findMyText2(needle, replacement) {
-    if (haystackText.length == 0) {
-        haystackText = document.getElementById("primary").innerHTML;
-    }
-    var match = new RegExp(needle, "ig");
-    var replaced = "";
-    if (replacement.length > 0) {
-        replaced = haystackText.replace(match, replacement);
-    } else {
-        var boldText = "            " + needle + "            ";
-        replaced = haystackText.replace(match, boldText);
-    }
-    document.getElementById("vsel").innerHTML = replaced;
-}
-
-function replaceEveryting(str, find, replace) {
-    if (str && typeof str !== "string" || typeof str === "undefined" || typeof find === "undefined" || typeof replace === "undefined") {
-        return;
-    }
-    return str.replace(new RegExp(find, 'g'), replace);
-}
-
 // AUDIO
-
 function playRS() {
     var song = $("#sidebar-player-audio").get(0);
     var src = "https://www.radioking.com/play/radio-sofa";
@@ -64,35 +29,29 @@ function stopRS() {
     $("#sidebar-player").addClass("play");
     $("#sidebar-player").removeClass("pause");
 }
-function myOnCanPlayFunction() {
-    //console.log('Can play');
-}
 
-function myOnCanPlayThroughFunction() {
-    //console.log('Can play through');
-}
-
+//UTILS
 function myOnLoadedData() {
     $(".lds-dual-ring").hide();
     $("#sidebar-player").show();
     $("#sidebar-player").addClass("pause");
 }
 
-function stopAllAudio() {
-    // Stop all audio
-    $('audio').each(function () {
-        this.pause();
-        this.currentTime = 0;
-    });
-    var allRelpayIframes = $(".replay-images iframe")
-    allRelpayIframes.hide();
-    for (let count = 0; count < allRelpayIframes.length; count++) {
-        // Stop iframe audio
-        var srcIframe = $(allRelpayIframes[count]).attr('src');
-        $(allRelpayIframes[count]).attr('src', "");
-        $(allRelpayIframes[count]).attr('src', srcIframe);
-    }
+// Find and replace text: planning
+var ladate = new Date();
+var tab_jour = new Array("dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi");
 
+function findMyText(needle, replacementText) {
+    var myOldString = $("#vsel").html();
+    var myNewString = myOldString && myOldString.replaceAll(needle, replacementText);
+    $("#vsel").html(myNewString);
+}
+
+function replaceEveryting(str, find, replace) {
+    if (str && typeof str !== "string" || typeof str === "undefined" || typeof find === "undefined" || typeof replace === "undefined") {
+        return;
+    }
+    return str.replace(new RegExp(find, 'g'), replace);
 }
 
 function cleanReponseText(text) {
@@ -125,31 +84,33 @@ function openPage(evt, selector, pageName, response) {
         console.debug("[openPage] page rendering started...");
         selectorDiv.show().html(cleanReponseText(response.post_content))
         console.debug("[openPage] page rendered");
-        $("#spin").hide();
     }
+    $("#spin").hide();
 
     /*if (pageName !== "Convives" && pageName !== "Residence") $("#spin").hide();*/
     selectorDiv.show();
 
     handleMenu(evt, selector);
 
-    setTimeout(function () {
-        findMyText(tab_jour[ladate.getDay()], "Aujourd'hui");
-        findMyText(tab_jour[ladate.getDay() + 1], "Demain");
-    }, 1000);
-
     if (pageName === "Residence") {
         handleResidence();
         handleReplayIframe();
+        hideResidenceDetails();
     } else if (pageName === "Sofas") {
         handleSofas();
     } else if (pageName === "Convives" || pageName === "Ondes") {
         handleReplayIframe()
     } else if (pageName === "Journal" || pageName === "Ondes") {
         handleJournalClick();
+    } else if (pageName === "Ondes"){
+        setTimeout(function () {
+            findMyText(tab_jour[ladate.getDay()], "Aujourd'hui");
+            findMyText(tab_jour[ladate.getDay() + 1], "Demain");
+        }, 1000);
     }
 }
 
+//MENU
 function selectorToPageName(selector) {
     return selector.substr(selector.lastIndexOf('page-') + 5).replace(/^\w/, (c) => c.toUpperCase());
 }
@@ -175,13 +136,11 @@ function handleMenu(evt, selector) {
     }
 }
 
+// RESIDENCE
 function handleResidence() {
     setTimeout(function () {
         $("#back-residence").click(function () {
-            $(".residence-details").hide();
-            $(".replay-images").show();
-            $("#back-residence").parent("div").hide();
-
+            hideResidenceDetails();
         });
 
         $("#page-radio-residence .rs-block-image").click(function () {
@@ -189,12 +148,21 @@ function handleResidence() {
             $(".replay-images").hide();
             $("#residence-" + resident).show();
             $("#back-residence").parent("div").show();
-
             handleReplayIframe();
+            setTimeout(function(){
+                $("html, body").scrollTop(0);
+            }, 100)
         });
     }, 0)
 }
 
+function hideResidenceDetails() {
+    $(".residence-details").hide();
+    $(".replay-images").show();
+    $("#back-residence").parent("div").hide();
+}
+
+// JOURNAL
 function handleJournalClick() {
     setTimeout(function () {
         // Journal articles
@@ -228,6 +196,7 @@ function handleJournalClick() {
 
 }
 
+// SOFAS
 function handleSofas() {
     setTimeout(function () {
         $(".sofas-posts .wp-block-column").click(function () {
@@ -237,6 +206,7 @@ function handleSofas() {
     }, 0)
 }
 
+// REPLAYS
 var currentReplayDiv;
 
 function handleReplayIframe() {

@@ -88,13 +88,13 @@
         if (!localStorage.getItem("debug")) {
             // Load all pages in background
             setTimeout(function () {
-                var pagesToLoad = ["Sofas", "Convives", "Residence", "Emissions"]
+                var pagesToLoad = ["Convives", "Residence"]
                 for (const pageName of pagesToLoad) {
                     setTimeout(function () {
-                        /*fetchPage(null, pageName)*/
+                        fetchPage(null, pageName, true)
                     }, 1000)
                 }
-            }, 10000)
+            }, 1000)
         }
 
         var siteMainDiv = $(".site-main");

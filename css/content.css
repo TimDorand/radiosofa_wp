@@ -623,7 +623,7 @@ img {
         bottom: 73px;
     }
     .replay-images .rs-title{
-        translate(0px,calc(76vw - 0px))
+        transform: translate(0px,calc(76vw - 0px))
     }
 
     .small-img-loader {
