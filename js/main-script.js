@@ -63,7 +63,7 @@
             $("#primary-menu").toggle();
         });*/
 
-        // ARTICLES
+/*        // ARTICLES
         // Home articles
         $(".bloc-articles a").click(function (e) {
             var url = new URL($(this).attr('href'));
@@ -71,7 +71,7 @@
             fetchPost(url.pathname.replace(/\//g, ""));
             window.location = '#article-' + url.pathname.replace(/\//g, "");
             e.preventDefault();
-        });
+        });*/
 
         handleReplayIframe();
 

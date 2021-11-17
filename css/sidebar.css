@@ -211,6 +211,8 @@ div[class^='src-components-current-track__articleCard--'] {
 
 .main-navigation{
     padding: 28px 0 0 40px;
+    z-index: 8;
+
 }
 .main-navigation ul{
     display: flex;
@@ -327,6 +329,8 @@ div[class^='src-components-current-track__articleCard--'] {
 #menu__toggle:checked ~ .menu__box {
     visibility: visible;
     left: 0;
+    z-index: 9;
+
 }
 
 .menu__btn {

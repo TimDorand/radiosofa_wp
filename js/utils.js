@@ -68,7 +68,7 @@ function fetchHideShowPage(selector, page_name, is_template) {
     $(".tabcontent").hide();
     var isTabRendered = $("#" + selector + " div").length === 0;
 
-    if (!isTabRendered && selector !== "page-residence") {
+    if (!isTabRendered && selector !== "page-radio-journal") {
         openPage(null, selector, page_name)
     } else {
         fetchPage(selector, page_name, is_template)
@@ -87,7 +87,6 @@ function openPage(evt, selector, pageName, response) {
     }
     $("#spin").hide();
 
-    /*if (pageName !== "Convives" && pageName !== "Residence") $("#spin").hide();*/
     selectorDiv.show();
 
     handleMenu(evt, selector);
@@ -98,11 +97,14 @@ function openPage(evt, selector, pageName, response) {
         hideResidenceDetails();
     } else if (pageName === "Sofas") {
         handleSofas();
-    } else if (pageName === "Convives" || pageName === "Ondes") {
+    } else if (pageName === "Convives") {
         handleReplayIframe()
-    } else if (pageName === "Journal" || pageName === "Ondes") {
+    } else if (pageName === "Journal") {
         handleJournalClick();
-    } else if (pageName === "Ondes"){
+    }
+    if (pageName === "Ondes"){
+        handleReplayIframe();
+        handleJournalClick();
         setTimeout(function () {
             findMyText(tab_jour[ladate.getDay()], "Aujourd'hui");
             findMyText(tab_jour[ladate.getDay() + 1], "Demain");
@@ -143,39 +145,45 @@ function handleResidence() {
             hideResidenceDetails();
         });
 
-        $("#page-radio-residence .rs-block-image").click(function () {
-            var resident = $(this).context.parentElement.childNodes[1].innerText;
-            $(".replay-images").hide();
-            $("#residence-" + resident).show();
-            $("#back-residence").parent("div").show();
-            handleReplayIframe();
-            setTimeout(function(){
-                $("html, body").scrollTop(0);
-            }, 100)
+        $("#page-radio-residence .resident-item").click(function (e) {
+            showResidenceDetails(e);
         });
+    }, 0)
+}
+
+function showResidenceDetails(e) {
+    var resident = e.currentTarget.children[0].innerText
+    $("#page-radio-residence .replay-images").hide();
+    $("#residence-" + resident).show();
+    $("#back-residence").parent("div").show();
+    handleReplayIframe();
+    setTimeout(function(){
+        $("html, body").scrollTop(0);
+    }, 100)
+    setTimeout(function(){
+        $("#page-radio-residence").scrollTop(0);
     }, 0)
 }
 
 function hideResidenceDetails() {
     $(".residence-details").hide();
-    $(".replay-images").show();
+    $("#page-radio-residence .replay-images").show();
     $("#back-residence").parent("div").hide();
 }
 
 // JOURNAL
 function handleJournalClick() {
     setTimeout(function () {
-        // Journal articles
+        // Ondes articles
         $(".ondes-journal-post-link").click(function () {
-            var post_id = $(this).attr('data-post-id');
-            fetchPost(post_id);
+            window.location = '#article-' + $(this).attr('href').replace(/\//g, "");
+            fetchPost($(this).attr('data-post-id'));
             $("html, body").scrollTop(0);
         })
         $('.post-title').click(function () {
             var post_id = $(this).parent().attr('data-post-id');
             fetchPost(post_id);
             $("html, body").scrollTop(0);
-
         });
     }, 100)
 

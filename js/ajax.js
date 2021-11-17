@@ -118,9 +118,9 @@ $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
 // Show post-single, show loader, fetch post, hide content
 function fetchPost(post_name) {
     console.debug("[fetchPost]", post_name)
-    $("#page-radio-journal").show();
     $(".post-single").show();
     $("#spin").show();
+    $(".tabcontent").hide();
 
     $.ajax({
         url: ajaxUrl,

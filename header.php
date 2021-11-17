@@ -181,12 +181,18 @@
 
             <div id="primary-menu">
                <ul>
-                   <li class="tablinks currenttab pageTemplateSelector" pageSelector="page-radio-ondes"><h2><a href="/#">Salon</a></h2></li>
-                   <li class="tablinks pageSelector" pageSelector="page-sofas"><h2><a href="/#page-sofas">Sofas</a></h2></li>
-                   <li class="tablinks pageTemplateSelector" pageSelector="page-radio-convives"><h2><a href="/#radio-convives">Convives</a></h2></li>
-                   <li class="tablinks pageTemplateSelector big-phone-only" pageSelector="page-radio-residence"><h2><a href="/#radio-residence">Residence</a></h2></li>
-                   <li class="tablinks pageSelector desktop-only" pageSelector="page-emissions"><h2><a href="/#page-emissions">Emissions</a></h2></li>
-                   <li class="tablinks pageTemplateSelector desktop-only" pageSelector="page-radio-journal"><h2><a href="/#radio-journal">Journal</a></h2></li>
+                   <li class="tablinks currenttab pageTemplateSelector" pageSelector="page-radio-ondes">
+                       <h2><a href="/#">Salon</a></h2></li>
+                   <li class="tablinks pageSelector" pageSelector="page-sofas">
+                       <h2><a href="/#page-sofas">Sofas</a></h2></li>
+                   <li class="tablinks pageTemplateSelector" pageSelector="page-radio-convives">
+                       <h2><a href="/#radio-convives">Convives</a></h2></li>
+                   <li class="tablinks pageTemplateSelector big-phone-only" pageSelector="page-radio-residence">
+                       <h2><a href="/#radio-residence">Residence</a></h2></li>
+                   <li class="tablinks pageSelector desktop-only" pageSelector="page-emissions">
+                       <h2><a href="/#page-emissions">Emissions</a></h2></li>
+                   <li class="tablinks pageTemplateSelector desktop-only" pageSelector="page-radio-journal">
+                       <h2><a href="/#radio-journal">Journal</a></h2></li>
                </ul>
             </div>
 
@@ -198,9 +204,18 @@
                     </label>
 
                     <ul class="menu__box">
-                        <li class="tablinks pageTemplateSelector" for="menu__toggle" mobileMenu="true" pageSelector="page-radio-residence"><h2><a href="/#radio-residence">Residence</a></h2></li>
-                        <li class="tablinks pageSelector" for="menu__toggle" mobileMenu="true"  pageSelector="page-emissions"><h2><a href="/#page-emissions">Emissions</a></h2></li>
-                        <li class="tablinks pageTemplateSelector" for="menu__toggle" mobileMenu="true"  pageSelector="page-radio-journal"><h2><a href="/#radio-journal">Journal</a></h2></li>
+                        <li class="tablinks currenttab pageTemplateSelector" mobileMenu="true" pageSelector="page-radio-ondes">
+                            <h2><a href="/#">Salon</a></h2></li>
+                        <li class="tablinks pageSelector" mobileMenu="true" pageSelector="page-sofas">
+                            <h2><a href="/#page-sofas">Sofas</a></h2></li>
+                        <li class="tablinks pageTemplateSelector" mobileMenu="true" pageSelector="page-radio-convives">
+                            <h2><a href="/#radio-convives">Convives</a></h2></li>
+                        <li class="tablinks pageTemplateSelector" mobileMenu="true" pageSelector="page-radio-residence">
+                            <h2><a href="/#radio-residence">Residence</a></h2></li>
+                        <li class="tablinks pageSelector" mobileMenu="true"  pageSelector="page-emissions">
+                            <h2><a href="/#page-emissions">Emissions</a></h2></li>
+                        <li class="tablinks pageTemplateSelector" mobileMenu="true"  pageSelector="page-radio-journal">
+                            <h2><a href="/#radio-journal">Journal</a></h2></li>
 
                     </ul>
                 </div>

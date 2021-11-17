@@ -26,7 +26,7 @@
 
                         <?php
                         $categoryArticles = get_category_by_slug("Articles");
-                        $recentArticles = get_posts(["numberposts" => 2, "category" => $categoryArticles->cat_ID]);
+                        $recentArticles = get_posts(["numberposts" => 4, "category" => $categoryArticles->cat_ID]);
                         foreach ($recentArticles as $post) {
                             $post_date = get_the_date('j n');
                             echo '<li><a class="ondes-journal-post-link" data-post-id="' . $post->post_name . '" href="/#article-' . $post->post_name . '">' . $post->post_title . '</a>
