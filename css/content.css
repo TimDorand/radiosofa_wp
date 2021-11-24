@@ -377,6 +377,11 @@ img {
 #page-radio-journal{
     overflow:hidden;
 }
+.site-journal .blocks-gallery-item img{
+
+    max-width: 400px;
+    width: 100%;
+}
 .post-single {
     min-height: 88vh;
     display: none;
