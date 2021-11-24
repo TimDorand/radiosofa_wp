@@ -170,7 +170,7 @@ $residents = [$baume, $belaria, $broski, $charleeps, $falafef, $felix, $girasol,
 echo '<div class="rs-block-columns replay-images">';
 foreach ($residents as $resident) {
     echo '<div class="rs-block-column resident-item">
-        <div class="rs-title rs-title-light">
+        <div class="rs-title-mini rs-title-light">
             <div><h2>' . $resident->name . '</h2></div>
         </div>
 
