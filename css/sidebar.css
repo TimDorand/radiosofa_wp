@@ -307,10 +307,9 @@ div[class^='src-components-current-track__articleCard--'] {
     -ms-transform: scale(1); /* IE 9 */
     -webkit-transform: scale(1); /* Safari */
     transform: scale(1);
-    image-rendering: pixelated;
 }
 img{
-    image-rendering: pixelated;
+    image-rendering: crisp-edges;
 }
 
 /* MOBILE BURGER MENU */
