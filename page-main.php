@@ -36,7 +36,7 @@ get_header();
         <div id="page-sofas" class="tabcontent">
         </div>
 
-        <div id="page-emissions" class="tabcontent">
+        <div id="page-collection" class="tabcontent">
         </div>
 
         <div id="page-radio-residence" class="tabcontent">
