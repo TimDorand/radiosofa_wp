@@ -305,7 +305,9 @@ small {
     width: fit-content;
     cursor:pointer;
 }
-
+#page-radio-convives .btn-replay{
+    margin: 0 0 -20px 0;
+}
 .replay-images div:not(:first-child) {
     /*
     margin-left:10px;
