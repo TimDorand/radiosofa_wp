@@ -678,12 +678,26 @@ small {
         margin-bottom: 50px;
     }
 
+    #page-radio-residence .residence-details{
+        margin-bottom: 110px;
+    }
+
     .convives-post {
         width: 100%;
     }
 
+    #page-radio-residence .convive-post{
+        margin-bottom: 10px;
+    }
+
     .convives-post .btn-replay {
         margin-left: 17px;
+    }
+
+    #page-radio-residence .convives-post .btn-replay {
+        padding: 5px 18px;
+        width: 91px;
+        margin: 5px 0;
     }
 
     #page-radio-residence .rs-title {
