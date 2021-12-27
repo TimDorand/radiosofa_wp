@@ -256,8 +256,11 @@ Eclectisme garanti avec chaque semaine des sélections thématiques et des DJ se
             <a rel="noreferrer" target="_blank" href="https://www.instagram.com/radio.sofa/">
                 <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/logo_insta.png" width="15" height="15" alt="Instagram logo">
             </a>
-            <a rel="noreferrer" target="_blank" href="https://open.spotify.com/user/jackhadagroove/">
-                <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/logo_spotify.png" width="15" height="15" alt="Spotify logo">
+           <!-- <a rel="noreferrer" target="_blank" href="https://open.spotify.com/user/jackhadagroove/">
+                <img src="<?php /*echo site_url();*/?>/wp-content/themes/radiosofa/img/logo_spotify.png" width="15" height="15" alt="Spotify logo">
+            </a>-->
+            <a rel="noreferrer" target="_blank" href="https://soundcloud.com/radio-sofa">
+                <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/logo_soundcloud.png" width="15" height="15" alt="Soundcloud logo">
             </a>
         </div>
             <small>contact.radiosofa@gmail.com</small>
