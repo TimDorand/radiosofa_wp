@@ -112,7 +112,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-    <img src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/loading-site.gif" alt="loader" class="img-loader" id="spin" width="200"/>
+    <img src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/loading-site.gif" alt="loader" class="img-loader" id="spin" width="96" height="96"/>
     <img src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/loading-site.gif" alt="loader" class="small-img-loader" id="small-spin"/>
 
     <!--<div class="music-loader-container" id="spin">
@@ -250,14 +250,14 @@ Eclectisme garanti avec chaque semaine des sélections thématiques et des DJ se
         </div>
         <div class="site-header-second-part">
 
-        <div style="display:flex;flex-direction:row";> <a target="_blank" href="https://facebook.com/webradio.sofa">
-                <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/logo_facebook.png" width="20" alt="Facebook logo">
+        <div style="display:flex;flex-direction:row";> <a rel="noreferrer" target="_blank" href="https://facebook.com/webradio.sofa">
+                <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/logo_facebook.png" width="15" height="15" alt="Facebook logo">
             </a>
-            <a target="_blank" href="https://www.instagram.com/radio.sofa/">
-                <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/logo_insta.png" width="20" alt="Instagram logo">
+            <a rel="noreferrer" target="_blank" href="https://www.instagram.com/radio.sofa/">
+                <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/logo_insta.png" width="15" height="15" alt="Instagram logo">
             </a>
-            <a target="_blank" href="https://open.spotify.com/user/jackhadagroove/">
-                <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/logo_spotify.png" width="20" alt="Spotify logo">
+            <a rel="noreferrer" target="_blank" href="https://open.spotify.com/user/jackhadagroove/">
+                <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/logo_spotify.png" width="15" height="15" alt="Spotify logo">
             </a>
         </div>
             <small>contact.radiosofa@gmail.com</small>

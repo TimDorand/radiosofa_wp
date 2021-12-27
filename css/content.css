@@ -294,11 +294,16 @@ small {
 }
 
 
-.replay-images .btn-replay {
+.replay-images .btn-replay, .convives-post .btn-replay {
     font-size: 10px;
-    padding: 5px 6px;
+    padding: 5px 17px;
     text-align: center;
     align-items: center;
+    margin: -40px 0 0 -118%;
+    background: white;
+    min-width: 100px;
+    width: fit-content;
+    cursor:pointer;
 }
 
 .replay-images div:not(:first-child) {
@@ -451,8 +456,9 @@ small {
 }
 
 .convives-post {
-    width: calc(33.3% - 20px);
     margin-bottom: 70px;
+    width: calc(33.3% - 28px);
+
 }
 
 .convives-post img {
@@ -463,12 +469,14 @@ small {
     display: none;
 }
 
+/*
 .convives-post .btn-replay {
     cursor: pointer;
     background: white;
     margin-left: -10px;
     width: 64px;
 }
+*/
 
 /* SOFAS */
 
@@ -531,7 +539,8 @@ small {
 }
 .residence-details-archives{
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    column-gap: 42px;
 }
 .mobile-only {
     display: none;
