@@ -127,7 +127,7 @@
                     $categoryArticles = get_category_by_slug("Articles");
                     $recentArticles = get_posts(["numberposts" => 2, "category" => $categoryArticles->cat_ID]);
                     foreach ($recentArticles as $post) {
-                        $post_date = get_the_date('j n');
+                        $post_date = get_the_date('j')."/".get_the_date('n');
                         echo '<li><a class="ondes-journal-post-link" data-post-id="' . $post->post_name . '" href="/#article-' . $post->post_name . '">' . $post->post_title . '</a>
                         <time datetime="' . $post->post_date_gmt . '" class="rs-block-latest-posts__post-date">' . $post_date . '</time>
                         <div class="rs-block-latest-posts__post-excerpt ondes-journal-post">' . $post->post_content . '
@@ -135,27 +135,6 @@
                     </li>';
                     }
                     ?>
-                    <!--<li><a href="https://radiosofa.timothee.pro/radio-sofa-invite-mic-mac/">RADIO SOFA INVITE MIC
-                            MAC</a>
-                        <time datetime="2021-02-27T14:34:00+01:00" class="rs-block-latest-posts__post-date">27 02</time>
-                        <div class="rs-block-latest-posts__post-excerpt">En attendant d’arpenter à nouveau les fêtes
-                            franciliennes, les trois […]
-                        </div>
-                    </li>
-                    <li><a href="https://radiosofa.timothee.pro/nouvelle-release-italo-de-smib/">NOUVELLE RELEASE ITALO
-                            DE SMIB</a>
-                        <time datetime="2021-02-23T19:44:44+01:00" class="rs-block-latest-posts__post-date">23 02</time>
-                        <div class="rs-block-latest-posts__post-excerpt">Release day pour SMIB ! Les tracks de son
-                            second […]
-                        </div>
-                    </li>
-                    <li><a href="https://radiosofa.timothee.pro/radio-sofa-invite-itineraire-bis/">RADIO SOFA INVITE
-                            ITINÉRAIRE BIS</a>
-                        <time datetime="2021-02-19T19:58:00+01:00" class="rs-block-latest-posts__post-date">19 02</time>
-                        <div class="rs-block-latest-posts__post-excerpt">Le collectif Itinéraire Bis prend le contrôle
-                            de nos ondes […]
-                        </div>
-                    </li>-->
                 </ul>
 
             </div>

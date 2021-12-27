@@ -52,7 +52,7 @@ https://www.youtube.com/watch?v=XYbzw_t0TB4&ab_channel=SinchiCollective&fbclid=I
 $categoryArticles = get_category_by_slug("Articles");
 $posts = get_posts(["numberposts" => -1, "category" => $categoryArticles->cat_ID]);
 foreach ($posts as $post) {
-    echo '<div data-post-id="' . $post->post_name . '">
+    echo '<div class="rs-journal-post data-post-id="' . $post->post_name . '">
             <h2 class="post-title"><a href="/#article-'.$post->post_name.'">'. $post->post_title . '</a></h2>
                 ' . $post->post_content . '
             </div><hr/>';

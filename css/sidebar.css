@@ -305,8 +305,9 @@ div[class^='src-components-current-track__articleCard--'] {
 }
 .site-branding img{
     -ms-transform: scale(1); /* IE 9 */
-    -webkit-transform: scale(1); /* Safari */
+    -webkit-transform: scale(1) rotate(0) translate3d( 0, 0, 0); /* Safari*/
     transform: scale(1);
+
 }
 img{
     image-rendering: crisp-edges;
