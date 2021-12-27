@@ -61,7 +61,7 @@ $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
             } catch (e) {
                 console.warn('[Cache] couldnot parse data', e)
             }
-            if (foundLocalStorage && parseData && ((new Date().getTime() - parseData._) < 3600000)) {
+            if (foundLocalStorage && parseData && ((new Date().getTime() - parseData._) < 1200000)) {
                 console.debug("[Cache] found in cache", cacheKey);
                 success(foundLocalStorage);
                 return false;
@@ -133,7 +133,7 @@ function fetchPost(post_name) {
     }).done(function (response) {
         if (response && response.data) {
             openPage(null, "page-radio-journal", "Journal")
-            var post_html = '<div data-post-id="' + response.data['ID'] + '">' +
+            var post_html = '<div class="rs-journal-single" data-post-id="' + response.data['ID'] + '">' +
                 '<h2 class="post-title">' + response.data['post_title'] + '</h2>' +
                 response.data['post_content'] + '</div><hr/>';
             $("#page-radio-journal").show();

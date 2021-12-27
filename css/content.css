@@ -429,6 +429,11 @@ small {
 .post-title {
     cursor: pointer;
 }
+.rs-journal-single{
+    max-width: 500px;
+    width: 80%;
+    margin: auto;
+}
 
 /* CONVIVES*/
 
