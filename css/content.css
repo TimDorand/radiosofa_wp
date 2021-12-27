@@ -633,11 +633,7 @@ small {
         flex-wrap: nowrap;
         width: 180%;
         flex-direction: row;
-        height: auto;
-        overflow: hidden;
-        margin-bottom: -40px;
-
-    }
+        height: auto;}
 
     .replay-images .rs-block-column{
         width:100%;
@@ -654,7 +650,7 @@ small {
 
     .mobile-container {
         overflow: scroll;
-        margin: 45px -40px 0 -27px;
+        margin: 45px -40px -63px -27px;
         display: block;
     }
 
