@@ -103,8 +103,16 @@
         height: auto;
         flex-direction: row;
         margin: 24px -25px -6px -24px;
-        max-height: 20vh;
+        max-height: 100%;
+
     }
+    .vsel-container div{
+        display:none;
+    }
+    .vsel-container div:nth-child(-n+2){
+        display:flex;
+    }
+
     .vsel-content{
         margin: 0 0 14px 0 !important;
     }
