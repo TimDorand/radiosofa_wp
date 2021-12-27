@@ -633,8 +633,9 @@ small {
         flex-wrap: nowrap;
         width: 180%;
         flex-direction: row;
-        height: 163px;
+        height: auto;
         overflow: hidden;
+        margin-bottom: -40px;
 
     }
 
