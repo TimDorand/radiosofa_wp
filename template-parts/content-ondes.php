@@ -73,7 +73,7 @@
                                    echo '<div data-post-id="' . $post->post_name . '"><h2 class="post-title"><a href="/#article-' . $post->post_name . '">' . $post->post_title . '</a></h2>' . $post->post_excerpt . '</div><hr/>';
                                }*/
                     foreach ($recentConvives as $post) {
-                        $image = get_the_post_thumbnail($post, ["300", "300"]);
+                        $image = get_the_post_thumbnail($post, [238,238]);
                         echo '<div data-post-id="' . $post->post_name . '" class="ondes-convives-post" >';
                         echo $image;
                         echo $post->post_content;
