@@ -58,6 +58,10 @@
             fetchHideShowPage($(this).attr("pageSelector"), selectorRadioToPageName($(this).attr("pageSelector")), true);
         });
 
+        $("#menu__close").click(function (e) {
+                $("#menu__toggle").click()
+        })
+
         // Mobile Menu toggle
         /*$("#menu-toggle").click(function () {
             $("#primary-menu").toggle();

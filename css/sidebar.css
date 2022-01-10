@@ -374,7 +374,7 @@ img{
 .menu__box {
     display: flex;
     flex-direction: column !important;
-    padding: 170px 50px 0px 0px !important;
+    padding: 100px 50px 0px 0px !important;
     position: fixed;
     visibility: hidden;
     top: 0;
