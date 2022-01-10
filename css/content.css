@@ -739,6 +739,9 @@ small {
     .sofas-post{
         width:100%;
     }
+    .sofas-post-2, .sofas-post-3, .sofas-post-4{
+        margin: auto;
+    }
     .width-50{
         width:100%;
     }
