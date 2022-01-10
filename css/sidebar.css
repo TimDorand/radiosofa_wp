@@ -311,6 +311,7 @@ div[class^='src-components-current-track__articleCard--'] {
 }
 img{
     image-rendering: crisp-edges;
+    image-rendering: pixelated;
 }
 
 /* MOBILE BURGER MENU */
