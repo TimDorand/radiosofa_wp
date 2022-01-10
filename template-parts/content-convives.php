@@ -45,7 +45,7 @@ REPLAY
     $posts = get_posts(["numberposts" => -1, "category" => $categoryArticles->cat_ID]);
 
     foreach ($posts as $post) {
-        $image = get_the_post_thumbnail($post, ["300", "300"]);
+        $image = get_the_post_thumbnail($post, [300, 300]);
         echo '<div data-post-id="' . $post->post_name . '" class="convives-post">';
         echo $image;
         echo $post->post_content;
