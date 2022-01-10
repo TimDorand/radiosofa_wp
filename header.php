@@ -105,7 +105,6 @@
     wp_localize_script( 'rs-ajax', 'ajaxUrl', admin_url( 'admin-ajax.php') );
     wp_localize_script( 'rs-ajax', 'isAdmin', is_admin());
     wp_localize_script( 'rs-main', 'url_visuel_mois', get_field("url_visuel_mois"));
-    wp_localize_script( 'rs-main', 'url_visuel_mois', "/wp-content/themes/radiosofa/img/sofa_mois/tapisserie-selon-camille-bourdon-dec-21-5-2.jpg");
     wp_localize_script( 'rs-main', 'description_visuel_mois', get_field("description_visuel_mois"));
     ?>
 </head>

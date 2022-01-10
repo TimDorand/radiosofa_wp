@@ -7,7 +7,7 @@
                     width="524"
                     height="524"
                     loading="lazy"
-                    src="/wp-content/themes/radiosofa/img/sofa_mois/tapisserie-selon-camille-bourdon-dec-21-5.jpg"
+                    src=""
                     alt="Visuel du mois" id="visuel_mois">
             <figcaption class="description_visuel_mois">Le sofa du mois par Moon Art Club Template Parts</figcaption>
         </figure>
