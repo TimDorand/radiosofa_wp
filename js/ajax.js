@@ -146,14 +146,15 @@ function fetchPost(post_name) {
     });
 }
 
-function fetchPage(selector, page_name, is_template) {
+function fetchPage(selector, page_name, is_template, convives_year) {
     console.debug("[fetchPage] init call. selector: ", selector, " is_template: ", is_template);
     $.ajax({
         url: ajaxUrl,
         type: "POST",
         data: {
             'action': is_template ? 'load_page_template_with_name' : 'load_page_with_name',
-            'page_name': page_name
+            'page_name': page_name,
+            'convives_year': convives_year ? convives_year: ""
         },
         cache: true,
         success: function (data) {

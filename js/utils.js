@@ -71,7 +71,7 @@ function fetchHideShowPage(selector, page_name, is_template) {
     if (!isTabRendered && selector !== "page-radio-journal") {
         openPage(null, selector, page_name)
     } else {
-        fetchPage(selector, page_name, is_template)
+        fetchPage(selector, page_name, is_template, null)
     }
 }
 
@@ -220,6 +220,10 @@ var currentReplayDiv;
 function handleReplayIframe() {
     /*$("#spin").hide();
 */
+    $(".convives_year").click(function(e){
+        $("#spin").show();
+        fetchPage("page-radio-convives", "Convives", true, e.target.name)
+    })
     // Replay Souncdloud and mixcloud player
     $(".btn-replay").click(function () {
         var smallSpinner = $("#small-spin");

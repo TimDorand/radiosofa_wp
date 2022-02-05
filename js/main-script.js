@@ -95,7 +95,7 @@
                 var pagesToLoad = ["Convives", "Residence"]
                 for (const pageName of pagesToLoad) {
                     setTimeout(function () {
-                        fetchPage(null, pageName, true)
+                        fetchPage(null, pageName, true, null)
                     }, 1000)
                 }
             }, 1000)
