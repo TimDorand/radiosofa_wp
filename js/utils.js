@@ -220,21 +220,23 @@ function handleSofas() {
 
 // REPLAYS
 var currentReplayDiv;
+function handleClickFilter(){
 
-function handleReplayIframe() {
-    /*$("#spin").hide();
-*/
+    console.warn($(".convives_year").length);
+
     $(".convives_year").click(function (e) {
         $("#spin").show();
         fetchPage("page-radio-convives", "Convives", true, e.target.name)
     })
-    setTimeout(function () {
-
-        $(".convives_year").click(function (e) {
-            $("#spin").show();
-            fetchPage("page-radio-convives", "Convives", true, e.target.name)
-        })
-    },4000)
+}
+function handleReplayIframe() {
+    if($(".convives_year").length > 0){
+        handleClickFilter();
+    } else {
+        setTimeout(function () {
+            handleClickFilter();
+        },4000)
+    }
 
     // Replay Souncdloud and mixcloud player
     $(".btn-replay").click(function () {

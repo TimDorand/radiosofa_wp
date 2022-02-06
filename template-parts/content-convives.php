@@ -42,7 +42,7 @@ REPLAY
 
     $categoryArticles = get_category_by_slug("Convives");
     $posts = get_posts(["numberposts" => -1, "category" => $categoryArticles->cat_ID]);
-    $years = ['2021', '2020'];
+    $years = ['2022', '2021', '2020'];
 
     $year_selected = isset($args['convives_year']) && $args['convives_year'] !== ""
         ? $args['convives_year']
@@ -65,6 +65,10 @@ REPLAY
         echo $image;
         echo $post->post_content;
         echo '</div>';
+    }
+    var_dump(sizeof($posts));
+    if(sizeof($posts)){
+        echo '<p>Pas de replay en '.$year.'.</p> <span style="display:none">radiosofa radiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofaradiosofa</span>';
     }
     ?>
     <?php wp_reset_postdata(); ?>
