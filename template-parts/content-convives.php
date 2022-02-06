@@ -54,7 +54,9 @@ REPLAY
 
     echo '<div class="convives_year_filter">';
     foreach ($years as $year) {
-        echo '<button class="convives_year" name="' . $year . '">' . $year . '</button>';
+        echo '<button class="convives_year'
+            . ($year === $year_selected ? ' convives_year_actif' : '')
+            . '" name="' . $year . '">' . $year . '</button>';
     }
     echo '</div>';
     foreach ($posts as $key => $post) {

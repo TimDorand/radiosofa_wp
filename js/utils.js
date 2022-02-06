@@ -159,9 +159,13 @@ function showResidenceDetails(e) {
     handleReplayIframe();
     setTimeout(function(){
         $("html, body").scrollTop(0);
+        $('main').scrollTop(0);
+
     }, 100)
     setTimeout(function(){
         $("#page-radio-residence").scrollTop(0);
+        $('main').scrollTop(0);
+
     }, 0)
 }
 
