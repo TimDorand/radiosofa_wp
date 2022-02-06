@@ -224,13 +224,17 @@ var currentReplayDiv;
 function handleReplayIframe() {
     /*$("#spin").hide();
 */
+    $(".convives_year").click(function (e) {
+        $("#spin").show();
+        fetchPage("page-radio-convives", "Convives", true, e.target.name)
+    })
     setTimeout(function () {
 
         $(".convives_year").click(function (e) {
             $("#spin").show();
             fetchPage("page-radio-convives", "Convives", true, e.target.name)
         })
-    },2000)
+    },4000)
 
     // Replay Souncdloud and mixcloud player
     $(".btn-replay").click(function () {
