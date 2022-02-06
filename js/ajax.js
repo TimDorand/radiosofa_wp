@@ -76,6 +76,13 @@ $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
             if (typeof data.data == "undefined") {
                 data = replaceEveryting(data, 'iframe width="100%" height="60" src=', 'iframe width="100%" height="60" allow="autoplay" src="about:blank" data-src=')
                 data = replaceEveryting(data, 'allow="autoplay" src=', 'allow="autoplay" src="about:blank" data-src=')
+                data = replaceEveryting(data, '<!-- /wp:column -->', '')
+                data = replaceEveryting(data, '<!-- wp:column -->', '')
+                data = replaceEveryting(data, '<!-- wp:html /-->', '')
+                data = replaceEveryting(data, '<!-- /wp:columns -->', '')
+                data = replaceEveryting(data, '<!-- wp:paragraph -->', '')
+                data = replaceEveryting(data, '<!-- /wp:paragraph -->', '')
+                data = replaceEveryting(data, '<!-- wp:columns {"className":"replay-info"} -->', '')
             }
 
             var responseData = JSON.stringify(
