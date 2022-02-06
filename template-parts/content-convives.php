@@ -66,9 +66,8 @@ REPLAY
         echo $post->post_content;
         echo '</div>';
     }
-    var_dump(sizeof($posts));
     if(sizeof($posts) == 0){
-        echo '<p>Pas de replay en '.$year.'.</p>';
+        echo "<p class='text-centered' style='text-align:center;width:100%;'>Les replay de ".$year_selected." ne sont pas encore disponibles. Revenez bientôt.</p>";
     }
     ?>
     <?php wp_reset_postdata(); ?>
