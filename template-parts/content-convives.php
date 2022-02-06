@@ -67,7 +67,7 @@ REPLAY
         echo '</div>';
     }
     var_dump(sizeof($posts));
-    if(sizeof($posts)){
+    if(sizeof($posts) == 0){
         echo '<p>Pas de replay en '.$year.'.</p>';
     }
     ?>
