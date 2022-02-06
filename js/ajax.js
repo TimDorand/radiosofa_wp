@@ -47,7 +47,9 @@ $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
         }*/
     if (options.cache) {
         var success = originalOptions.success || $.noop,
-            cacheKey = originalOptions.data.page_name ? originalOptions.data.page_name : originalOptions.data.post_name;
+            cacheKey = originalOptions.data.page_name
+                ? originalOptions.data.page_name+originalOptions.data.convives_year
+                : originalOptions.data.post_name;
 
         options.cache = false; //remove jQuery cache as we have our own localStorage
         options.beforeSend = function () {
