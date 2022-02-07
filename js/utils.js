@@ -83,6 +83,7 @@ function openPage(evt, selector, pageName, response) {
     if (selector && response) {
         console.debug("[openPage] page rendering started...");
         selectorDiv.show().html(cleanReponseText(response.post_content))
+        $('main').scrollTop(0);
         console.debug("[openPage] page rendered");
     }
     $("#spin").hide();
@@ -158,12 +159,10 @@ function showResidenceDetails(e) {
     $("#back-residence").parent("div").show();
     handleReplayIframe();
     setTimeout(function(){
-        $("html, body").scrollTop(0);
         $('main').scrollTop(0);
 
     }, 100)
     setTimeout(function(){
-        $("#page-radio-residence").scrollTop(0);
         $('main').scrollTop(0);
 
     }, 0)
