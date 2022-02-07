@@ -83,12 +83,12 @@ function openPage(evt, selector, pageName, response) {
     if (selector && response) {
         console.debug("[openPage] page rendering started...");
         selectorDiv.show().html(cleanReponseText(response.post_content))
-        $('main').scrollTop(0);
         console.debug("[openPage] page rendered");
     }
     $("#spin").hide();
 
     selectorDiv.show();
+    $('main').scrollTop(0);
 
     handleMenu(evt, selector);
 
