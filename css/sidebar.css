@@ -85,7 +85,7 @@
 .site-player :before,.site-player :after {
     display: block;
     content: "";
-    position: absolute;
+    /*position: absolute;*/
 }
 .site-player audio{
     display:none;

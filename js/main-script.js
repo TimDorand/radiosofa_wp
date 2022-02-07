@@ -112,6 +112,28 @@
             }
         });
 
+        // PREVIOUS NAV
+        window.addEventListener('popstate', (event) => {
+            console.log("location: " + document.location + ", state: " + JSON.stringify(event.state), ", history: ", event);
+            if(event.state){
+                window.location.reload();
+            }
+
+        });
+        window.onpopstate=function()
+        {
+            alert("Back/Forward clicked!");
+        }
+        if (history.state !== null  &&  +history.state < history.length)
+        {
+            alert("refresh needed");
+            history.replaceState(null, "", window.location.href);
+        }
+        else
+        {
+            history.replaceState(history.length, "", window.location.href);
+        }
+
 
         console.log("[Main Script] Document ready");
     });

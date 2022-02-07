@@ -19,6 +19,7 @@
     <script src="<?php echo site_url();?>/wp-content/themes/radiosofa/js/jquery_min_213.js"></script>
     <?php wp_head(); ?>
     <link rel="stylesheet" href="<?php echo site_url();?>/wp-content/themes/radiosofa/css/style.css">
+    <link rel="stylesheet" href="<?php echo site_url();?>/wp-content/themes/radiosofa/css/fa.css">
 
     <style>
         html{
@@ -252,18 +253,23 @@ Eclectisme garanti avec chaque semaine des sélections thématiques et des DJ se
         </div>
         <div class="site-header-second-part">
 
-        <div style="display:flex;flex-direction:row";> <a rel="noreferrer" target="_blank" href="https://facebook.com/webradio.sofa">
-                <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/logo_facebook.png" width="15" height="15" alt="Facebook logo">
+        <div style="display:flex;flex-direction:row";>
+            <a href="https://www.facebook.com/webradio.sofa" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/radio.sofa/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://soundcloud.com/radio-sofa" target="_blank"><i class="fab fa-soundcloud"></i></a>
+            <!--<a rel="noreferrer" target="_blank" href="https://facebook.com/webradio.sofa">
+                <img src="<?php /*echo site_url();*/?>/wp-content/themes/radiosofa/img/logo_facebook.png" width="15" height="15" alt="Facebook logo">
             </a>
             <a rel="noreferrer" target="_blank" href="https://www.instagram.com/radio.sofa/">
-                <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/logo_insta.png" width="15" height="15" alt="Instagram logo">
+                <img src="<?php /*echo site_url();*/?>/wp-content/themes/radiosofa/img/logo_insta.png" width="15" height="15" alt="Instagram logo">
             </a>
-           <!-- <a rel="noreferrer" target="_blank" href="https://open.spotify.com/user/jackhadagroove/">
-                <img src="<?php /*echo site_url();*/?>/wp-content/themes/radiosofa/img/logo_spotify.png" width="15" height="15" alt="Spotify logo">
-            </a>-->
+
             <a rel="noreferrer" target="_blank" href="https://soundcloud.com/radio-sofa">
-                <img src="<?php echo site_url();?>/wp-content/themes/radiosofa/img/logo_soundcloud.png" width="15" height="15" alt="Soundcloud logo">
-            </a>
+                <img src="<?php /*echo site_url();*/?>/wp-content/themes/radiosofa/img/logo_soundcloud.png" width="15" height="15" alt="Soundcloud logo">
+            </a>-->
+            <!-- <a rel="noreferrer" target="_blank" href="https://open.spotify.com/user/jackhadagroove/">
+                <img src="<?php /* echo site_url(); */?>/wp-content/themes/radiosofa/img/logo_spotify.png" width="15" height="15" alt="Spotify logo">
+            </a>-->
         </div>
             <small>contact.radiosofa@gmail.com</small>
 

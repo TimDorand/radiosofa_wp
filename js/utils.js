@@ -222,8 +222,8 @@ function handleSofas() {
 var currentReplayDiv;
 function handleClickFilter(){
     $(".convives_year").click(function (e) {
-        e.preventDefault();
         $("#spin").show();
+        e.preventDefault();
         fetchPage("page-radio-convives", "Convives", true, e.target.name)
     })
 }

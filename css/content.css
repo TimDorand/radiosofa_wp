@@ -580,6 +580,13 @@ small {
     .rs-block-column, .wp-block-column{
         width:100%;
     }
+    .rs-block-columns{
+        flex-wrap:wrap;
+    }
+    .rs-block-column:not(:first-child) {
+        margin:0;
+    }
+
     .convives-post {
         width: calc(50% - 20px);
     }
@@ -601,7 +608,9 @@ small {
 
 /* MOBILE */
 @media screen and (max-width: 750px) {
-
+    .wp-block-column {
+        flex-basis: auto !important;
+    }
     .mobile-only {
         display: flex;
     }
