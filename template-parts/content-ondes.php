@@ -132,19 +132,9 @@
 </div>
 
 <div class="mobile-only text-centered">
-    <div class="rs-home-footer"><a target="_blank" href="https://facebook.com/webradio.sofa">
-            <img src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/logo_facebook.png" width="20"
-                 alt="Facebook logo">
-        </a>
-        <a target="_blank" href="https://www.instagram.com/radio.sofa/">
-            <img src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/logo_insta.png" width="20"
-                 alt="Instagram logo">
-        </a>
-        <a target="_blank" href="https://open.spotify.com/user/jackhadagroove/">
-            <img src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/logo_spotify.png" width="20"
-                 alt="Spotify logo">
-        </a>
-    </div>
+    <a href="https://www.facebook.com/webradio.sofa" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/radio.sofa/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://soundcloud.com/radio-sofa" target="_blank"><i class="fab fa-soundcloud"></i></a>
 </div>
 
 <!-- wp:column -->
