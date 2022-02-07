@@ -292,7 +292,9 @@ small {
 .ondes-convives-post img{
     border: 1px solid black;
 }
-
+.mobile-rs-icons a{
+    padding: 5px
+}
 
 .replay-images .btn-replay, .convives-post .btn-replay {
     font-size: 10px;
