@@ -44,18 +44,18 @@ REPLAY
     $posts = get_posts(["numberposts" => -1, "category" => $categoryArticles->cat_ID]);
     $years = ['2022', '2021', '2020'];
 
-    $year_selected = isset($args['convives_year']) && $args['convives_year'] !== ""
-        ? $args['convives_year']
+    $year_selected = isset($args['convivesYear']) && $args['convivesYear'] !== ""
+        ? $args['convivesYear']
         : $years[0];
 
     $posts = array_filter($posts, function ($post) use ($year_selected) {
         return strpos($post->post_date, $year_selected) !== false;
     }, ARRAY_FILTER_USE_BOTH);
 
-    echo '<div class="convives_year_filter">';
+    echo '<div class="convivesYear_filter">';
     foreach ($years as $year) {
-        echo '<button class="convives_year'
-            . ($year === $year_selected ? ' convives_year_actif' : '')
+        echo '<button class="convivesYear'
+            . ($year === $year_selected ? ' convivesYear_actif' : '')
             . '" name="' . $year . '">' . $year . '</button>';
     }
     echo '</div>';

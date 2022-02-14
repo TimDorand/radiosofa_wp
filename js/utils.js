@@ -62,33 +62,43 @@ function cleanReponseText(text) {
 
 // CONTENT MANAGEMENT
 // Hide content, show loader, fetch page, hide content, openPage()
-function fetchHideShowPage(selector, page_name, is_template) {
-    console.debug("[fetchHideShowPage] selector to show:", selector, "page_name:", page_name);
+function fetchHideShowPage(selector, pageName, is_template) {
+    console.debug("[fetchHideShowPage] selector to show:", selector, "pageName:", pageName);
     $("#spin").show();
     $(".tabcontent").hide();
     var isTabRendered = $("#" + selector + " div").length === 0;
 
     if (!isTabRendered && selector !== "page-radio-journal") {
-        openPage(null, selector, page_name)
+        openPage({ selector, pageName})
     } else {
-        fetchPage(selector, page_name, is_template, null)
+        console.debug("[fetchHideShow] fetchPage")
+        fetchPage({selector, pageName, is_template})
     }
 }
-
+let previousConvivesYear
 // Rooter page: handle active menu, hide all page, show content
-function openPage(evt, selector, pageName, response) {
-    console.debug("[openPage] evt:", evt, "selector:", selector, "pageName:", pageName);
+const openPage = (params) => {
+    const {evt, selector, pageName, response, convivesYear, loadAll} = params;
+    console.debug(`[openPage] pageName : ${pageName}`);
 
-    var selectorDiv = $("#" + selector);
+    const selectorDiv = $("#" + selector);
     if (selector && response) {
         console.debug("[openPage] page rendering started...");
+
+        if (pageName === "Convives" && response.post_content.length > 50000 && !loadAll) {
+            response.post_content = response.post_content.slice(0, 50300)
+                + '"/> <div class="convivesLoadMoreContainer"></div><button class="convivesLoadMore" id="load_more_convives">Charger plus de replay</button></main> '
+        }
         selectorDiv.show().html(cleanReponseText(response.post_content))
         console.debug("[openPage] page rendered");
     }
     $("#spin").hide();
 
-    selectorDiv.show();
-    $('main').scrollTop(0);
+    /*selectorDiv.show();*/
+
+    if(!loadAll){
+        $('main').scrollTop(0);
+    }
 
     handleMenu(evt, selector);
 
@@ -103,9 +113,10 @@ function openPage(evt, selector, pageName, response) {
     } else if (pageName === "Journal") {
         handleJournalClick();
     }
-    if (pageName === "Ondes"){
+    if (pageName === "Ondes") {
         handleReplayIframe();
         handleJournalClick();
+        handleOndes()
         setTimeout(function () {
             findMyText(tab_jour[ladate.getDay()], "Aujourd'hui");
             findMyText(tab_jour[ladate.getDay() + 1], "Demain");
@@ -139,6 +150,21 @@ function handleMenu(evt, selector) {
     }
 }
 
+// ONDES
+function handleOndes() {
+    $("#visuel_mois").attr('src', url_visuel_mois);
+    $(".description_visuel_mois").html(description_visuel_mois);
+
+    $("#ondes-more-planning").click(function (e) {
+        e.preventDefault();
+        if ($(".vsel-container").hasClass("max-height-100")) {
+            $(".vsel-container").removeClass("max-height-100");
+        } else {
+            $(".vsel-container").addClass("max-height-100");
+        }
+    });
+}
+
 // RESIDENCE
 function handleResidence() {
     setTimeout(function () {
@@ -158,11 +184,11 @@ function showResidenceDetails(e) {
     $("#residence-" + resident).show();
     $("#back-residence").parent("div").show();
     handleReplayIframe();
-    setTimeout(function(){
+    setTimeout(function () {
         $('main').scrollTop(0);
 
     }, 100)
-    setTimeout(function(){
+    setTimeout(function () {
         $('main').scrollTop(0);
 
     }, 0)
@@ -190,21 +216,6 @@ function handleJournalClick() {
         });
     }, 100)
 
-    setTimeout(function () {
-        $("#visuel_mois").attr('src', url_visuel_mois);
-        $(".description_visuel_mois").html(description_visuel_mois);
-
-        $("#ondes-more-planning").click(function (e) {
-            e.preventDefault();
-            if ($(".vsel-container").hasClass("max-height-100")) {
-                $(".vsel-container").removeClass("max-height-100");
-            } else {
-                $(".vsel-container").addClass("max-height-100");
-            }
-        });
-
-    }, 0)
-
 }
 
 // SOFAS
@@ -219,21 +230,38 @@ function handleSofas() {
 
 // REPLAYS
 var currentReplayDiv;
-function handleClickFilter(){
-    $(".convives_year").click(function (e) {
+
+function handleClickFilter() {
+
+}
+
+function handleReplayIframe() {
+    if ($(".convivesYear").length > 0) {
+        $(".convivesYear").click(function (e) {
+            $("#spin").show();
+            e.preventDefault();
+            console.debug("[handleClickFilter] fetchPage")
+            fetchPage({
+                selector:"page-radio-convives",
+                pageName:"Convives",
+                is_template: true,
+                convivesYear: e.target.name})
+        })    } else {
+    }
+
+    $("#load_more_convives").click(function (e) {
         $("#spin").show();
         e.preventDefault();
-        fetchPage("page-radio-convives", "Convives", true, e.target.name)
+        console.debug("[handleLoadMoreConvives] fetchPage")
+        fetchPage({
+            selector: "page-radio-convives",
+            pageName: "Convives",
+            is_template: true,
+            convivesYear: $(".convivesYear_actif").attr('name'),
+            loadAll: true
+        });
     })
-}
-function handleReplayIframe() {
-    if($(".convives_year").length > 0){
-        handleClickFilter();
-    } else {
-        setTimeout(function () {
-            handleClickFilter();
-        },4000)
-    }
+
 
     // Replay Souncdloud and mixcloud player
     $(".btn-replay").click(function () {

@@ -15,7 +15,8 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="description" content="Radio Sofa, la webradio à écouter assis et debout. Partage continuel de sons universels et confortables par nos diggers de salon.">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
     <script src="<?php echo site_url();?>/wp-content/themes/radiosofa/js/jquery_min_213.js"></script>
     <?php wp_head(); ?>
     <link rel="stylesheet" href="<?php echo site_url();?>/wp-content/themes/radiosofa/css/style.css">
@@ -142,6 +143,9 @@
             <div id="rk-current-track-widget" data-id="radio-sofa" data-buy="0"></div>
             <!-- <script type="text/javascript" src="https://widget.radioking.io/current-track/build/script.min.js"></script> -->
             <script type="text/javascript" src="<?php echo site_url();?>/wp-content/themes/radiosofa/js/current-track/rk-current-track-min.js"></script>
+           <!-- <script type="text/javascript" src="<?php /*echo site_url();*/?>/wp-content/themes/radiosofa/js/lazyframe/lazyframe.js"></script>
+            <link rel="stylesheet" href="<?php /*echo site_url();*/?>/wp-content/themes/radiosofa/js/lazyframe/lazyframe.css" />
+-->
         </div>
 		<div class="site-branding">
 			<?php

@@ -31,7 +31,7 @@ var localCache = {
 $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
     /*    if (options.cache) {
             var complete = originalOptions.complete || $.noop,
-                cacheKey = originalOptions.data.page_name ? originalOptions.data.page_name : originalOptions.data.post_name;
+                cacheKey = originalOptions.data.pageName ? originalOptions.data.pageName : originalOptions.data.post_name;
             //remove jQuery cache as we have our own localCache
             options.cache = false;
             options.beforeSend = function () {
@@ -47,8 +47,8 @@ $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
         }*/
     if (options.cache) {
         var success = originalOptions.success || $.noop,
-            cacheKey = originalOptions.data.page_name
-                ? originalOptions.data.page_name+originalOptions.data.convives_year
+            cacheKey = originalOptions.data.pageName
+                ? originalOptions.data.pageName+originalOptions.data.convivesYear
                 : originalOptions.data.post_name;
 
         options.cache = false; //remove jQuery cache as we have our own localStorage
@@ -141,7 +141,7 @@ function fetchPost(post_name) {
         /*cache: true*/
     }).done(function (response) {
         if (response && response.data) {
-            openPage(null, "page-radio-journal", "Journal")
+            openPage({selector: "page-radio-journal", pageName: "Journal"})
             var post_html = '<div class="rs-journal-single" data-post-id="' + response.data['ID'] + '">' +
                 '<h2 class="post-title">' + response.data['post_title'] + '</h2>' +
                 response.data['post_content'] + '</div><hr/>';
@@ -155,24 +155,36 @@ function fetchPost(post_name) {
     });
 }
 
-function fetchPage(selector, page_name, is_template, convives_year) {
-    console.debug("[fetchPage] init call. selector: ", selector, " is_template: ", is_template);
+const fetchPage = (params) => {
+    const {
+        selector,
+        pageName,
+        is_template,
+        convivesYear,
+        loadAll
+    } = params;
+    console.debug(`[fetchPage] ${JSON.stringify(params)}`);
     $.ajax({
         url: ajaxUrl,
         type: "POST",
         data: {
             'action': is_template ? 'load_page_template_with_name' : 'load_page_with_name',
-            'page_name': page_name,
-            'convives_year': convives_year ? convives_year: ""
+            'pageName': pageName,
+            'convivesYear': convivesYear ? convivesYear: ""
         },
         cache: true,
         success: function (data) {
             var response = JSON.parse(data) ? JSON.parse(data).cacheData : null;
-            console.debug("[fetchPage] selector: ", selector, " is_template: ", is_template);
             if (response && selector) {
-                openPage(null, selector, page_name, response)
+                openPage({
+                    selector,
+                    pageName,
+                    response,
+                    convivesYear,
+                    loadAll
+                })
             } else if (!response && selector) {
-                openPage(null, "page-ondes", "Ondes")
+                openPage({selector: "page-ondes",pageName: "Ondes"})
                 console.error('[fetchPage] Erreur sur load_page_with_name: ', response);
             }
         },

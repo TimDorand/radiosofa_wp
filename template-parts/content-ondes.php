@@ -49,11 +49,11 @@
         </div>
         <?php echo do_shortcode("[vsel]"); ?>
 
-        <!--<div class="text-centered" id="ondes-more-planning">▽</div>-->
-        <div class="rs-block-columns"><!-- wp:column -->
+        <div class="text-centered" id="ondes-more-planning">▽</div>
+        <div class="rs-block-columns">
             <div class="rs-block-column"></div>
 
-            <!-- wp:column -->
+
             <div class="rs-block-column"></div>
         </div>
 
@@ -65,7 +65,7 @@
             </div>
 
             <span class="mobile-container">
-                <div class="rs-block-columns replay-images"><!-- wp:column -->
+                <div class="rs-block-columns replay-images">
                     <?php
                     $categoryConvives = get_category_by_slug("Convives");
                     $recentConvives = get_posts(["numberposts" => 4, "category" => $categoryConvives->cat_ID]);
@@ -121,18 +121,17 @@
 
 
 <div class="ondes-footer">
-    <div><h3 onclick="openPage(event, 'page-actualites')">à propos</h3></div>
+    <div><h3 onclick="openPage({evt:event, selector:'page-actualites'})">à propos</h3></div>
 
 <!-- wp:paragraph {"className":"text-justify"} -->
 <p class="text-justify">Radio Sofa vous partage en continu de la musique universelle piochée avec soin par notre
     équipe de diggers de salon.<br><br>Eclectisme garanti avec chaque semaine des sélections thématiques et des
-    DJ sets, à écouter assis et debout.Radio Sofa vous partage en continu de la musique universelle piochée avec
-    soin par notre équipe de diggers de salon.<br></p>
+    DJ sets, à écouter assis et debout.<br></p>
 <!-- /wp:paragraph -->
 </div>
 
 <div class="mobile-only text-centered mobile-rs-icons">
-    <a href="https://www.facebook.com/webradio.sofa" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.facebook.com/webradio.sofa" target="_blank"><i class="fab fa-facebook">Facebook</i></a>
     <a href="https://www.instagram.com/radio.sofa/" target="_blank"><i class="fab fa-instagram"></i></a>
     <a href="https://soundcloud.com/radio-sofa" target="_blank"><i class="fab fa-soundcloud"></i></a>
 
@@ -143,6 +142,6 @@
     <br/>
 </div>
 
-<!-- wp:column -->
+
 
 </div>

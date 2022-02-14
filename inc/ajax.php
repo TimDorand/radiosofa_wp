@@ -29,9 +29,9 @@ add_action('wp_ajax_load_post_with_name', 'rs_load_post_with_name');
 
 function rs_load_page_with_name()
 {
-    $page_name = $_POST['page_name'];
+    $pageName = $_POST['pageName'];
     try{
-        $page = get_page_by_title($page_name);
+        $page = get_page_by_title($pageName);
         wp_send_json_success($page);
     }catch(Exception $e){
         wp_send_json_error($e);
@@ -44,11 +44,11 @@ add_action('wp_ajax_load_page_with_name', 'rs_load_page_with_name');
 
 function rs_load_page_template_with_name()
 {
-    $page_name = $_POST['page_name'];
-    $convives_year = $_POST['convives_year'];
+    $pageName = $_POST['pageName'];
+    $convivesYear = $_POST['convivesYear'];
 
     try{
-        $template = get_template_part( 'template-parts/content', strtolower($page_name), ['convives_year' => $convives_year]);
+        $template = get_template_part( 'template-parts/content', strtolower($pageName), ['convivesYear' => $convivesYear]);
         wp_send_json_success($template);
     }catch(Exception $e){
         wp_send_json_error($e);

@@ -554,12 +554,12 @@ small {
     display: block;
 }
 
-.convives_year_filter{
+.convivesYear_filter, .convivesLoadMoreContainer{
     display:flex;
     width: 100%;
     justify-content: center;
 }
-.convives_year{
+.convivesYear, .convivesLoadMore{
     background: transparent;
     border: 1px solid lightgray;
     border-radius: 0;
@@ -568,11 +568,11 @@ small {
     box-shadow: lightgray 2px 2px 0;
 }
 
-.convives_year:hover{
+.convivesYear:hover{
     background: #f6f6f6;
     border: 1px solid black;
 }
-.convives_year_actif{
+.convivesYear_actif{
     border: 1px solid black;
     box-shadow: black 2px 2px 0px;
 }

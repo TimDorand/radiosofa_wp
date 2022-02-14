@@ -1,4 +1,5 @@
 // On click functions
+
 (function ($) {
 
     // Player
@@ -95,7 +96,8 @@
                 var pagesToLoad = ["Convives", "Residence"]
                 for (const pageName of pagesToLoad) {
                     setTimeout(function () {
-                        fetchPage(null, pageName, true, null)
+                        console.debug("[loadPageBackground] fetchPage")
+                        /*fetchPage(null, pageName, true, null)*/
                     }, 1000)
                 }
             }, 1000)
@@ -118,22 +120,7 @@
             if(event.state){
                 window.location.reload();
             }
-
         });
-        window.onpopstate=function()
-        {
-            alert("Back/Forward clicked!");
-        }
-        if (history.state !== null  &&  +history.state < history.length)
-        {
-            alert("refresh needed");
-            history.replaceState(null, "", window.location.href);
-        }
-        else
-        {
-            history.replaceState(history.length, "", window.location.href);
-        }
-
 
         console.log("[Main Script] Document ready");
     });
