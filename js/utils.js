@@ -78,12 +78,12 @@ function fetchHideShowPage(selector, pageName, is_template) {
 let previousConvivesYear
 // Rooter page: handle active menu, hide all page, show content
 const openPage = (params) => {
-    const {evt, selector, pageName, response, convivesYear, loadAll} = params;
-    console.debug(`[openPage] pageName : ${pageName}`);
+    const {evt, selector, pageName, response, loadAll} = params;
+    console.debug(`[openPage] pageName : ${pageName}, selector: ${selector}, response: ${response}`);
 
     const selectorDiv = $("#" + selector);
     if (selector && response) {
-        console.debug("[openPage] page rendering started...");
+        console.debug("[openPage] page rendering started...", response.post_content.length,loadAll );
 
         if (pageName === "Convives" && response.post_content.length > 50000 && !loadAll) {
             response.post_content = response.post_content.slice(0, 50300)
@@ -91,6 +91,9 @@ const openPage = (params) => {
         }
         selectorDiv.show().html(cleanReponseText(response.post_content))
         console.debug("[openPage] page rendered");
+    } else {
+        // page already fetched
+        selectorDiv.show();
     }
     $("#spin").hide();
 
