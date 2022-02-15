@@ -310,8 +310,7 @@ div[class^='src-components-current-track__articleCard--'] {
 
 }
 img{
-    image-rendering: pixelated;
-    image-rendering: crisp-edges;
+    image-rendering: auto;
 }
 
 /* MOBILE BURGER MENU */

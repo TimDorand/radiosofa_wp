@@ -1,7 +1,7 @@
 // AUDIO
 function playRS() {
-    var song = $("#sidebar-player-audio").get(0);
-    var src = "https://www.radioking.com/play/radio-sofa";
+    const song = $("#sidebar-player-audio").get(0);
+    const src = "https://www.radioking.com/play/radio-sofa";
     if (song.paused) {
         song.src = src;
         song.load();
@@ -39,7 +39,7 @@ function myOnLoadedData() {
 
 // Find and replace text: planning
 var ladate = new Date();
-var tab_jour = new Array("dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi");
+var tab_jour = ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"];
 
 function findMyText(needle, replacementText) {
     var myOldString = $("#vsel").html();
@@ -66,9 +66,9 @@ function fetchHideShowPage(selector, pageName, is_template) {
     console.debug("[fetchHideShowPage] selector to show:", selector, "pageName:", pageName);
     $("#spin").show();
     $(".tabcontent").hide();
-    var isTabRendered = $("#" + selector + " div").length === 0;
+    var isTabRendered = $("#" + selector + " div").length !== 0;
 
-    if (!isTabRendered && selector !== "page-radio-journal") {
+    if (isTabRendered && selector !== "page-radio-journal") {
         openPage({ selector, pageName})
     } else {
         console.debug("[fetchHideShow] fetchPage")
@@ -158,14 +158,17 @@ function handleOndes() {
     $("#visuel_mois").attr('src', url_visuel_mois);
     $(".description_visuel_mois").html(description_visuel_mois);
 
-    $("#ondes-more-planning").click(function (e) {
-        e.preventDefault();
-        if ($(".vsel-container").hasClass("max-height-100")) {
-            $(".vsel-container").removeClass("max-height-100");
-        } else {
-            $(".vsel-container").addClass("max-height-100");
-        }
-    });
+    setTimeout(function(){
+        $("#ondes-more-planning").click(function (e) {
+            e.preventDefault();
+            if ($(".vsel-container").hasClass("max-height-100")) {
+                $(".vsel-container").removeClass("max-height-100");
+            } else {
+                $(".vsel-container").addClass("max-height-100");
+            }
+        });
+    }, 10)
+
 }
 
 // RESIDENCE
