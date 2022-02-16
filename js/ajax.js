@@ -128,7 +128,7 @@ $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
 function fetchPost(post_name) {
     console.debug("[fetchPost]", post_name)
     $(".post-single").show();
-    $("#spin").show();
+    showLoader();
     $(".tabcontent").hide();
 
     $.ajax({
@@ -151,7 +151,7 @@ function fetchPost(post_name) {
         } else {
             console.error('[fetchPost] Erreur sur load_post_with_name: ', response);
         }
-        $("#spin").hide();
+        hideLoader();
     });
 }
 

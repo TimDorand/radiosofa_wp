@@ -29,6 +29,14 @@ function stopRS() {
     $("#sidebar-player").addClass("play");
     $("#sidebar-player").removeClass("pause");
 }
+const showLoader = () => {
+    document.body.style.cursor = "wait";
+    $("#spin").show();
+}
+const hideLoader = () => {
+    document.body.style.cursor = 'default';
+    $("#spin").hide();
+}
 
 //UTILS
 function myOnLoadedData() {
@@ -64,7 +72,7 @@ function cleanReponseText(text) {
 // Hide content, show loader, fetch page, hide content, openPage()
 function fetchHideShowPage(selector, pageName, is_template) {
     console.debug("[fetchHideShowPage] selector to show:", selector, "pageName:", pageName);
-    $("#spin").show();
+    showLoader();
     $(".tabcontent").hide();
     var isTabRendered = $("#" + selector + " div").length !== 0;
 
@@ -95,9 +103,7 @@ const openPage = (params) => {
         // page already fetched
         selectorDiv.show();
     }
-    $("#spin").hide();
-
-    /*selectorDiv.show();*/
+    hideLoader();
 
     if(!loadAll){
         $('main').scrollTop(0);
@@ -244,7 +250,7 @@ function handleClickFilter() {
 function handleReplayIframe() {
     if ($(".convivesYear").length > 0) {
         $(".convivesYear").click(function (e) {
-            $("#spin").show();
+            showLoader();
             e.preventDefault();
             console.debug("[handleClickFilter] fetchPage")
             fetchPage({
@@ -256,7 +262,7 @@ function handleReplayIframe() {
     }
 
     $("#load_more_convives").click(function (e) {
-        $("#spin").show();
+        showLoader();
         e.preventDefault();
         console.debug("[handleLoadMoreConvives] fetchPage")
         fetchPage({
