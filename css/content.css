@@ -656,6 +656,9 @@ small {
     .rs-journal-post {
         width: 100%;
     }
+    .rs-title{
+        display:none;
+    }
 }
 
 /* MOBILE */
