@@ -625,6 +625,12 @@ small {
     box-shadow: black 2px 2px 0px;
 }
 
+@media screen and (max-width: 1230px) and (min-width: 1000px) {
+    .ondes-title{
+        font-size: 11rem;
+    }
+
+}
 /* TABLETTE */
 @media screen and (max-width: 1000px) and (min-width: 750px) {
     .rs-block-column, .wp-block-column {
@@ -656,7 +662,7 @@ small {
     .rs-journal-post {
         width: 100%;
     }
-    .rs-title{
+    .ondes-title{
         display:none;
     }
 }
