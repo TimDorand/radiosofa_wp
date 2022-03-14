@@ -2,7 +2,7 @@
 
 ?>
 
-<h1 class="ondes-title desktop-only">
+<h1 class="ondes-title">
     <span>R</span>
     <span>A</span>
     <span>D</span>
@@ -22,7 +22,7 @@
 </h1>
 <div class="rs-block-columns">
     <div class="rs-block-column ondes-first-column">
-        <figure class="rs-block-image size-large img-bordered img-visu-mois" ><img
+        <figure class="rs-block-image size-large img-bordered img-visu-mois"><img
                     width="524"
                     height="524"
                     loading="lazy"
@@ -47,7 +47,7 @@
                         $categoryArticles = get_category_by_slug("Articles");
                         $recentArticles = get_posts(["numberposts" => 4, "category" => $categoryArticles->cat_ID]);
                         foreach ($recentArticles as $post) {
-                            $post_date = get_the_date('j')."/".get_the_date('n');
+                            $post_date = get_the_date('j') . "/" . get_the_date('n');
                             echo '<li><a class="ondes-journal-post-link" data-post-id="' . $post->post_name . '" href="/#article-' . $post->post_name . '">' . $post->post_title . '</a>
                         <time datetime="' . $post->post_date_gmt . '" class="rs-block-latest-posts__post-date">' . $post_date . '</time>
                         <div class="rs-block-latest-posts__post-excerpt ondes-journal-post">' . $post->post_content . '
@@ -63,12 +63,12 @@
     </div>
 
     <div class="rs-block-column home-agenda ondes-second-column">
-        <div class="rs-title rs-title-light" style="margin-top:45px">
+        <div class="rs-title rs-title-light ondes-more-planning clickable" style="margin-top:45px">
             <div><h2>AGENDA</h2></div>
         </div>
         <?php echo do_shortcode("[vsel]"); ?>
 
-        <div class="text-centered" id="ondes-more-planning">▽</div>
+        <div class="text-centered ondes-more-planning clickable">▽</div>
         <div class="rs-block-columns">
             <div class="rs-block-column"></div>
 
@@ -78,8 +78,8 @@
 
 
         <div class="rs-home-convives">
-            <div class="rs-title rs-title-dark">
-                <div><h2 class="clickable" onclick="fetchHideShowPage('page-radio-convives', 'Convives', true)">
+            <div class="rs-title rs-title-dark" onclick="fetchHideShowPage('page-radio-convives', 'Convives', true)">
+                <div><h2 class="clickable">
                         CONVIVES</h2></div>
             </div>
 
@@ -92,7 +92,7 @@
                                    echo '<div data-post-id="' . $post->post_name . '"><h2 class="post-title"><a href="/#article-' . $post->post_name . '">' . $post->post_title . '</a></h2>' . $post->post_excerpt . '</div><hr/>';
                                }*/
                     foreach ($recentConvives as $post) {
-                        $image = get_the_post_thumbnail($post, [238,238]);
+                        $image = get_the_post_thumbnail($post, [238, 238]);
                         echo '<div data-post-id="' . $post->post_name . '" class="ondes-convives-post" >';
                         echo $image;
                         echo $post->post_content;
@@ -105,8 +105,9 @@
 
     </div>
     <div class="rs-home-journal mobile-only">
-        <div class="rs-title rs-title-default rs-title-margin-top">
-            <div><h2 class="clickable" onclick="fetchHideShowPage('page-radio-journal', 'Journal', true)">
+        <div class="rs-title rs-title-default rs-title-margin-top"
+             onclick="fetchHideShowPage('page-radio-journal', 'Journal', true)">
+            <div><h2 class="clickable">
                     JOURNAL</h2>
             </div>
         </div>
@@ -121,7 +122,7 @@
                     $categoryArticles = get_category_by_slug("Articles");
                     $recentArticles = get_posts(["numberposts" => 2, "category" => $categoryArticles->cat_ID]);
                     foreach ($recentArticles as $post) {
-                        $post_date = get_the_date('j')."/".get_the_date('n');
+                        $post_date = get_the_date('j') . "/" . get_the_date('n');
                         echo '<li><a class="ondes-journal-post-link" data-post-id="' . $post->post_name . '" href="/#article-' . $post->post_name . '">' . $post->post_title . '</a>
                         <time datetime="' . $post->post_date_gmt . '" class="rs-block-latest-posts__post-date">' . $post_date . '</time>
                         <div class="rs-block-latest-posts__post-excerpt ondes-journal-post">' . $post->post_content . '
@@ -142,11 +143,11 @@
 <div class="ondes-footer">
     <div><h3 onclick="openPage({evt:event, selector:'page-actualites'})">à propos</h3></div>
 
-<!-- wp:paragraph {"className":"text-justify"} -->
-<p class="text-justify">Radio Sofa vous partage en continu de la musique universelle piochée avec soin par notre
-    équipe de diggers de salon.<br><br>Eclectisme garanti avec chaque semaine des sélections thématiques et des
-    DJ sets, à écouter assis et debout.<br></p>
-<!-- /wp:paragraph -->
+    <!-- wp:paragraph {"className":"text-justify"} -->
+    <p class="text-justify">Radio Sofa vous partage en continu de la musique universelle piochée avec soin par notre
+        équipe de diggers de salon.<br><br>Eclectisme garanti avec chaque semaine des sélections thématiques et des
+        DJ sets, à écouter assis et debout.<br></p>
+    <!-- /wp:paragraph -->
 </div>
 
 <div class="mobile-only text-centered mobile-rs-icons">
@@ -160,7 +161,6 @@
     <br/>
     <br/>
 </div>
-
 
 
 </div>

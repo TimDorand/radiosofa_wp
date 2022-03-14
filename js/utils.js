@@ -165,8 +165,7 @@ function handleOndes() {
     $(".description_visuel_mois").html(description_visuel_mois);
 
     setTimeout(function(){
-        $("#ondes-more-planning").click(function (e) {
-            e.preventDefault();
+        $(".ondes-more-planning").click(function () {
             if ($(".vsel-container").hasClass("max-height-100")) {
                 $(".vsel-container").removeClass("max-height-100");
             } else {
