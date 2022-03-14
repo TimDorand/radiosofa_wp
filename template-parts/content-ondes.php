@@ -9,12 +9,6 @@
     <span>I</span>
     <span>O</span>
     <span> </span>
-    <span> </span>
-    <span> </span>
-    <span> </span>
-    <span> </span>
-    <span> </span>
-    <span> </span>
     <span>S</span>
     <span>O</span>
     <span>F</span>
