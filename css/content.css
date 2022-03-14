@@ -528,7 +528,7 @@ small {
 
 /* SOFAS */
 
-.sofas-posts .rs-block-column {
+.sofas-posts .wp-block-column{
     cursor: pointer;
 }
 
