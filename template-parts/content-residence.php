@@ -1,5 +1,5 @@
-<div class="rs-title" style="display:none;width: 200px;height: 32px;">
-    <div style="height: 32px;" id="back-residence"><p>Tous les residents</p></div>
+<div class="rs-title" style="display:none;">
+    <div style="height: 32px;font-size:1rem; text-transform: uppercase" id="back-residence"><p>Tous les residents</p></div>
 </div>
 
 <?php
@@ -47,6 +47,12 @@ $broski = new Resident(
     "",
     "/wp-content/uploads/2021/03/broski-scaled.jpeg");
 
+$elonaprime = new Resident(
+    "ELONA PRIME",
+    "",
+    "",
+    "/wp-content/uploads/2022/03/Elona-Prime-1-1024x1024.png");
+
 $charleeps = new Resident(
     "CHARLEEPS",
     "",
@@ -74,6 +80,12 @@ $girasol = new Resident(
     Latitudes lunatiques est un espace d’exploration sonore exaltant la diversité musicale qui bouillonne à la surface du globe. 
     Les sonorités des deux hémisphères y dialoguent pour valoriser un groove schizophrénique qui s’assoit sur les préjugés. Attendez-vous à tout, et n’oubliez pas l’échauffement :  grands écarts géographiques et back-flips stylistiques garantis.',
     "/wp-content/uploads/2021/03/girasol-edited.jpeg");
+
+$matso = new Resident(
+    "MATSO",
+    "",
+    "",
+    "/wp-content/uploads/2021/03/89092659_1117093465349544_8177255567056699392_o.jpeg");
 
 $matso = new Resident(
     "MATSO",
@@ -140,6 +152,19 @@ $tropicalites = new Resident(
     "",
     "/wp-content/uploads/2021/03/tropicalites.png");
 
+$monacogza = new Resident(
+    "MONACO GZA",
+    "",
+    "",
+    "/wp-content/uploads/2022/03/monaco-gza-1-1024x1024.png");
+
+
+$rodrigueSoulgroove = new Resident(
+    "RODRIGUE SOULGROOVE",
+    "",
+    "",
+    "/wp-content/uploads/2022/03/RODRIGUE-SOULGROOVE-1-1017x1024.png");
+
 
 $mimi = new Resident(
     "MIMI",
@@ -156,27 +181,54 @@ Fauteuil Club - le nom de l'émission
 
 #4 Qu'est-ce que t'évoque le sofa en 1 ou 2 phrases ?  
 Sofa : n.m. Un nuage de coton dans lequel on se sent en sécurité, un lieu de partage et de réconfort. \"",
-    "/wp-content/uploads/2021/06/Mimi-.jpg");
+    "/wp-content/uploads/2022/03/Mimi-2.jpeg");
 
 $micropolis = new Resident(
     "MICROPOLIS",
-    "MACROPHONE",
+    "MICROPOLIS GZA",
     "",
-    "/wp-content/uploads/2021/06/MICROPOLIS-invite-LOS3SALTOS.jpg");
+    "/wp-content/uploads/2022/03/MICROPOLIS-1-1024x1024.png");
 
 
-$residents = [$baume, $belaria, $broski, $charleeps, $falafef, $felix, $girasol, $matso, $nofraje, $planisphere, $sunaas, $tropicalites, $mimi, $micropolis];
+$taka = new Resident(
+    "TAKA",
+    "GOGUETTE ASTRALE",
+    "",
+    "/wp-content/uploads/2022/03/MICROPOLIS-1-1024x1024.png");
+
+
+$tomCoololo = new Resident(
+    "TOM COOLOLO",
+    "TOM COOLOLO",
+    "",
+    "/wp-content/uploads/2022/03/tom-coololo-1-1024x1024.png");
+
+$toniDog = new Resident(
+    "TONI DOG",
+    "TONI DOG",
+    "",
+    "/wp-content/uploads/2022/03/TONI-DOG-1-1024x1024.png");
+
+$waveyCuts = new Resident(
+    "WAVEY CUTS",
+    "WAVEY CUTS",
+    "",
+    "/wp-content/uploads/2022/03/WAVEY-1.jpeg");
+
+
+$residents = [$baume, $belaria, $broski, $charleeps,$elonaprime, $falafef, $felix, $girasol, $matso, $micropolis,
+    $mimi, $monacogza,$nofraje, $planisphere, $rodrigueSoulgroove, $sunaas, $taka, $tomCoololo, $toniDog,
+    $tropicalites, $waveyCuts];
 
 echo '<div class="rs-block-columns replay-images">';
 foreach ($residents as $resident) {
     echo '<div class="rs-block-column resident-item">
-        <div class="rs-title-mini rs-title-light">
+        <figure class="rs-block-image size-large is-resized">
+          <img src="' . $resident->image . '" alt="' . $resident->name . '" width="376" height="376"/>
+        </figure>
+          <div class="rs-title-mini rs-title-light">
             <div><h2>' . $resident->name . '</h2></div>
         </div>
-
-        <figure class="rs-block-image size-large is-resized">
-        <img src="' . $resident->image . '" alt="' . $resident->name . '" width="376" height="376"/>
-        </figure>
     </div>';
 }
 echo '</div>';
@@ -193,14 +245,14 @@ foreach ($residents as $resident) {
             <img loading="lazy" width="500" height="500" src="' . $resident->image . '" alt="' . $resident->name . '"></figure>
         </div>
         <div class="rs-block-column width-50">
-            <div class="rs-title rs-title-light rs-title-min-200"><div><h2>' . $resident->name . '</h2></div></div>
+            <div class="rs-title rs-title-light"><div><h2>' . $resident->name . '</h2></div></div>
             <h3>' . $resident->residenceName . '</h3>
             <p>' . $resident->desc . '</p>
         </div>
     </div>
     <div class="rs-block-columns">
         <div class="rs-block-column">
-            <div class="rs-title rs-title-light"><div><h2 style="width:30vw">ARCHIVES</h2></div></div>
+            <div class="rs-title rs-title-light"><div><h2>ARCHIVES</h2></div></div>
         </div>
     </div>
     <div class="rs-block-columns residence-details-archives">';

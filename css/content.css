@@ -148,7 +148,7 @@ small {
     text-align: center;
     font-size: 1.4rem;
 }
-
+/* EDIT DESIGN 13 MARS 22
 .rs-title {
     display: flex;
     width: calc(100% - 10px);
@@ -212,7 +212,40 @@ small {
 
 .rs-title-dark {
     background: rgba(25, 0, 255, 0.48);
+}*/
+
+.ondes-title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14rem;
+    font-weight: 900;
+    margin: -20px -8px 0 -8px;
 }
+#page-radio-ondes .rs-title{
+    text-align:right;
+    margin: 24px 0;
+}
+.rs-title-mini, .rs-title {
+    margin: 2px 0 10px 0;
+}
+.rs-title div, .rs-title-mini div{
+    display: inline-block;
+    background: black;
+}
+.rs-title div:hover, .rs-title-mini div:hover{
+    background:transparent;
+}
+
+.rs-title h2, .rs-title p, .rs-title-mini h2{
+    color: white;
+    margin: 3px 6px;
+    font-size: 1.7rem;
+}
+
+.rs-title div:hover + .rs-title div h2{
+    color:black;
+}
+
 .rs-title-min-200{
     min-width:200px;
 }
@@ -521,10 +554,6 @@ small {
     visibility: hidden;
 }
 
-#page-radio-residence .replay-images {
-    margin-top: -30px;
-}
-
 #page-radio-residence .replay-images img {
     border: 1px solid black;
     cursor: pointer;
@@ -596,12 +625,12 @@ small {
     .replay-images .rs-block-column {
         width: calc(50% - 20px);
     }
-
+/*
     .rs-title-mini {
         display: flex;
         border: 1px solid black;
         transform: translate(0px, calc((100vw - 570px) / 2));
-    }
+    }*/
 
     .rs-journal-post {
         width: 100%;
@@ -634,7 +663,14 @@ small {
         flex-direction: column;
         border: none;
     }
-
+    #page-radio-ondes .rs-title {
+        text-align: right;
+        margin: 40px 0 20px;
+    }
+    .rs-title-margin-top{
+        margin-top:80px !important;
+    }
+/*
     .rs-title {
         margin-top: 41px;
         height: 30px;
@@ -648,7 +684,7 @@ small {
     .rs-title h2 {
         margin: 4px 0 0 0;
         font-size: 16px;
-    }
+    }*/
 
     .ondes-first-column {
 
@@ -685,7 +721,8 @@ small {
         flex-wrap: nowrap;
         width: 180%;
         flex-direction: row;
-        height: auto;}
+        height: auto;
+    }
 
     .replay-images .rs-block-column{
         width:100%;
@@ -786,10 +823,10 @@ small {
     }
     .width-50{
         width:100%;
-    }
+    }/*
     .rs-title-mini{
         transform: translate(0px,75vw);
-    }
+    }*/
     .rs-journal-post {
         width: 100%;
     }

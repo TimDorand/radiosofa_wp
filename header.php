@@ -50,7 +50,7 @@
                  echo "50";
              } ?>s infinite linear;
         }
-
+/*
         .rs-title-light{
             background:<?php
             $couleur_2 = get_field("couleur_2");
@@ -77,7 +77,7 @@
         } else {
               echo "rgba(25, 0, 255, 0.48);";
               } ?>;
-        }
+        }*/
         .page-body{
             background:<?php
             $couleur_4 = get_field("couleur_5");
@@ -257,7 +257,7 @@ Eclectisme garanti avec chaque semaine des sélections thématiques et des DJ se
         </div>
         <div class="site-header-second-part">
 
-        <div style="display:flex;flex-direction:row";>
+        <div style="display:flex;flex-direction:row;">
             <a href="https://www.facebook.com/webradio.sofa" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/radio.sofa/" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://soundcloud.com/radio-sofa" target="_blank"><i class="fab fa-soundcloud"></i></a>
