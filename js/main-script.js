@@ -5,7 +5,6 @@
     // Player
     $(".lds-dual-ring").click(function (e) {
         playRS();
-
     })
     setInterval(function () {
         var playerDiv = $("div[class^='src-components-current-track__title--']");
@@ -26,6 +25,7 @@
     $(document).ready(function () {
         // hide player spinner
         $(".lds-dual-ring").hide();
+        $("#sidebar-player").show();
 
         // Navigation: Open page from anchor
         var anchor = $(location).attr('hash').split('#').pop();

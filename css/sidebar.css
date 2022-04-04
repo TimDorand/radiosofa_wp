@@ -73,6 +73,9 @@
 .custom-logo-link img{
     width: 70px;
 }
+#send-loader{
+    display:none;
+}
 .site-branding{
     padding: 36px 0 0 45px;
 }

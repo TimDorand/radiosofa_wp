@@ -139,7 +139,7 @@
                 Your browser does not support the audio element.
             </audio>
             <div class="lds-dual-ring"></div>
-            <a id="sidebar-player" class="play" href="#"></a>
+            <a id="sidebar-player" class="play" href="#" style="display:none;"></a>
             <div id="rk-current-track-widget" data-id="radio-sofa" data-buy="0"></div>
             <!-- <script type="text/javascript" src="https://widget.radioking.io/current-track/build/script.min.js"></script> -->
             <script type="text/javascript" src="<?php echo site_url();?>/wp-content/themes/radiosofa/js/current-track/rk-current-track-min.js"></script>
