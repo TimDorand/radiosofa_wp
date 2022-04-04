@@ -62,7 +62,7 @@
         </div>
         <?php echo do_shortcode("[vsel]"); ?>
 
-        <div class="text-centered ondes-more-planning clickable">▽</div>
+        <div class="text-centered ondes-more-planning clickable desktop-only">▽</div>
         <div class="rs-block-columns">
             <div class="rs-block-column"></div>
 
