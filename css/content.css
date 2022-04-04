@@ -234,6 +234,7 @@ small {
 
 .rs-title-mini, .rs-title {
     margin: 2px 0 10px 0;
+    transition: 0.3s ease;
 }
 
 .rs-title div, .rs-title-mini div {
@@ -409,7 +410,7 @@ small {
     justify-content: space-between;
     padding:2px;
     margin-bottom: 26px;
-
+    transition: 0.3s ease;
 }
 
 .rs-block-latest-posts time {
@@ -644,6 +645,7 @@ small {
     border-radius: 0;
     margin: 18px;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .convivesYear:hover {
