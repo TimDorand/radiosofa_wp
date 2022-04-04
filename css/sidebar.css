@@ -96,6 +96,10 @@
 .site-player:hover .pause:before {
     background: white;
 }
+.site-player:hover .lds-dual-ring:after {
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+}
 
 .site-player:hover div[class^='src-components-current-track__title-block--'] > div {
     color: white !important;

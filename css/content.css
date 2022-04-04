@@ -386,11 +386,30 @@ small {
 .bloc-articles {
 }
 
+.rs-block-latest-posts li:hover{
+    background: black;
+    color:white;
+}
+
+.rs-block-latest-posts li:hover a{
+    color:white;
+}
+.rs-block-latest-posts a:hover{
+    color:white;
+}
+
+.rs-block-latest-posts li:hover time{
+    color:white;
+}
+
 .rs-block-latest-posts li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding:2px;
+    margin-bottom: 26px;
+
 }
 
 .rs-block-latest-posts time {
@@ -412,7 +431,6 @@ small {
     margin-top: 0;
     text-align: justify;
     /*order: 2;*/
-    margin-bottom: 26px;
 }
 
 .rs-block-latest-posts__post-date {
