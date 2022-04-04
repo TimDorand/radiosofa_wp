@@ -82,6 +82,29 @@
     border-bottom: 1px solid black;
     height: 180px;
     align-items: center;}
+
+.site-player:hover{
+    background:black;
+}
+
+.site-player:hover .play:before{
+    border-left: 45px solid white;
+}
+.site-player:hover .pause:after {
+    background: white;
+}
+.site-player:hover .pause:before {
+    background: white;
+}
+
+.site-player:hover div[class^='src-components-current-track__title-block--'] > div {
+    color: white !important;
+}
+.site-player:hover div[class^='src-components-current-track__artist--'] {
+    color:white !important;
+}
+
+
 .site-player :before,.site-player :after {
     display: block;
     content: "";
