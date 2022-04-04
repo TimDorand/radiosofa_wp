@@ -147,7 +147,7 @@
 </div>
 
 <div class="mobile-only text-centered mobile-rs-icons">
-    <a href="https://www.facebook.com/webradio.sofa" target="_blank"><i class="fab fa-facebook">Facebook</i></a>
+    <a href="https://www.facebook.com/webradio.sofa" target="_blank"><i class="fab fa-facebook"></i></a>
     <a href="https://www.instagram.com/radio.sofa/" target="_blank"><i class="fab fa-instagram"></i></a>
     <a href="https://soundcloud.com/radio-sofa" target="_blank"><i class="fab fa-soundcloud"></i></a>
 

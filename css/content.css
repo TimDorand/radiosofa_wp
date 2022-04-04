@@ -96,6 +96,11 @@ small {
     scrollbar-width: none; /* Firefox */
 }
 
+.rotate-180{
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .site-main::-webkit-scrollbar {
     display: none;
@@ -389,6 +394,7 @@ small {
 
 .rs-block-latest-posts time {
     flex-basis: 62px;
+    text-align: right;
 }
 
 .rs-block-latest-posts a {

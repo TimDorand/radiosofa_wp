@@ -165,11 +165,14 @@ function handleOndes() {
     $(".description_visuel_mois").html(description_visuel_mois);
 
     setTimeout(function(){
+        $(".ondes-more-planning").off("click");
         $(".ondes-more-planning").click(function () {
             if ($(".vsel-container").hasClass("max-height-100")) {
                 $(".vsel-container").removeClass("max-height-100");
+                $(".ondes-more-planning").removeClass("rotate-180");
             } else {
                 $(".vsel-container").addClass("max-height-100");
+                $(".ondes-more-planning").addClass("rotate-180");
             }
         });
     }, 10)

@@ -202,6 +202,10 @@ div[class^='src-components-current-track__articleCard--'] {
     display:inline;
     padding: 2px 10px;
 }
+
+.main-navigation h2{
+    border: 1px solid white;
+}
 .currenttab h2{
     border: 1px solid black;
 }
@@ -231,6 +235,9 @@ div[class^='src-components-current-track__articleCard--'] {
     text-decoration: none;
 }
 
+.main-navigation h2:hover{
+    border:1px solid black;
+}
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
