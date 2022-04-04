@@ -241,6 +241,7 @@ small {
     display: inline-block;
     background: black;
     border: 1px solid black;
+    transition: 0.3s ease;
 }
 
 .rs-title h2, .rs-title p, .rs-title-mini h2 {
