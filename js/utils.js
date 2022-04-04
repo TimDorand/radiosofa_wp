@@ -192,7 +192,8 @@ function handleResidence() {
 function showResidenceDetails(e) {
     var resident = e.currentTarget.children[1].innerText
     $("#page-radio-residence .replay-images").hide();
-    $("#residence-" + resident).show();
+    console.warn(resident.split(' ').join('_'))
+    $("#residence-" + resident.split(' ').join('_')).show();
     $("#back-residence").parent("div").show();
     handleReplayIframe();
     setTimeout(function () {

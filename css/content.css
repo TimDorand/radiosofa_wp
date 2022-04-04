@@ -236,18 +236,25 @@ small {
     border: 1px solid black;
 }
 
-.rs-title div:hover, .rs-title-mini div:hover {
-    background: transparent;
-}
-
 .rs-title h2, .rs-title p, .rs-title-mini h2 {
     color: white;
     margin: 3px 6px;
     font-size: 1.7rem;
 }
 
-.rs-title div:hover h2, .rs-title-mini:hover h2 {
+.rs-title div:hover, .rs-title-mini div:hover {
+    background: transparent;
+}
+
+.rs-title div:hover h2, .rs-title-mini div:hover  h2,#page-sofas  .rs-title div:hover p {
     color: black;
+}
+#page-sofas .rs-title div:hover, #page-sofas  .rs-title-mini div:hover {
+    background: black;
+}
+
+#page-sofas .rs-title div:hover h2,#page-sofas  .rs-title-mini div:hover  h2,#page-sofas  .rs-title div:hover p {
+    color: white;
 }
 
 .rs-title-min-200 {
@@ -368,7 +375,6 @@ small {
 .btn-replay {
     border: 1px solid black;
     cursor: pointer;
-
 }
 
 .bloc-articles {
@@ -378,6 +384,7 @@ small {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .rs-block-latest-posts time {
@@ -386,7 +393,7 @@ small {
 
 .rs-block-latest-posts a {
     font-size: 2.4rem;
-    order: 1;
+    /*order: 1;*/
     flex-basis: 78%;
     display: block;
     text-decoration: none;
@@ -397,7 +404,7 @@ small {
 
     margin-top: 0;
     text-align: justify;
-    order: 2;
+    /*order: 2;*/
     margin-bottom: 26px;
 }
 
@@ -571,9 +578,8 @@ small {
     cursor: pointer;
 }
 
-#page-radio-residence .rs-title {
+#page-radio-residence .rs-title-mini, #page-radio-residence .rs-title{
     cursor: pointer;
-
 }
 
 .replay-images .rs-block-column {
@@ -607,22 +613,22 @@ small {
 }
 
 .convivesYear, .convivesLoadMore {
-    background: transparent;
-    border: 1px solid lightgray;
+    background: black;
+    border: 1px solid black;
+    color:white;
     border-radius: 0;
     margin: 18px;
     cursor: pointer;
-    box-shadow: lightgray 2px 2px 0;
 }
 
 .convivesYear:hover {
-    background: #f6f6f6;
-    border: 1px solid black;
+    background: white;
+    color: black;
 }
 
 .convivesYear_actif {
-    border: 1px solid black;
-    box-shadow: black 2px 2px 0px;
+    background: white;
+    color:black;
 }
 
 @media screen and (max-width: 1230px) and (min-width: 1000px) {

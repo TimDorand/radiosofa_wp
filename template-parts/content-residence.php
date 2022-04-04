@@ -1,5 +1,6 @@
 <div class="rs-title" style="display:none;">
-    <div style="height: 32px;font-size:1rem; text-transform: uppercase" id="back-residence"><p>Tous les residents</p></div>
+    <div style="height: 32px;font-size:1rem; text-transform: uppercase" id="back-residence"><p>Tous les residents</p>
+    </div>
 </div>
 
 <?php
@@ -216,9 +217,10 @@ $waveyCuts = new Resident(
     "/wp-content/uploads/2022/03/WAVEY-1.jpeg");
 
 
-$residents = [$baume, $belaria, $broski, $charleeps,$elonaprime, $falafef, $felix, $girasol, $matso, $micropolis,
-    $mimi, $monacogza,$nofraje, $planisphere, $rodrigueSoulgroove, $sunaas, $taka, $tomCoololo, $toniDog,
+$residents = [$baume, $belaria, $broski, $charleeps, $elonaprime, $falafef, $felix, $girasol, $matso, $micropolis,
+    $mimi, $monacogza, $nofraje, $planisphere, $rodrigueSoulgroove, $sunaas, $taka, $tomCoololo, $toniDog,
     $tropicalites, $waveyCuts];
+sort($residents);
 
 echo '<div class="rs-block-columns replay-images">';
 foreach ($residents as $resident) {
@@ -234,11 +236,13 @@ foreach ($residents as $resident) {
 echo '</div>';
 
 foreach ($residents as $resident) {
-    if(!$resident->desc){
-        $resident->desc = "Redécouvrez les résidences de ".$resident->name." ci dessous.";
+    if (!$resident->desc) {
+        $resident->desc = "Redécouvrez les résidences de " . $resident->name . " ci dessous.";
     }
+    $residentId = str_replace(' ', '_', $resident->name);
+
     echo '
-    <div id="residence-' . $resident->name . '" class="residence-details">
+    <div id="residence-' . $residentId . '" class="residence-details">
     <div class="rs-block-columns">
         <div class="rs-block-column width-50">
             <figure class="rs-block-image size-large">
@@ -258,9 +262,9 @@ foreach ($residents as $resident) {
     <div class="rs-block-columns residence-details-archives">';
 
     $categoryArticles = get_category_by_slug($resident->name);
-    if($categoryArticles){
+    if ($categoryArticles) {
         $posts = get_posts(["numberposts" => -1, "category" => $categoryArticles->cat_ID]);
-    }else{
+    } else {
         $posts = [];
     }
 

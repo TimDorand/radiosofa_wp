@@ -78,6 +78,7 @@
             </div>
 
             <span class="mobile-container">
+                    <div class="bigger-replay-images">
                 <div class="rs-block-columns replay-images">
                     <?php
                     $categoryConvives = get_category_by_slug("Convives");
@@ -93,6 +94,7 @@
                         echo '</div>';
                     }
                     ?>
+                    </div>
                 </div>
             </span>
         </div>
