@@ -258,8 +258,15 @@ small {
 
 /* (D) SHOW/HIDE */
 .fullcap {
-    visibility: none; opacity: 0;
+    opacity: 0;
     transition: opacity 0.3s;
+    visibility: none;
+    padding: 40px;
+    line-height: 2.1;
+    text-align: center;
+}
+.fullcap a{
+    color:white;
 }
 .rs-image-wrapper:hover .fullcap {
     visibility: visible; opacity: 1;
@@ -269,7 +276,6 @@ small {
     margin: 2px 0 10px 0;
     transition: 0.3s ease;
 }
-
 .rs-title div, .rs-title-mini div {
     display: inline-block;
     background: black;
