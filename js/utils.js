@@ -163,6 +163,7 @@ function handleMenu(evt, selector) {
 function handleOndes() {
     $("#visuel_mois").attr('src', url_visuel_mois);
     $(".description_visuel_mois").html(description_visuel_mois);
+    $(".fullcap").html(description_complete_visuel_mois);
 
     setTimeout(function(){
         $(".ondes-more-planning").off("click");

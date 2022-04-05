@@ -108,6 +108,7 @@
     wp_localize_script( 'rs-ajax', 'isAdmin', is_admin());
     wp_localize_script( 'rs-main', 'url_visuel_mois', get_field("url_visuel_mois"));
     wp_localize_script( 'rs-main', 'description_visuel_mois', get_field("description_visuel_mois"));
+    wp_localize_script( 'rs-main', 'description_complete_visuel_mois', get_field("description_complete_visuel_mois"));
     ?>
 </head>
 
