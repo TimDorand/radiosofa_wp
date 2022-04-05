@@ -409,7 +409,7 @@ small {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding:2px;
+    padding:5px 5px 0 5px;
     margin-bottom: 26px;
     transition: 0.3s ease;
 }
