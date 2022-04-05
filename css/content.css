@@ -419,7 +419,7 @@ small {
     text-align: right;
 }
 
-.rs-block-latest-posts a {
+.rs-block-latest-posts .ondes-journal-post-link {
     font-size: 2.4rem;
     /*order: 1;*/
     flex-basis: 78%;

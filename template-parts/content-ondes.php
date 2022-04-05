@@ -139,11 +139,22 @@
 <div class="ondes-footer">
     <div><h3 onclick="openPage({evt:event, selector:'page-actualites'})">à propos</h3></div>
 
-    <!-- wp:paragraph {"className":"text-justify"} -->
     <p class="text-justify">Radio Sofa vous partage en continu de la musique universelle piochée avec soin par notre
         équipe de diggers de salon.<br><br>Eclectisme garanti avec chaque semaine des sélections thématiques et des
-        DJ sets, à écouter assis et debout.<br></p>
-    <!-- /wp:paragraph -->
+        DJ sets, à écouter assis et debout.<br>
+    </p>
+    <h1 class="ondes-title">
+        <span>R</span>
+        <span>A</span>
+        <span>D</span>
+        <span>I</span>
+        <span>O</span>
+        <span> </span>
+        <span>S</span>
+        <span>O</span>
+        <span>F</span>
+        <span style="margin-left: -15px;">A</span>
+    </h1>
 </div>
 
 <div class="mobile-only text-centered mobile-rs-icons">
