@@ -259,7 +259,7 @@ small {
     visibility: none;
     padding: 40px;
     line-height: 2.1;
-    text-align: center;
+    text-align: left;
 }
 .fullcap a{
     color:white;
