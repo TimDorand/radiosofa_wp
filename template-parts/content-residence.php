@@ -217,10 +217,10 @@ $waveyCuts = new Resident(
     "/wp-content/uploads/2022/03/WAVEY-1.jpeg");
 
 
-$residents = [$baume, $belaria, $broski, $charleeps, $elonaprime, $falafef, $felix, $girasol, $matso, $micropolis,
-    $mimi, $monacogza, $nofraje, $planisphere, $rodrigueSoulgroove, $sunaas, $taka, $tomCoololo, $toniDog,
-    $tropicalites, $waveyCuts];
-sort($residents);
+$residents = [$mimi, $tomCoololo, $waveyCuts, $planisphere, $sunaas, $nofraje, $charleeps, $toniDog, $monacogza, $elonaprime,
+    $broski, $matso, $taka, $falafef, $tropicalites, $girasol, $felix, $baume, $micropolis, $monacogza,
+    $rodrigueSoulgroove];
+/*sort($residents);*/
 
 echo '<div class="rs-block-columns replay-images">';
 foreach ($residents as $resident) {
