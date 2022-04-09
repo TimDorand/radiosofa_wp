@@ -629,11 +629,6 @@ height:calc(100% - 26px)
     height: 20px;
 }
 
-#page-radio-convives .convives-post {
-    margin-bottom: 45px;
-    width: calc(33.3% - 28px);
-
-}
 
 .convives-post img {
     border: 1px solid black;
@@ -751,10 +746,19 @@ height:calc(100% - 26px)
     color:black;
 }
 
+@media screen and (min-width: 750px) {
+
+    #page-radio-convives .convives-post {
+        margin-bottom: 45px;
+        width: calc(33.3% - 28px);
+
+    }
+}
 @media screen and (max-width: 1230px) and (min-width: 1000px) {
     .ondes-title{
         font-size: 11rem;
     }
+
 
 }
 /* TABLETTE */
@@ -826,7 +830,6 @@ height:calc(100% - 26px)
         text-align: right;
         margin: 40px 0 20px;
     }
-
     .rs-title-margin-top {
         margin-top: 80px !important;
     }
@@ -934,6 +937,7 @@ height:calc(100% - 26px)
 
     .convives-post {
         width: 100%;
+        margin-bottom: 45px;
     }
 
     #page-radio-residence .convive-post {
