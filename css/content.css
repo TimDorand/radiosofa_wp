@@ -257,7 +257,7 @@ small {
     opacity: 0;
     transition: opacity 0.3s;
     visibility: none;
-    padding: 40px;
+    padding: 5px;
     line-height: 2.1;
     text-align: left;
 }
