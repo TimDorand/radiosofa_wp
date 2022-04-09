@@ -369,6 +369,11 @@ small {
 }
 
 /* (A) WRAPPER */
+#page-radio-residence .convives-post{
+    width: 25%;
+    min-width: 300px;
+    position: relative;
+}
 .convives-post {
     position: relative; /* required for (c2) */
 }

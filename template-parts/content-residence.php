@@ -272,6 +272,9 @@ foreach ($residents as $resident) {
         $image = get_the_post_thumbnail($post, ["300", "300"]);
         echo '<div data-post-id="' . $post->post_name . '" class="convives-post">';
         echo $image;
+        if (strpos($post->post_content, 'btn-replay') !== false) {
+            echo '<span class="play-hover">▶</span>';
+        }
         echo $post->post_content;
         echo '</div>';
     }
