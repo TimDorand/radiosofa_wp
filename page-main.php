@@ -27,6 +27,8 @@ get_header();
         endwhile; // End of the loop.
         ?>
 
+        <div class="replay-container"></div>
+
         <div id="page-radio-ondes" class="tabcontent active">
         </div>
 
@@ -45,7 +47,6 @@ get_header();
 
         <div id="page-radio-journal" class="tabcontent">
         </div><!-- .page-journal -->
-
     </main><!-- #main -->
 
 

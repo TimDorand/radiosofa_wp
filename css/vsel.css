@@ -106,12 +106,12 @@
         max-height: 100%;
 
     }
-    .vsel-container div{
+/*    .vsel-container div{
         display:none;
     }
     .vsel-container div:nth-child(-n+2){
         display:flex;
-    }
+    }*/
 
     .vsel-content{
         margin: 0 0 14px 0 !important;

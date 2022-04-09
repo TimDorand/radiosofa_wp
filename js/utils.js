@@ -15,6 +15,7 @@ function playRS() {
         if (currentReplayDiv) {
             currentReplayDiv.attr("src", "about:blank");
             currentReplayDiv.hide();
+            $(".replay-container").hide();
         }
     } else {
         stopRS(song);
@@ -280,33 +281,45 @@ function handleReplayIframe() {
 
 
     // Replay Souncdloud and mixcloud player
-    $(".btn-replay").click(function () {
+    $(".play-hover").click(function () {
         var smallSpinner = $("#small-spin");
-        smallSpinner.show();
+        smallSpinner.show()
 
-        var iframe = $(this).next();
+        console.warn($(this).next('div').children().last().children("iframe"))
+        var iframe = $(this).next('div').children().last().children("iframe");
 
         // Stop and hide last replay
         if (currentReplayDiv) {
             currentReplayDiv.attr("src", "about:blank");
             currentReplayDiv.hide();
         }
-        // set new replay to current
-        currentReplayDiv = iframe;
 
         // Stop Player
         stopRS();
 
         // load and display new replay
-        iframe.attr("src", iframe.attr("data-src"));
-        iframe.show();
-        iframe.addClass("replay-iframe");
+        $("#btn_clone").click(function(){
+            $("#a_clone").clone().appendTo("#b_clone");
+        });
+
+
+        $('.replay-container').empty()
+        iframe.clone().appendTo(".replay-container")
+        var clonedIframe = $('.replay-container').find('iframe')
+        clonedIframe.attr("src", clonedIframe.attr("data-src"));
+        clonedIframe.show();
+        clonedIframe.addClass("replay-clonedIframe");
+        $(".replay-container").show();
+
+        // set new replay to current
+        currentReplayDiv = clonedIframe;
+
         /*$(".page-body").css("height", "calc(100vh - 135px)")*/
         setTimeout(function () {
-            iframe.contents().find(".widget-controls-top").css({"background": "#fff", "border": "none"});
-            iframe.contents().find(".singleSound").css({"background": "#fff", "border": "none"});
-            iframe.contents().find(".soundContainer").css({"background": "#fff", "border": "none"});
-            iframe.contents().find(".compactSound .g-background-default").css({
+            clonedIframe.contents().find(".widget-controls-top").css({"background": "#fff", "border": "none"});
+            clonedIframe.contents().find(".singleSound").css({"background": "#fff", "border": "none"});
+            clonedIframe.contents().find(".soundContainer").css({"background": "#fff", "border": "none"});
+            clonedIframe.contents().find(".compactSound .g-background-default").css({
                 "background": "#fff",
                 "border": "none"
             });

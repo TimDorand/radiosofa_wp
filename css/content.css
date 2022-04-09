@@ -272,6 +272,7 @@ small {
     visibility: visible; opacity: 1;
 }
 
+
 .rs-title-mini, .rs-title {
     margin: 2px 0 10px 0;
     transition: 0.3s ease;
@@ -371,6 +372,39 @@ small {
 
 }
 
+/* (A) WRAPPER */
+.convives-post {
+    position: relative; /* required for (c2) */
+}
+
+/* (B) RESPONSIVE IMAGE */
+.convives-post img { width: 100%; }
+
+/* (C) CAPTION */
+.play-hover {
+    box-sizing: border-box;
+    width: 100%;
+    height: 99%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    visibility: none;
+    padding: 40px;
+    line-height: 2.1;
+    text-align: center;
+    font-size: 55px;
+    cursor:pointer;
+}
+.convives-post:hover .play-hover {
+    visibility: visible; opacity: 1;
+}
 .rs-block-columns .replay-images {
     /*height: 180px;*/
     /*overflow: hidden;*/
@@ -388,7 +422,10 @@ small {
 .mobile-rs-icons a {
     padding: 5px
 }
-
+/*0 avril 22: suppression des boutons replay*/
+.btn-replay{
+    display:none;
+}
 .replay-images .btn-replay, .convives-post .btn-replay {
     font-size: 10px;
     padding: 5px 17px;
@@ -399,6 +436,17 @@ small {
     min-width: 100px;
     width: fit-content;
     cursor: pointer;
+}
+.replay-container{
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+    background: white;
+    width: calc(100% - 400px);
+    height: 36px;
+    padding: 7px;
+    border-top: 1px solid black;
+    display:none;
 }
 
 #page-radio-convives .btn-replay {
@@ -572,12 +620,12 @@ small {
 .site-convives .replay-info {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: -41px;
+    margin-top: -27px;
     height: 20px;
 }
 
 .convives-post {
-    margin-bottom: 70px;
+    margin-bottom: 45px;
     width: calc(33.3% - 28px);
 
 }
@@ -826,7 +874,7 @@ small {
     .rs-home-convives .replay-images {
         display: flex;
         flex-wrap: nowrap;
-        width: 180%;
+        width: 290%;
         flex-direction: row;
         height: auto;
     }
@@ -922,8 +970,8 @@ small {
     }
 
     .small-img-loader {
-        right: 30px;
-        top: 0px;
+        right: 46px;
+        top: -23px;
         width: 100px;
         left: auto;
     }
@@ -953,5 +1001,9 @@ small {
     }
     .wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{
         flex-basis: auto !important;
+    }
+    .replay-container{
+        width: 100%;
+        margin-bottom: 95px;
     }
 }
