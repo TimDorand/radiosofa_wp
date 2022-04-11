@@ -463,6 +463,14 @@ html {
 
 @font-face {
     font-family: 'Roboto';
+    src: url('../fonts/Roboto-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
     src: url('../fonts/Roboto-BoldItalic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
