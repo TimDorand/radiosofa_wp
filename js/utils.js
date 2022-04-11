@@ -197,7 +197,6 @@ function handleResidence() {
 function showResidenceDetails(e) {
     var resident = e.currentTarget.children[1].innerText
     $("#page-radio-residence .replay-images").hide();
-    console.warn(resident.split(' ').join('_'))
     $("#residence-" + resident.split(' ').join('_')).show();
     $("#back-residence").parent("div").show();
     handleReplayIframe();
@@ -285,7 +284,6 @@ function handleReplayIframe() {
         var smallSpinner = $("#small-spin");
         smallSpinner.show()
 
-        console.warn($(this).next('div').children().last().children("iframe"))
         var iframe = $(this).next('div').children().last().children("iframe");
 
         // Stop and hide last replay
