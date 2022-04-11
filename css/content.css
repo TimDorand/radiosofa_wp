@@ -381,7 +381,9 @@ small {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+}
+.replay-info{
+    height:0px;
 }
 
 /* (A) WRAPPER */
@@ -389,6 +391,7 @@ small {
     width: 25%;
     min-width: 300px;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .convives-post {
@@ -422,23 +425,17 @@ small {
     font-size: 55px;
     cursor: pointer;
 }
-#page-radio-residence .play-hover{
-    height: calc(100% - 27px);
-}
 
-.ondes-convives-post .play-hover {
-    height: calc(100% - 26px)
+#page-radio-residence .play-hover, #page-radio-ondes .play-hover{
+    height: calc(100% - 5px);
+}
+#page-radio-convives .play-hover{
+    height: calc(100% + 3px);
 }
 
 .convives-post:hover .play-hover {
     visibility: visible;
     opacity: 1;
-}
-
-.rs-block-columns .replay-images {
-    /*height: 180px;*/
-    /*overflow: hidden;*/
-    /*padding-bottom: 30px;*/
 }
 
 .ondes-convives-post {
