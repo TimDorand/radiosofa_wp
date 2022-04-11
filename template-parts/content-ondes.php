@@ -97,7 +97,7 @@
                         echo '<div data-post-id="' . $post->post_name . '" class="ondes-convives-post convives-post" >';
                         echo $image;
                         if (strpos($post->post_content, 'btn-replay') !== false) {
-                            echo '<span class="play-hover">▶</span>';
+                            echo '<span class="play-hover">&#9654;</span>';
                         }
                         echo $post->post_content;
                         echo '</div>';
