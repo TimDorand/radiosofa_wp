@@ -422,6 +422,9 @@ small {
     font-size: 55px;
     cursor: pointer;
 }
+#page-radio-residence .play-hover{
+    height: calc(100% - 27px);
+}
 
 .ondes-convives-post .play-hover {
     height: calc(100% - 26px)

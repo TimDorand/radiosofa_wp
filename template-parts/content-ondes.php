@@ -149,7 +149,7 @@
     <p class="text-justify">
     <p>Radio Sofa vous partage en continu de la musique universelle piochée avec soin par notre équipe de diggers de
         salon.</p>
-    <p>Radio Sofa est une webradio assemblée au printemps 2020 dans un Paris atone.
+    <p style="margin-bottom:19px">Radio Sofa est une webradio assemblée au printemps 2020 dans un Paris atone.
         Nous partageons en flux tendu nos trouvailles éclectiques, et convions chaque
         semaine artistes et résidents locaux ou étrangers sur nos ondes pour des sets
         et sélections. Notre bande-son se module entre atmosphères lounge et lentes,
