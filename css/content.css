@@ -66,6 +66,9 @@ small {
 .text-justify {
     text-align: justify;
 }
+.text-italic{
+    font-style:italic;
+}
 
 .width-50 {
     width: 50%;
@@ -134,7 +137,7 @@ small {
 }
 
 .tabcontent {
-    padding: 15px 40px 40px 40px;
+    padding: 15px 40px 15px 40px;
 }
 
 /* HOME */
@@ -225,6 +228,12 @@ small {
     font-size: 14rem;
     font-weight: 900;
     margin: -20px -8px 0 -8px;
+}
+.ondes-title-stroke{
+}
+.ondes-title-stroke span{
+    color: white;
+    -webkit-text-stroke: 2px black;
 }
 
 #page-radio-ondes .rs-title {
@@ -746,6 +755,7 @@ height:calc(100% - 26px)
     color:black;
 }
 
+/* DESKTOP */
 @media screen and (min-width: 750px) {
 
     #page-radio-convives .convives-post {

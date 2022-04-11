@@ -144,19 +144,27 @@
 
 
 <div class="ondes-footer">
-    <div><h3 onclick="openPage({evt:event, selector:'page-actualites'})">à propos</h3></div>
-
-    <p class="text-justify">Radio Sofa vous partage en continu de la musique universelle piochée avec soin par notre équipe de diggers de salon.
-
-        Radio Sofa est une webradio assemblée au printemps 2020 dans un Paris atone. Nous partageons en flux tendu nos trouvailles éclectiques, et convions chaque semaine artistes et résidents locaux ou étrangers sur nos ondes pour des sets et sélections. Notre bande-son se module entre atmosphères lounge et lentes, grooves des quatre coins du monde et beats club acides et synthétiques.
-        <br/><br/>
-        __
-        <br/><br/>
-        Radio Sofa shares with you a continuous stream of universal music carefully selected by our team of living room diggers.
-        <br/>
-        Radio Sofa is a webradio assembled in the spring of 2020 in a dull Paris. We share our eclectic finds and invite local and foreign artists and residents on our airwaves every week for sets and selections. Our soundtrack is modulated between lounge and slow atmospheres, grooves from all over the world and acid and synthetic club beats.<br>
+    <p class="text-justify">
+    <p>Radio Sofa vous partage en continu de la musique universelle piochée avec soin par notre équipe de diggers de
+        salon.</p>
+    <p>Radio Sofa est une webradio assemblée au printemps 2020 dans un Paris atone.
+        Nous partageons en flux tendu nos trouvailles éclectiques, et convions chaque
+        semaine artistes et résidents locaux ou étrangers sur nos ondes pour des sets
+        et sélections. Notre bande-son se module entre atmosphères lounge et lentes,
+        grooves des quatre coins du monde et beats club acides et synthétiques.</p>
+    __
+    <p class="text-italic">
+        Radio Sofa shares with you a continuous stream of universal music carefully selected by our team of living room
+        diggers.
     </p>
-    <h1 class="ondes-title">
+    <p class="text-italic">
+        Radio Sofa is a webradio assembled in the spring of 2020 in a dull Paris. We share our eclectic finds and invite
+        local and foreign artists and residents on our airwaves every week for sets and selections. Our soundtrack is
+        modulated between lounge and slow atmospheres, grooves from all over the world and acid and synthetic club
+        beats.
+    </p>
+    </p>
+    <h1 class="ondes-title ondes-title-stroke">
         <span>R</span>
         <span>A</span>
         <span>D</span>
