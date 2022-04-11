@@ -143,8 +143,7 @@ $taka = new Resident(
     "TAKA",
     "GOGUETTE ASTRALE",
     "",
-    "/wp-content/uploads/2022/03/MICROPOLIS-1-1024x1024.png");
-
+    "/wp-content/uploads/2022/03/TAKA_2.jpeg");
 
 $tomCoololo = new Resident(
     "TOM COOLOLO",
