@@ -281,7 +281,7 @@ function handleReplayIframe() {
 
 
     // Replay Souncdloud and mixcloud player
-    $(".play-hover").click(function () {
+    $(".replay-present").click(function () {
         var smallSpinner = $("#small-spin");
         smallSpinner.show()
 

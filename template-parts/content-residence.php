@@ -1,6 +1,6 @@
 <div class="rs-title rs-title-light" style="display:none;">
-<!--    <div style="height: 32px;font-size:1rem; text-transform: uppercase" id="back-residence"><p>Tous les residents</p>
-    </div>-->
+    <!--    <div style="height: 32px;font-size:1rem; text-transform: uppercase" id="back-residence"><p>Tous les residents</p>
+        </div>-->
     <div id="back-residence">
         <h2>TOUS LES RESIDENTS</h2>
     </div>
@@ -164,9 +164,7 @@ $waveyCuts = new Resident(
     "/wp-content/uploads/2022/03/WAVEY-1.jpeg");
 
 
-$residents = [$mimi, $tomCoololo, $waveyCuts, $planisphere, $sunaas, $nofraje, $charleeps, $toniDog, $monacogza, $elonaprime,
-    $broski, $matso, $taka, $falafef, $tropicalites, $girasol, $felix, $baume, $micropolis, $monacogza,
-    $rodrigueSoulgroove];
+$residents = [$mimi, $tomCoololo, $waveyCuts, $planisphere, $sunaas, $nofraje, $charleeps, $toniDog, $monacogza, $elonaprime, $broski, $matso, $taka, $falafef, $tropicalites, $girasol, $felix, $baume, $micropolis, $monacogza, $rodrigueSoulgroove];
 /*sort($residents);*/
 
 echo '<div class="rs-block-columns replay-images">';
@@ -220,7 +218,9 @@ foreach ($residents as $resident) {
         echo '<div data-post-id="' . $post->post_name . '" class="convives-post">';
         echo $image;
         if (strpos($post->post_content, 'btn-replay') !== false) {
-            echo '<span class="play-hover">&#9654;</span>';
+            echo '<span class="play-hover replay-present">&#9654;</span>';
+        } else {
+            echo '<span class="play-hover no-replay">&#10710;</span>';
         }
         echo $post->post_content;
         echo '</div>';

@@ -425,6 +425,9 @@ small {
     font-size: 55px;
     cursor: pointer;
 }
+.no-replay{
+    cursor:default;
+}
 
 #page-radio-residence .play-hover, #page-radio-ondes .play-hover{
     height: calc(100% - 5px);
