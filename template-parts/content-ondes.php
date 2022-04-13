@@ -67,7 +67,7 @@
         <?php echo do_shortcode("[vsel]"); ?>
 
         <div class="text-centered ondes-more-planning clickable desktop-only">
-            <?php if(strlen(do_shortcode("[vsel]")) > 500){ echo '▽'; } ?>
+            <?php if(strlen(do_shortcode("[vsel]")) > 700){ echo '▽'; } ?>
         </div>
         <div class="rs-block-columns">
             <div class="rs-block-column"></div>
