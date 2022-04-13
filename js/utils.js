@@ -96,10 +96,8 @@ const openPage = (params) => {
 
         if (pageName === "Convives" && response.post_content.length > 50000 && !loadAll) {
             let firstConvives = response.post_content.slice(0, 50000);
-            console.warn(firstConvives)
             response.post_content = firstConvives.slice(0, firstConvives.lastIndexOf('<div data-post-id='))
                 + '<div class="convivesLoadMoreContainer"></div><button class="convivesLoadMore" id="load_more_convives">Charger plus de replay</button></main> '
-            console.warn(firstConvives.slice(firstConvives.lastIndexOf('<div data-post-id=')))
         }
         selectorDiv.show().html(cleanReponseText(response.post_content))
         console.debug("[openPage] page rendered");
