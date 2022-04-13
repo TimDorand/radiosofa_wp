@@ -382,11 +382,6 @@ small {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.replay-images::after {
-    content: "";
-    flex: auto;
-}
-
 .replay-info{
     height:0px;
 }
