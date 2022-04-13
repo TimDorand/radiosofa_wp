@@ -212,7 +212,7 @@
                                 <h2><a href="/#radio-convives">Convives</a></h2></li>
                             <li class="tablinks pageTemplateSelector big-phone-only"
                                 pageSelector="page-radio-residence">
-                                <h2><a href="/#radio-residence">Residence</a></h2></li>
+                                <h2><a href="/#radio-residence">Residences</a></h2></li>
                             <li class="tablinks pageSelector desktop-only" pageSelector="page-collection">
                                 <h2><a href="/#page-collection">Collection</a></h2></li>
                             <li class="tablinks pageTemplateSelector desktop-only" pageSelector="page-radio-journal">
@@ -239,7 +239,7 @@
                                     <h2><a href="/#radio-convives">Convives</a></h2></li>
                                 <li class="tablinks pageTemplateSelector" mobileMenu="true"
                                     pageSelector="page-radio-residence">
-                                    <h2><a href="/#radio-residence">Residence</a></h2></li>
+                                    <h2><a href="/#radio-residence">Residences</a></h2></li>
                                 <li class="tablinks pageSelector" mobileMenu="true" pageSelector="page-collection">
                                     <h2><a href="/#page-collection">Collection</a></h2></li>
                                 <li class="tablinks pageTemplateSelector" mobileMenu="true"

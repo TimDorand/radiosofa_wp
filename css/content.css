@@ -382,6 +382,11 @@ small {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.replay-imagess::after {
+    content: "";
+    flex: auto;
+}
+
 .replay-info{
     height:0px;
 }
@@ -470,6 +475,7 @@ small {
     width: fit-content;
     cursor: pointer;
 }
+
 
 .replay-container {
     position: absolute;

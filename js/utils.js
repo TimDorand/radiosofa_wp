@@ -95,8 +95,11 @@ const openPage = (params) => {
         console.debug("[openPage] page rendering started...", response.post_content.length,loadAll );
 
         if (pageName === "Convives" && response.post_content.length > 50000 && !loadAll) {
-            response.post_content = response.post_content.slice(0, 50300)
-                + '"/> <div class="convivesLoadMoreContainer"></div><button class="convivesLoadMore" id="load_more_convives">Charger plus de replay</button></main> '
+            let firstConvives = response.post_content.slice(0, 50000);
+            console.warn(firstConvives)
+            response.post_content = firstConvives.slice(0, firstConvives.lastIndexOf('<div data-post-id='))
+                + '<div class="convivesLoadMoreContainer"></div><button class="convivesLoadMore" id="load_more_convives">Charger plus de replay</button></main> '
+            console.warn(firstConvives.slice(firstConvives.lastIndexOf('<div data-post-id=')))
         }
         selectorDiv.show().html(cleanReponseText(response.post_content))
         console.debug("[openPage] page rendered");
