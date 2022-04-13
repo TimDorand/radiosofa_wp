@@ -382,7 +382,7 @@ small {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.replay-imagess::after {
+.replay-images::after {
     content: "";
     flex: auto;
 }
