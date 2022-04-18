@@ -1,6 +1,7 @@
 // On click functions
 
 (function ($) {
+    // Disable console log in production
     var DEBUG = false;
     if(!DEBUG){
         if(!window.console) window.console = {};

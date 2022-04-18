@@ -588,7 +588,7 @@ var {
 
 abbr,
 acronym {
-    border-bottom: 1px dotted #666;
+    border: 2px dotted #666;
     cursor: help;
 }
 
@@ -702,7 +702,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    border: 1px solid;
+    border: 2px solid;
     /*border-color: #ccc #ccc #bbb;*/
     border-radius: 3px;
     /*background: #e6e6e6;*/
@@ -746,7 +746,7 @@ input[type="datetime-local"],
 input[type="color"],
 textarea {
     color: #666;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 3px;
     padding: 3px;
 }
@@ -771,7 +771,7 @@ textarea:focus {
 }
 
 select {
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
 }
 
 textarea {

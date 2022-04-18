@@ -52,7 +52,7 @@ REPLAY
         return strpos($post->post_date, $year_selected) !== false;
     }, ARRAY_FILTER_USE_BOTH);
 
-    echo '<div class="convivesYear_filter">';
+    echo '<div class="convives-year-filter">';
     foreach ($years as $year) {
         echo '<button class="convivesYear'
             . ($year === $year_selected ? ' convivesYear_actif' : '')

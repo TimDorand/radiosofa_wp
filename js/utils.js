@@ -1,4 +1,6 @@
 // AUDIO
+const sidebarPlayerDiv = $("#sidebar-player");
+
 function playRS() {
     const song = $("#sidebar-player-audio").get(0);
     const src = "https://www.radioking.com/play/radio-sofa";
@@ -6,16 +8,16 @@ function playRS() {
         song.src = src;
         song.load();
         song.play();
-//         $(this).text("❙ ❙");
-        $("#sidebar-player").hide();
+        sidebarPlayerDiv.hide();
         $(".lds-dual-ring").show();
-        $("#sidebar-player").removeClass("play");
+        sidebarPlayerDiv.removeClass("play");
         $("iframe").hide();
         $(".page-body").css("height", "100%")
         if (currentReplayDiv) {
             currentReplayDiv.attr("src", "about:blank");
             currentReplayDiv.hide();
             $(".replay-container").hide();
+            $(".tabcontent").css({"padding": "15px 40px 0px 40px"});
         }
     } else {
         stopRS(song);
@@ -27,8 +29,8 @@ function stopRS() {
     song.pause();
     song.currentTime = 0;
     song.src = '';
-    $("#sidebar-player").addClass("play");
-    $("#sidebar-player").removeClass("pause");
+    sidebarPlayerDiv.addClass("play");
+    sidebarPlayerDiv.removeClass("pause");
 }
 const showLoader = () => {
     document.body.style.cursor = "wait";
@@ -42,8 +44,8 @@ const hideLoader = () => {
 //UTILS
 function myOnLoadedData() {
     $(".lds-dual-ring").hide();
-    $("#sidebar-player").show();
-    $("#sidebar-player").addClass("pause");
+    sidebarPlayerDiv.show();
+    sidebarPlayerDiv.addClass("pause");
 }
 
 // Find and replace text: planning
@@ -51,9 +53,10 @@ var ladate = new Date();
 var tab_jour = ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"];
 
 function findMyText(needle, replacementText) {
-    var myOldString = $("#vsel").html();
-    var myNewString = myOldString && myOldString.replaceAll(needle, replacementText);
-    $("#vsel").html(myNewString);
+    const vselDiv = $("#vsel")
+    const myOldString = vselDiv.html();
+    const myNewString = myOldString && myOldString.replace(needle, replacementText);
+    vselDiv.html(myNewString);
 }
 
 function replaceEveryting(str, find, replace) {
@@ -84,6 +87,7 @@ function fetchHideShowPage(selector, pageName, is_template) {
         fetchPage({selector, pageName, is_template})
     }
 }
+
 let previousConvivesYear
 // Rooter page: handle active menu, hide all page, show content
 const openPage = (params) => {
@@ -97,7 +101,7 @@ const openPage = (params) => {
         if (pageName === "Convives" && response.post_content.length > 50000 && !loadAll) {
             let firstConvives = response.post_content.slice(0, 50000);
             response.post_content = firstConvives.slice(0, firstConvives.lastIndexOf('<div data-post-id='))
-                + '<div class="convivesLoadMoreContainer"></div><button class="convivesLoadMore" id="load_more_convives">Charger plus de replay</button></main> '
+                + '<div class="convives-load-more-container"></div><button class="convivesLoadMore" id="load_more_convives">Charger plus de replay</button></main> '
         }
         selectorDiv.show().html(cleanReponseText(response.post_content))
         console.debug("[openPage] page rendered");
@@ -182,7 +186,7 @@ function handleOndes() {
 
 }
 
-// RESIDENCE
+// RESIDENCES
 function handleResidence() {
     setTimeout(function () {
         $("#back-residence").click(function () {
@@ -247,11 +251,6 @@ function handleSofas() {
 
 // REPLAYS
 var currentReplayDiv;
-
-function handleClickFilter() {
-
-}
-
 function handleReplayIframe() {
     if ($(".convivesYear").length > 0) {
         $(".convivesYear").click(function (e) {
@@ -295,6 +294,7 @@ function handleReplayIframe() {
 
         // Stop Player
         stopRS();
+        $(".tabcontent").css({"padding": "15px 40px 25px 40px"});
 
         // load and display new replay
         $("#btn_clone").click(function(){
@@ -313,7 +313,6 @@ function handleReplayIframe() {
         // set new replay to current
         currentReplayDiv = clonedIframe;
 
-        /*$(".page-body").css("height", "calc(100vh - 135px)")*/
         setTimeout(function () {
             clonedIframe.contents().find(".widget-controls-top").css({"background": "#fff", "border": "none"});
             clonedIframe.contents().find(".singleSound").css({"background": "#fff", "border": "none"});

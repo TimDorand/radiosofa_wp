@@ -52,7 +52,7 @@
 }
 
 .site-header{
-    border-right: 1px solid black;
+    border-right: 2px solid black;
     width: 400px;
     display: flex;
     flex-direction: column;
@@ -82,7 +82,7 @@
 .site-player{
     display: flex;
     padding: 0 0 0 45px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     height: 180px;
     align-items: center;
     transition: 0.3s ease;}
@@ -210,10 +210,10 @@ div[class^='src-components-current-track__articleCard--'] {
 }
 
 .main-navigation h2{
-    border: 1px solid white;
+    border: 2px solid white;
 }
 .currenttab h2{
-    border: 1px solid black;
+    border: 2px solid black;
 }
 .active {
     display: block;
@@ -242,7 +242,7 @@ div[class^='src-components-current-track__articleCard--'] {
 }
 
 .main-navigation h2:hover{
-    border:1px solid black;
+    border: 2px solid black;
 }
 /* Small menu. */
 .menu-toggle,
@@ -493,7 +493,7 @@ img{
         overflow:visible;
     }
     .main-navigation{
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid black;
     }
     .site-player{
         position: absolute;
@@ -503,7 +503,7 @@ img{
         z-index: 3;
         border-bottom: none;
         margin: 0 0px 0 0px;
-        border-top: 1px solid black;
+        border-top: 2px solid black;
         height: 73px;
         padding: 0 0 0 37px;
     }
@@ -538,7 +538,7 @@ img{
         width: 100%;
         background: white;
         z-index: 3;
-        border-top: 1px solid black;
+        border-top: 2px solid black;
         padding-top: 2px;
         margin: -1px 0;
     }

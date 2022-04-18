@@ -21,7 +21,7 @@
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
 }
 .vsel-meta-date {
     padding: 0 !important;
