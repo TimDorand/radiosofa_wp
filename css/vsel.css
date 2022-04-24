@@ -1,6 +1,6 @@
 
 /* EVENTS PLANNING VSEL */
-.vsel-container {
+#vsel {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -99,7 +99,7 @@
 
 /*MOBILE */
 @media screen and (max-width: 782px) {
-    .vsel-container{
+    #vsel{
         height: auto;
         flex-direction: row;
         margin: 24px -25px -6px -24px;
