@@ -171,15 +171,18 @@ function handleOndes() {
     $(".description_visuel_mois").html(description_visuel_mois);
     $(".fullcap").html("<p>"+description_complete_visuel_mois+"</p>");
 
+    const ondesMorePlanningDiv = $(".ondes-more-planning");
+    const vselDiv = $("#vsel");
+
     setTimeout(function(){
-        $(".ondes-more-planning").off("click");
-        $(".ondes-more-planning").click(function () {
-            if ($(".vsel-container").hasClass("max-height-100")) {
-                $(".vsel-container").removeClass("max-height-100");
-                $(".ondes-more-planning").removeClass("rotate-180");
+        ondesMorePlanningDiv.off("click");
+        ondesMorePlanningDiv.click(function () {
+            if (vselDiv.hasClass("max-height-100")) {
+                vselDiv.removeClass("max-height-100");
+                ondesMorePlanningDiv.removeClass("rotate-180");
             } else {
-                $(".vsel-container").addClass("max-height-100");
-                $(".ondes-more-planning").addClass("rotate-180");
+                vselDiv.addClass("max-height-100");
+                ondesMorePlanningDiv.addClass("rotate-180");
             }
         });
     }, 10)
