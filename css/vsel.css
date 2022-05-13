@@ -39,6 +39,7 @@
 .vsel-meta-time{
     order:2;
     margin: -5px 0 !important;
+    display:none;
 }
 .vsel-meta-title{
 }
