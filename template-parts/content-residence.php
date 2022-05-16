@@ -54,11 +54,11 @@ $charleeps = new Resident(
     "",
     "/wp-content/uploads/2021/03/charleeps.jpeg");
 
-$falafef = new Resident(
-    "FALAFEF",
+$marsoc10 = new Resident(
+    "Mars O10C",
     "",
     "",
-    "/wp-content/uploads/2021/03/falafef-1-edited-1.jpg");
+    "/wp-content/uploads/2021/06/VISUEL-MARS-O10C.png");
 
 $felix = new Resident(
     "FELIX",
@@ -164,7 +164,7 @@ $waveyCuts = new Resident(
     "/wp-content/uploads/2022/03/WAVEY-1.jpeg");
 
 
-$residents = [$mimi, $tomCoololo, $waveyCuts, $planisphere, $sunaas, $nofraje, $charleeps, $toniDog, $monacogza, $elonaprime, $broski, $matso, $taka, $falafef, $tropicalites, $girasol, $felix, $baume, $micropolis, $monacogza, $rodrigueSoulgroove];
+$residents = [$mimi, $tomCoololo, $waveyCuts, $planisphere, $sunaas, $nofraje, $charleeps, $toniDog, $monacogza, $elonaprime, $broski, $matso, $taka, $marsoc10, $tropicalites, $girasol, $felix, $baume, $micropolis, $monacogza, $rodrigueSoulgroove];
 /*sort($residents);*/
 
 echo '<div class="rs-block-columns replay-images">';
