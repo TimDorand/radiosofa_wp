@@ -55,7 +55,7 @@ $charleeps = new Resident(
     "/wp-content/uploads/2021/03/charleeps.jpeg");
 
 $marsoc10 = new Resident(
-    "Mars O10C",
+    "MARS O10C",
     "",
     "",
     "/wp-content/uploads/2021/06/VISUEL-MARS-O10C.png");
