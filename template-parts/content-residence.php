@@ -58,7 +58,7 @@ $marsoc10 = new Resident(
     "MARS O10C",
     "",
     "",
-    "/wp-content/uploads/2021/06/VISUEL-MARS-O10C.png");
+    "/wp-content/uploads/2022/05/Marcia_HD_04crop-e1652768379929.jpg");
 
 $felix = new Resident(
     "FELIX",
