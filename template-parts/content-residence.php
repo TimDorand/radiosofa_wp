@@ -44,13 +44,13 @@ $broski = new Resident(
 
 $elonaprime = new Resident(
     "ELONA PRIME",
-    "",
+    "COFFEE VIBE",
     "",
     "/wp-content/uploads/2022/03/Elona-Prime-1-1024x1024.png");
 
 $charleeps = new Resident(
     "CHARLEEPS",
-    "",
+    "RIVIERA EXPRESS",
     "",
     "/wp-content/uploads/2021/03/charleeps.jpeg");
 
@@ -62,7 +62,7 @@ $marsoc10 = new Resident(
 
 $felix = new Resident(
     "FELIX",
-    "",
+    "SONORAMA",
     "",
     "/wp-content/uploads/2021/03/felix-edited-1.jpg");
 
@@ -74,16 +74,9 @@ $girasol = new Resident(
 
 $matso = new Resident(
     "MATSO",
-    "",
-    "",
-    "/wp-content/uploads/2021/03/89092659_1117093465349544_8177255567056699392_o.jpeg");
-
-$matso = new Resident(
-    "MATSO",
-    "",
+    "ADN",
     "",
     "/wp-content/uploads/2021/03/89092659_1117093465349544_8177255567056699392_o.jpeg");
-
 
 $nofraje = new Resident(
     "NOFRAJE",
@@ -101,27 +94,27 @@ $planisphere = new Resident(
 
 $sunaas = new Resident(
     "SUNAAS",
-    "",
+    "SLOW DOWN A MINUTE",
     '',
     "/wp-content/uploads/2021/03/sunaas-1.jpeg");
 
 
 $tropicalites = new Resident(
     "TROPICALITES",
-    "",
+    "TRANSATLANTIQUES",
     "",
     "/wp-content/uploads/2021/03/tropicalites.png");
 
 $monacogza = new Resident(
     "MONACO GZA",
-    "",
+    "MONACO GZA",
     "",
     "/wp-content/uploads/2022/03/monaco-gza-1-1024x1024.png");
 
 
 $rodrigueSoulgroove = new Resident(
     "RODRIGUE SOULGROOVE",
-    "",
+    "LE SILLON",
     "",
     "/wp-content/uploads/2022/03/RODRIGUE-SOULGROOVE-1-1017x1024.png");
 
@@ -147,19 +140,19 @@ $taka = new Resident(
 
 $tomCoololo = new Resident(
     "TOM COOLOLO",
-    "TOM COOLOLO",
+    "ARTEFACTS AUDITIFS",
     "",
     "/wp-content/uploads/2022/03/tom-coololo-1-1024x1024.png");
 
 $toniDog = new Resident(
     "TONI DOG",
-    "TONI DOG",
+    "ÂMES SENSIBLES",
     "",
     "/wp-content/uploads/2022/03/TONI-DOG-1-1024x1024.png");
 
 $waveyCuts = new Resident(
     "WAVEY CUTS",
-    "WAVEY CUTS",
+    "AIN'T EASY BEING WAVEY",
     "",
     "/wp-content/uploads/2022/03/WAVEY-1.jpeg");
 
