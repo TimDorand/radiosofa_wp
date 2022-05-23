@@ -56,7 +56,7 @@ $charleeps = new Resident(
 
 $marsoc10 = new Resident(
     "MARS O10C",
-    "",
+    "BREAK A LEG",
     "",
     "/wp-content/uploads/2022/05/Marcia_HD_04crop-e1652768379929.jpg");
 
@@ -127,7 +127,7 @@ $mimi = new Resident(
 
 $micropolis = new Resident(
     "MICROPOLIS",
-    "MICROPOLIS GZA",
+    "MACROPHONE",
     "",
     "/wp-content/uploads/2022/03/MICROPOLIS-1-1024x1024.png");
 
