@@ -578,6 +578,12 @@ small {
 
 /* SOFAS */
 
+.sofas-posts {
+    column-gap: 20px;
+}
+.sofas-post .wp-block-image{
+    margin-bottom: 20px;
+}
 .sofas-posts .wp-block-column {
     cursor: pointer;
 }
