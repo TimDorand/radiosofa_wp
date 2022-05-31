@@ -61,7 +61,7 @@ $marsoc10 = new Resident(
     "/wp-content/uploads/2022/05/Marcia_HD_04crop-e1652768379929.jpg");
 
 $felix = new Resident(
-    "FELIX",
+    "SANSOU",
     "SONORAMA",
     "",
     "/wp-content/uploads/2021/03/felix-edited-1.jpg");
