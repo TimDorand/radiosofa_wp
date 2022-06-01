@@ -596,17 +596,20 @@ small {
     display: none;
     width: calc(396% + 90px);
 }
+.sofas-post-100{
+    width:100%;
+}
 
 .sofas-post-2 {
-    margin-left: calc(-100% - 28px);
+    margin-left: calc(-100% - 20px);
 }
 
 .sofas-post-3 {
-    margin-left: calc(-200% - 56px);
+    margin-left: calc(-200% - 40px);
 }
 
 .sofas-post-4 {
-    margin-left: calc(-299% - 86px);
+    margin-left: calc(-299% - 60px);
 }
 
 /* RESIDENCE */
