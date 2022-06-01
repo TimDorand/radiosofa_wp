@@ -48,7 +48,7 @@ $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
             } catch (e) {
                 console.warn('[Cache] couldnot parse data', e)
             }
-            if (foundLocalStorage && parseData && ((new Date().getTime() - parseData._) < 60000)) {
+            if (foundLocalStorage && parseData && ((new Date().getTime() - parseData._) < 0)) {
                 console.debug("[Cache] found in cache", cacheKey);
                 success(foundLocalStorage);
                 return false;
