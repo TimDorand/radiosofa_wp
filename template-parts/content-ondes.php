@@ -18,12 +18,24 @@
     <div class="rs-block-column ondes-first-column">
         <figure class="rs-block-image size-large img-bordered img-visu-mois">
             <div class="rs-image-wrapper">
-                <img
+                <video id="sofa_mois_video" src="https://www.radio-sofa.com/wp-content/uploads/2022/06/Numéro-4.mp4" autoplay loop muted playsinline ></video>
+                <script>window.addEventListener('load', function(){
+                var newVideo = document.getElementById('sofa_mois_video');
+                newVideo.addEventListener('ended', function() {
+                this.currentTime = 0;
+                this.play();
+                }, false);
+
+                newVideo.play();
+
+                });
+                </script>
+                <!--<img
                         width="524"
                         height="524"
                         loading="lazy"
                         src=""
-                        alt="Visuel du mois" id="visuel_mois">
+                        alt="Visuel du mois" id="visuel_mois">-->
                 <div class="fullcap"></div>
             </div>
             <figcaption class="description_visuel_mois">Le sofa du mois par Moon Art Club Template Parts</figcaption>
