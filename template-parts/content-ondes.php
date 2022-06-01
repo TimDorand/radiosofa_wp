@@ -30,6 +30,13 @@
 
                 });
                 </script>
+                <style>
+                    /*DUPLICATE OF CONTENT.CSS*/
+                    #sofa_mois_video{
+                        width:100%;
+                        border: 2px solid black;
+                    }
+                </style>
                 <!--<img
                         width="524"
                         height="524"
