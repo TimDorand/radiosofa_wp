@@ -585,8 +585,8 @@ small {
 .sofas-posts {
     column-gap: 20px;
 }
-.sofas-post .alignright{
-    margin-top: 20px;
+.sofas-post .alignright img{
+    margin-top: 5px;
 }
 .sofas-posts .wp-block-column {
     cursor: pointer;
