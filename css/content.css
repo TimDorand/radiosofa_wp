@@ -73,6 +73,10 @@ small {
 .width-50 {
     width: 50%;
 }
+#sofa_mois_video{
+    width:100%;
+    border: 2px solid black;
+}
 
 /* Boutons */
 .btn {
