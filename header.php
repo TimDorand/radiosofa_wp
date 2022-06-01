@@ -20,7 +20,9 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <script src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/js/jquery_min_213.js"></script>
     <?php wp_head(); ?>
-    <link rel="stylesheet" href="<?php echo site_url(); ?>/wp-content/themes/radiosofa/css/style010622.css">
+    <?php wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css', array(), filemtime(get_template_directory() . '/css/style.css'), false); ?>
+
+<!--    <link rel="stylesheet" href="<?php /*echo site_url(); */?>/wp-content/themes/radiosofa/css/style010622.css">-->
     <link rel="stylesheet" href="<?php echo site_url(); ?>/wp-content/themes/radiosofa/css/fa.css">
 
     <style>
