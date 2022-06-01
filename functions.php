@@ -233,7 +233,7 @@ function disable_emojis_remove_dns_prefetch( $urls, $relation_type ) {
  * Enqueue Styles & Scripts w/ a hook
  */
 function enqueue_styles_scripts_versioning() {
-    wp_enqueue_style('main-styles', get_template_directory_uri() . '/css/style.css', array(), filemtime(get_template_directory() . '/css/style.css'), false);
+    wp_enqueue_style('radio-sofa-style', get_template_directory_uri() . '/css/style.css', array(), filemtime(get_template_directory() . '/css/style.css'), false);
     /*wp_enqueue_script( 'main-styles', get_template_directory_uri() . '/js/example.js', array(), filemtime(get_template_directory() . '/js/example.js'), true );*/
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_styles_scripts_versioning' );

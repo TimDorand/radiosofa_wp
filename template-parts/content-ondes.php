@@ -18,7 +18,7 @@
     <div class="rs-block-column ondes-first-column">
         <figure class="rs-block-image size-large img-bordered img-visu-mois">
             <div class="rs-image-wrapper">
-                <video id="sofa_mois_video" src="https://www.radio-sofa.com/wp-content/uploads/2022/06/video_sofa_juin_2022_resize500px.mp4" autoplay loop muted playsinline ></video>
+                <!--<video id="sofa_mois_video" src="https://www.radio-sofa.com/wp-content/uploads/2022/06/video_sofa_juin_2022_resize500px.mp4" autoplay loop muted playsinline ></video>
                 <script>window.addEventListener('load', function(){
                 var newVideo = document.getElementById('sofa_mois_video');
                 newVideo.addEventListener('ended', function() {
@@ -29,7 +29,7 @@
                 newVideo.play();
 
                 });
-                </script>
+                </script>-->
                 <!--<img
                         width="524"
                         height="524"
