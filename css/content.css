@@ -311,10 +311,11 @@ small {
 .replay-info {
     height: 0px;
 }
-
+#page-radio-residence .wp-block-columns{
+    margin:0;
+}
 #page-radio-residence .convives-post {
-    width: 25%;
-    min-width: 300px;
+    width: 29%;
     position: relative;
     margin-bottom: 20px;
 }
@@ -701,6 +702,9 @@ small {
     .ondes-title {
         font-size: 11rem;
     }
+    #page-radio-residence .convives-post {
+        width: 47%;
+    }
 }
 
 /* TABLETTE */
@@ -731,6 +735,9 @@ small {
 
     .ondes-title {
         display: none;
+    }
+    #page-radio-residence .convives-post {
+        width: 100%;
     }
 }
 
