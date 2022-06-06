@@ -205,7 +205,10 @@
     <a href="https://www.facebook.com/webradio.sofa" target="_blank"><i class="fab fa-facebook"></i></a>
     <a href="https://www.instagram.com/radio.sofa/" target="_blank"><i class="fab fa-instagram"></i></a>
     <a href="https://soundcloud.com/radio-sofa" target="_blank"><i class="fab fa-soundcloud"></i></a>
-
+    <br>
+    <small>
+        <a href="mailto:contact.radiosofa@gmail.com">contact.radiosofa@gmail.com</a>
+    </small>
     <br/>
     <br/>
     <br/>
