@@ -78,7 +78,7 @@ small {
     border: 2px solid black;
 }
 .wp-block-columns{
-    margin:0 !important;
+    margin:0;
 }
 /* Boutons */
 .btn {
@@ -359,7 +359,7 @@ small {
 }
 
 #page-radio-convives .play-hover {
-    height: calc(100% + 3px);
+    height: calc(100% - 3px);
 }
 
 .convives-post:hover .play-hover {
@@ -568,8 +568,6 @@ small {
 .site-convives .replay-info {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: -27px;
-    height: 20px;
 }
 
 
