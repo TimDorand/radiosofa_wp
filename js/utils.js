@@ -297,7 +297,8 @@ function handleReplayIframe() {
 
         // Stop Player
         stopRS();
-        $(".tabcontent:not(#page-radio-journal)").css({"padding": "15px 40px 25px 40px"});
+        $(".tabcontent:not").css({"padding": "15px 40px 25px 40px"});
+        $("#page-radio-journal").css({"padding": "0"});
 
         // load and display new replay
         $("#btn_clone").click(function(){
