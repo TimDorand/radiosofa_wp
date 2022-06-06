@@ -927,4 +927,7 @@ small {
     #page-radio-ondes{
         margin-bottom: 50px;
     }
+    .mobile-rs-icons{
+        flex-direction: column;
+    }
 }
