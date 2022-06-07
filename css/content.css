@@ -935,4 +935,8 @@ small {
     .mobile-rs-icons{
         flex-direction: column;
     }
+
+    #page-radio-residence .convives-post {
+        width: 100%;
+    }
 }
