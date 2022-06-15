@@ -156,14 +156,14 @@ $waveyCuts = new Resident(
     "",
     "/wp-content/uploads/2022/03/WAVEY-1.jpeg");
 
-$sainteMisere = new Resident(
-    "SAINTE MISERE",
+$saintMisere = new Resident(
+    "SAINT MISERE",
     "NEW PHONE. WHO DIS ?",
     "",
     "/wp-content/uploads/2022/06/sainte-misere-residence-scaled.jpg");
 
 
-$residents = [$mimi, $tomCoololo, $waveyCuts, $planisphere, $sunaas, $nofraje, $charleeps, $toniDog, $monacogza, $elonaprime, $broski, $sainteMisere, $matso, $taka, $marsoc10, $tropicalites, $girasol, $felix, $baume, $micropolis, $monacogza, $rodrigueSoulgroove];
+$residents = [$mimi, $tomCoololo, $waveyCuts, $planisphere, $sunaas, $nofraje, $charleeps, $toniDog, $monacogza, $elonaprime, $broski, $saintMisere, $matso, $taka, $marsoc10, $tropicalites, $girasol, $felix, $baume, $micropolis, $monacogza, $rodrigueSoulgroove];
 /*sort($residents);*/
 
 echo '<div class="rs-block-columns replay-images">';
