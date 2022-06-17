@@ -315,7 +315,7 @@ small {
 }
 
 #page-radio-residence .convives-post {
-    width: calc(33% - 26.6%);
+    width: calc(33% - 26.6px);
     position: relative;
     margin-bottom: 20px;
 }
