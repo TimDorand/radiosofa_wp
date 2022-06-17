@@ -315,7 +315,7 @@ small {
 }
 
 #page-radio-residence .convives-post {
-    width: calc(33% - 25px);
+    width: calc(33% - 26.6%);
     position: relative;
     margin-bottom: 20px;
 }
@@ -643,7 +643,7 @@ small {
 .residence-details-archives {
     flex-wrap: wrap;
     justify-content: flex-start;
-    column-gap: 42px;
+    column-gap: 40px;
 }
 
 .mobile-only {
@@ -701,7 +701,6 @@ small {
         font-size: 11rem;
     }
     #page-radio-residence .convives-post {
-        width: 47%;
     }
 }
 
