@@ -18,7 +18,7 @@
     <div class="rs-block-column ondes-first-column">
         <figure class="rs-block-image size-large img-bordered img-visu-mois">
             <div class="rs-image-wrapper">
-                <video id="sofa_mois_video" src="https://www.radio-sofa.com/wp-content/uploads/2022/06/video_sofa_juin_2022_resize500px.mp4" autoplay loop muted playsinline ></video>
+                <!--<video id="sofa_mois_video" src="https://www.radio-sofa.com/wp-content/uploads/2022/06/video_sofa_juin_2022_resize500px.mp4" autoplay loop muted playsinline ></video>
                 <script>window.addEventListener('load', function(){
                 var newVideo = document.getElementById('sofa_mois_video');
                 newVideo.addEventListener('ended', function() {
@@ -36,16 +36,16 @@
                         width:100%;
                         border: 2px solid black;
                     }
-                </style>
-                <!--<img
+                </style>-->
+                <img
                         width="524"
                         height="524"
                         loading="lazy"
                         src=""
-                        alt="Visuel du mois" id="visuel_mois">-->
+                        alt="Visuel du mois" id="visuel_mois">
                 <div class="fullcap"></div>
             </div>
-            <figcaption class="description_visuel_mois">Le sofa du mois par Moon Art Club Template Parts</figcaption>
+            <figcaption class="description_visuel_mois">Le sofa du mois</figcaption>
         </figure>
         <div class="rs-home-journal desktop-only">
             <div class="rs-title rs-title-default">
