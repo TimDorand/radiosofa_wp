@@ -147,6 +147,7 @@
 div[class^='src-components-current-track__title-block--'] > div {
     font-weight: 700;
     line-height: normal;
+    white-space: normal;
 }
 div[class^='src-components-current-track__artist--'] {
     margin-top: 4px;
