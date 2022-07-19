@@ -43,7 +43,7 @@ $broski = new Resident(
     "/wp-content/uploads/2021/03/broski-scaled.jpeg");
 
 $elonaprime = new Resident(
-    "ELONA PRIME",
+    "ELONA",
     "COFFEE VIBE",
     "",
     "/wp-content/uploads/2022/03/Elona-Prime-1-1024x1024.png");

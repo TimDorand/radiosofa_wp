@@ -27,6 +27,15 @@
         playRS();
     });
 
+    document.body.onkeyup = function(e) {
+        if (e.key === " " ||
+            e.code === "Space" ||
+            e.keyCode === 32
+        ) {
+            playRS();
+        }
+    }
+
     if (!$(location).attr('hash').split('#').pop()) {
         $("#page-ondes").hide();
     }
