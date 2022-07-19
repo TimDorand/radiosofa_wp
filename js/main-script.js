@@ -27,11 +27,12 @@
         playRS();
     });
 
-    document.body.onkeyup = function(e) {
+    document.body.onkeydown = function(e) {
         if (e.key === " " ||
             e.code === "Space" ||
             e.keyCode === 32
         ) {
+            e.preventDefault();
             playRS();
         }
     }
