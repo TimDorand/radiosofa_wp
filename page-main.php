@@ -20,10 +20,6 @@ get_header();
             <div data-text="<?php echo $text_defilant; ?>"><span><?php echo $text_defilant; ?></span></div>
         </div>
 
-        <div class="rs-tchat">
-            <?php if (function_exists('simple_ajax_chat')) simple_ajax_chat(); ?>
-        </div>
-
 
         <?php
         while (have_posts()) :
@@ -51,6 +47,12 @@ get_header();
 
         <div id="page-radio-journal" class="tabcontent">
         </div><!-- .page-journal -->
+
+
+
+        <div class="rs-tchat">
+            <?php if (function_exists('simple_ajax_chat')) simple_ajax_chat(); ?>
+        </div>
     </main><!-- #main -->
 
 
