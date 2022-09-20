@@ -86,7 +86,9 @@
         <?php echo do_shortcode("[vsel]"); ?>
 
         <div class="text-centered ondes-more-planning clickable desktop-only">
-            <?php if(strlen(do_shortcode("[vsel]")) > 700){ echo '▽'; } ?>
+            <?php if (strlen(do_shortcode("[vsel]")) > 700) {
+                echo '▽';
+            } ?>
         </div>
         <div class="rs-block-columns">
             <div class="rs-block-column"></div>
@@ -167,26 +169,15 @@
 
 
 <div class="ondes-footer">
-    <p class="text-justify">
-    <p>Radio Sofa vous partage en continu de la musique universelle piochée avec soin par notre équipe de diggers de
-        salon.</p>
-    <p style="margin-bottom:19px">Radio Sofa est une webradio assemblée au printemps 2020 dans un Paris atone.
-        Nous partageons en flux tendu nos trouvailles éclectiques, et convions chaque
-        semaine artistes et résidents locaux ou étrangers sur nos ondes pour des sets
-        et sélections. Notre bande-son se module entre atmosphères lounge et lentes,
-        grooves des quatre coins du monde et beats club acides et synthétiques.</p>
-    __
-    <p class="text-italic">
-        Radio Sofa shares with you a continuous stream of universal music carefully selected by our team of living room
-        diggers.
-    </p>
-    <p class="text-italic">
-        Radio Sofa is a webradio assembled in the spring of 2020 in a dull Paris. We share our eclectic finds and invite
-        local and foreign artists and residents on our airwaves every week for sets and selections. Our soundtrack is
-        modulated between lounge and slow atmospheres, grooves from all over the world and acid and synthetic club
-        beats.
-    </p>
-    </p>
+    <div class="text-justify">
+        <p>Collectif francilien rhizomatique, Radio Sofa oscille entre événements festifs et méditatifs, diffusion
+            radiophonique, arts visuels, sapes et micro-label.</p>
+        __
+        <p class="text-italic">
+            Radio Sofa is a rhizomatic parisian collective, oscillating between festive and meditative events,
+            radio broadcasting, visual arts, clothing and micro-label.
+        </p>
+    </div>
     <h1 class="ondes-title ondes-title-stroke">
         <span>R</span>
         <span>A</span>
@@ -204,8 +195,8 @@
 <div class="mobile-only text-centered mobile-rs-icons">
     <div>
         <a href="https://www.facebook.com/webradio.sofa" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.instagram.com/radio.sofa/" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://soundcloud.com/radio-sofa" target="_blank"><i class="fab fa-soundcloud"></i></a>
+        <a href="https://www.instagram.com/radio.sofa/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://soundcloud.com/radio-sofa" target="_blank"><i class="fab fa-soundcloud"></i></a>
     </div>
     <br>
     <small>
