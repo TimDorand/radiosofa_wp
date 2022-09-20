@@ -171,8 +171,9 @@
 <div class="ondes-footer">
     <div class="text-justify">
         <p>Collectif francilien rhizomatique, Radio Sofa oscille entre événements festifs et méditatifs, diffusion
-            radiophonique, arts visuels, sapes et micro-label.</p>
+            radiophonique, arts visuels, sapes et micro-label.<br/>
         __
+        </p>
         <p class="text-italic">
             Radio Sofa is a rhizomatic parisian collective, oscillating between festive and meditative events,
             radio broadcasting, visual arts, clothing and micro-label.
