@@ -185,9 +185,9 @@ foreach ($residents as $resident) {
         <figure class="rs-block-image size-large is-resized">
           <img src="' . $resident->image . '" alt="' . $resident->name . '" width="376" height="376"/>
         </figure>
-          <div class="rs-title-mini rs-title-light">
+          <!--<div class="rs-title-mini rs-title-light">
             <div><h2>' . $resident->name . '</h2></div>
-        </div>
+        </div>-->
     </div>';
 }
 echo '</div>';
