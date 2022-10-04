@@ -28,37 +28,37 @@ $baume = new Resident(
     "BAUME",
     "TOUT QUITTER POUR PARTIR",
     '',
-    "https://www.radio-sofa.com/wp-content/uploads/2022/10/BAUME-SC.jpg");
+    "/wp-content/uploads/2022/10/BAUME-SC.jpg");
 
 $belaria = new Resident(
     "BELARIA",
     "VAGUES SYNTHETIQUES",
     '',
-    "https://www.radio-sofa.com/wp-content/uploads/2022/10/BELARIA-SC.jpg");
+    "/wp-content/uploads/2022/10/BELARIA-SC.jpg");
 
 $broski = new Resident(
     "BROSKI",
     "EXPÉDITION ÉLECTRONIQUE",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2022/10/BROSKI-SC.jpg");
+    "/wp-content/uploads/2022/10/BROSKI-SC.jpg");
 
 $elonaprime = new Resident(
     "ELONA",
     "COFFEE VIBE",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2022/10/ELONA-SC.jpg");
+    "/wp-content/uploads/2022/10/ELONA-SC.jpg");
 
 $charleeps = new Resident(
     "CHARLEEPS",
     "RIVIERA EXPRESS",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2022/10/CHARLEEPS-SC.jpg");
+    "/wp-content/uploads/2022/10/CHARLEEPS-SC.jpg");
 
 $marsoc10 = new Resident(
     "MARS O10C",
     "BREAK A LEG",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2022/10/MARS-O10C-SC.jpg");
+    "/wp-content/uploads/2022/10/MARS-O10C-SC.jpg");
 
 $felix = new Resident(
     "FELIX",
@@ -70,33 +70,33 @@ $girasol = new Resident(
     "GIRASOL",
     "LATITUDES LUNATIQUES",
     '',
-    "https://www.radio-sofa.com/wp-content/uploads/2022/10/GIRASOL-SC.jpg");
+    "/wp-content/uploads/2022/10/GIRASOL-SC.jpg");
 
 $matso = new Resident(
     "MATSO",
     "ADN",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2022/10/MATSO-SC.jpg");
+    "/wp-content/uploads/2022/10/MATSO-SC.jpg");
 
 $nofraje = new Resident(
     "NOFRAJE",
     "GLOBAL FREQUENCY",
     '',
-    "https://www.radio-sofa.com/wp-content/uploads/2022/10/NOFRAJE-SC.jpg");
+    "/wp-content/uploads/2022/10/NOFRAJE-SC.jpg");
 
 
 $planisphere = new Resident(
     "PLANISPHERE",
     "MUSIQUES POUR MOBILIER",
     '',
-    "https://www.radio-sofa.com/wp-content/uploads/2022/10/PLANISPHERE-SC.jpg");
+    "/wp-content/uploads/2022/10/PLANISPHERE-SC.jpg");
 
 
 $sunaas = new Resident(
     "SUNAAS",
     "SLOW DOWN A MINUTE",
     '',
-    "https://www.radio-sofa.com/wp-content/uploads/2022/10/SUNAAS-SC.jpg");
+    "/wp-content/uploads/2022/10/SUNAAS-SC.jpg");
 
 
 $tropicalites = new Resident(
@@ -109,40 +109,40 @@ $monacogza = new Resident(
     "MONACO GZA",
     "Dschungel Kosmos",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2022/10/MONACO-GZA.jpg");
+    "/wp-content/uploads/2022/10/MONACO-GZA.jpg");
 
 
 $rodrigueSoulgroove = new Resident(
     "RODRIGUE SOULGROOVE",
     "LE SILLON",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2022/10/RODRIGUE-SC.jpg");
+    "/wp-content/uploads/2022/10/RODRIGUE-SC.jpg");
 
 
 $mimi = new Resident(
     "MIMI",
     "FAUTEUIL CLUB",
     '',
-    "https://www.radio-sofa.com/wp-content/uploads/2022/10/MIMI-SC.jpg");
+    "/wp-content/uploads/2022/10/MIMI-SC.jpg");
 
 $micropolis = new Resident(
     "MICROPOLIS",
     "MACROPHONE",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2022/10/MICROPOLIS-SC.jpg");
+    "/wp-content/uploads/2022/10/MICROPOLIS-SC.jpg");
 
 
 $taka = new Resident(
     "TAKA",
     "GOGUETTE ASTRALE",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2022/10/TAKA-SC.jpg");
+    "/wp-content/uploads/2022/10/TAKA-SC.jpg");
 
 $tomCoololo = new Resident(
     "TOM COOLOLO",
     "ARTEFACTS AUDITIFS",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2022/10/TOM-COOLOLO-SC.jpg");
+    "/wp-content/uploads/2022/10/TOM-COOLOLO-SC.jpg");
 
 $toniDog = new Resident(
     "TONI DOG",
@@ -166,14 +166,14 @@ $saintMisere = new Resident(
     "SAINT MISERE",
     "NEW PHONE. WHO DIS ?",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2022/10/SAINT-MISERE-SC.jpg");
+    "/wp-content/uploads/2022/10/SAINT-MISERE-SC.jpg");
 
 
 $slim = new Resident(
     "SLIM SLIM",
     "Hot Chose",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2022/10/SLIM-SIM-SC.jpg");
+    "/wp-content/uploads/2022/10/SLIM-SIM-SC.jpg");
 
 
 $residents = [$mimi, $belaria, $tomCoololo, $waveyCuts, $planisphere, $sunaas, $nofraje, $charleeps, $toniDog, $slim, $monacogza, $elonaprime, $broski, $saintMisere, $matso, $taka, $marsoc10, $tropicalites, $girasol, $felix, $baume, $micropolis, $rodrigueSoulgroove];
