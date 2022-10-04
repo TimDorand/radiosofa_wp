@@ -132,10 +132,10 @@ const openPage = (params) => {
         handleReplayIframe();
         handleJournalClick();
         handleOndes()
-       /* setTimeout(function () {
+        setTimeout(function () {
             findMyText(tab_jour[ladate.getDay()], "Aujourd'hui");
             findMyText(tab_jour[ladate.getDay() + 1], "Demain");
-        }, 1000);*/
+        }, 1000);
     }
 }
 
