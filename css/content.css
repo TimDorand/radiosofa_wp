@@ -609,11 +609,12 @@ small {
 
 .sofas-post {
     display: none;
-    width: calc(396% + 90px);
+    /*width: calc(396% + 90px);*/
 }
 .sofas-post-100{
     width:100%;
 }
+/*
 
 .sofas-post-2 {
     margin-left: calc(-100% - 20px);
@@ -625,7 +626,7 @@ small {
 
 .sofas-post-4 {
     margin-left: calc(-299% - 60px);
-}
+}*/
 
 /* RESIDENCE */
 
