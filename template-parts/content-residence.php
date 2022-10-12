@@ -176,7 +176,21 @@ $slim = new Resident(
     "/wp-content/uploads/2022/10/SLIM-SIM-SC.jpg");
 
 
-$residents = [$mimi, $belaria, $tomCoololo, $waveyCuts, $planisphere, $sunaas, $nofraje, $charleeps, $toniDog, $slim, $monacogza, $elonaprime, $broski, $saintMisere, $matso, $taka, $marsoc10, $tropicalites, $girasol, $felix, $baume, $micropolis, $rodrigueSoulgroove];
+$kenzzza = new Resident(
+    "KENZZZA",
+    "Silky w    itchcraft",
+    "",
+    "/wp-content/uploads/2022/10/KENZZZA.jpg");
+
+
+$paradisFiscal = new Resident(
+    "PARADIS FISCAL",
+    "Synthetic Music Company",
+    "",
+    "/wp-content/uploads/2022/10/SLIM-SIM-SC.jpg");
+
+
+$residents = [$tomCoololo, $waveyCuts, $planisphere, $sunaas, $nofraje, $charleeps, $toniDog, $slim, $kenzzza, $paradisFiscal, $monacogza, $elonaprime, $broski, $saintMisere, $matso, $taka, $marsoc10, $tropicalites, $girasol, $felix, $baume, $micropolis, $rodrigueSoulgroove, $mimi, $belaria];
 /*sort($residents);*/
 
 echo '<div class="rs-block-columns replay-images">';
