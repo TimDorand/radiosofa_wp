@@ -3,11 +3,12 @@
 (function ($) {
     // Disable console log in production
     var DEBUG = false;
-    if(!DEBUG){
-        if(!window.console) window.console = {};
+    if (!DEBUG) {
+        if (!window.console) window.console = {};
         var methods = ["log", "debug", "warn", "info"];
-        for(var i=0;i<methods.length;i++){
-            console[methods[i]] = function(){};
+        for (var i = 0; i < methods.length; i++) {
+            console[methods[i]] = function () {
+            };
         }
     }
 
@@ -27,7 +28,7 @@
         playRS();
     });
 
-    document.body.onkeydown = function(e) {
+    document.body.onkeydown = function (e) {
         if (e.key === " " ||
             e.code === "Space" ||
             e.keyCode === 32
@@ -66,20 +67,20 @@
 
         // Menu to Page
         $(".pageSelector").click(function (e) {
-            if($(this).attr("mobileMenu")){
+            if ($(this).attr("mobileMenu")) {
                 $("#menu__toggle").click()
             }
             fetchHideShowPage($(this).attr("pageSelector"), selectorToPageName($(this).attr("pageSelector")), false);
         });
         $(".pageTemplateSelector").click(function (e) {
-            if($(this).attr("mobileMenu")){
+            if ($(this).attr("mobileMenu")) {
                 $("#menu__toggle").click()
             }
             fetchHideShowPage($(this).attr("pageSelector"), selectorRadioToPageName($(this).attr("pageSelector")), true);
         });
 
         $("#menu__close").click(function (e) {
-                $("#menu__toggle").click()
+            $("#menu__toggle").click()
         })
 
         // Mobile Menu toggle
@@ -87,15 +88,15 @@
             $("#primary-menu").toggle();
         });*/
 
-/*        // ARTICLES
-        // Home articles
-        $(".bloc-articles a").click(function (e) {
-            var url = new URL($(this).attr('href'));
-            openPage(null, "page-journal", "Journal");
-            fetchPost(url.pathname.replace(/\//g, ""));
-            window.location = '#article-' + url.pathname.replace(/\//g, "");
-            e.preventDefault();
-        });*/
+        /*        // ARTICLES
+                // Home articles
+                $(".bloc-articles a").click(function (e) {
+                    var url = new URL($(this).attr('href'));
+                    openPage(null, "page-journal", "Journal");
+                    fetchPost(url.pathname.replace(/\//g, ""));
+                    window.location = '#article-' + url.pathname.replace(/\//g, "");
+                    e.preventDefault();
+                });*/
 
         handleReplayIframe();
 
@@ -110,16 +111,18 @@
         })
 
         if (!localStorage.getItem("debug")) {
-            // Load all pages in background
+            // Load all pages in background after 30 min and every hour
             setTimeout(function () {
-                var pagesToLoad = ["Convives", "Residence"]
+                var pagesToLoad = ["Ondes", "Convives", "Residence"]
                 for (const pageName of pagesToLoad) {
                     setTimeout(function () {
                         console.debug("[loadPageBackground] fetchPage")
-                        /*fetchPage(null, pageName, true, null)*/
+                        setInterval(function () {
+                            fetchPage(null, pageName, true, null)
+                        }, 3600000)
                     }, 1000)
                 }
-            }, 1000)
+            }, 1800000)
         }
 
         var siteMainDiv = $(".site-main");
@@ -136,7 +139,7 @@
         // PREVIOUS NAV
         window.addEventListener('popstate', (event) => {
             console.log("location: " + document.location + ", state: " + JSON.stringify(event.state), ", history: ", event);
-            if(event.state){
+            if (event.state) {
                 window.location.reload();
             }
         });
