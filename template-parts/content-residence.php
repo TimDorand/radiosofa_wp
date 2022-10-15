@@ -178,7 +178,7 @@ $slim = new Resident(
 
 $kenzzza = new Resident(
     "KENZZZA",
-    "Silky w    itchcraft",
+    "Silky witchcraft",
     "",
     "/wp-content/uploads/2022/10/KENZZZA.jpg");
 
@@ -187,7 +187,7 @@ $paradisFiscal = new Resident(
     "PARADIS FISCAL",
     "Synthetic Music Company",
     "",
-    "/wp-content/uploads/2022/10/SLIM-SIM-SC.jpg");
+    "/wp-content/uploads/2022/10/PARADIS-FISCAL.jpg");
 
 
 $residents = [$tomCoololo, $waveyCuts, $planisphere, $sunaas, $nofraje, $charleeps, $toniDog, $slim, $kenzzza, $paradisFiscal, $monacogza, $elonaprime, $broski, $saintMisere, $matso, $taka, $marsoc10, $tropicalites, $girasol, $felix, $baume, $micropolis, $rodrigueSoulgroove, $mimi, $belaria];
