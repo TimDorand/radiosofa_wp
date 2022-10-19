@@ -112,7 +112,7 @@
 
         if (!localStorage.getItem("debug")) {
             // Load all pages in background after 30 min and every hour
-            setTimeout(function () {
+           /* setTimeout(function () {
                 var pagesToLoad = ["Ondes", "Convives", "Residence"]
                 for (const pageName of pagesToLoad) {
                     setTimeout(function () {
@@ -122,7 +122,7 @@
                         }, 3600000)
                     }, 1000)
                 }
-            }, 1800000)
+            }, 1800000)*/
         }
 
         var siteMainDiv = $(".site-main");
