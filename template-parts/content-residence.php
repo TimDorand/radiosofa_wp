@@ -151,10 +151,10 @@ $toniDog = new Resident(
     "/wp-content/uploads/2022/10/TONI-DOG-SC.jpg");
 
 $waveyCuts = new Resident(
-    "WAVEY CUTS",
-    "AIN'T EASY BEING WAVEY",
+    "BAXUA & WAVEY CUTS",
+    "FRACAS",
     "",
-    "/wp-content/uploads/2022/10/WAVEY-SC.jpg");
+    "/wp-content/uploads/2022/10/FRACAS_-BAXUA-_-WAVEY-CUTS-EP1.png");
 
 $saintMisere = new Resident(
     "SAINT MISERE",
