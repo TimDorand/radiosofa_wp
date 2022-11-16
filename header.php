@@ -16,7 +16,7 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-          content="Radio Sofa, la webradio à écouter assis et debout. Partage continuel de sons universels et confortables par nos diggers de salon.">
+          content="Radio Sofa est un collectif parisien oscillant entre événements festifs et méditatifs, diffusion radiophonique, arts visuels, sapes et micro-label.">
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <script src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/js/jquery_min_213.js"></script>
     <?php wp_head(); ?>
