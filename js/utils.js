@@ -133,8 +133,8 @@ const openPage = (params) => {
         handleJournalClick();
         handleOndes()
         setTimeout(function () {
-            findMyText(tab_jour[ladate.getDay()], "Aujourd'hui");
-            findMyText(tab_jour[ladate.getDay() + 1], "Demain");
+            /*findMyText(tab_jour[ladate.getDay()], "Aujourd'hui");
+            findMyText(tab_jour[ladate.getDay() + 1], "Demain");*/
         }, 1000);
     }
 }
