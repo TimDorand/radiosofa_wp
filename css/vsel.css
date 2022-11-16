@@ -78,6 +78,8 @@
 }
 .vsel-info td{
     min-width: 38px;
+    border: none;
+    padding: 0;
 }
 .vsel-content{
     display: flex;
