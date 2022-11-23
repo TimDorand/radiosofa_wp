@@ -46,7 +46,7 @@ $elonaprime = new Resident(
     "ELONA",
     "COFFEE VIBE",
     "",
-    "/wp-content/uploads/2022/10/ELONA-SC.jpg");
+    "/wp-content/uploads/2022/11/ELONA-PRIME-SC.jpg");
 
 $charleeps = new Resident(
     "CHARLEEPS",
@@ -189,8 +189,14 @@ $paradisFiscal = new Resident(
     "",
     "/wp-content/uploads/2022/10/PARADIS-FISCAL.jpg");
 
+$maxKlank = new Resident(
+    "MAX KLANK",
+    "TAR",
+    "",
+    "/wp-content/uploads/2022/11/MAX-KLANK.jpg");
 
-$residents = [$tomCoololo, $waveyCuts, $planisphere, $sunaas, $nofraje, $charleeps, $toniDog, $slim, $kenzzza, $paradisFiscal, $monacogza, $elonaprime, $broski, $saintMisere, $matso, $taka, $marsoc10, $tropicalites, $girasol, $felix, $baume, $micropolis, $rodrigueSoulgroove, $mimi, $belaria];
+
+$residents = [$tomCoololo, $waveyCuts, $planisphere, $sunaas, $nofraje, $maxKlank, $charleeps, $toniDog, $slim, $kenzzza, $paradisFiscal, $monacogza, $elonaprime, $broski, $saintMisere, $matso, $taka, $marsoc10, $tropicalites, $girasol, $felix, $baume, $micropolis, $rodrigueSoulgroove, $mimi, $belaria];
 /*sort($residents);*/
 
 echo '<div class="rs-block-columns replay-images">';
