@@ -511,13 +511,13 @@ img {
 /* MOBILE */
 
 /*bigphoneonly*/
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 364px) {
     .big-phone-only {
         display: none;
     }
 }
 
-@media screen and (min-width: 350px) and (max-width: 782px) {
+@media screen and (min-width: 364px) and (max-width: 782px) {
     .big-phone-only {
         display: inline-block;
     }
