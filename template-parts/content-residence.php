@@ -196,6 +196,13 @@ $maxKlank = new Resident(
     "/wp-content/uploads/2022/11/MAX-KLANK.jpg");
 
 
+$kimKenis = new Resident(
+    "KIM KENIS",
+    "Same As It Ever Was",
+    "",
+    "/wp-content/uploads/2023/01/KIM-KENIS-01-23-1-1024x1024.png");
+
+
 $residents = [$tomCoololo, $waveyCuts, $planisphere, $sunaas, $nofraje, $maxKlank, $charleeps, $toniDog, $slim, $kenzzza, $paradisFiscal, $monacogza, $elonaprime, $broski, $saintMisere, $matso, $taka, $marsoc10, $tropicalites, $girasol, $felix, $baume, $micropolis, $rodrigueSoulgroove, $mimi, $belaria];
 /*sort($residents);*/
 
