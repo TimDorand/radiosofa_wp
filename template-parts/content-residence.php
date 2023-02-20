@@ -151,7 +151,7 @@ $toniDog = new Resident(
     "/wp-content/uploads/2022/10/TONI-DOG-SC.jpg");
 
 $fracas = new Resident(
-    "BAXUA & WAVEY CUTS",
+    "BAXUA AND WAVEY CUTS",
     "FRACAS",
     "",
     "/wp-content/uploads/2022/10/FRACAS_-BAXUA-_-WAVEY-CUTS-EP1.png");
