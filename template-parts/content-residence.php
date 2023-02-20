@@ -150,9 +150,15 @@ $toniDog = new Resident(
     "",
     "/wp-content/uploads/2022/10/TONI-DOG-SC.jpg");
 
-$waveyCuts = new Resident(
+$fracas = new Resident(
     "BAXUA & WAVEY CUTS",
     "FRACAS",
+    "",
+    "/wp-content/uploads/2022/10/FRACAS_-BAXUA-_-WAVEY-CUTS-EP1.png");
+
+$waveyCuts = new Resident(
+    "WAVEY CUTS",
+    "Aint Easy Being Wavey",
     "",
     "/wp-content/uploads/2022/10/FRACAS_-BAXUA-_-WAVEY-CUTS-EP1.png");
 
@@ -203,7 +209,7 @@ $kimKenis = new Resident(
     "/wp-content/uploads/2023/01/KIM-KENIS-01-23-1-1024x1024.png");
 
 
-$residents = [$tomCoololo, $waveyCuts, $planisphere, $sunaas, $nofraje, $maxKlank, $charleeps, $toniDog, $slim, $kenzzza, $paradisFiscal, $monacogza, $elonaprime, $broski, $saintMisere, $matso, $taka, $marsoc10, $tropicalites, $girasol, $felix, $baume, $micropolis, $rodrigueSoulgroove, $mimi, $belaria];
+$residents = [$tomCoololo, $fracas, $planisphere, $sunaas, $kimKenis, $nofraje, $maxKlank, $charleeps, $toniDog, $slim, $kenzzza, $paradisFiscal, $monacogza, $elonaprime, $broski, $saintMisere, $matso, $taka, $marsoc10, $tropicalites, $girasol, $felix, $baume, $micropolis, $rodrigueSoulgroove, $waveyCuts, $mimi, $belaria];
 /*sort($residents);*/
 
 echo '<div class="rs-block-columns replay-images">';
