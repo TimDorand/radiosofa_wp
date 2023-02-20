@@ -162,6 +162,12 @@ $waveyCuts = new Resident(
     "",
     "/wp-content/uploads/2022/10/FRACAS_-BAXUA-_-WAVEY-CUTS-EP1.png");
 
+$SBN6 = new Resident(
+    "SBN6",
+    "Lovecast",
+    "",
+    "/wp-content/uploads/2023/02/SBN6-lovecast-ep2.png");
+
 $saintMisere = new Resident(
     "SAINT MISERE",
     "NEW PHONE. WHO DIS ?",
@@ -209,7 +215,7 @@ $kimKenis = new Resident(
     "/wp-content/uploads/2023/01/KIM-KENIS-01-23-1-1024x1024.png");
 
 
-$residents = [$tomCoololo, $fracas, $planisphere, $sunaas, $kimKenis, $nofraje, $maxKlank, $charleeps, $toniDog, $slim, $kenzzza, $paradisFiscal, $monacogza, $elonaprime, $broski, $saintMisere, $matso, $taka, $marsoc10, $tropicalites, $girasol, $felix, $baume, $micropolis, $rodrigueSoulgroove, $waveyCuts, $mimi, $belaria];
+$residents = [$tomCoololo, $fracas, $planisphere, $sunaas, $kimKenis, $SBN6, $nofraje, $maxKlank, $charleeps, $toniDog, $slim, $kenzzza, $paradisFiscal, $monacogza, $elonaprime, $broski, $saintMisere, $matso, $taka, $marsoc10, $tropicalites, $girasol, $felix, $baume, $micropolis, $rodrigueSoulgroove, $waveyCuts, $mimi, $belaria];
 /*sort($residents);*/
 
 echo '<div class="rs-block-columns replay-images">';
