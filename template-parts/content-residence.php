@@ -64,7 +64,7 @@ $felix = new Resident(
     "FELIX",
     "SONORAMA",
     "",
-    "/wp-content/uploads/2021/03/felix-edited-1.jpg");
+    "/wp-content/uploads/2023/02/FELIX-SC.jpg");
 
 $girasol = new Resident(
     "GIRASOL",
