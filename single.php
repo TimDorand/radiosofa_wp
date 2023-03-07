@@ -7,11 +7,12 @@
  * @package radiosofa
  */
 
-$uri = "/#article-".substr(substr($_SERVER['REQUEST_URI'], 1), 0, -1);
+$uri = $_SERVER['REQUEST_URI'];
 if (str_contains($uri, 'collection')) {
     header("Location: #page-collection");
 } else {
-    header("Location: ".$uri);
+    $article_uri = "/#article-".substr(substr($_SERVER['REQUEST_URI'], 1), 0, -1);
+    header("Location: ".$article_uri);
 }
 die();
 
