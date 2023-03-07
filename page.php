@@ -13,6 +13,16 @@
  * @package radiosofa
  */
 
+$uri = $_SERVER['REQUEST_URI'];
+$redirected_uri = "/#";
+if (str_contains($uri, 'collection')) {
+    $redirected_uri = "/#page-collection";
+} else if(str_contains($uri, 'sofas')) {
+    $redirected_uri = "/#page-sofas";
+} else if(str_contains($uri, 'residence-')) {
+    $redirected_uri = "/#page-residence";
+}
+header("Location: ".$redirected_uri);
 get_header();
 ?>
 
