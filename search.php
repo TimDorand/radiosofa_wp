@@ -7,6 +7,7 @@
  * @package radiosofa
  */
 
+return;
 get_header();
 ?>
 
