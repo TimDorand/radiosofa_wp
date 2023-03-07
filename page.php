@@ -23,6 +23,7 @@ if (str_contains($uri, 'collection')) {
     $redirected_uri = "/#page-residence";
 }
 header("Location: ".$redirected_uri);
+die();
 get_header();
 ?>
 
