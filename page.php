@@ -20,7 +20,7 @@ if (str_contains($uri, 'collection')) {
 } else if(str_contains($uri, 'sofas')) {
     $redirected_uri = "/#page-sofas";
 } else if(str_contains($uri, 'residence-')) {
-    $redirected_uri = "/#page-residence";
+    $redirected_uri = "/#radio-residence";
 }
 header("Location: ".$redirected_uri);
 die();
