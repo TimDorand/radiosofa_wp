@@ -12,9 +12,9 @@ $redirected_uri = "/#";
 if (str_contains($uri, 'collection')) {
     $redirected_uri = "/#page-collection";
 } else if(str_contains($uri, 'journal')) {
-    $redirected_uri = "/#article-".substr(substr($_SERVER['REQUEST_URI'], 1), 0, -8);
+    $redirected_uri = "/#article-".substr(substr($uri, 1), 0, -9);
 } else {
-    $redirected_uri = "/#article-".substr(substr($_SERVER['REQUEST_URI'], 1), 0, -1);
+    $redirected_uri = "/#article-".substr(substr($uri, 1), 0, -1);
 }
 header("Location: ".$redirected_uri);
 die();
