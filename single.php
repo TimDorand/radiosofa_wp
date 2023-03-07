@@ -9,7 +9,7 @@
 
 $uri = $_SERVER['REQUEST_URI'];
 $redirected_uri = "/#";
-if(str_contains($uri, 'journal-')) {
+if(str_contains($uri, 'journal')) {
     $redirected_uri = "/#article-".substr(substr($uri, 9), 0, -1);
 } else {
     $redirected_uri = "/#article-".substr(substr($uri, 1), 0, -1);
