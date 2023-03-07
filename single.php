@@ -11,6 +11,9 @@ $uri = $_SERVER['REQUEST_URI'];
 $redirected_uri = "/#";
 if (str_contains($uri, 'collection')) {
     $redirected_uri = "/#page-collection";
+} else if(str_contains($uri, 'residence')) {
+    $redirected_uri = "/#page-residence";
+
 } else if(str_contains($uri, 'journal')) {
     $redirected_uri = "/#article-".substr(substr($uri, 9), 0, -1);
 } else {
