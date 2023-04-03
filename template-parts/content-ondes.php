@@ -2,18 +2,6 @@
 
 ?>
 
-<h1 class="ondes-title">
-    <span>R</span>
-    <span>A</span>
-    <span>D</span>
-    <span>I</span>
-    <span>O</span>
-    <span> </span>
-    <span>S</span>
-    <span>O</span>
-    <span>F</span>
-    <span style="margin-left: -15px;">A</span>
-</h1>
 <div class="rs-block-columns">
     <div class="rs-block-column ondes-first-column">
         <figure class="rs-block-image size-large img-bordered img-visu-mois">
@@ -80,7 +68,7 @@
     </div>
 
     <div class="rs-block-column home-agenda ondes-second-column">
-        <div class="rs-title rs-title-light ondes-more-planning clickable" style="margin-top:45px">
+        <div class="rs-title rs-title-light ondes-more-planning clickable">
             <div><h2>AGENDA</h2></div>
         </div>
         <?php echo do_shortcode("[vsel]"); ?>
