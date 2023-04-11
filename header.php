@@ -23,6 +23,7 @@
     <link rel="preload" href="<?php echo site_url(); ?>/wp-content/themes/radiosofa/fonts/ts_block/TS%20Block%20Bold.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="<?php echo site_url(); ?>/wp-content/themes/radiosofa/fonts/novaesium/Novaesium.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="<?php echo site_url(); ?>/wp-content/themes/radiosofa/fonts/novaesium/Novaesium%20Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="<?php echo site_url(); ?>/wp-content/themes/radiosofa/fonts/arial-rounded-mt-bold.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="stylesheet" href="<?php echo site_url(); ?>/wp-content/themes/radiosofa/css/fa.css">
 
     <style>
@@ -283,8 +284,7 @@
                     <a href="https://www.facebook.com/webradio.sofa" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href="https://www.instagram.com/radio.sofa/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://soundcloud.com/radio-sofa" target="_blank"><i class="fab fa-soundcloud"></i></a>
+                    <a href="mailto:contact.radiosofa@gmail.com" target="_blank"><i class="fab fa-mailbox"></i></a>
                 </div>
-                <small>contact.radiosofa@gmail.com</small>
-
             </div>
         </header><!-- #masthead -->

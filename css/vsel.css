@@ -21,7 +21,7 @@
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
-    border-bottom: 2px solid black;
+    border-bottom: 0.5rem solid black;
 }
 .vsel-meta-date {
     padding: 0 !important;
@@ -84,7 +84,7 @@
 .vsel-content{
     display: flex;
     flex-direction: column;
-    padding: 0px 0 23px !important;
+    padding: 0 0 4rem 0 !important;
     width:100%;
 }
 
@@ -93,7 +93,7 @@
 }
 
 .ondes-more-planning{
-    margin-bottom: 60px;
+    margin-bottom: 2rem;
 }
 
 .max-height-100{

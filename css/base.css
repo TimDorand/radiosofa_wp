@@ -568,6 +568,23 @@ html {
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Arial Rounded MT';
+    src: url('../fonts/arial-rounded-mt-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Arial Rounded MT';
+    src: url('../fonts/arial-rounded-mt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 
 body,
@@ -698,7 +715,7 @@ img {
 }
 
 figure {
-    margin: 0.5em 0 0 0;
+    margin: 0 0 0 0;
 }
 
 table {
