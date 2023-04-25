@@ -46,6 +46,14 @@
 </div>
 <div class="rs-block-columns">
     <div class="rs-block-column rs-home-convives">
+        <div class="messagedefilant messagedefilant-reverse">
+            <h3>
+              <?php
+              $text_defilant = "↓↓↓ NOUVEAUX REPLAYS ↓↓↓ NOUVEAUX REPLAYS ↓↓↓ NOUVEAUX REPLAYS ↓↓↓ NOUVEAUX REPLAYS ↓↓↓ NOUVEAUX REPLAYS ↓↓↓ NOUVEAUX REPLAYS "
+              ?>
+            </h3>
+            <div data-text="<?php echo $text_defilant; ?>"><span><?php echo $text_defilant; ?></span></div>
+        </div>
         <div class="rs-title rs-title-dark" onclick="fetchHideShowPage('page-radio-convives', 'Convives', true)">
             <div><h2 class="clickable">
                     CONVIVES</h2></div>
@@ -80,6 +88,14 @@
 </div>
 <div class="rs-block-columns">
     <div class="rs-block-column rs-home-journal desktop-only">
+        <div class="messagedefilant messagedefilant-reverse">
+            <h3>
+          <?php
+          $text_defilant = "↓↓↓ NOS ACTUS ↓↓↓ NOS ACTUS ↓↓↓ NOS ACTUS ↓↓↓ NOS ACTUS ↓↓↓ NOS ACTUS ↓↓↓ NOS ACTUS ↓↓↓ NOS ACTUS ↓↓↓ NOS ACTUS ↓↓↓ NOS ACTUS "
+          ?>
+            </h3>
+            <div data-text="<?php echo $text_defilant; ?>"><span><?php echo $text_defilant; ?></span></div>
+        </div>
         <div class="rs-title rs-title-default">
             <div><h2 class="clickable" onclick="fetchHideShowPage('page-radio-journal', 'Journal', true)">
                     JOURNAL</h2>
@@ -157,25 +173,24 @@
             radio broadcasting, visual arts, clothing and micro-label.
         </p>
     </div>
-    <h1 class="ondes-title ondes-title-stroke">
-        <span>R</span>
-        <span>A</span>
-        <span>D</span>
-        <span>I</span>
-        <span>O</span>
-        <span> </span>
-        <span>S</span>
-        <span>O</span>
-        <span>F</span>
-        <span style="margin-left: -15px;">A</span>
-    </h1>
+    <div class="footer-image">
+        <img src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/radiosofa_logo_white.png" alt="Logo Radio Sofa blanc sur fond noir" />
+    </div>
 </div>
 
 <div class="mobile-only text-centered mobile-rs-icons">
     <div>
-        <a href="https://www.facebook.com/webradio.sofa" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/radio.sofa/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://soundcloud.com/radio-sofa" target="_blank"><i class="fab fa-soundcloud"></i></a>
+        <a href="https://www.facebook.com/webradio.sofa" target="_blank">
+            <img width="20" src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/fb_icon.png" alt="Accéder au facebook radio sofa"/>
+        </a>
+        <a href="https://www.instagram.com/radio.sofa/" target="_blank">
+            <img width="20" src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/insta_icon.png" alt="Accéder à l'insta radio sofa "/>
+        </a>
+        <a href="https://soundcloud.com/radio-sofa" target="_blank">
+            <img width="20" src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/soundcloud_icon_dark.png" alt="Accéder au Soundcloud de Radio Sofa "/></a>
+        <a href="mailto:contact.radiosofa@gmail.com" target="_blank">
+            <img width="20" src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/mail_icon.png" alt="Ecrire un mail à Radio Sofa "/></a>
+
     </div>
     <br>
     <small>

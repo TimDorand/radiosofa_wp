@@ -86,6 +86,7 @@ small {
 }
 .wp-block-columns{
     margin:0;
+    column-gap: 3rem;
 }
 
 #simple-ajax-chat {
@@ -121,7 +122,6 @@ small {
 
 .site-main {
     overflow: scroll;
-    flex-basis: 75%;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -138,7 +138,7 @@ small {
 .page-body {
     display: flex;
     flex-direction: row;
-    height: 100%;
+    height: calc(100% - 180px);
 }
 .page-body, .site-player{
     padding: 0 var(--side-margin) 0 var(--side-margin);
@@ -208,6 +208,20 @@ small {
     left: 0;
     content: attr(data-text);
 }
+.messagedefilant-reverse{
+    margin-bottom: 1.5rem;
+}
+
+.messagedefilant-reverse h3{
+    margin:0;
+}
+.messagedefilant-reverse div span {
+    animation: defilement-reverse 20s infinite linear;
+}
+
+.messagedefilant-reverse div:after {
+    animation: defilement-reverse2 20s infinite linear;
+}
 
 @keyframes defilement {
     0% {
@@ -226,6 +240,26 @@ small {
 
     100% {
         margin-left: 0%;
+    }
+}
+
+@keyframes defilement-reverse {
+    0% {
+        margin-left: -100%;
+    }
+
+    100% {
+        margin-left: 0%;
+    }
+}
+
+@keyframes defilement-reverse2 {
+    0% {
+        margin-left: 0%;
+    }
+
+    100% {
+        margin-left: 100%;
     }
 }
 
@@ -385,7 +419,7 @@ div[class^='src-components-current-track__artist--'] {
 /* ONDES */
 @media (min-width: 782px) {
     .rs-block-column:not(:first-child) {
-        margin-left: 1rem;
+        margin-left: 3rem;
     }
 }
 
@@ -441,7 +475,7 @@ div[class^='src-components-current-track__artist--'] {
 
 .rs-title-mini, .rs-title {
     transition: 0.3s ease;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 .rs-title div, .rs-title-mini div {
@@ -475,7 +509,8 @@ div[class^='src-components-current-track__artist--'] {
 }
 
 .ondes-first-column {
-    width: 100%;
+    width:60%;
+    margin-bottom: 5rem;
 }
 
 
@@ -505,7 +540,9 @@ div[class^='src-components-current-track__artist--'] {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
+.rs-home-convive{
+    margin-bottom: 2rem;
+}
 .replay-info {
     height: 0px;
 }
@@ -640,6 +677,7 @@ div[class^='src-components-current-track__artist--'] {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    height: 3rem;
 }
 .rs-block-latest-posts li {
     display: flex;
@@ -685,8 +723,15 @@ div[class^='src-components-current-track__artist--'] {
 }
 
 .ondes-footer {
-    border-top: 2px solid var(--main-color);
-    padding: 0 20px;
+    padding: 4rem;
+    background: var(--main-color);
+    color: white;
+    display: flex;
+    column-gap: 9rem;
+    margin: 3rem 0 3rem 0;
+}
+.ondes-footer .footer-image{
+    width: 70%;
 }
 
 .ondes-footer p {
@@ -721,7 +766,6 @@ div[class^='src-components-current-track__artist--'] {
 
 #page-radio-journal {
     overflow: hidden;
-    border-top: 2px solid var(--main-color);
     padding: 0;
 }
 
@@ -732,11 +776,9 @@ div[class^='src-components-current-track__artist--'] {
 }
 
 .rs-journal-post {
-    width: 50%;
+    width: 33rem;
     display: block;
-    border-right: 2px solid var(--main-color);
-    border-bottom: 2px solid var(--main-color);
-    padding: 0 38px;
+    padding: 0 6rem 6rem 0;
 }
 
 .site-journal .blocks-gallery-item img {
@@ -955,19 +997,92 @@ div[class^='src-components-current-track__artist--'] {
         display: none;
     }
 
+    .site-player {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: white;
+        z-index: 3;
+        border-bottom: none;
+        margin: 0 0px 0 0px;
+        border-top: 2px solid black;
+        height: 73px;
+        padding: 0 0 0 37px;
+    }
+
+    #rk-current-track-widget div .component div {
+        font-size: 1.7rem;
+    }
+
+    .messagedefilant div span,
+    .messagedefilant div:after {
+        font-size: 16px;
+    }
+
+    .play:before {
+        border-top: 20px solid transparent;
+        border-bottom: 17px solid transparent;
+        border-left: 29px solid #1a1c19;
+        border-radius: 3px;
+    }
+
+    .pause:before,
+    .pause:after {
+        height: 40px;
+    }
+
+    .play,
+    .pause,
+    .lds-dual-ring {
+        width: 50px;
+    }
+
+    .lds-dual-ring {
+        margin-left: -11px;
+        margin-right: 11px;
+    }
+
+    .messagedefilant {
+        height: 22px;
+        position: absolute;
+        bottom: 74px;
+        width: 100%;
+        background: white;
+        z-index: 3;
+        border-top: 2px solid black;
+        padding-top: 2px;
+        margin: -1px 0;
+    }
+
     .site-main {
         flex-basis: 100%;
     }
 
     .img-loader {
-        top: 40%;
-        left: 26%;
-        width: 80%;
+        width: 100px;
+        display: block;
+        left: calc(50% - 49px);
+        top: calc(40% - 50px);
     }
-
+    .ondes-footer{
+        flex-direction: column;
+    }
+    .messagedefilant-reverse{
+        display: none;
+    }
+.title-section{
+    display:none;
+}
+.player-section{
+ width:auto;
+    min-width: auto;
+}
     .page-body {
         flex-direction: column;
         border: none;
+        padding: 0;
+        height: 100%;
+
     }
 
     #page-radio-ondes .rs-title {
@@ -1036,7 +1151,6 @@ div[class^='src-components-current-track__artist--'] {
     }
 
     .rs-home-journal .rs-block-latest-posts__list, .rs-home-journal .text-justify {
-        margin: 30px -26px;
     }
 
     .rs-home-journal {

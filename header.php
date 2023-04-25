@@ -24,7 +24,6 @@
     <link rel="preload" href="<?php echo site_url(); ?>/wp-content/themes/radiosofa/fonts/novaesium/Novaesium.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="<?php echo site_url(); ?>/wp-content/themes/radiosofa/fonts/novaesium/Novaesium%20Bold.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="<?php echo site_url(); ?>/wp-content/themes/radiosofa/fonts/arial-rounded-mt-bold.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="stylesheet" href="<?php echo site_url(); ?>/wp-content/themes/radiosofa/css/fa.css">
 
     <style>
         html {
@@ -37,7 +36,7 @@
              } ?>;
         }
 
-        .messagedefilant div span {
+        .messagedefilant-normal div span {
             animation: defilement <?php
              $texte_defilant_temps = get_field("texte_defilant_temps");
              if(isset($texte_defilant_temps)){
@@ -47,7 +46,7 @@
              } ?>s infinite linear;
         }
 
-        .messagedefilant div:after {
+        .messagedefilant-normal div:after {
             animation: defilement2 <?php
              if(isset($texte_defilant_temps)){
                  echo $texte_defilant_temps;
@@ -142,7 +141,7 @@
          class="small-img-loader" id="small-spin"/>-->
     <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'radiosofa'); ?></a>
 
-    <div class="messagedefilant">
+    <div class="messagedefilant messagedefilant-normal">
         <?php
         $text_defilant = get_field("texte_defilant");
         ?>
@@ -281,10 +280,16 @@
             <div class="site-header-second-part">
 
                 <div style="display:flex;flex-direction:row;">
-                    <a href="https://www.facebook.com/webradio.sofa" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/radio.sofa/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://soundcloud.com/radio-sofa" target="_blank"><i class="fab fa-soundcloud"></i></a>
-                    <a href="mailto:contact.radiosofa@gmail.com" target="_blank"><i class="fab fa-mailbox"></i></a>
+                    <a href="https://www.facebook.com/webradio.sofa" target="_blank">
+                        <img width="20" src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/fb_icon.png" alt="Accéder au facebook radio sofa"/>
+                    </a>
+                    <a href="https://www.instagram.com/radio.sofa/" target="_blank">
+                        <img width="20" src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/insta_icon.png" alt="Accéder à l'insta radio sofa "/>
+                    </a>
+                    <a href="https://soundcloud.com/radio-sofa" target="_blank">
+                        <img width="20" src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/soundcloud_icon_dark.png" alt="Accéder au Soundcloud de Radio Sofa "/></a>
+                    <a href="mailto:contact.radiosofa@gmail.com" target="_blank">
+                        <img width="20" src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/mail_icon.png" alt="Ecrire un mail à Radio Sofa "/></a>
                 </div>
             </div>
         </header><!-- #masthead -->
