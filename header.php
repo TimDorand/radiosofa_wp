@@ -26,16 +26,6 @@
     <link rel="preload" href="<?php echo site_url(); ?>/wp-content/themes/radiosofa/fonts/arial-rounded-mt-bold.ttf" as="font" type="font/ttf" crossorigin>
 
     <style>
-        html {
-            background: <?php
-             $backgroundColor = get_field("couleur_1");
-             if(isset($backgroundColor)){
-                 echo $backgroundColor;
-             } else {
-                 echo "#f7f8f4";
-             } ?>;
-        }
-
         .messagedefilant-normal div span {
             animation: defilement <?php
              $texte_defilant_temps = get_field("texte_defilant_temps");
@@ -53,56 +43,6 @@
              } else {
                  echo "50";
              } ?>s infinite linear;
-        }
-
-        /*
-                .rs-title-light{
-                    background:
-
-        <?php
-                            $couleur_2 = get_field("couleur_2");
-                        if(isset($couleur_2)){
-                            echo $couleur_2;
-                        } else {
-                              echo "rgba(248, 112, 248, 0.51);";
-                              } ?>
-
-                ;
-                        }
-                        .rs-title-default{
-                            background:
-
-        <?php
-                            $couleur_3 = get_field("couleur_3");
-                        if(isset($couleur_3)){
-                            echo $couleur_3;
-                        } else {
-                              echo "rgba(131, 46, 199, 0.51);";
-                              } ?>
-
-                ;
-                        }
-                        .rs-title-dark{
-                            background:
-
-        <?php
-                            $couleur_4 = get_field("couleur_4");
-                        if(isset($couleur_4)){
-                            echo $couleur_4;
-                        } else {
-                              echo "rgba(25, 0, 255, 0.48);";
-                              } ?>
-
-                ;
-                        }*/
-        .page-body {
-            background: <?php
-            $couleur_4 = get_field("couleur_5");
-        if(isset($couleur_4)){
-            echo $couleur_4;
-        } else {
-              echo "#fff";
-              } ?>;
         }
 
         .messagedefilant div span, .messagedefilant div:after {
