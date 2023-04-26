@@ -49,7 +49,7 @@
         <div class="messagedefilant messagedefilant-reverse">
             <h3>
               <?php
-              $text_defilant = "↓↓↓ NOUVEAUX REPLAYS ↓↓↓ NOUVEAUX REPLAYS ↓↓↓ NOUVEAUX REPLAYS ↓↓↓ NOUVEAUX REPLAYS ↓↓↓ NOUVEAUX REPLAYS ↓↓↓ NOUVEAUX REPLAYS "
+              $text_defilant = "↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOUVEAUX REPLAYS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOUVEAUX REPLAYS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOUVEAUX REPLAYS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOUVEAUX REPLAYS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOUVEAUX REPLAYS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOUVEAUX REPLAYS&nbsp;&nbsp;&nbsp;&nbsp;"
               ?>
             </h3>
             <div data-text="<?php echo $text_defilant; ?>"><span><?php echo $text_defilant; ?></span></div>
@@ -91,7 +91,7 @@
         <div class="messagedefilant messagedefilant-reverse">
             <h3>
           <?php
-          $text_defilant = "↓↓↓ NOS ACTUS ↓↓↓ NOS ACTUS ↓↓↓ NOS ACTUS ↓↓↓ NOS ACTUS ↓↓↓ NOS ACTUS ↓↓↓ NOS ACTUS ↓↓↓ NOS ACTUS ↓↓↓ NOS ACTUS ↓↓↓ NOS ACTUS "
+          $text_defilant = "↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;"
           ?>
             </h3>
             <div data-text="<?php echo $text_defilant; ?>"><span><?php echo $text_defilant; ?></span></div>
