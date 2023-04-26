@@ -79,7 +79,9 @@
 .vsel-info td{
     min-width: 38px;
     border: none;
-    padding: 0;
+    padding: 1rem 0 0;
+    font-size: 1.7rem;
+    font-weight: 100;
 }
 .vsel-content{
     display: flex;
