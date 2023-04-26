@@ -1065,8 +1065,7 @@ div[class^='src-components-current-track__artist--'] {
   }
 
   .lds-dual-ring {
-    margin-left: -11px;
-    margin-right: 11px;
+    margin: 24px 11px 0 -11px;
   }
 
   .messagedefilant {
