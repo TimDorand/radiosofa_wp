@@ -420,6 +420,7 @@ div[class^='src-components-current-track__artist--'] {
 @media (min-width: 782px) {
     .rs-block-column:not(:first-child) {
         margin-left: 3rem;
+        width: 50%;
     }
 }
 
@@ -509,7 +510,7 @@ div[class^='src-components-current-track__artist--'] {
 }
 
 .ondes-first-column {
-    width:60%;
+    width:50%;
     margin-bottom: 5rem;
 }
 
@@ -1146,7 +1147,7 @@ div[class^='src-components-current-track__artist--'] {
 
     .mobile-container {
         overflow: scroll;
-        margin: 45px -40px -63px -27px;
+        margin: 45px -20px -49px -20px;
         display: block;
     }
 
