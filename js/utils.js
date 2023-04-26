@@ -12,7 +12,6 @@ function playRS() {
         $(".lds-dual-ring").show();
         sidebarPlayerDiv.removeClass("play");
         $("iframe").hide();
-        $(".page-body").css("height", "100%")
         if (currentReplayDiv) {
             currentReplayDiv.attr("src", "about:blank");
             currentReplayDiv.hide();
@@ -297,9 +296,6 @@ function handleReplayIframe() {
 
         // Stop Player
         stopRS();
-        $(".tabcontent:not(#page-radio-journal)").css({"padding": "15px 40px 25px 40px"});
-        /*$(".tabcontent:not(#page-radio-journal)").css({"padding": "15px 40px 25px 40px"});*/
-
         // load and display new replay
         $("#btn_clone").click(function(){
             $("#a_clone").clone().appendTo("#b_clone");
