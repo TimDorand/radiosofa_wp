@@ -437,7 +437,7 @@ div[class^='src-components-current-track__artist--'] {
 
 .rs-image-wrapper {
     position: relative;
-    max-width: 500px;
+    max-width: 60rem;
 }
 
 .rs-image-wrapper img {
