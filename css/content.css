@@ -434,10 +434,6 @@ div[class^='src-components-current-track__artist--'] {
   }
 }
 
-.img-bordered img {
-  border: 2px solid var(--main-color);
-}
-
 .img-bordered figcaption {
   text-align: center;
   font-size: 1.4rem;
@@ -888,7 +884,6 @@ div[class^='src-components-current-track__artist--'] {
 }
 
 #page-radio-residence .replay-images img {
-  border: 2px solid var(--main-color);
   cursor: pointer;
 }
 
