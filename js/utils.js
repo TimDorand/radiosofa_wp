@@ -17,7 +17,7 @@ function playRS() {
             currentReplayDiv.attr("src", "about:blank");
             currentReplayDiv.hide();
             $(".replay-container").hide();
-            $(".tabcontent").css({"padding": "15px 40px 0px 40px"});
+            $(".tabcontent").css({"padding-bottom": "2rem"});
         }
     } else {
         stopRS(song);
