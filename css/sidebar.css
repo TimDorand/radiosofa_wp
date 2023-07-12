@@ -311,7 +311,7 @@ img {
 /* MOBILE */
 
 /*bigphoneonly*/
-@media screen and (max-width: 364px) {
+@media screen and (max-width: 420px) {
     .big-phone-only {
         display: none;
     }
