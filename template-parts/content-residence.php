@@ -214,8 +214,16 @@ $kimKenis = new Resident(
     "",
     "/wp-content/uploads/2023/01/KIM-KENIS-01-23-1-1024x1024.png");
 
+$janAstasia = new Resident(
+    "JAN ASTASIA",
+    "Face A/B",
+    "",
+    "https://www.radio-sofa.com/wp-content/uploads/2023/07/FACE-AB-JAN-ASTASIA-EP-1.png");
 
-$residents = [$tomCoololo, $fracas, $planisphere, $sunaas, $kimKenis, $SBN6, $nofraje, $maxKlank, $charleeps, $toniDog, $slim, $kenzzza, $paradisFiscal, $monacogza, $elonaprime, $broski, $saintMisere, $matso, $taka, $marsoc10, $tropicalites, $girasol, $felix, $baume, $micropolis, $rodrigueSoulgroove, $waveyCuts, $mimi, $belaria];
+
+
+
+$residents = [$tomCoololo, $fracas, $planisphere, $sunaas, $kimKenis, $SBN6, $nofraje, $maxKlank, $charleeps, $toniDog, $slim, $kenzzza, $paradisFiscal, $janAstasia, $monacogza, $elonaprime, $broski, $saintMisere, $matso, $taka, $marsoc10, $tropicalites, $girasol, $felix, $baume, $micropolis, $rodrigueSoulgroove, $waveyCuts, $mimi, $belaria];
 /*sort($residents);*/
 
 echo '<div class="rs-block-columns replay-images">';
