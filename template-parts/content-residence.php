@@ -276,7 +276,7 @@ foreach ($residents as $resident) {
         $image = get_the_post_thumbnail($post, ["300", "300"]);
         echo '<div data-post-id="' . $post->post_name . '" class="convives-post">';
 
-        $image = str_replace("<img", "<img loading='lazy'", $image);
+        $image = str_replace("<img", "<img loading=\"lazy\"", $image);
         echo $image;
         if (strpos($post->post_content, 'btn-replay') !== false) {
             echo '<span class="play-hover replay-present">&#9654;</span>';
