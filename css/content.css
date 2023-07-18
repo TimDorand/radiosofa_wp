@@ -715,6 +715,7 @@ div[class^='src-components-current-track__artist--'] {
   text-decoration: none;
   text-transform: uppercase;
   order: 1;
+  width: calc(100% - 82px);
 }
 
 .rs-block-latest-posts__post-excerpt {
@@ -890,12 +891,12 @@ div[class^='src-components-current-track__artist--'] {
 
 #page-radio-residence .rs-title-mini, #page-radio-residence .rs-title {
   cursor: pointer;
-}
+}/*
 #page-radio-residence .replay-images .rs-title-mini, #page-radio-residence .replay-images .rs-title {
   height: 0;
   overflow: hidden;
   margin-bottom: 20px;
-}
+}*/
 
 .replay-images .rs-block-column {
   width: calc(33% - 20px);
