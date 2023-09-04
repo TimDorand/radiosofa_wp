@@ -13,6 +13,10 @@
     padding-right: 5px !important;
 }
 
+#vsel .vsel-info-block{
+    width: 100% !important;
+}
+
 /* META */
 
 .vsel-meta{
