@@ -1170,7 +1170,7 @@ div[class^='src-components-current-track__artist--'] {
     flex-wrap: nowrap;
     width: 2000px;
     flex-direction: row;
-    height: auto;
+    height: 240px;
   }
 
   .replay-images .rs-block-column {
@@ -1286,7 +1286,7 @@ div[class^='src-components-current-track__artist--'] {
 
   .replay-container {
     width: 100%;
-    margin-bottom: 95px;
+    margin-bottom: 108px;
   }
 
   #page-radio-ondes {

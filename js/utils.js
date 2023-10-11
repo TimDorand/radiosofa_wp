@@ -305,7 +305,7 @@ function handleReplayIframe() {
         $('.replay-container').empty()
         iframe.clone().appendTo(".replay-container")
         var clonedIframe = $('.replay-container').find('iframe')
-        clonedIframe.attr("src", clonedIframe.attr("data-src"));
+        clonedIframe.attr("src", clonedIframe.attr("data-src").replaceAll("auto_play=false", "auto_play=true"));
         clonedIframe.show();
         clonedIframe.addClass("replay-clonedIframe");
         $(".replay-container").show();
@@ -314,6 +314,7 @@ function handleReplayIframe() {
         currentReplayDiv = clonedIframe;
 
         setTimeout(function () {
+            clonedIframe.contents().find(".widget-controls-top").css({"background": "#fff", "border": "none"});
             clonedIframe.contents().find(".widget-controls-top").css({"background": "#fff", "border": "none"});
             clonedIframe.contents().find(".singleSound").css({"background": "#fff", "border": "none"});
             clonedIframe.contents().find(".soundContainer").css({"background": "#fff", "border": "none"});
