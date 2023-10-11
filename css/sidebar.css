@@ -352,7 +352,7 @@ img {
     }
 
     .main-navigation {
-        border-bottom: 2px solid black;
+        border-bottom: 0.5rem solid black;
     }
 
     .site-branding {

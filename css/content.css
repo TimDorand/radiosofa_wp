@@ -517,7 +517,7 @@ div[class^='src-components-current-track__artist--'] {
 
 .ondes-first-column {
   width: 50%;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 
@@ -1039,7 +1039,7 @@ div[class^='src-components-current-track__artist--'] {
     z-index: 3;
     border-bottom: none;
     margin: 0 0px 0 0px;
-    border-top: 2px solid black;
+    border-top: 0.5rem solid black;
     height: 73px;
     padding: 0 0 0 37px;
   }
@@ -1080,13 +1080,13 @@ div[class^='src-components-current-track__artist--'] {
   }
 
   .messagedefilant {
-    height: 22px;
+    height: 25px;
     position: absolute;
     bottom: 74px;
     width: 100%;
     background: white;
     z-index: 3;
-    border-top: 2px solid black;
+    border-top: 0.5rem solid black;
     padding-top: 2px;
     margin: -1px 0;
   }
@@ -1168,7 +1168,7 @@ div[class^='src-components-current-track__artist--'] {
   .rs-home-convives .replay-images {
     display: flex;
     flex-wrap: nowrap;
-    width: 290%;
+    width: 2000px;
     flex-direction: row;
     height: auto;
   }
@@ -1181,11 +1181,16 @@ div[class^='src-components-current-track__artist--'] {
     margin-bottom: 100px;
   }
 
+  .convives-post {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+
   .ondes-convives-post {
     width: 30%;
     margin-right: 20px;
+    margin-bottom: 0;
   }
-
   .mobile-container {
     overflow: scroll;
     margin: 45px -20px -49px -20px;
@@ -1218,10 +1223,6 @@ div[class^='src-components-current-track__artist--'] {
     margin-bottom: 110px;
   }
 
-  .convives-post {
-    width: 100%;
-    margin-bottom: 45px;
-  }
 
   #page-radio-residence .convive-post {
     margin-bottom: 10px;
