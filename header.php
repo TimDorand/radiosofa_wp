@@ -81,11 +81,16 @@
          class="small-img-loader" id="small-spin"/>-->
     <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'radiosofa'); ?></a>
 
+    <a href="<?php
+    $lien_banniere = get_field("lien_banniere");
+    echo $lien_banniere ? $lien_banniere : 'https://www.facebook.com/events/2014866655544358/'
+    ?>" target="_blank" aria-label="Lien vers Facebook">
     <div class="messagedefilant messagedefilant-normal">
         <?php
         $text_defilant = get_field("texte_defilant");
         ?>
         <div data-text="<?php echo $text_defilant; ?>"><span><?php echo $text_defilant; ?></span></div>
+    </a>
     </div>
     <div class="site-player">
         <div class="player-section">

@@ -160,7 +160,7 @@ $waveyCuts = new Resident(
     "WAVEY CUTS",
     "Aint Easy Being Wavey",
     "",
-    "/wp-content/uploads/2022/10/FRACAS_-BAXUA-_-WAVEY-CUTS-EP1.png");
+    "https://www.radio-sofa.com/wp-content/uploads/2023/10/WAVEY-SC.jpg");
 
 $SBN6 = new Resident(
     "SBN6",
@@ -218,12 +218,24 @@ $janAstasia = new Resident(
     "JAN ASTASIA",
     "Face A/B",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/07/FACE-AB-JAN-ASTASIA-EP-1.png");
+    "");
+
+$h2o = new Resident(
+    "H2O",
+    "Deep Dive ",
+    "",
+    "");
+
+$blanca = new Resident(
+    "Blanca",
+    "",
+    "",
+    "");
 
 
 
 
-$residents = [$tomCoololo, $fracas, $planisphere, $sunaas, $kimKenis, $SBN6, $nofraje, $maxKlank, $charleeps, $toniDog, $slim, $kenzzza, $paradisFiscal, $janAstasia, $monacogza, $elonaprime, $broski, $saintMisere, $matso, $taka, $marsoc10, $tropicalites, $girasol, $felix, $baume, $micropolis, $rodrigueSoulgroove, $waveyCuts, $mimi, $belaria];
+$residents = [$tomCoololo, $fracas, $planisphere, $sunaas, $kimKenis, $SBN6, $nofraje, $maxKlank, $charleeps, $toniDog, $slim, $kenzzza, $paradisFiscal, $janAstasia, $monacogza, $elonaprime, $saintMisere, $matso, $taka, $marsoc10, $tropicalites, $girasol, $felix, $baume, $micropolis, $rodrigueSoulgroove, $waveyCuts, $mimi, $belaria, $broski];
 /*sort($residents);*/
 
 echo '<div class="rs-block-columns replay-images">';
