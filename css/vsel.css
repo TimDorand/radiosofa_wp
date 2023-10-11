@@ -146,6 +146,12 @@
     .vsel-info td {
         padding: 0;
     }
+    .vsel-meta-link {
+        padding: 3px 0 0 8px;
+    }
+    .vsel-content h3 {
+        margin: 4px 0px 0px 7px !important;
+    }
 }
 
 /* BIG SCREEN */

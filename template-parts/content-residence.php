@@ -222,20 +222,20 @@ $janAstasia = new Resident(
 
 $h2o = new Resident(
     "H2O",
-    "Deep Dive ",
+    "Deep Dive",
     "",
     "https://www.radio-sofa.com/wp-content/uploads/2023/10/H2O.jpg");
 
 $blanca = new Resident(
     "BLANCA BRUSCI",
-    "",
+    "Poetic Weapons",
     "",
     "https://www.radio-sofa.com/wp-content/uploads/2023/10/BLANCA-BRUSCI.png");
 
 
 
 
-$residents = [$tomCoololo, $fracas, $planisphere, $sunaas, $kimKenis, $SBN6, $nofraje, $maxKlank, $charleeps, $toniDog, $slim, $kenzzza, $paradisFiscal, $janAstasia, $monacogza, $elonaprime, $saintMisere, $matso, $taka, $marsoc10, $tropicalites, $girasol, $felix, $baume, $micropolis, $rodrigueSoulgroove, $waveyCuts, $mimi, $belaria, $broski];
+$residents = [$tomCoololo, $h2o, $blanca, $fracas, $planisphere, $sunaas, $kimKenis, $SBN6, $nofraje, $maxKlank, $charleeps, $toniDog, $slim, $kenzzza, $paradisFiscal, $janAstasia, $monacogza, $elonaprime, $saintMisere, $matso, $taka, $marsoc10, $tropicalites, $girasol, $felix, $baume, $micropolis, $rodrigueSoulgroove, $waveyCuts, $mimi, $belaria, $broski];
 /*sort($residents);*/
 
 echo '<div class="rs-block-columns replay-images">';
