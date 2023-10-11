@@ -132,8 +132,15 @@
         font-size: 1.5rem;
         font-style: italic;
     }
+    .vsel-meta{
+        margin: 0 0 12px;
+    }
     .ondes-more-planning {
         margin-bottom: 0;
+    }
+
+    .vsel-info td {
+        padding: 0;
     }
 }
 
