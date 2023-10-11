@@ -1084,9 +1084,9 @@ div[class^='src-components-current-track__artist--'] {
     position: absolute;
     bottom: 74px;
     width: 100%;
-    background: white;
     z-index: 3;
     border-top: 0.5rem solid black;
+    background-color: var(--secondary-color);
     padding-top: 2px;
     margin: -1px 0;
   }
