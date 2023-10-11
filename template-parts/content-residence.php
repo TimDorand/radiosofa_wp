@@ -154,13 +154,13 @@ $fracas = new Resident(
     "BAXUA AND WAVEY CUTS",
     "FRACAS",
     "",
-    "/wp-content/uploads/2022/10/FRACAS_-BAXUA-_-WAVEY-CUTS-EP1.png");
+    "/wp-content/uploads/2023/10/FRACAS_-BAXUA-WAVEY-CUTS-EP2.png");
 
 $waveyCuts = new Resident(
     "WAVEY CUTS",
     "Aint Easy Being Wavey",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/10/WAVEY-SC.jpg");
+    "/wp-content/uploads/2023/10/WAVEY-SC.jpg");
 
 $SBN6 = new Resident(
     "SBN6",
@@ -224,13 +224,13 @@ $h2o = new Resident(
     "H2O",
     "Deep Dive ",
     "",
-    "");
+    "https://www.radio-sofa.com/wp-content/uploads/2023/10/H2O.jpg");
 
 $blanca = new Resident(
-    "Blanca",
+    "BLANCA BRUSCI",
     "",
     "",
-    "");
+    "https://www.radio-sofa.com/wp-content/uploads/2023/10/BLANCA-BRUSCI.png");
 
 
 

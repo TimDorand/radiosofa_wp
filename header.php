@@ -83,7 +83,7 @@
 
     <a href="<?php
     $lien_banniere = get_field("lien_banniere");
-    echo $lien_banniere ? $lien_banniere : 'https://www.facebook.com/events/2014866655544358/'
+    echo $lien_banniere ? $lien_banniere : 'https://www.facebook.com/webradio.sofa'
     ?>" target="_blank" aria-label="Lien vers Facebook">
     <div class="messagedefilant messagedefilant-normal">
         <?php
