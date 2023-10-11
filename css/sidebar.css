@@ -404,10 +404,21 @@ img {
      letter-spacing: 0;
         padding: 2px 5px 2px 5px;
     }
+    .tablinks{
+        margin-right: -1px;
+    }
     .hamburger-menu{
         margin-top: 10px;
     }
 
+    #menu__close{
+        font-family: system-ui;
+        font-size: 41px;
+        text-transform: lowercase;
+        padding: 0;
+        margin: 0;
+        line-height: 92px;
+    }
 }
 
 @media screen and (min-width: 37.5em) {}

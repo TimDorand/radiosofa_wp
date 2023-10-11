@@ -1080,14 +1080,14 @@ div[class^='src-components-current-track__artist--'] {
   }
 
   .messagedefilant {
-    height: 25px;
+    height: 35px;
     position: absolute;
     bottom: 74px;
     width: 100%;
     z-index: 3;
     border-top: 0.5rem solid black;
     background-color: var(--secondary-color);
-    padding-top: 2px;
+    padding-top: 6px;
     margin: -1px 0;
   }
 
