@@ -154,13 +154,13 @@ $fracas = new Resident(
     "BAXUA AND WAVEY CUTS",
     "FRACAS",
     "",
-    "/wp-content/uploads/2022/10/FRACAS_-BAXUA-_-WAVEY-CUTS-EP1.png");
+    "/wp-content/uploads/2023/10/FRACAS_-BAXUA-WAVEY-CUTS-EP2.png");
 
 $waveyCuts = new Resident(
     "WAVEY CUTS",
     "Aint Easy Being Wavey",
     "",
-    "/wp-content/uploads/2022/10/FRACAS_-BAXUA-_-WAVEY-CUTS-EP1.png");
+    "/wp-content/uploads/2023/10/WAVEY-SC.jpg");
 
 $SBN6 = new Resident(
     "SBN6",
@@ -214,8 +214,28 @@ $kimKenis = new Resident(
     "",
     "/wp-content/uploads/2023/01/KIM-KENIS-01-23-1-1024x1024.png");
 
+$janAstasia = new Resident(
+    "JAN ASTASIA",
+    "Face A/B",
+    "",
+    "");
 
-$residents = [$tomCoololo, $fracas, $planisphere, $sunaas, $kimKenis, $SBN6, $nofraje, $maxKlank, $charleeps, $toniDog, $slim, $kenzzza, $paradisFiscal, $monacogza, $elonaprime, $broski, $saintMisere, $matso, $taka, $marsoc10, $tropicalites, $girasol, $felix, $baume, $micropolis, $rodrigueSoulgroove, $waveyCuts, $mimi, $belaria];
+$h2o = new Resident(
+    "H2O",
+    "Deep Dive",
+    "",
+    "https://www.radio-sofa.com/wp-content/uploads/2023/10/H2O.jpg");
+
+$blanca = new Resident(
+    "BLANCA BRUSCI",
+    "Poetic Weapons",
+    "",
+    "https://www.radio-sofa.com/wp-content/uploads/2023/10/BLANCA-BRUSCI.png");
+
+
+
+
+$residents = [$tomCoololo, $h2o, $blanca, $fracas, $planisphere, $sunaas, $kimKenis, $SBN6, $nofraje, $maxKlank, $charleeps, $toniDog, $slim, $kenzzza, $paradisFiscal, $janAstasia, $monacogza, $elonaprime, $saintMisere, $matso, $taka, $marsoc10, $tropicalites, $girasol, $felix, $baume, $micropolis, $rodrigueSoulgroove, $waveyCuts, $mimi, $belaria, $broski];
 /*sort($residents);*/
 
 echo '<div class="rs-block-columns replay-images">';
@@ -267,6 +287,8 @@ foreach ($residents as $resident) {
     foreach ($posts as $post) {
         $image = get_the_post_thumbnail($post, ["300", "300"]);
         echo '<div data-post-id="' . $post->post_name . '" class="convives-post">';
+
+        $image = str_replace("<img", "<img loading=\"lazy\"", $image);
         echo $image;
         if (strpos($post->post_content, 'btn-replay') !== false) {
             echo '<span class="play-hover replay-present">&#9654;</span>';

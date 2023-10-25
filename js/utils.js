@@ -12,12 +12,11 @@ function playRS() {
         $(".lds-dual-ring").show();
         sidebarPlayerDiv.removeClass("play");
         $("iframe").hide();
-        $(".page-body").css("height", "100%")
         if (currentReplayDiv) {
             currentReplayDiv.attr("src", "about:blank");
             currentReplayDiv.hide();
             $(".replay-container").hide();
-            $(".tabcontent").css({"padding": "15px 40px 0px 40px"});
+            $(".tabcontent").css({"padding-bottom": "2rem"});
         }
     } else {
         stopRS(song);
@@ -297,9 +296,6 @@ function handleReplayIframe() {
 
         // Stop Player
         stopRS();
-        $(".tabcontent:not(#page-radio-journal)").css({"padding": "15px 40px 25px 40px"});
-        /*$(".tabcontent:not(#page-radio-journal)").css({"padding": "15px 40px 25px 40px"});*/
-
         // load and display new replay
         $("#btn_clone").click(function(){
             $("#a_clone").clone().appendTo("#b_clone");
@@ -309,7 +305,7 @@ function handleReplayIframe() {
         $('.replay-container').empty()
         iframe.clone().appendTo(".replay-container")
         var clonedIframe = $('.replay-container').find('iframe')
-        clonedIframe.attr("src", clonedIframe.attr("data-src"));
+        clonedIframe.attr("src", clonedIframe.attr("data-src").replaceAll("auto_play=false", "auto_play=true"));
         clonedIframe.show();
         clonedIframe.addClass("replay-clonedIframe");
         $(".replay-container").show();
@@ -318,6 +314,7 @@ function handleReplayIframe() {
         currentReplayDiv = clonedIframe;
 
         setTimeout(function () {
+            clonedIframe.contents().find(".widget-controls-top").css({"background": "#fff", "border": "none"});
             clonedIframe.contents().find(".widget-controls-top").css({"background": "#fff", "border": "none"});
             clonedIframe.contents().find(".singleSound").css({"background": "#fff", "border": "none"});
             clonedIframe.contents().find(".soundContainer").css({"background": "#fff", "border": "none"});

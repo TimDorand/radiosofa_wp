@@ -12,15 +12,6 @@ get_header();
     </style>
 
     <main id="primary" class="site-main">
-
-        <div class="messagedefilant">
-            <?php
-            $text_defilant = get_field("texte_defilant");
-            ?>
-            <div data-text="<?php echo $text_defilant; ?>"><span><?php echo $text_defilant; ?></span></div>
-        </div>
-
-
         <?php
         while (have_posts()) :
             the_post();

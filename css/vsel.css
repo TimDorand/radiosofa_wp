@@ -4,13 +4,17 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-height: 25vw;
+    max-height: 40vw;
     overflow: hidden;
 }
 #vsel .vsel-content{
-    margin:0 !important;
+    margin:0;
     border-bottom:none;
     padding-right: 5px !important;
+}
+
+#vsel .vsel-info-block{
+    width: 100% !important;
 }
 
 /* META */
@@ -21,7 +25,7 @@
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
-    border-bottom: 2px solid black;
+    border-bottom: 0.5rem solid black;
 }
 .vsel-meta-date {
     padding: 0 !important;
@@ -57,14 +61,18 @@
 .vsel-image-info:before{
 }
 .vsel-content h3 {
-    margin: 0px 0px 0px 7px !important;
+    margin: 11px 0px 0px 7px !important;
     padding: 0px !important;
     display: inline-block !important;
     order: 1;
     letter-spacing: -1px;
     font-weight: 700 !important;
     font-size: 27px;
-    line-height: 30px;
+    line-height: 16px;
+}
+.vsel-meta-link{
+    order:4;
+    padding: 12px 0 0 8px;
 }
 .vsel-info, .vsel-image-info{
 }
@@ -77,14 +85,15 @@
     display: flex;
 }
 .vsel-info td{
-    min-width: 38px;
     border: none;
-    padding: 0;
+    padding: 1rem 0 0;
+    font-size: 1.7rem;
+    font-weight: 100;
 }
 .vsel-content{
     display: flex;
     flex-direction: column;
-    padding: 0px 0 23px !important;
+    padding: 0 0 4rem 0 !important;
     width:100%;
 }
 
@@ -93,7 +102,7 @@
 }
 
 .ondes-more-planning{
-    margin-bottom: 60px;
+    margin-bottom: 2rem;
 }
 
 .max-height-100{
@@ -105,7 +114,6 @@
     #vsel{
         height: auto;
         flex-direction: row;
-        margin: 24px -25px -6px -24px;
         max-height: 100%;
 
     }
@@ -117,14 +125,33 @@
     }*/
 
     .vsel-content{
-        margin: 0 0 14px 0 !important;
+        margin: 0 0 0 0 !important;
+        padding: 0 0 30px 0 !important;
+    }
+    .vsel-content:last-child{
+        margin: 0 0 0 0 !important;
+        padding: 0 0 0 0 !important;
     }
     .vsel-meta-date{
         font-size: 1.5rem;
         font-style: italic;
     }
+    .vsel-meta{
+        margin: 0 0 12px;
+    }
     .ondes-more-planning {
         margin-bottom: 0;
+    }
+
+    .vsel-info td {
+        padding: 0;
+    }
+    .vsel-meta-link {
+        padding: 1px 0 0 8px;
+    }
+    .vsel-content h3 {
+        margin: 1px 0px 0px 7px !important;
+        font-size: 15px !important;
     }
 }
 

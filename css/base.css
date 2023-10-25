@@ -406,7 +406,7 @@ html {
 
 @font-face {
     font-family: 'DM Sans';
-    src: url('../fonts/DMSans-Italic.ttf') format('truetype');
+    src: url('../fonts/DMSans/DMSans-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -414,7 +414,7 @@ html {
 
 @font-face {
     font-family: 'DM Sans';
-    src: url('../fonts/DMSans-BoldItalic.ttf') format('truetype');
+    src: url('../fonts/DMSans/DMSans-BoldItalic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -422,7 +422,7 @@ html {
 
 @font-face {
     font-family: 'DM Sans';
-    src: url('../fonts/DMSans-Medium.ttf') format('truetype');
+    src: url('../fonts/DMSans/DMSans-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -430,7 +430,7 @@ html {
 
 @font-face {
     font-family: 'DM Sans';
-    src: url('../fonts/DMSans-MediumItalic.ttf') format('truetype');
+    src: url('../fonts/DMSans/DMSans-MediumItalic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -438,7 +438,7 @@ html {
 
 @font-face {
     font-family: 'DM Sans';
-    src: url('../fonts/DMSans-Regular.ttf') format('truetype');
+    src: url('../fonts/DMSans/DMSans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -446,7 +446,7 @@ html {
 
 @font-face {
     font-family: 'DM Sans';
-    src: url('../fonts/DMSans-Bold.ttf') format('truetype');
+    src: url('../fonts/DMSans/DMSans-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -455,7 +455,7 @@ html {
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/Roboto-Italic.ttf') format('truetype');
+    src: url('../fonts/Roboto/Roboto-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -463,7 +463,7 @@ html {
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/Roboto-LightItalic.ttf') format('truetype');
+    src: url('../fonts/Roboto/Roboto-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -471,7 +471,7 @@ html {
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/Roboto-BoldItalic.ttf') format('truetype');
+    src: url('../fonts/Roboto/Roboto-BoldItalic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -479,7 +479,7 @@ html {
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+    src: url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -487,7 +487,7 @@ html {
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/Roboto-MediumItalic.ttf') format('truetype');
+    src: url('../fonts/Roboto/Roboto-MediumItalic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -495,7 +495,7 @@ html {
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -503,14 +503,14 @@ html {
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/Roboto-Light.ttf') format('truetype');
+    src: url('../fonts/Roboto/Roboto-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/Roboto-Thin.ttf') format('truetype');
+    src: url('../fonts/Roboto/Roboto-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -518,11 +518,73 @@ html {
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+    src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'TS Block';
+    src: url('../fonts/ts_block/TS Block Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Novaesium';
+    src: url('../fonts/novaesium/Novaesium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Novaesium';
+    src: url('../fonts/novaesium/Novaesium Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Novaesium';
+    src: url('../fonts/novaesium/Novaesium Black.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Novaesium';
+    src: url('../fonts/novaesium/Novaesium Extra Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Arlrdbd';
+    src: url('../fonts/arlrdbd.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial Rounded MT';
+    src: url('../fonts/arial-rounded-mt-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Arial Rounded MT';
+    src: url('../fonts/arial-rounded-mt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 
 body,
@@ -653,7 +715,7 @@ img {
 }
 
 figure {
-    margin: 0.5em 0 0 0;
+    margin: 0 0 0 0;
 }
 
 table {
