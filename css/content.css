@@ -471,20 +471,23 @@ div[class^='src-components-current-track__artist--'] {
 }
 
 .slider-sofadumois .slide:nth-child(1) {
-  background: url('/wp-content/uploads/2023/11/page1-scaled.jpeg');
+  background-image: url('/wp-content/uploads/2023/11/page1-scaled.jpeg');
+  background-size:cover;
 }
 
 .slider-sofadumois .slide:nth-child(2) {
-  background: url('/wp-content/uploads/2023/11/page2-scaled.jpeg');
+  background-image: url('/wp-content/uploads/2023/11/page2-scaled.jpeg');
+  background-size:cover;
 }
 
 .slider-sofadumois .slide:nth-child(3) {
-  background: url('/wp-content/uploads/2023/11/page3-scaled.jpeg');
+  background-image: url('/wp-content/uploads/2023/11/page3-scaled.jpeg');
+  background-size:cover;
 }
 
 .slider-sofadumois .slide:nth-child(4) {
-  background: url('/wp-content/uploads/2023/11/page4-scaled.jpeg');
-  border-radius: 0 0.7rem 0.7rem 0;
+  background-image: url('/wp-content/uploads/2023/11/page4-scaled.jpeg');
+  background-size:cover;
 }
 
 .slider-sofadumois .slide h2 {

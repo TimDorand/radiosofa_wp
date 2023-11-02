@@ -43,16 +43,12 @@
                         <!-- slides start -->
                         <ul class="slides-flex">
                             <li class="slide">
-                            <h2>1</h2>
                             </li>
                             <li class="slide">
-                            <h2>2</h2>
                             </li>
                             <li class="slide">
-                            <h2>3</h2>
                             </li>
                             <li class="slide">
-                            <h2>4</h2>
                             </li>
                         </ul>
                         <!-- slides end -->
@@ -66,7 +62,7 @@
                         <!-- navigation end -->
                         </section>
 
-                <div class="fullcap"></div>
+                <!-- <div class="fullcap"></div> -->
             </div>
             <figcaption class="description_visuel_mois">Le sofa du mois</figcaption>
         </figure>
