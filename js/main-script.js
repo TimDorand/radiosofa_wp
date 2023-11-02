@@ -149,6 +149,7 @@
 
         // CAROUSEL
 
+        setTimeout(function () {
 
 
 const slideContainer = document.querySelector(".slider-sofadumois");
@@ -280,6 +281,7 @@ const navigation = document.querySelector(".slider-navigation");
 })(slideContainer, slidesFlex, navigation);
 
 
+        },500);
 
 // END CAROUSEL
         console.log("[Main Script] Document ready");
