@@ -435,6 +435,125 @@ div[class^='src-components-current-track__artist--'] {
   }
 }
 
+.slider-sofadumois ul {
+  list-style: none;
+}
+
+.slider-sofadumois {
+  position: relative;
+  width: 80%;
+  aspect-ratio: 1;
+  max-width: 50rem;
+  max-height: 31.25rem;
+  border-radius: 0.7rem;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.slider-sofadumois  input {
+  display: none;
+}
+
+/* SLIDES */
+.slider-sofadumois .slides-flex {
+  position: absolute;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  display: flex;
+  transition: 0.8s;
+}
+
+.slider-sofadumois .slide {
+  width: 25%;
+  display: grid;
+  place-items: center;
+}
+
+.slider-sofadumois .slide:nth-child(1) {
+  background: url('/wp-content/uploads/2023/11/page1-scaled.jpeg');
+}
+
+.slider-sofadumois .slide:nth-child(2) {
+  background: url('/wp-content/uploads/2023/11/page2-scaled.jpeg');
+}
+
+.slider-sofadumois .slide:nth-child(3) {
+  background: url('/wp-content/uploads/2023/11/page3-scaled.jpeg');
+}
+
+.slider-sofadumois .slide:nth-child(4) {
+  background: url('/wp-content/uploads/2023/11/page4-scaled.jpeg');
+  border-radius: 0 0.7rem 0.7rem 0;
+}
+
+.slider-sofadumois .slide h2 {
+  user-select: none;
+  color: var(--primaryColor);
+  height: 5rem;
+  width: 5rem;
+  font-size: 3rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  outline: 3px solid;
+}
+
+/* NAVIGATION */
+.slider-navigation {
+  position: absolute;
+  user-select: none;
+  width: 100%;
+  bottom: 2.5rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.slider-navigation label {
+  border: 2px solid var(--primaryColor);
+  padding: 0.3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s;
+}
+
+/* ON RADIO CHECKED */
+/* #radio1:checked ~ .slides-flex {
+  left: 0%;
+}
+
+#radio2:checked ~ .slides-flex {
+  left: -100%;
+}
+
+#radio3:checked ~ .slides-flex {
+  left: -200%;
+}
+
+#radio4:checked ~ .slides-flex {
+  left: -300%;
+} */
+
+.slider-sofadumois #radio1:checked ~ .slider-navigation .btn1 {
+  background: var(--primaryColor);
+}
+
+.slider-sofadumois #radio2:checked ~ .slider-navigation .btn2 {
+  background: var(--primaryColor);
+}
+
+.slider-sofadumois #radio3:checked ~ .slider-navigation .btn3 {
+  background: var(--primaryColor);
+}
+
+.slider-sofadumois #radio4:checked ~ .slider-navigation .btn4 {
+  background: var(--primaryColor);
+}
+
+
+
 .img-bordered figcaption {
   text-align: center;
   font-size: 1.4rem;

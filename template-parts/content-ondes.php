@@ -25,12 +25,47 @@
                         border: 2px solid black;
                     }
                 </style>-->
-                <img
+                <!-- <img
                         width="524"
                         height="524"
                         loading="lazy"
                         src=""
-                        alt="Visuel du mois" id="visuel_mois">
+                        alt="Visuel du mois" id="visuel_mois"> -->
+                        
+
+                        <section class="slider-sofadumois">
+                        <!-- radio buttons start -->
+                        <input type="radio" name="radio-btn" id="radio1" checked />
+                        <input type="radio" name="radio-btn" id="radio2" />
+                        <input type="radio" name="radio-btn" id="radio3" />
+                        <input type="radio" name="radio-btn" id="radio4" />
+                        <!-- radio buttons end -->
+                        <!-- slides start -->
+                        <ul class="slides-flex">
+                            <li class="slide">
+                            <h2>1</h2>
+                            </li>
+                            <li class="slide">
+                            <h2>2</h2>
+                            </li>
+                            <li class="slide">
+                            <h2>3</h2>
+                            </li>
+                            <li class="slide">
+                            <h2>4</h2>
+                            </li>
+                        </ul>
+                        <!-- slides end -->
+                        <!-- navigation start -->
+                        <div class="navigation">
+                            <label for="radio1" class="btn1" id="1"></label>
+                            <label for="radio2" class="btn2" id="2"></label>
+                            <label for="radio3" class="btn3" id="3"></label>
+                            <label for="radio4" class="btn4" id="4"></label>
+                        </div>
+                        <!-- navigation end -->
+                        </section>
+
                 <div class="fullcap"></div>
             </div>
             <figcaption class="description_visuel_mois">Le sofa du mois</figcaption>
