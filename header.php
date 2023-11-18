@@ -100,7 +100,8 @@
             </audio>
             <div class="lds-dual-ring"></div>
             <a id="sidebar-player" class="play" href="#" style="display:none;"></a>
-            <div id="rk-current-track-widget" data-id="radio-sofa" data-buy="0"></div>
+            <p>MOBILE HOME (LIVE)</p>
+            <!--<div id="rk-current-track-widget" data-id="radio-sofa" data-buy="0"></div>-->
             <script type="text/javascript"
                     src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/js/current-track/rk-current-track-min.js"></script>
         </div>
