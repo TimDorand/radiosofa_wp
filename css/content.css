@@ -715,7 +715,7 @@ div[class^='src-components-current-track__artist--'] {
   text-decoration: none;
   text-transform: uppercase;
   order: 1;
-  width: calc(100% - 82px);
+  width: calc(100% - 84px);
 }
 
 .rs-block-latest-posts__post-excerpt {
