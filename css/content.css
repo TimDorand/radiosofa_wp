@@ -892,14 +892,14 @@ div[class^='src-components-current-track__artist--'] {
 #page-radio-residence .rs-title-mini, #page-radio-residence .rs-title {
   cursor: pointer;
 }
-
+/* HIDE RESIDENT TITLE
 .resident-item .rs-title-mini div{
   background:white;
   border:white;
 }
 .resident-item .rs-title-mini div h2{
   font-size: 0;
-}
+}*/
 /*
 #page-radio-residence .replay-images .rs-title-mini, #page-radio-residence .replay-images .rs-title {
   height: 0;
