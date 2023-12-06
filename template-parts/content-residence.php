@@ -10,17 +10,23 @@
 
 class Resident
 {
+    public $id;
     public $name;
     public $residenceName;
     public $desc;
     public $image;
 
-    function __construct($name, $residenceName, $desc, $image)
+    function __construct($name, $residenceName, $desc, $image, $id)
     {
         $this->name = $name;
         $this->residenceName = $residenceName;
         $this->desc = nl2br($desc);
         $this->image = $image;
+        if(!$id){
+            $this->id = $name;
+        }else{
+            $this->id = $id;
+        }
     }
 }
 
@@ -28,237 +34,242 @@ $baume = new Resident(
     "BAUME",
     "TOUT QUITTER POUR PARTIR",
     '',
-    "/wp-content/uploads/2023/12/BAUME.jpg");
+    "/wp-content/uploads/2023/12/BAUME.jpg", null);
 
 $belaria = new Resident(
     "BELARIA",
     "VAGUES SYNTHETIQUES",
     '',
-    "/wp-content/uploads/2023/12/BELARIA.jpg");
+    "/wp-content/uploads/2023/12/BELARIA.jpg", null);
 
 $broski = new Resident(
     "BROSKI",
     "EXPÉDITION ÉLECTRONIQUE",
     "",
-    "/wp-content/uploads/2023/12/BROSKI.jpg");
+    "/wp-content/uploads/2023/12/BROSKI.jpg", null);
 
 $elonaprime = new Resident(
     "ELONA",
     "COFFEE VIBE",
     "",
-    "/wp-content/uploads/2023/12/ELONA-PRIME.jpg");
+    "/wp-content/uploads/2023/12/ELONA-PRIME.jpg", null);
 
 $charleeps = new Resident(
     "CHARLEEPS",
     "RIVIERA EXPRESS",
     "",
-    "/wp-content/uploads/2023/12/CHARLEEPS.jpg");
+    "/wp-content/uploads/2023/12/CHARLEEPS.jpg", null);
 
 $marsoc10 = new Resident(
     "MARS O10C",
     "BREAK A LEG",
     "",
-    "/wp-content/uploads/2023/12/MARS-O10C.jpg");
+    "/wp-content/uploads/2023/12/MARS-O10C.jpg", null);
 
 $felix = new Resident(
     "FELIX",
     "SONORAMA",
     "",
-    "/wp-content/uploads/2023/12/FELIX.jpg");
+    "/wp-content/uploads/2023/12/FELIX.jpg", null);
 
 $girasol = new Resident(
     "GIRASOL",
     "LATITUDES LUNATIQUES",
     '',
-    "/wp-content/uploads/2023/12/GIRASOL.jpg");
+    "/wp-content/uploads/2023/12/GIRASOL.jpg", null);
 
 $matso = new Resident(
     "MATSO",
     "ADN",
     "",
-    "/wp-content/uploads/2023/12/MATSO.jpg");
+    "/wp-content/uploads/2023/12/MATSO.jpg", null);
 
 $nofraje = new Resident(
     "NOFRAJE",
     "GLOBAL FREQUENCY",
     '',
-    "/wp-content/uploads/2023/12/NOFRAJE.jpg");
+    "/wp-content/uploads/2023/12/NOFRAJE.jpg", null);
 
 
 $planisphere = new Resident(
     "PLANISPHERE",
     "MUSIQUES POUR MOBILIER",
     '',
-    "/wp-content/uploads/2023/12/PLANISPHERE.jpg");
+    "/wp-content/uploads/2023/12/PLANISPHERE.jpg", null);
 
 
 $sunaas = new Resident(
     "SUNAAS",
     "SLOW DOWN A MINUTE",
     '',
-    "/wp-content/uploads/2023/12/SUNAAS.jpg");
+    "/wp-content/uploads/2023/12/SUNAAS.jpg", null);
 
 
 $tropicalites = new Resident(
     "TROPICALITES",
     "TRANSATLANTIQUES",
     "",
-    "/wp-content/uploads/2023/12/TROPICALITES.jpg");
+    "/wp-content/uploads/2023/12/TROPICALITES.jpg", null);
 
 $monacogza = new Resident(
     "MONACO GZA",
     "Dschungel Kosmos",
     "",
-    "/wp-content/uploads/2023/12/MONACO-GZA.jpg");
+    "/wp-content/uploads/2023/12/MONACO-GZA.jpg", null);
 
 
 $rodrigueSoulgroove = new Resident(
     "RODRIGUE SOULGROOVE",
     "LE SILLON",
     "",
-    "/wp-content/uploads/2023/12/RODRIGUE.jpg");
+    "/wp-content/uploads/2023/12/RODRIGUE.jpg", null);
 
 
 $mimi = new Resident(
     "MIMI",
     "FAUTEUIL CLUB",
     '',
-    "/wp-content/uploads/2023/12/MIMI-S.jpg");
+    "/wp-content/uploads/2023/12/MIMI-S.jpg", null);
 
 $micropolis = new Resident(
     "MICROPOLIS",
     "MACROPHONE",
     "",
-    "/wp-content/uploads/2023/12/MICROPOLIS.jpg");
+    "/wp-content/uploads/2023/12/MICROPOLIS.jpg", null);
 
 
 $taka = new Resident(
     "TAKA",
     "GOGUETTE ASTRALE",
     "",
-    "/wp-content/uploads/2023/12/TAKA.jpg");
+    "/wp-content/uploads/2023/12/TAKA.jpg", null);
 
 $tomCoololo = new Resident(
     "TOM COOLOLO",
     "ARTEFACTS AUDITIFS",
     "",
-    "/wp-content/uploads/2023/12/TOM-COOLOLO.jpg");
+    "/wp-content/uploads/2023/12/TOM-COOLOLO.jpg", null);
 
 $toniDog = new Resident(
     "TONI DOG",
     "ÂMES SENSIBLES",
     "",
-    "/wp-content/uploads/2023/12/TONI-DOG.jpg");
+    "/wp-content/uploads/2023/12/TONI-DOG.jpg", null);
 
 $fracas = new Resident(
     "BAXUA AND WAVEY CUTS",
     "FRACAS",
     "",
-    "/wp-content/uploads/2023/12/BAXUA-_-WAVEY-CUTS.jpg");
+    "/wp-content/uploads/2023/12/BAXUA-_-WAVEY-CUTS.jpg", null);
 
 $waveyCuts = new Resident(
     "WAVEY CUTS",
     "Aint Easy Being Wavey",
     "",
-    "/wp-content/uploads/2023/12/WAVEY-SC.jpg");
+    "/wp-content/uploads/2023/12/WAVEY-SC.jpg", null);
 
 $SBN6 = new Resident(
     "SBN6",
     "Lovecast",
     "",
-    "/wp-content/uploads/2023/02/SBN6-lovecast-ep2.png");
+    "/wp-content/uploads/2023/02/SBN6-lovecast-ep2.png", null);
 
 $saintMisere = new Resident(
     "SAINT MISERE",
     "NEW PHONE. WHO DIS ?",
     "",
-    "/wp-content/uploads/2023/12/SAINT-MISERE.jpg");
+    "/wp-content/uploads/2023/12/SAINT-MISERE.jpg", null);
 
 
 $slim = new Resident(
     "SLIM SLIM",
     "Hot Chose",
     "",
-    "/wp-content/uploads/2023/12/SLIM-SIM.jpg");
+    "/wp-content/uploads/2023/12/SLIM-SIM.jpg", null);
 
 
 $kenzzza = new Resident(
     "KENZZZA",
     "Silky witchcraft",
     "",
-    "/wp-content/uploads/2023/12/KENZZZA.jpg");
+    "/wp-content/uploads/2023/12/KENZZZA.jpg", null);
 
 
 $paradisFiscal = new Resident(
     "PARADIS FISCAL",
     "Synthetic Music Company",
     "",
-    "/wp-content/uploads/2023/12/PARADIS-FISCAL.jpg");
+    "/wp-content/uploads/2023/12/PARADIS-FISCAL.jpg", null);
 
 $maxKlank = new Resident(
     "MAX KLANK",
     "TAR",
     "",
-    "/wp-content/uploads/2023/12/MAX-KLANK.jpg");
+    "/wp-content/uploads/2023/12/MAX-KLANK.jpg", null);
 
 
 $kimKenis = new Resident(
     "KIM KENIS",
     "Same As It Ever Was",
     "",
-    "/wp-content/uploads/2023/12/KIM-KENIS.jpg");
+    "/wp-content/uploads/2023/12/KIM-KENIS.jpg", null);
 
 $janAstasia = new Resident(
     "JAN ASTASIA",
     "Face A/B",
     "",
-    "/wp-content/uploads/2023/12/JAN-ASTASIA.jpg");
+    "/wp-content/uploads/2023/12/JAN-ASTASIA.jpg", null);
 
 $h2o = new Resident(
     "H2O",
     "Deep Dive",
     "",
-    "/wp-content/uploads/2023/12/H2O.jpg");
+    "/wp-content/uploads/2023/12/H2O.jpg", null);
 
 $blanca = new Resident(
     "BLANCA BRUSCI",
     "Poetic Weapons",
     "",
-    "/wp-content/uploads/2023/12/BLANCA-BRUSCI.jpg");
+    "/wp-content/uploads/2023/12/BLANCA-BRUSCI.jpg", null);
 
 $troiscenttrois = new Resident(
         "/303",
   "Deep Ewing Show",
   "",
-  "/wp-content/uploads/2023/12/303.jpg"
+  "/wp-content/uploads/2023/12/303.jpg",
+  "303"
 );
 
 $boboxa = new Resident(
         "BOBOXA",
   "Mind The Gap",
   "",
-  "/wp-content/uploads/2023/12/BOBOXA.jpg"
+  "/wp-content/uploads/2023/12/BOBOXA.jpg",
+  null
 );
 
 $ensemble = new Resident(
         "Ensemble",
   "",
   "",
-  "/wp-content/uploads/2023/12/ENSEMBLE-PODCAST.jpg"
+  "/wp-content/uploads/2023/12/ENSEMBLE-PODCAST.jpg",
+  null
 );
 
 $genouFragile = new Resident(
         "Genou Fragile",
   "Cataplasme",
   "",
-  "/wp-content/uploads/2023/12/GENOU-FRAGILE.jpg"
+  "/wp-content/uploads/2023/12/GENOU-FRAGILE.jpg",
+  null
 );
 
 $julojulo = new Resident(
         "Julo Julo",
   "Contemplation",
   "",
-  "/wp-content/uploads/2023/12/JULO-JULO.jpg"
+  "/wp-content/uploads/2023/12/JULO-JULO.jpg",
+  null
 );
 
 
@@ -304,7 +315,7 @@ foreach ($residents as $resident) {
     </div>
     <div class="rs-block-columns residence-details-archives">';
 
-    $categoryArticles = get_category_by_slug($resident->name);
+    $categoryArticles = get_category_by_slug($resident->id);
     if ($categoryArticles) {
         $posts = get_posts(["numberposts" => -1, "category" => $categoryArticles->cat_ID]);
     } else {
