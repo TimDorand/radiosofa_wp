@@ -23,9 +23,9 @@ class Resident
     $this->desc = nl2br($desc);
     $this->image = $image;
     if (isset($id)) {
-      $this->id = $name;
-    } else {
       $this->id = $id;
+    } else {
+      $this->id = $name;
     }
   }
 }
