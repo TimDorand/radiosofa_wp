@@ -28,139 +28,139 @@ $baume = new Resident(
     "BAUME",
     "TOUT QUITTER POUR PARTIR",
     '',
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/BAUME.jpg");
+    "/wp-content/uploads/2023/12/BAUME.jpg");
 
 $belaria = new Resident(
     "BELARIA",
     "VAGUES SYNTHETIQUES",
     '',
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/BELARIA.jpg");
+    "/wp-content/uploads/2023/12/BELARIA.jpg");
 
 $broski = new Resident(
     "BROSKI",
     "EXPÉDITION ÉLECTRONIQUE",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/BROSKI.jpg");
+    "/wp-content/uploads/2023/12/BROSKI.jpg");
 
 $elonaprime = new Resident(
     "ELONA",
     "COFFEE VIBE",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/ELONA-PRIME.jpg");
+    "/wp-content/uploads/2023/12/ELONA-PRIME.jpg");
 
 $charleeps = new Resident(
     "CHARLEEPS",
     "RIVIERA EXPRESS",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/CHARLEEPS.jpg");
+    "/wp-content/uploads/2023/12/CHARLEEPS.jpg");
 
 $marsoc10 = new Resident(
     "MARS O10C",
     "BREAK A LEG",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/MARS-O10C.jpg");
+    "/wp-content/uploads/2023/12/MARS-O10C.jpg");
 
 $felix = new Resident(
     "FELIX",
     "SONORAMA",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/FELIX.jpg");
+    "/wp-content/uploads/2023/12/FELIX.jpg");
 
 $girasol = new Resident(
     "GIRASOL",
     "LATITUDES LUNATIQUES",
     '',
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/GIRASOL.jpg");
+    "/wp-content/uploads/2023/12/GIRASOL.jpg");
 
 $matso = new Resident(
     "MATSO",
     "ADN",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/MATSO.jpg");
+    "/wp-content/uploads/2023/12/MATSO.jpg");
 
 $nofraje = new Resident(
     "NOFRAJE",
     "GLOBAL FREQUENCY",
     '',
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/NOFRAJE.jpg");
+    "/wp-content/uploads/2023/12/NOFRAJE.jpg");
 
 
 $planisphere = new Resident(
     "PLANISPHERE",
     "MUSIQUES POUR MOBILIER",
     '',
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/PLANISPHERE.jpg");
+    "/wp-content/uploads/2023/12/PLANISPHERE.jpg");
 
 
 $sunaas = new Resident(
     "SUNAAS",
     "SLOW DOWN A MINUTE",
     '',
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/SUNAAS.jpg");
+    "/wp-content/uploads/2023/12/SUNAAS.jpg");
 
 
 $tropicalites = new Resident(
     "TROPICALITES",
     "TRANSATLANTIQUES",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/TROPICALITES.jpg");
+    "/wp-content/uploads/2023/12/TROPICALITES.jpg");
 
 $monacogza = new Resident(
     "MONACO GZA",
     "Dschungel Kosmos",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/MONACO-GZA.jpg");
+    "/wp-content/uploads/2023/12/MONACO-GZA.jpg");
 
 
 $rodrigueSoulgroove = new Resident(
     "RODRIGUE SOULGROOVE",
     "LE SILLON",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/RODRIGUE.jpg");
+    "/wp-content/uploads/2023/12/RODRIGUE.jpg");
 
 
 $mimi = new Resident(
     "MIMI",
     "FAUTEUIL CLUB",
     '',
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/MIMI-S.jpg");
+    "/wp-content/uploads/2023/12/MIMI-S.jpg");
 
 $micropolis = new Resident(
     "MICROPOLIS",
     "MACROPHONE",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/MICROPOLIS.jpg");
+    "/wp-content/uploads/2023/12/MICROPOLIS.jpg");
 
 
 $taka = new Resident(
     "TAKA",
     "GOGUETTE ASTRALE",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/TAKA.jpg");
+    "/wp-content/uploads/2023/12/TAKA.jpg");
 
 $tomCoololo = new Resident(
     "TOM COOLOLO",
     "ARTEFACTS AUDITIFS",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/TOM-COOLOLO.jpg");
+    "/wp-content/uploads/2023/12/TOM-COOLOLO.jpg");
 
 $toniDog = new Resident(
     "TONI DOG",
     "ÂMES SENSIBLES",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/TONI-DOG.jpg");
+    "/wp-content/uploads/2023/12/TONI-DOG.jpg");
 
 $fracas = new Resident(
     "BAXUA AND WAVEY CUTS",
     "FRACAS",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/BAXUA-_-WAVEY-CUTS.jpg");
+    "/wp-content/uploads/2023/12/BAXUA-_-WAVEY-CUTS.jpg");
 
 $waveyCuts = new Resident(
     "WAVEY CUTS",
     "Aint Easy Being Wavey",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/WAVEY-SC.jpg");
+    "/wp-content/uploads/2023/12/WAVEY-SC.jpg");
 
 $SBN6 = new Resident(
     "SBN6",
@@ -172,59 +172,59 @@ $saintMisere = new Resident(
     "SAINT MISERE",
     "NEW PHONE. WHO DIS ?",
     "",
-    "/https://www.radio-sofa.com/wp-content/uploads/2023/12/SAINT-MISERE.jpg");
+    "/wp-content/uploads/2023/12/SAINT-MISERE.jpg");
 
 
 $slim = new Resident(
     "SLIM SLIM",
     "Hot Chose",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/SLIM-SIM.jpg");
+    "/wp-content/uploads/2023/12/SLIM-SIM.jpg");
 
 
 $kenzzza = new Resident(
     "KENZZZA",
     "Silky witchcraft",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/KENZZZA.jpg");
+    "/wp-content/uploads/2023/12/KENZZZA.jpg");
 
 
 $paradisFiscal = new Resident(
     "PARADIS FISCAL",
     "Synthetic Music Company",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/PARADIS-FISCAL.jpg");
+    "/wp-content/uploads/2023/12/PARADIS-FISCAL.jpg");
 
 $maxKlank = new Resident(
     "MAX KLANK",
     "TAR",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/MAX-KLANK.jpg");
+    "/wp-content/uploads/2023/12/MAX-KLANK.jpg");
 
 
 $kimKenis = new Resident(
     "KIM KENIS",
     "Same As It Ever Was",
     "",
-    "/https://www.radio-sofa.com/wp-content/uploads/2023/12/KIM-KENIS.jpg");
+    "/wp-content/uploads/2023/12/KIM-KENIS.jpg");
 
 $janAstasia = new Resident(
     "JAN ASTASIA",
     "Face A/B",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/JAN-ASTASIA.jpg");
+    "/wp-content/uploads/2023/12/JAN-ASTASIA.jpg");
 
 $h2o = new Resident(
     "H2O",
     "Deep Dive",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/H2O.jpg");
+    "/wp-content/uploads/2023/12/H2O.jpg");
 
 $blanca = new Resident(
     "BLANCA BRUSCI",
     "Poetic Weapons",
     "",
-    "https://www.radio-sofa.com/wp-content/uploads/2023/12/BLANCA-BRUSCI.jpg");
+    "/wp-content/uploads/2023/12/BLANCA-BRUSCI.jpg");
 
 $troiscenttrois = new Resident(
         "/303",
@@ -237,28 +237,28 @@ $boboxa = new Resident(
         "BOBOXA",
   "",
   "",
-  "https://www.radio-sofa.com/wp-content/uploads/2023/12/BOBOXA.jpg"
+  "/wp-content/uploads/2023/12/BOBOXA.jpg"
 );
 
 $ensemble = new Resident(
         "Ensemble",
   "",
   "",
-  "https://www.radio-sofa.com/wp-content/uploads/2023/12/ENSEMBLE-PODCAST.jpg"
+  "/wp-content/uploads/2023/12/ENSEMBLE-PODCAST.jpg"
 );
 
 $genouFragile = new Resident(
         "Genou Fragile",
   "Cataplasme",
   "",
-  "https://www.radio-sofa.com/wp-content/uploads/2023/12/GENOU-FRAGILE.jpg"
+  "/wp-content/uploads/2023/12/GENOU-FRAGILE.jpg"
 );
 
 $julojulo = new Resident(
         "Julo Julo",
   "Contemplation",
   "",
-  "https://www.radio-sofa.com/wp-content/uploads/2023/12/JULO-JULO.jpg"
+  "/wp-content/uploads/2023/12/JULO-JULO.jpg"
 );
 
 
