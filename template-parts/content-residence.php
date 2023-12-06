@@ -23,9 +23,9 @@ class Resident
     $this->desc = nl2br($desc);
     $this->image = $image;
     if (isset($id)) {
-      $this->id = $id;
-    } else {
       $this->id = $name;
+    } else {
+      $this->id = $id;
     }
   }
 }
@@ -293,7 +293,7 @@ foreach ($residents as $resident) {
   if (!$resident->desc) {
     $resident->desc = "Redécouvrez les résidences de " . $resident->name . " ci dessous.";
   }
-  $residentId = str_replace(' ', '_', $resident->name);
+  $residentId = str_replace(' ', '_', $resident->id);
 
   echo '
     <div id="residence-' . $residentId . '" class="residence-details">
