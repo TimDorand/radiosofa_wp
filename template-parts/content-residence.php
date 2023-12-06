@@ -235,7 +235,7 @@ $troiscenttrois = new Resident(
 
 $boboxa = new Resident(
         "BOBOXA",
-  "",
+  "Mind The Gap",
   "",
   "/wp-content/uploads/2023/12/BOBOXA.jpg"
 );
