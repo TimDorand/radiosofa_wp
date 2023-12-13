@@ -188,6 +188,7 @@
         Nous veillons également à minimiser l’impact environnemental de nos activités via une programmation articulée autour d’artistes locaux.ales et une priorité accordée aux mobilités douces ainsi qu’à l’emploi de matériaux de seconde main.
         <br/><br/>
         A écouter assis.e et debout.
+        <br/><br/>
     </p>
     <div class="text-italic">
         <br/>
@@ -200,6 +201,8 @@
         We are also committed to minimizing the environmental impact of our activities by programming with local artists and giving priority to soft mobility and the use of second-hand materials.
         <br/><br/>
         To be listened to sitting and standing.
+        <br/><br/>
+
     </div>
     </div>
     <div class="footer-image">
