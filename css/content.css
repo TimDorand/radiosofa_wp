@@ -736,28 +736,14 @@ div[class^='src-components-current-track__artist--'] {
   margin: 0;
 }
 
-.ondes-footer {
-  padding: 4rem;
-  background: var(--main-color);
-  color: white;
+.rs-home-apropos .flex-col{
   display: flex;
-  column-gap: 9rem;
-  margin: 3rem 0 3rem 0;
+  column-gap: 60px;
 }
+.footer-image img{
+  width:100%;
 
-.ondes-footer .footer-image {
-  width: 70%;
 }
-
-.ondes-footer p {
-  font-size: 25px;
-}
-
-.ondes-footer h3 {
-  font-weight: 300;
-  font-style: italic;
-}
-
 /* IFRAMES */
 
 .replay-iframe {

@@ -41,7 +41,7 @@
         <div class="rs-title rs-title-light ondes-more-planning clickable">
             <div><h2>AGENDA</h2></div>
         </div>
-        <?php echo do_shortcode("[vsel]"); ?>
+      <?php echo do_shortcode("[vsel]"); ?>
     </div>
 </div>
 <div class="rs-block-columns">
@@ -90,9 +90,9 @@
     <div class="rs-block-column rs-home-journal desktop-only">
         <div class="messagedefilant messagedefilant-reverse">
             <h3>
-          <?php
-          $text_defilant = "↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;"
-          ?>
+              <?php
+              $text_defilant = "↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOS ACTUS&nbsp;&nbsp;&nbsp;&nbsp;"
+              ?>
             </h3>
             <div data-text="<?php echo $text_defilant; ?>"><span><?php echo $text_defilant; ?></span></div>
         </div>
@@ -140,56 +140,110 @@
                 <!-- wp:latest-posts {"categories":[{"id":8,"count":18,"description":"","link":"http://localhost:8888/category/articles/","name":"Articles","slug":"articles","taxonomy":"category","parent":0,"meta":[],"_links":{"self":[{"href":"http://localhost:8888/wp-json/wp/v2/categories/8"}],"collection":[{"href":"http://localhost:8888/wp-json/wp/v2/categories"}],"about":[{"href":"http://localhost:8888/wp-json/wp/v2/taxonomies/category"}],"wp:post_type":[{"href":"http://localhost:8888/wp-json/wp/v2/posts?categories=8"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}}],"postsToShow":3,"displayPostContent":true,"excerptLength":10,"displayPostDate":true,"align":"left","className":"bloc-articles"} /-->
                 <ul class="rs-block-latest-posts__list has-dates alignleft bloc-articles rs-block-latest-posts">
 
-                    <?php
-                    $categoryArticles = get_category_by_slug("Articles");
-                    $recentArticles = get_posts(["numberposts" => 2, "category" => $categoryArticles->cat_ID]);
-                    foreach ($recentArticles as $post) {
-                        $post_date = get_the_date('j') . "/" . get_the_date('n');
-                        echo '<li><a class="ondes-journal-post-link" data-post-id="' . $post->post_name . '" href="/#article-' . $post->post_name . '">' . $post->post_title . '</a>
+                  <?php
+                  $categoryArticles = get_category_by_slug("Articles");
+                  $recentArticles = get_posts(["numberposts" => 2, "category" => $categoryArticles->cat_ID]);
+                  foreach ($recentArticles as $post) {
+                    $post_date = get_the_date('j') . "/" . get_the_date('n');
+                    echo '<li><a class="ondes-journal-post-link" data-post-id="' . $post->post_name . '" href="/#article-' . $post->post_name . '">' . $post->post_title . '</a>
                         <time datetime="' . $post->post_date_gmt . '" class="rs-block-latest-posts__post-date">' . $post_date . '</time>
                         <div class="rs-block-latest-posts__post-excerpt ondes-journal-post">' . $post->post_content . '
                     </div>
                     </li>';
-                    }
-                    ?>
+                  }
+                  ?>
                 </ul>
 
             </div>
         </div>
     </div>
-
-
 </div>
 
 
-<div class="ondes-footer">
-    <div class="text-justify">
-        <p>Collectif francilien rhizomatique, Radio Sofa oscille entre événements festifs et méditatifs, diffusion
-            radiophonique, arts visuels, sapes et micro-label.
-        </p>
-        __
-        <p class="text-italic">
-            Radio Sofa is a rhizomatic parisian collective, oscillating between festive and meditative events,
-            radio broadcasting, visual arts, clothing and micro-label.
-        </p>
+
+<div class="rs-block-columns">
+    <div class="rs-block-column rs-home-apropos">
+        <div class="messagedefilant messagedefilant-reverse">
+        <h3>
+          <?php
+          $text_defilant = "↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOTRE COLLECTIF&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOTRE COLLECTIF&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOTRE COLLECTIF&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOTRE COLLECTIF&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOTRE COLLECTIF&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOTRE COLLECTIF&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOTRE COLLECTIF&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOTRE COLLECTIF&nbsp;&nbsp;&nbsp;&nbsp;↓↓↓&nbsp;&nbsp;&nbsp;&nbsp;NOTRE COLLECTIF&nbsp;&nbsp;&nbsp;&nbsp;"
+          ?>
+        </h3>
+        <div data-text="<?php echo $text_defilant; ?>"><span><?php echo $text_defilant; ?></span></div>
+    </div>
+    <div class="rs-title rs-title-default rs-title-margin-top">
+        <div><h2 class="clickable">
+                A PROPOS</h2>
+        </div>
+    </div>
+        <div class="flex-col">
+    <p>
+        <br/>
+        Radio Sofa est une webradio et collectif monté en avril 2020 dans un Paris confiné. Dans un contexte pandémique
+        de Covid-19 qui s’est accompagné d’une fermeture des lieux culturels, le projet de webradio avait pour but de
+        partager de la musique et permettre aux artistes de continuer à créer afin de maintenir le lien avec leur
+        public.
+        <br/><br/>
+        Les activités de Radio Sofa oscillent entre diffusion radiophonique, événements festifs et méditatifs,
+        arts visuels, micro-collection de vêtements et K7.
+        <br/><br/>
+        A travers ses ondes et ses événements, Radio Sofa se profile
+        comme un espace d’expression pour les artistes et un espace de découverte pour notre auditoire.
+        <br/><br/>
+        L’identité de
+        Radio Sofa se construit sur 3 pilliers :
+        <br/>
+        - Défricheur en mettant en avant l'émergence, la création et la prise
+        de risque artistique,
+        <br/>
+        - Inclusif dans sa programmation en termes de genre, de provenance géographique,
+        d’origines socio-culturelles et de styles musicaux,
+        <br/>
+        - Durable en limitant son empreinte carbone via la
+        programmation de locaux.ales et en utilisant des vêtements de secondes mains pour nos micro-collections.
+    </p>
+    <div class="text-italic">
+        <br/>
+        Radio Sofa is a webradio and collective set up in April 2020 in a confined Paris. Against the backdrop of the
+        Covid-19 pandemic, which was accompanied by the closure of cultural venues, the webradio project aimed to share
+        music and enable artists to continue creating in order to maintain the link with their audiences.
+        <br/><br/>
+        Radio Sofa's activities oscillate between radio broadcasting, festive and meditative events, visual arts, clothing
+        micro-collection and K7.
+        <br/><br/>
+        Through its airwaves and events, Radio Sofa is a space of expression for artists and a
+        place of discovery for our audience.
+        <br/><br/>
+        Radio Sofa's identity is built on 3 pillars:<br/>
+        - A pioneer, by emphasizing emergence, creation and artistic risk-taking,<br/>
+        - Inclusive in its programming in terms of gender, geographical provenance, socio-cultural origins and musical
+        styles,<br/>
+        - Sustainable, by limiting its carbon footprint through local programming and by using second-hand clothing for
+        our micro-collections.
+    </div>
     </div>
     <div class="footer-image">
-        <img src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/radiosofa_logo_white.png" alt="Logo Radio Sofa blanc sur fond noir" />
+        <img src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/a_propos_12_23.gif"
+             alt="Galerie de photo : foule au concert Radio Sofa au Sample à Bagnolet et photo shoot de collections de vêtements "/>
     </div>
 </div>
 
 <div class="mobile-only text-centered mobile-rs-icons">
     <div>
         <a href="https://www.facebook.com/webradio.sofa" target="_blank">
-            <img width="20" src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/fb_icon.png" alt="Accéder au facebook radio sofa"/>
+            <img width="20" src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/fb_icon.png"
+                 alt="Accéder au facebook radio sofa"/>
         </a>
         <a href="https://www.instagram.com/radio.sofa/" target="_blank">
-            <img width="20" src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/insta_icon.png" alt="Accéder à l'insta radio sofa "/>
+            <img width="20" src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/insta_icon.png"
+                 alt="Accéder à l'insta radio sofa "/>
         </a>
         <a href="https://soundcloud.com/radio-sofa" target="_blank">
-            <img width="20" src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/soundcloud_icon_dark.png" alt="Accéder au Soundcloud de Radio Sofa "/></a>
+            <img width="20" src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/soundcloud_icon_dark.png"
+                 alt="Accéder au Soundcloud de Radio Sofa "/></a>
         <a href="mailto:contact.radiosofa@gmail.com" target="_blank">
-            <img width="20" src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/mail_icon.png" alt="Ecrire un mail à Radio Sofa "/></a>
+            <img width="20" src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/mail_icon.png"
+                 alt="Ecrire un mail à Radio Sofa "/></a>
 
     </div>
     <br>
