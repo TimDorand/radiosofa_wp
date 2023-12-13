@@ -179,46 +179,27 @@
         <div class="flex-col">
     <p>
         <br/>
-        Radio Sofa est une webradio et collectif monté en avril 2020 dans un Paris confiné. Dans un contexte pandémique
-        de Covid-19 qui s’est accompagné d’une fermeture des lieux culturels, le projet de webradio avait pour but de
-        partager de la musique et permettre aux artistes de continuer à créer afin de maintenir le lien avec leur
-        public.
+        Radio Sofa est un collectif monté en avril 2020, à l’origine sous forme de webradio, afin de participer à la continuité de la diffusion des musiques actuelles et électroniques dans un contexte de fermeture des lieux culturels.
         <br/><br/>
-        Les activités de Radio Sofa oscillent entre diffusion radiophonique, événements festifs et méditatifs,
-        arts visuels, micro-collection de vêtements et K7.
+        Nos activités se sont aujourd’hui étendues pour osciller entre la traditionnelle diffusion radiophonique, la production d’événements festifs et méditatifs, les arts visuels et les micro-collection de vêtements et de cassettes.
         <br/><br/>
-        A travers ses ondes et ses événements, Radio Sofa se profile
-        comme un espace d’expression pour les artistes et un espace de découverte pour notre auditoire.
+        A travers ses ondes et ses événements, Radio Sofa se profile comme un espace d’expression pour les artistes et de découverte pour le public et l’auditoire. Nous nous attachons à proposer une programmation défricheuse et inclusive, mettant en avant des artistes émergent.e.s et aux identités diverses, en valorisant la prise de risque artistique et la création.
         <br/><br/>
-      <!--  L’identité de Radio Sofa se construit sur 3 pilliers :
-        <br/>
-        - Défricheur en mettant en avant l'émergence, la création et la prise
-        de risque artistique,
-        <br/>
-        - Inclusif dans sa programmation en termes de genre, de provenance géographique,
-        d’origines socio-culturelles et de styles musicaux,
-        <br/>
-        - Durable en limitant son empreinte carbone via la
-        programmation de locaux.ales et en utilisant des vêtements de secondes mains pour nos micro-collections.-->
+        Nous veillons également à minimiser l’impact environnemental de nos activités via une programmation articulée autour d’artistes locaux.ales et une priorité accordée aux mobilités douces ainsi qu’à l’emploi de matériaux de seconde main.
+        <br/><br/>
+        A écouter assis.e et debout.
     </p>
     <div class="text-italic">
         <br/>
-        Radio Sofa is a webradio and collective set up in April 2020 in a confined Paris. Against the backdrop of the
-        Covid-19 pandemic, which was accompanied by the closure of cultural venues, the webradio project aimed to share
-        music and enable artists to continue creating in order to maintain the link with their audiences.
+        Radio Sofa is a collective set up in April 2020, originally as a web radio station, in order to participate in the continuity of the broadcasting of current and electronic music in a context of closing cultural venues.
         <br/><br/>
-        Radio Sofa's activities oscillate between radio broadcasting, festive and meditative events, visual arts, clothing
-        micro-collection and K7.
+        Today, our activities have expanded to oscillate between traditional radio broadcasting, the production of festive and meditative events, the visual arts and micro-collections of clothing and cassettes.
         <br/><br/>
-        Through its airwaves and events, Radio Sofa is a space of expression for artists and a
-        place of discovery for our audience.
+        Through its airwaves and events, Radio Sofa is a space of expression for artists and discovery for audiences. We are committed to offering pioneering and inclusive programming, showcasing emerging artists with diverse identities, and valuing artistic risk-taking and creation.
         <br/><br/>
-       <!-- Radio Sofa's identity is built on 3 pillars:<br/>
-        - A pioneer, by emphasizing emergence, creation and artistic risk-taking,<br/>
-        - Inclusive in its programming in terms of gender, geographical provenance, socio-cultural origins and musical
-        styles,<br/>
-        - Sustainable, by limiting its carbon footprint through local programming and by using second-hand clothing for
-        our micro-collections.-->
+        We are also committed to minimizing the environmental impact of our activities by programming with local artists and giving priority to soft mobility and the use of second-hand materials.
+        <br/><br/>
+        To be listened to sitting and standing.
     </div>
     </div>
     <div class="footer-image">
