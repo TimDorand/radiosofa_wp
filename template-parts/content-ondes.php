@@ -190,8 +190,7 @@
         A travers ses ondes et ses événements, Radio Sofa se profile
         comme un espace d’expression pour les artistes et un espace de découverte pour notre auditoire.
         <br/><br/>
-        L’identité de
-        Radio Sofa se construit sur 3 pilliers :
+      <!--  L’identité de Radio Sofa se construit sur 3 pilliers :
         <br/>
         - Défricheur en mettant en avant l'émergence, la création et la prise
         de risque artistique,
@@ -200,7 +199,7 @@
         d’origines socio-culturelles et de styles musicaux,
         <br/>
         - Durable en limitant son empreinte carbone via la
-        programmation de locaux.ales et en utilisant des vêtements de secondes mains pour nos micro-collections.
+        programmation de locaux.ales et en utilisant des vêtements de secondes mains pour nos micro-collections.-->
     </p>
     <div class="text-italic">
         <br/>
@@ -214,12 +213,12 @@
         Through its airwaves and events, Radio Sofa is a space of expression for artists and a
         place of discovery for our audience.
         <br/><br/>
-        Radio Sofa's identity is built on 3 pillars:<br/>
+       <!-- Radio Sofa's identity is built on 3 pillars:<br/>
         - A pioneer, by emphasizing emergence, creation and artistic risk-taking,<br/>
         - Inclusive in its programming in terms of gender, geographical provenance, socio-cultural origins and musical
         styles,<br/>
         - Sustainable, by limiting its carbon footprint through local programming and by using second-hand clothing for
-        our micro-collections.
+        our micro-collections.-->
     </div>
     </div>
     <div class="footer-image">
