@@ -192,13 +192,13 @@
     </p>
     <div class="text-italic">
         <br/>
-        Radio Sofa is a collective set up in April 2020, originally as a web radio station, in order to participate in the continuity of the broadcasting of current and electronic music in a context of closing cultural venues.
+        Radio Sofa is a collective set up in April 2020, originally as a web radio station. The idea was to take part in the continuity of the broadcasting of current and electronic music while cultural venues had to stay silent.
         <br/><br/>
-        Today, our activities have expanded to oscillate between traditional radio broadcasting, the production of festive and meditative events, the visual arts and micro-collections of clothing and cassettes.
+        Our activities have now expanded and oscillate between the traditional radio broadcasting, the production of festive and meditative events, visual arts and micro-collections of clothing and cassettes.
         <br/><br/>
-        Through its airwaves and events, Radio Sofa is a space of expression for artists and discovery for audiences. We are committed to offering pioneering and inclusive programming, showcasing emerging artists with diverse identities, and valuing artistic risk-taking and creation.
+        Through its airwaves and events, Radio Sofa creates a space of expression for artists and discovery for the audience. We are committed to pioneering and inclusive programming, showcasing emerging artists with diverse identities and valuing risk-taking and creation.
         <br/><br/>
-        We are also committed to minimizing the environmental impact of our activities by programming with local artists and giving priority to soft mobility and the use of second-hand materials.
+        We also intend to minimize the environmental impact of our activities by programming local artists and giving priority to soft mobilityl and second-hand materials.
         <br/><br/>
         To be listened to sitting and standing.
         <br/><br/>
