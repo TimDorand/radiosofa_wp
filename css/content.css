@@ -742,6 +742,7 @@ div[class^='src-components-current-track__artist--'] {
 }
 .footer-image img{
   width:100%;
+  margin-bottom: 40px;
 
 }
 /* IFRAMES */
