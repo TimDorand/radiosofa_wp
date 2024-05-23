@@ -12,7 +12,7 @@ html, body, #page {
 :root {
   --main-color: #000;
   /* --secondary-color: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
-  --secondary-color: #00e91a;
+  --secondary-color: #F15025;
   --sidebar-width: 34rem;
   --side-margin: 6rem;
 }
