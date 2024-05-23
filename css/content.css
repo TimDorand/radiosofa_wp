@@ -1294,4 +1294,7 @@ div[class^='src-components-current-track__artist--'] {
   #page-radio-residence .convives-post {
     width: 100%;
   }
+  .header-container{
+    margin: initial;
+  }
 }
