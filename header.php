@@ -93,44 +93,46 @@
     </a>
     </div>
     <div class="site-player">
-        <div class="player-section">
-            <audio id="sidebar-player-audio" controls preload="none" onloadeddata="myOnLoadedData()">
-                <source src="" type="audio/mpeg" style="width:100px">
-                Your browser does not support the audio element.
-            </audio>
-            <div class="lds-dual-ring"></div>
-            <a id="sidebar-player" class="play" href="#" style="display:none;"></a>
-            <div id="rk-current-track-widget" data-id="radio-sofa" data-buy="0"></div>
-            <script type="text/javascript"
-                    src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/js/current-track/rk-current-track-min.js"></script>
-        </div>
-        <div class="title-section">
-           <!-- <h1 class="ondes-title">
-                <span>R</span>
-                <span>A</span>
-                <span>D</span>
-                <span>I</span>
-                <span>O</span>
-                <span style="width: 5%"></span>
-                <span>S</span>
-                <span>O</span>
-                <span>F</span>
-                <span style="margin-left:-7%">A</span>
-            </h1>-->
-            <img
-                    width="887"
-                    src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/radio_sofa_title.svg"
-                    alt="Radio Sofa en lettres majuscules"
-                    class="img-radio-sofa-title"
-            />
-            <p hidden>RADIO SOFA</p>
-            <img
-                    width="100"
-                    height="100"
-                    src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/animated_star.gif"
-                    alt="Etoile à 4 branches tournant sur elle-même"
-                    class="img-title-star"
-            />
+        <div class="header-container">
+            <div class="player-section">
+                <audio id="sidebar-player-audio" controls preload="none" onloadeddata="myOnLoadedData()">
+                    <source src="" type="audio/mpeg" style="width:100px">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="lds-dual-ring"></div>
+                <a id="sidebar-player" class="play" href="#" style="display:none;"></a>
+                <div id="rk-current-track-widget" data-id="radio-sofa" data-buy="0"></div>
+                <script type="text/javascript"
+                        src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/js/current-track/rk-current-track-min.js"></script>
+            </div>
+            <div class="title-section">
+            <!-- <h1 class="ondes-title">
+                    <span>R</span>
+                    <span>A</span>
+                    <span>D</span>
+                    <span>I</span>
+                    <span>O</span>
+                    <span style="width: 5%"></span>
+                    <span>S</span>
+                    <span>O</span>
+                    <span>F</span>
+                    <span style="margin-left:-7%">A</span>
+                </h1>-->
+                <img
+                        width="887"
+                        src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/radio_sofa_title.svg"
+                        alt="Radio Sofa en lettres majuscules"
+                        class="img-radio-sofa-title"
+                />
+                <p hidden>RADIO SOFA</p>
+                <img
+                        width="100"
+                        height="100"
+                        src="<?php echo site_url(); ?>/wp-content/themes/radiosofa/img/animated_star.gif"
+                        alt="Etoile à 4 branches tournant sur elle-même"
+                        class="img-title-star"
+                />
+            </div>
         </div>
     </div>
 
