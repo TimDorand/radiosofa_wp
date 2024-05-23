@@ -11,7 +11,7 @@ html, body, #page {
 
 :root {
   --main-color: #000;
-  --secondary-color: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)
+  --secondary-color: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
   /* --secondary-color: #F15025; */
   --sidebar-width: 34rem;
   --side-margin: 6rem;
@@ -1074,7 +1074,7 @@ div[class^='src-components-current-track__artist--'] {
     width: 100%;
     z-index: 3;
     border-top: 0.5rem solid black;
-    background-color: var(--secondary-color);
+    background: var(--secondary-color);
     padding-top: 6px;
     margin: -1px 0;
   }
