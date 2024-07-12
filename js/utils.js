@@ -168,7 +168,11 @@ function handleMenu(evt, selector) {
 function handleOndes() {
     $("#visuel_mois").attr('src', url_visuel_mois);
     $(".description_visuel_mois").html(description_visuel_mois);
-    $(".fullcap").html("<p>"+description_complete_visuel_mois+"</p>");
+    if(description_complete_visuel_mois.length > 0){
+        $(".fullcap").html("<p>"+description_complete_visuel_mois+"</p>");
+    } else {
+        $(".fullcap").hide();
+    }
 
     const ondesMorePlanningDiv = $(".ondes-more-planning");
     const vselDiv = $("#vsel");
