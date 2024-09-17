@@ -37,7 +37,7 @@ class Resident
 $residents = [];
 
 foreach($all_residents as $resident) {
- $new_resident = new Resident($resident[1], $resident[2], $resident[3],$resident[4], $resident[0]);
+ $new_resident = new Resident($resident[0], $resident[1],$resident[2], $resident[3],$resident[4]);
  array_push($residents, $new_resident);
 }
 sort($residents);
