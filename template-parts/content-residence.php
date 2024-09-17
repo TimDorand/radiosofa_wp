@@ -44,7 +44,7 @@ sort($residents);
 
 echo '<div class="rs-block-columns replay-images">';
 foreach ($residents as $resident) {
-  if(isset($resident->image)){
+  if(isset($resident->image) && $resident->image != '') {
     echo '<div class="rs-block-column resident-item">
     <figure class="rs-block-image size-large is-resized">
     <img src="' . $resident->image . '" alt="' . $resident->name . '" width="376" height="376"/>
