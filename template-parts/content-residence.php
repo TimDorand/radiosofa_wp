@@ -36,11 +36,11 @@ class Resident
 // $residents = [$tomCoololo, $h2o, $blanca, $genouFragile, $fracas, $toniDog, $kenzzza, $paradisFiscal, $marsoc10, $julojulo, $saintMisere, $planisphere, $sunaas, $kimKenis, $slim, $janAstasia, $troiscenttrois, $nofraje, $taka, $maxKlank, $ensemble, $SBN6, $charleeps, $monacogza, $elonaprime, $boboxa, $matso, $tropicalites, $girasol, $felix, $baume, $micropolis, $rodrigueSoulgroove, $waveyCuts, $mimi, $belaria, $broski];
 $residents = [];
 
+sort($all_residents);
 foreach($all_residents as $resident) {
  $new_resident = new Resident($resident[0], $resident[1],$resident[2], $resident[3],$resident[4]);
  array_push($residents, $new_resident);
 }
-sort($residents);
 
 echo '<div class="rs-block-columns replay-images">';
 foreach ($residents as $resident) {
