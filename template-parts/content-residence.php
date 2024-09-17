@@ -61,10 +61,9 @@ foreach ($residents as $resident) {
   if (!$resident->desc) {
     $resident->desc = "Redécouvrez les résidences de " . $resident->name . " ci dessous.";
   }
-  $residentId = str_replace(' ', '_', $resident->id);
 
   echo '
-    <div id="residence-' . $residentId . '" class="residence-details">
+    <div id="residence-' . $resident->id . '" class="residence-details">
     <div class="rs-block-columns">
         <div class="rs-block-column width-50">
             <figure class="rs-block-image size-large">
