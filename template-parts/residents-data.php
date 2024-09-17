@@ -1,8 +1,8 @@
 <?php
 $all_residents = [
     ["/303", "Deep Ewing Show", "", "/wp-content/uploads/2023/12/303.jpg", "deep-ewing-show"],
-    ["aairs (Seconde Aride & risolee)", "Twin Picks", "", "/wp-content/uploads/2024/09/AAIRS-scaled.jpg", "aairs"],
-    ["Aber", "Sweet Furious Animals", "", "/wp-content/uploads/2023/12/ABER.jpg", "sweet-furious-animals"],
+    ["aairs (Seconde Aride & risolee)", "Twin Picks", "", "/wp-content/uploads/2024/09/AAIRS-scaled.jpg", "twin-picks"],
+    ["Aber", "Sweet Furious Animals", "", "m/wp-content/uploads/2024/09/ABER-1.jpg", "sweet-furious-animals"],
     ["ACIDEPLASTIQUE & JUNOL", "SYSTEM OF A DAWN", "", "", "system-of-a-dawn"],
     ["Aimée", "Everything in between", "", "/wp-content/uploads/2024/09/Aimee.jpg", "everything-in-between"],
     ["AUDREY CRISTEA", "MELATONINE OBSESSIONS", "", "/wp-content/uploads/2024/09/audrey-cristea-e1726583061143.jpg", "elatonine-obsessions"],
@@ -16,7 +16,7 @@ $all_residents = [
     ["BROSKI", "EXPÉDITION ÉLECTRONIQUE", "", "/wp-content/uploads/2023/12/BROSKI.jpg", "expéditions-électroniques"],
     ["Carole Fe", "Natural High", "", "/wp-content/uploads/2024/09/CaroleFe-NaturalHigh.jpg", "natural-high"],
     ["CHARLEEPS", "RIVIERA EXPRESS", "", "/wp-content/uploads/2023/12/CHARLEEPS.jpg", "riviera-express"],
-    ["Collettivo Loredana", "Corrente", "", "/wp-content/uploads/2024/09/CORRENTE.jpg", "corrente"],
+    ["Corrente", "Corrente", "", "/wp-content/uploads/2024/09/CORRENTE-e1726583035703.jpg", "corrente"],
     ["DISCOSTOUF", "PROG INTAKE", "", "/wp-content/uploads/2024/09/discostouf-scaled-e1726583364131.jpeg", "prog-intake"],
     ["Eerie", "MUSIC FOR READING BOOKS", "", "/wp-content/uploads/2024/09/EERIE.jpg", "music-for-reading-books"],
     ["ELI", "SEXY LOVE BEACH", "", "/wp-content/uploads/2024/09/ELI-scaled-e1726583421697.jpeg", "sexy-love-beach"],
