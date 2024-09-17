@@ -206,7 +206,8 @@ function handleResidence() {
 }
 
 function showResidenceDetails(e) {
-    var resident = e.currentTarget.children[1].innerText
+    console.info("showResidenceDetails", e.currentTarget);
+    var resident = e.currentTarget.data('resident-id');
     $("#page-radio-residence .replay-images").hide();
     $("#residence-" + resident.replaceAll('/','').split(' ').join('_')).show();
     $("#back-residence").parent("div").show();
