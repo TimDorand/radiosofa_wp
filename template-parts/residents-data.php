@@ -50,7 +50,7 @@ $all_residents = [
     ["NOFRAJE", "GLOBAL FREQUENCY", '', "/wp-content/uploads/2023/12/NOFRAJE.jpg", "global-frequency"],
     ["OLGA B.", "KOMMUNALKA", "", "/wp-content/uploads/2024/09/Olga-B.-Kommunalka-scaled-e1726583508355.jpeg", "kommunalka"],
     ["PARADIS FISCAL", "Synthetic Music Company", "", "/wp-content/uploads/2023/12/PARADIS-FISCAL.jpg", "synthetic-music-company"],
-    ["Perceval", "WE NEED JUNGLE I'M AFRAID", "", "/wp-content/uploads/2024/09/WE-NEED-JUNGLE-I_M-AFRAID.png", "we-need-jungle-i'm-afraid"],
+    ["WE NEED JUNGLE, I'M AFRAID", "WE NEED JUNGLE, I'M AFRAID", "", "/wp-content/uploads/2024/09/WE-NEED-JUNGLE-I_M-AFRAID.png", "we-need-jungle-i'm-afraid"],
     ["PLANISPHERE", "MUSIQUES POUR MOBILIER", '', "/wp-content/uploads/2023/12/PLANISPHERE.jpg", "musiques-pour-mobiliers"],
     ["Poiçon", "Bande Désorganisée", "", "", "bande-désorganisée"],
     ["POMO", "ULTRASOFTCARE", "", "/wp-content/uploads/2024/09/POMO.jpg", "ultrasoftcare"],
