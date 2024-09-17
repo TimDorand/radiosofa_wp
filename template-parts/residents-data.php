@@ -5,7 +5,7 @@ $all_residents = [
     ["Aber", "Sweet Furious Animals", "", "m/wp-content/uploads/2024/09/ABER-1.jpg", "sweet-furious-animals"],
     ["ACIDEPLASTIQUE & JUNOL", "SYSTEM OF A DAWN", "", "", "system-of-a-dawn"],
     ["Aimée", "Everything in between", "", "/wp-content/uploads/2024/09/Aimee.jpg", "everything-in-between"],
-    ["AUDREY CRISTEA", "MELATONINE OBSESSIONS", "", "/wp-content/uploads/2024/09/audrey-cristea-e1726583061143.jpg", "elatonine-obsessions"],
+    ["AUDREY CRISTEA", "MELATONINE OBSESSIONS", "", "/wp-content/uploads/2024/09/audrey-cristea-e1726583061143.jpg", "melatonine-obsessions"],
     ["Araxie", "Loaded", "", "", "loaded"],
     ["Miniteuf", "B-Side", "", "", "miniteuf"],
     ["BAUME", "TOUT QUITTER POUR PARTIR", '', "/wp-content/uploads/2023/12/BAUME.jpg", "tout-quitter-pour-partir"],

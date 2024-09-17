@@ -8,7 +8,9 @@
 
 <?php
 include('residents-data.php');
-
+function stripAccents($str) {
+  return strtr(utf8_decode($str), utf8_decode('àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ'), 'aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY');
+}
 class Resident
 {
   public $id;
@@ -50,7 +52,7 @@ foreach ($residents as $resident) {
     <img src="' . $resident->image . '" alt="' . $resident->name . '" width="376" height="376"/>
     </figure>
     <div class="rs-title-mini rs-title-light">
-    <div><h2>' . $resident->name . '</h2></div>
+    <div><h2>' . stripAccents($resident->name) . '</h2></div>
     </div>
     </div>';
     }
@@ -70,8 +72,8 @@ foreach ($residents as $resident) {
             <img loading="lazy" width="500" height="500" src="' . $resident->image . '" alt="' . $resident->name . '"></figure>
         </div>
         <div class="rs-block-column width-50">
-            <div class="rs-title rs-title-light"><div><h2>' . $resident->name . '</h2></div></div>
-            <h3>' . $resident->residenceName . '</h3>
+            <div class="rs-title rs-title-light"><div><h2>' . stripAccents($resident->name) . '</h2></div></div>
+            <h3>' . stripAccents($resident->residenceName) . '</h3>
             <p>' . $resident->desc . '</p>
         </div>
         
