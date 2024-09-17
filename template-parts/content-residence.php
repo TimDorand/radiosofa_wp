@@ -2,7 +2,7 @@
     <!--    <div style="height: 32px;font-size:1rem; text-transform: uppercase" id="back-residence"><p>Tous les residents</p>
         </div>-->
     <div id="back-residence">
-        <h2>TOUS LES RESIDENTS</h2>
+        <h2>Toutes les résidences</h2>
     </div>
 </div>
 
