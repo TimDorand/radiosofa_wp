@@ -55,7 +55,7 @@ foreach ($posts as $post) {
     echo '<div class="rs-journal-post" data-post-id="' . $post->post_name . '">
             <h2 class="post-title"><a href="/#article-'.$post->post_name.'">'. $post->post_title . '</a></h2>
                 ' . $post->post_content . '
-            </div><hr/>';
+            </div>';
 }
 
 ?>

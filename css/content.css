@@ -781,12 +781,14 @@ div[class^='src-components-current-track__artist--'] {
   padding: 0px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .rs-journal-post {
-  width: 33rem;
+  width: 40%;
   display: block;
-  padding: 0 6rem 6rem 0;
+  margin-bottom:6rem;
+  word-break: break-word;
 }
 
 .site-journal .blocks-gallery-item img {
