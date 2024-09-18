@@ -784,6 +784,10 @@ div[class^='src-components-current-track__artist--'] {
   justify-content: space-between;
 }
 
+.site-journal h2{
+  margin-top:0;
+
+}
 .rs-journal-post {
   width: 40%;
   display: block;
