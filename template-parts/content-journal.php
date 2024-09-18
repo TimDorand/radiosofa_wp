@@ -7,11 +7,11 @@ Template Name: Journal
 <main id="primary" class="site-journal">
 
 <div class="post-single">
-    <button class="btn" id="link-all-articles" style="width:100%">Tous les articles</button>
+    <button class="btn" id="link-all-articles">Tous les articles</button>
     <div id="post-single-content"></div>
 </div>
 
-<div id="tous-les-articles"></div>
+<div id="tous-les-articles" style="width:100%"></div>
 <?php
 
 /*
