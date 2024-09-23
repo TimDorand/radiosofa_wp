@@ -3,7 +3,7 @@ const sidebarPlayerDiv = $("#sidebar-player");
 
 function playRS() {
     const song = $("#sidebar-player-audio").get(0);
-    const src = "https://www.radioking.com/play/radio-sofa";
+    const src = "https://play.radioking.io/radio-sofa";
     if (song.paused) {
         song.src = src;
         song.load();
