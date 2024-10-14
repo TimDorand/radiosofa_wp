@@ -552,6 +552,9 @@ div[class^='src-components-current-track__artist--'] {
   padding: 0;
   margin: 0;
 }
+.wp-block-table .has-fixed-layout td, .wp-block-table .has-fixed-layout th {
+  word-break: auto-phrase;
+}
 
 /* ONDES REPLAY CONVIVES */
 
