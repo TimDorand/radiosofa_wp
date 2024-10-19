@@ -2,7 +2,7 @@
 
 (function ($) {
     // Disable console log in production
-    var DEBUG = true;
+    var DEBUG = false;
     if (!DEBUG) {
         if (!window.console) window.console = {};
         var methods = ["log", "debug", "warn", "info"];
