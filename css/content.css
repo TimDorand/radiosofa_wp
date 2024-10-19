@@ -553,7 +553,8 @@ div[class^='src-components-current-track__artist--'] {
   margin: 0;
 }
 .wp-block-table .has-fixed-layout td, .wp-block-table .has-fixed-layout th {
-  word-break: auto-phrase !important
+  word-break: unset;
+  word-break: auto-phrase;
 }
 
 /* ONDES REPLAY CONVIVES */
