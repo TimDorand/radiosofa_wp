@@ -4,7 +4,7 @@ $all_residents = [
     ["aairs (Seconde Aride & risolee)", "Twin Picks", "", "/wp-content/uploads/2024/09/AAIRS-scaled.jpg", "twin-picks"],
     ["Aber", "Sweet Furious Animals", "", "/wp-content/uploads/2024/09/ABER-1.jpg", "sweet-furious-animals"],
     ["ACIDEPLASTIQUE & JUNOL", "SYSTEM OF A DAWN", "", "", "system-of-a-dawn"],
-    ["ACSR & Radiola", "ACSR & Radiola", "", "/wp-content/uploads/2024/11/ACSR-RADIOLA-_-INO-VAOVAO-MADA-DE-JEANNE-DEBARSY-19_00-CET-06.11.24.jpg", "acsr-&-radiola"],
+    ["ACSR & Radiola", "ACSR & Radiola", "", "/wp-content/uploads/2024/11/ACSR-RADIOLA-_-INO-VAOVAO-MADA-DE-JEANNE-DEBARSY-19_00-CET-06.11.24.jpg", "acsr-radiola"],
     ["Aimée", "Everything in between", "", "/wp-content/uploads/2024/09/Aimee.jpg", "everything-in-between"],
     ["AUDREY CRISTEA", "MELATONINE OBSESSIONS", "", "/wp-content/uploads/2024/09/audrey-cristea-e1726583061143.jpg", "melatonine-obsessions"],
     ["Araxie", "Loaded", "", "", "loaded"],
