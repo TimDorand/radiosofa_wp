@@ -33,7 +33,7 @@ $all_residents = [
     ["GIRASOL", "LATITUDES LUNATIQUES", '', "/wp-content/uploads/2023/12/GIRASOL.jpg", "latitudes-lunatiques"],
     ["H2O", "Deep Dive", "", "/wp-content/uploads/2023/12/H2O.jpg", "deep-dive"],
     ["HAINERVÉ", "TRANQUILLEMENT", "", "/wp-content/uploads/2024/09/Hainerve.jpg", "tranquillement"],
-    ["Jabu Noir", "The Color Of Cajá", "", "/wp-content/uploads/2024/09/JABU-NOIR-1-e1726578188739.jpg", "the-color-of-caja"],
+    ["Jabu Noir", "Jabuticaba", "", "/wp-content/uploads/2024/09/JABU-NOIR-1-e1726578188739.jpg", "jabuticaba"],
     ["JAN ASTASIA", "Face A/B", "", "/wp-content/uploads/2023/12/JAN-ASTASIA.jpg", "face-ab"],
     ["Julo Julo", "Contemplation", "", "/wp-content/uploads/2023/12/JULO-JULO.jpg", "contemplation"],
     ["KENZZZA", "Silky witchcraft", "", "/wp-content/uploads/2023/12/KENZZZA.jpg", "silky-witchcraft"],
