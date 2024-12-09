@@ -95,7 +95,7 @@
     <div class="site-player">
         <div class="header-container">
             <div class="player-section">
-                <audio id="sidebar-player-audio" controls preload="none" onloadeddata="myOnLoadedData()">
+                <audio id="sidebar-player-audio" controls preload="none" onloadeddata="myOnLoadedData()" preload="true">
                     <source src="" type="audio/mpeg" style="width:100px">
                     Your browser does not support the audio element.
                 </audio>
