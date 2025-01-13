@@ -42,7 +42,12 @@ REPLAY
 
     $categoryArticles = get_category_by_slug("Convives");
     $posts = get_posts(["numberposts" => -1, "category" => $categoryArticles->cat_ID]);
-    $years = ['2024', '2023', '2022', '2021', '2020'];
+    
+    $currentYear = date("Y");
+    $years = [];
+    for ($year = $currentYear; $year >= 2020; $year--) {
+        $years[] = (string)$year;
+    }
 
     $year_selected = isset($args['convivesYear']) && $args['convivesYear'] !== ""
         ? $args['convivesYear']
