@@ -98,7 +98,7 @@
         </div>
         <div class="rs-title rs-title-default">
             <div><h2 class="clickable" onclick="fetchHideShowPage('page-radio-journal', 'Journal', true)">
-                    ÉVÉNEMENTS</h2>
+                    EVENEMENTS</h2>
             </div>
         </div>
 
