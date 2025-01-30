@@ -49,7 +49,7 @@ foreach ($residents as $resident) {
   if(isset($resident->image) && $resident->image !== '') {
     echo '<div class="rs-block-column resident-item" data-resident-id="'. $resident->id . '">
     <figure class="rs-block-image size-large is-resized">
-    <img src="' . $resident->image . '" alt="' . $resident->name . '" width="376" height="376"/>
+    <img loading="lazy" src="' . $resident->image . '" alt="' . $resident->name . '" width="376" height="376"/>
     </figure>
     <div class="rs-title-mini rs-title-light">
     <div><h2>' . stripAccents($resident->name) . '</h2></div>
@@ -96,7 +96,7 @@ foreach ($residents as $resident) {
     $image = get_the_post_thumbnail($post, ["300", "300"]);
     echo '<div data-post-id="' . $post->post_name . '" class="convives-post">';
 
-    $image = str_replace("<img", "<img loading=\"lazy\"", $image);
+    $image = str_replace("<img ", "<img loading=\"lazy\" ", $image);
     echo $image;
     if (strpos($post->post_content, 'btn-replay') !== false) {
       echo '<span class="play-hover replay-present">&#9654;</span>';
