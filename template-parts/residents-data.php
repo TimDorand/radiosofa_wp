@@ -20,7 +20,7 @@ $all_residents = [
     ["Corrente", "Corrente", "", "/wp-content/uploads/2024/09/CORRENTE-e1726583035703.jpg", "corrente"],
     ["DISCOSTOUF", "PROG INTAKE", "", "/wp-content/uploads/2024/09/discostouf-scaled-e1726583364131.jpeg", "prog-intake"],
     ["DIVA", "RESTING FANTASIES", "", "/wp-content/uploads/2024/11/RESTING-FANTASIES-_-DIVA-19_00-CET-07.11.24.jpg", "resting-fantasies"],
-    ["Eerie", "MUSIC FOR READING BOOKS", "", "/wp-content/uploads/2024/09/EERIE.jpg", "music-for-reading-books"],
+    ["Eerie", "MUSIC FOR READING BOOKS", "", "/wp-content/uploads/2025/01/IMG_4373.jpeg", "music-for-reading-books"],
     ["EDITIONS BÉTON-ROMAN", "ECLATS", "", "/wp-content/uploads/2024/10/Screenshot-2024-10-19-at-11.16.33.png", "eclats"],
     ["ELI", "SEXY LOVE BEACH", "", "/wp-content/uploads/2024/09/ELI-scaled-e1726583421697.jpeg", "sexy-love-beach"],
     ["ELONA", "SMALL SEEDS", "", "/wp-content/uploads/2023/12/ELONA-PRIME.jpg", "small-seeds"],
