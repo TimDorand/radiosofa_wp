@@ -49,7 +49,7 @@ https://www.youtube.com/watch?v=XYbzw_t0TB4&ab_channel=SinchiCollective&fbclid=I
 */
 
 
-$categoryArticles = get_category_by_slug("Articles");
+$categoryArticles = get_category_by_slug("Events");
 $posts = get_posts(["numberposts" => -1, "category" => $categoryArticles->cat_ID]);
 foreach ($posts as $post) {
     echo '<div class="rs-journal-post" data-post-id="' . $post->post_name . '">

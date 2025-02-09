@@ -109,7 +109,7 @@
                 <ul class="rs-block-latest-posts__list has-dates alignleft bloc-articles rs-block-latest-posts">
 
                   <?php
-                  $categoryArticles = get_category_by_slug("Articles");
+                  $categoryArticles = get_category_by_slug("Events");
                   $recentArticles = get_posts(["numberposts" => 3, "category" => $categoryArticles->cat_ID]);
                   foreach ($recentArticles as $post) {
                     $post_date = get_the_date('j') . "/" . get_the_date('n');
@@ -141,7 +141,7 @@
                 <ul class="rs-block-latest-posts__list has-dates alignleft bloc-articles rs-block-latest-posts">
 
                   <?php
-                  $categoryArticles = get_category_by_slug("Articles");
+                  $categoryArticles = get_category_by_slug("Events");
                   $recentArticles = get_posts(["numberposts" => 2, "category" => $categoryArticles->cat_ID]);
                   foreach ($recentArticles as $post) {
                     $post_date = get_the_date('j') . "/" . get_the_date('n');
